@@ -3,9 +3,10 @@ import {
 	PointsSnapLine,
 	SnapLine,
 	TLArrowShape,
+	TLGeoShape,
 	TLShapeId,
 	TLShapePartial,
-	Vec2d,
+	Vec,
 	createShapeId,
 } from '@tldraw/editor'
 import { TestEditor } from './TestEditor'
@@ -131,6 +132,8 @@ describe('When translating...', () => {
 		editor.user.updateUserPreferences({ edgeScrollSpeed: 1 })
 		editor.pointerDown(50, 50, ids.box1).pointerMove(0, 50) // [-50, 0]
 
+		const before = editor.getShape<TLGeoShape>(ids.box1)!
+
 		jest.advanceTimersByTime(100)
 		editor
 			// The change is bigger than expected because the camera moves
@@ -139,10 +142,14 @@ describe('When translating...', () => {
 			// The speed in the y position is smaller since we are further away from the edge.
 			.pointerMove(0, 25)
 		jest.advanceTimersByTime(100)
-		editor
-			.expectShapeToMatch({ id: ids.box1, x: -280, y: -42.54 })
-			.pointerUp()
-			.expectShapeToMatch({ id: ids.box1, x: -280, y: -42.54 })
+		editor.pointerUp()
+
+		const after = editor.getShape<TLGeoShape>(ids.box1)!
+
+		expect(after.x).toBeLessThan(before.x)
+		expect(after.y).toBeLessThan(before.y)
+		expect(after.props.w).toEqual(before.props.w)
+		expect(after.props.h).toEqual(before.props.h)
 	})
 
 	it('translates a single shape near the bottom right edge', () => {
@@ -387,17 +394,17 @@ describe('When translating shapes that are descendants of a rotated shape...', (
 		const shapeA = editor.getShape(ids.box1)!
 		const shapeD = editor.getShape(ids.boxD)!
 
-		expect(editor.getPageCenter(shapeA)).toMatchObject(new Vec2d(60, 60))
-		expect(editor.getShapeGeometry(shapeD).center).toMatchObject(new Vec2d(5, 5))
-		expect(editor.getPageCenter(shapeD)).toMatchObject(new Vec2d(35, 35))
+		expect(editor.getPageCenter(shapeA)).toMatchObject(new Vec(60, 60))
+		expect(editor.getShapeGeometry(shapeD).center).toMatchObject(new Vec(5, 5))
+		expect(editor.getPageCenter(shapeD)).toMatchObject(new Vec(35, 35))
 
 		const rads = 0
 
-		expect(editor.getPageCenter(shapeA)).toMatchObject(new Vec2d(60, 60))
+		expect(editor.getPageCenter(shapeA)).toMatchObject(new Vec(60, 60))
 
 		// Expect the node's page position to be rotated around its parent's page center
 		expect(editor.getPageCenter(shapeD)).toMatchObject(
-			new Vec2d(35, 35).rotWith(editor.getPageCenter(shapeA)!, rads)
+			new Vec(35, 35).rotWith(editor.getPageCenter(shapeA)!, rads)
 		)
 
 		const centerD = editor.getPageCenter(shapeD)!.clone().toFixed()
@@ -409,7 +416,7 @@ describe('When translating shapes that are descendants of a rotated shape...', (
 			.pointerMove(centerD.x, centerD.y - 10)
 			.pointerUp()
 
-		expect(editor.getPageCenter(shapeD)).toMatchObject(new Vec2d(centerD.x, centerD.y - 10))
+		expect(editor.getPageCenter(shapeD)).toMatchObject(new Vec(centerD.x, centerD.y - 10))
 
 		const centerA = editor.getPageCenter(shapeA)!.clone().toFixed()
 

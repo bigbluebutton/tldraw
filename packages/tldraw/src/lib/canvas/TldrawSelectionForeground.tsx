@@ -1,5 +1,5 @@
 import {
-	Box2d,
+	Box,
 	RotateCorner,
 	TLEmbedShape,
 	TLSelectionForegroundComponent,
@@ -19,7 +19,7 @@ import { TldrawCropHandles } from './TldrawCropHandles'
 
 /** @public */
 export const TldrawSelectionForeground: TLSelectionForegroundComponent = track(
-	function TldrawSelectionForeground({ bounds, rotation }: { bounds: Box2d; rotation: number }) {
+	function TldrawSelectionForeground({ bounds, rotation }: { bounds: Box; rotation: number }) {
 		const editor = useEditor()
 		const rSvg = useRef<SVGSVGElement>(null)
 
@@ -37,7 +37,6 @@ export const TldrawSelectionForeground: TLSelectionForegroundComponent = track(
 			!editor.getIsMenuOpen() && editor.getInstanceState().cursor.type === 'default'
 		const isCoarsePointer = editor.getInstanceState().isCoarsePointer
 
-		const shapes = editor.getSelectedShapes()
 		const onlyShape = editor.getOnlySelectedShape()
 		const isLockedShape = onlyShape && editor.isShapeOrAncestorLocked(onlyShape)
 
@@ -162,10 +161,7 @@ export const TldrawSelectionForeground: TLSelectionForegroundComponent = track(
 
 		let hideEdgeTargetsDueToCoarsePointer = isCoarsePointer
 
-		if (
-			hideEdgeTargetsDueToCoarsePointer &&
-			shapes.every((shape) => editor.getShapeUtil(shape).isAspectRatioLocked(shape))
-		) {
+		if (hideEdgeTargetsDueToCoarsePointer && onlyShape && onlyShape.type === 'text') {
 			hideEdgeTargetsDueToCoarsePointer = false
 		}
 

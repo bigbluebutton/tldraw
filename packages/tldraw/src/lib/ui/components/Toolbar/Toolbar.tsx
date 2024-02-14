@@ -112,15 +112,6 @@ export const Toolbar = memo(function Toolbar() {
 				<div className="tlui-toolbar__left">
 					{!isReadonly && (
 						<div className="tlui-toolbar__extras">
-							{breakpoint < 6 && !(activeToolId === 'hand' || activeToolId === 'zoom') && (
-								<div className="tlui-toolbar__extras__controls tlui-buttons__horizontal">
-									<UndoButton />
-									<RedoButton />
-									<TrashButton />
-									<DuplicateButton />
-									<ActionsMenu />
-								</div>
-							)}
 							<ToggleToolLockedButton activeToolId={activeToolId} />
 						</div>
 					)}

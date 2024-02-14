@@ -1,3 +1,312 @@
+# v2.0.0-beta.2 (Wed Jan 10 2024)
+
+### Release Notes
+
+#### Fix validation when pasting images. ([#2436](https://github.com/tldraw/tldraw/pull/2436))
+
+- Fixes url validations.
+
+#### Fix decrement button label in OnTheCanvas example component ([#2432](https://github.com/tldraw/tldraw/pull/2432))
+
+- tiny bug fix, simply changing a label to match behaviour
+
+#### refactor copy/export, fix safari copy-as-image being broken ([#2411](https://github.com/tldraw/tldraw/pull/2411))
+
+- Fix a bug preventing copying as an image on iOS
+
+#### Add url validation ([#2428](https://github.com/tldraw/tldraw/pull/2428))
+
+- Add validation to urls.
+
+#### [fix] next selected shapes comment ([#2427](https://github.com/tldraw/tldraw/pull/2427))
+
+- Fix error in setStyleForNextSelectedShapes comment
+
+#### annotate error boundary example ([#2410](https://github.com/tldraw/tldraw/pull/2410))
+
+- Add annotation to error boundary example
+
+#### Fix issues with clip paths for frames ([#2406](https://github.com/tldraw/tldraw/pull/2406))
+
+- Add a brief release note for your PR here.
+
+#### Annotate custom styles example ([#2405](https://github.com/tldraw/tldraw/pull/2405))
+
+- Add annotation to the custom styles example
+
+#### annotate custom config example ([#2404](https://github.com/tldraw/tldraw/pull/2404))
+
+- Adds annotation to the custom config example with a bit more detail
+
+#### annotate asset props, correct image/video confusion ([#2399](https://github.com/tldraw/tldraw/pull/2399))
+
+- Annotates the asset props example and fixes a mistake in the existing comments
+
+#### Annotate/refactor store events example ([#2400](https://github.com/tldraw/tldraw/pull/2400))
+
+- Update store events example to use store.listen method
+- Annotate with explanations of the code
+
+#### annotate canvas events ([#2397](https://github.com/tldraw/tldraw/pull/2397))
+
+- Adds annotation to the canvas events example
+
+#### [fix] edge scrolling when component is inside of screen ([#2398](https://github.com/tldraw/tldraw/pull/2398))
+
+- Add a brief release note for your PR here.
+
+#### Annotate api example ([#2395](https://github.com/tldraw/tldraw/pull/2395))
+
+- Annotate API example
+
+#### [tech debt] Primitives renaming party / cleanup ([#2396](https://github.com/tldraw/tldraw/pull/2396))
+
+- renames Vec2d to Vec
+- renames Vec2dModel to VecModel
+- renames Box2d to Box
+- renames Box2dModel to BoxModel
+- renames Matrix2d to Mat
+- renames Matrix2dModel to MatModel
+- removes unused primitive helpers
+
+#### Refactor and document speech bubble example ([#2392](https://github.com/tldraw/tldraw/pull/2392))
+
+- Add annotations to the speech bubble example
+- Refactor code for clarity
+
+#### Fix trademark links ([#2380](https://github.com/tldraw/tldraw/pull/2380))
+
+- Fixes broken links in a number of docs files.
+
+#### [fix] polygon bounds ([#2378](https://github.com/tldraw/tldraw/pull/2378))
+
+- Fixed a bug with the bounds calculation for polygons.
+
+#### Avoid importing `editor.css` twice ([#2373](https://github.com/tldraw/tldraw/pull/2373))
+
+- Prevent importing `editor.css` twice which should help when debugging the styles via developer console.
+
+#### Adding an image shape from a file the public folder ([#2370](https://github.com/tldraw/tldraw/pull/2370))
+
+- Adds a simple image example.
+
+---
+
+#### 💥 Breaking Change
+
+- `@tldraw/editor`, `@tldraw/tldraw`, `@tldraw/tlschema`
+  - [tech debt] Primitives renaming party / cleanup [#2396](https://github.com/tldraw/tldraw/pull/2396) ([@steveruizok](https://github.com/steveruizok))
+
+#### 🚀 Enhancement
+
+- Adding an image shape from a file the public folder [#2370](https://github.com/tldraw/tldraw/pull/2370) ([@MitjaBezensek](https://github.com/MitjaBezensek))
+
+#### 🐛 Bug Fix
+
+- Avoid importing `editor.css` twice [#2373](https://github.com/tldraw/tldraw/pull/2373) ([@MitjaBezensek](https://github.com/MitjaBezensek))
+- VS Code bump 2.0.20 [#2371](https://github.com/tldraw/tldraw/pull/2371) ([@MitjaBezensek](https://github.com/MitjaBezensek))
+- `@tldraw/tlschema`
+  - Fix validation when pasting images. [#2436](https://github.com/tldraw/tldraw/pull/2436) ([@MitjaBezensek](https://github.com/MitjaBezensek) [@SomeHats](https://github.com/SomeHats))
+- `@tldraw/tldraw`
+  - refactor copy/export, fix safari copy-as-image being broken [#2411](https://github.com/tldraw/tldraw/pull/2411) ([@SomeHats](https://github.com/SomeHats) [@huppy-bot[bot]](https://github.com/huppy-bot[bot]))
+  - [fix] Asset versions [#2389](https://github.com/tldraw/tldraw/pull/2389) ([@steveruizok](https://github.com/steveruizok))
+- `@tldraw/tldraw`, `@tldraw/tlschema`, `@tldraw/utils`, `@tldraw/validate`
+  - Add url validation [#2428](https://github.com/tldraw/tldraw/pull/2428) ([@MitjaBezensek](https://github.com/MitjaBezensek) [@SomeHats](https://github.com/SomeHats))
+- `@tldraw/editor`
+  - Fix issues with clip paths for frames [#2406](https://github.com/tldraw/tldraw/pull/2406) ([@MitjaBezensek](https://github.com/MitjaBezensek))
+- `@tldraw/editor`, `@tldraw/tldraw`
+  - [fix] edge scrolling when component is inside of screen [#2398](https://github.com/tldraw/tldraw/pull/2398) ([@steveruizok](https://github.com/steveruizok))
+  - [fix] polygon bounds [#2378](https://github.com/tldraw/tldraw/pull/2378) ([@steveruizok](https://github.com/steveruizok))
+- `@tldraw/store`
+  - Fix meta examples [#2379](https://github.com/tldraw/tldraw/pull/2379) ([@steveruizok](https://github.com/steveruizok))
+
+#### 🏠 Internal
+
+- Fix license language. [#2365](https://github.com/tldraw/tldraw/pull/2365) ([@steveruizok](https://github.com/steveruizok))
+
+#### 📝 Documentation
+
+- Fix decrement button label in OnTheCanvas example component [#2432](https://github.com/tldraw/tldraw/pull/2432) ([@StanFlint](https://github.com/StanFlint))
+- annotate error boundary example [#2410](https://github.com/tldraw/tldraw/pull/2410) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git) [@steveruizok](https://github.com/steveruizok))
+- fix example scrolling on ios [#2412](https://github.com/tldraw/tldraw/pull/2412) ([@SomeHats](https://github.com/SomeHats))
+- Add descriptions to active examples [#2407](https://github.com/tldraw/tldraw/pull/2407) ([@SomeHats](https://github.com/SomeHats))
+- Annotate custom styles example [#2405](https://github.com/tldraw/tldraw/pull/2405) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git) [@steveruizok](https://github.com/steveruizok))
+- annotate custom config example [#2404](https://github.com/tldraw/tldraw/pull/2404) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
+- annotate asset props, correct image/video confusion [#2399](https://github.com/tldraw/tldraw/pull/2399) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
+- Annotate/refactor store events example [#2400](https://github.com/tldraw/tldraw/pull/2400) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
+- annotate canvas events [#2397](https://github.com/tldraw/tldraw/pull/2397) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
+- Annotate api example [#2395](https://github.com/tldraw/tldraw/pull/2395) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
+- Refactor and document speech bubble example [#2392](https://github.com/tldraw/tldraw/pull/2392) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git) [@steveruizok](https://github.com/steveruizok))
+- Fix README link typo [#2372](https://github.com/tldraw/tldraw/pull/2372) ([@chunderbolt](https://github.com/chunderbolt))
+- `@tldraw/editor`
+  - [fix] next selected shapes comment [#2427](https://github.com/tldraw/tldraw/pull/2427) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
+- `@tldraw/tldraw`
+  - [example] Changing the default tldraw colors [#2402](https://github.com/tldraw/tldraw/pull/2402) ([@steveruizok](https://github.com/steveruizok))
+  - add descriptions to examples [#2375](https://github.com/tldraw/tldraw/pull/2375) ([@SomeHats](https://github.com/SomeHats) [@steveruizok](https://github.com/steveruizok))
+- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/tldraw`, `@tldraw/tlschema`, `@tldraw/utils`, `@tldraw/validate`
+  - Fix trademark links [#2380](https://github.com/tldraw/tldraw/pull/2380) ([@nonparibus](https://github.com/nonparibus))
+  - Another typo fix. [#2366](https://github.com/tldraw/tldraw/pull/2366) ([@steveruizok](https://github.com/steveruizok))
+
+#### Authors: 8
+
+- [@chunderbolt](https://github.com/chunderbolt)
+- [@huppy-bot[bot]](https://github.com/huppy-bot[bot])
+- alex ([@SomeHats](https://github.com/SomeHats))
+- David @ HASH ([@nonparibus](https://github.com/nonparibus))
+- Mitja Bezenšek ([@MitjaBezensek](https://github.com/MitjaBezensek))
+- Stan Flint ([@StanFlint](https://github.com/StanFlint))
+- Steve Ruiz ([@steveruizok](https://github.com/steveruizok))
+- Taha ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
+
+---
+
+# v2.0.0-beta.1 (Wed Dec 20 2023)
+
+### Release Notes
+
+#### add speech bubble example ([#2362](https://github.com/tldraw/tldraw/pull/2362))
+
+- Add an example for making a custom shape with handles, this one is a speech bubble with a movable tail.
+
+#### Fix clicking off the context menu ([#2355](https://github.com/tldraw/tldraw/pull/2355))
+
+- Fix not being able to close the context menu by clicking on the UI or your selected shape.
+
+#### fix read only page menu ([#2356](https://github.com/tldraw/tldraw/pull/2356))
+
+- Add a brief release note for your PR here.
+
+#### refactor: Keep hook function convention the same ([#2358](https://github.com/tldraw/tldraw/pull/2358))
+
+- Add a brief release note for your PR here.
+
+#### focus on container before deleting to avoid losing focus ([#2354](https://github.com/tldraw/tldraw/pull/2354))
+
+- Prevents losing focus when clicking the trash button
+
+#### Stop shape text labels being hoverable when context menu is open ([#2352](https://github.com/tldraw/tldraw/pull/2352))
+
+- Add a brief release note for your PR here.
+
+#### Use custom font ([#2343](https://github.com/tldraw/tldraw/pull/2343))
+
+- Add a brief release note for your PR here.
+
+#### Only allow side resizing when we have some shapes that are not aspect ratio locked ([#2347](https://github.com/tldraw/tldraw/pull/2347))
+
+- Don't allow edges resizing on mobile. The only exception is a single text shape.
+
+#### Fix iconleft padding ([#2345](https://github.com/tldraw/tldraw/pull/2345))
+
+- Fixes the icon padding in back to content / pen mode buttons.
+
+#### [bug] Fix for issue #2329 ([#2330](https://github.com/tldraw/tldraw/pull/2330))
+
+- Fix for `Matrix2d.Scale` function
+
+#### Allow dragging on top of locked shapes. ([#2337](https://github.com/tldraw/tldraw/pull/2337))
+
+- Allow translating of shapes on top of a locked shape by clicking inside of selection and moving the mouse.
+
+#### Remove deprecated getters ([#2333](https://github.com/tldraw/tldraw/pull/2333))
+
+- (Breaking) Removed deprecated getters.
+
+#### Lokalise: Translations update ([#2342](https://github.com/tldraw/tldraw/pull/2342))
+
+Added Czech translations.
+Updated translations for German, Korean, Russian, Ukrainian, Traditional Chinese.
+
+#### Prevent diff mutation ([#2336](https://github.com/tldraw/tldraw/pull/2336))
+
+- Fix `squashRecordDiffs` to prevent a bug where it mutates the 'updated' entires
+
+#### Fix indicator radius for bookmarks. ([#2335](https://github.com/tldraw/tldraw/pull/2335))
+
+- Fix the indicator for the bookmark shape. The radius now matches the shape's radius.
+
+#### Start scrolling if we are dragging close to the window edges. ([#2299](https://github.com/tldraw/tldraw/pull/2299))
+
+- Adds the logic to change the camera position when you get close to the edges of the window. This allows you to drag, resize, brush select past the edges of the current viewport.
+
+#### Fix downscaling ([#2325](https://github.com/tldraw/tldraw/pull/2325))
+
+- Decrease the size of uploaded assets.
+
+#### Use a global singleton for tlstate ([#2322](https://github.com/tldraw/tldraw/pull/2322))
+
+- Make a global singleton for tlstate.
+
+#### VS Code 2.0.19 ([#2324](https://github.com/tldraw/tldraw/pull/2324))
+
+- Version bump for VS Code.
+
+---
+
+#### 💥 Breaking Change
+
+- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/state`, `@tldraw/store`, `@tldraw/tldraw`, `@tldraw/tlschema`, `@tldraw/utils`, `@tldraw/validate`
+  - bump to beta [#2364](https://github.com/tldraw/tldraw/pull/2364) ([@steveruizok](https://github.com/steveruizok))
+  - Change licenses to tldraw [#2167](https://github.com/tldraw/tldraw/pull/2167) ([@steveruizok](https://github.com/steveruizok))
+- `@tldraw/assets`, `@tldraw/tldraw`
+  - Use custom font [#2343](https://github.com/tldraw/tldraw/pull/2343) ([@ds300](https://github.com/ds300) [@huppy-bot[bot]](https://github.com/huppy-bot[bot]))
+- `@tldraw/editor`, `@tldraw/state`
+  - Remove deprecated getters [#2333](https://github.com/tldraw/tldraw/pull/2333) ([@ds300](https://github.com/ds300))
+
+#### 🚀 Enhancement
+
+- add speech bubble example [#2362](https://github.com/tldraw/tldraw/pull/2362) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
+- `@tldraw/editor`, `@tldraw/tldraw`
+  - Start scrolling if we are dragging close to the window edges. [#2299](https://github.com/tldraw/tldraw/pull/2299) ([@MitjaBezensek](https://github.com/MitjaBezensek) [@steveruizok](https://github.com/steveruizok))
+
+#### 🐛 Bug Fix
+
+- VS Code 2.0.19 [#2324](https://github.com/tldraw/tldraw/pull/2324) ([@MitjaBezensek](https://github.com/MitjaBezensek))
+- `@tldraw/editor`, `@tldraw/tldraw`
+  - Fix clicking off the context menu [#2355](https://github.com/tldraw/tldraw/pull/2355) ([@TodePond](https://github.com/TodePond) [@steveruizok](https://github.com/steveruizok))
+  - Drop edge scrolling adjustment for mobile [#2346](https://github.com/tldraw/tldraw/pull/2346) ([@steveruizok](https://github.com/steveruizok))
+- `@tldraw/tldraw`
+  - fix read only page menu [#2356](https://github.com/tldraw/tldraw/pull/2356) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git) [@TodePond](https://github.com/TodePond))
+  - focus on container before deleting to avoid losing focus [#2354](https://github.com/tldraw/tldraw/pull/2354) ([@ds300](https://github.com/ds300))
+  - Only allow side resizing when we have some shapes that are not aspect ratio locked [#2347](https://github.com/tldraw/tldraw/pull/2347) ([@MitjaBezensek](https://github.com/MitjaBezensek))
+  - Fix iconleft padding [#2345](https://github.com/tldraw/tldraw/pull/2345) ([@steveruizok](https://github.com/steveruizok))
+  - Allow dragging on top of locked shapes. [#2337](https://github.com/tldraw/tldraw/pull/2337) ([@MitjaBezensek](https://github.com/MitjaBezensek))
+  - Fix indicator radius for bookmarks. [#2335](https://github.com/tldraw/tldraw/pull/2335) ([@MitjaBezensek](https://github.com/MitjaBezensek))
+  - Fix downscaling [#2325](https://github.com/tldraw/tldraw/pull/2325) ([@MitjaBezensek](https://github.com/MitjaBezensek))
+- `@tldraw/editor`
+  - Stop shape text labels being hoverable when context menu is open [#2352](https://github.com/tldraw/tldraw/pull/2352) ([@TodePond](https://github.com/TodePond))
+  - [bug] Fix for issue #2329 [#2330](https://github.com/tldraw/tldraw/pull/2330) ([@zfedoran](https://github.com/zfedoran))
+- `@tldraw/utils`
+  - fix png images with pixel ratios <0.5 crashing the app [#2350](https://github.com/tldraw/tldraw/pull/2350) ([@SomeHats](https://github.com/SomeHats))
+- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/tlschema`
+  - Lokalise: Translations update [#2342](https://github.com/tldraw/tldraw/pull/2342) ([@TodePond](https://github.com/TodePond))
+- `@tldraw/store`, `@tldraw/tldraw`
+  - Prevent diff mutation [#2336](https://github.com/tldraw/tldraw/pull/2336) ([@ds300](https://github.com/ds300))
+- `@tldraw/store`
+  - Call devFreeze on initialData [#2332](https://github.com/tldraw/tldraw/pull/2332) ([@ds300](https://github.com/ds300))
+- `@tldraw/state`
+  - Fix TSDoc for @tldraw/state [#2327](https://github.com/tldraw/tldraw/pull/2327) ([@ds300](https://github.com/ds300))
+  - Use a global singleton for tlstate [#2322](https://github.com/tldraw/tldraw/pull/2322) ([@ds300](https://github.com/ds300))
+
+#### 🏠 Internal
+
+- `@tldraw/editor`
+  - refactor: Keep hook function convention the same [#2358](https://github.com/tldraw/tldraw/pull/2358) ([@Lennon57](https://github.com/Lennon57))
+
+#### Authors: 9
+
+- [@huppy-bot[bot]](https://github.com/huppy-bot[bot])
+- [@zfedoran](https://github.com/zfedoran)
+- alex ([@SomeHats](https://github.com/SomeHats))
+- David Sheldrick ([@ds300](https://github.com/ds300))
+- Lu Wilson ([@TodePond](https://github.com/TodePond))
+- MinhoPark ([@Lennon57](https://github.com/Lennon57))
+- Mitja Bezenšek ([@MitjaBezensek](https://github.com/MitjaBezensek))
+- Steve Ruiz ([@steveruizok](https://github.com/steveruizok))
+- Taha ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
+
+---
+
 # v2.0.0-alpha.19 (Tue Dec 12 2023)
 
 ### Release Notes
