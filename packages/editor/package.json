@@ -45,11 +45,11 @@
 		"lint": "yarn run -T tsx ../../scripts/lint.ts"
 	},
 	"dependencies": {
-		"@tldraw/state": "workspace:*",
-		"@tldraw/store": "workspace:*",
-		"@tldraw/tlschema": "workspace:*",
-		"@tldraw/utils": "workspace:*",
-		"@tldraw/validate": "workspace:*",
+		"@tldraw/state": "2.0.0-alpha.19",
+		"@tldraw/store": "2.0.0-alpha.19",
+		"@tldraw/tlschema": "2.0.0-alpha.19",
+		"@tldraw/utils": "2.0.0-alpha.19",
+		"@tldraw/validate": "2.0.0-alpha.19",
 		"@types/core-js": "^2.5.5",
 		"@use-gesture/react": "^10.2.27",
 		"classnames": "^2.3.2",

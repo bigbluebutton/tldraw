@@ -41,7 +41,7 @@
 		"lint": "yarn run -T tsx ../../scripts/lint.ts"
 	},
 	"dependencies": {
-		"@tldraw/utils": "workspace:*"
+		"@tldraw/utils": "2.0.0-alpha.19"
 	},
 	"jest": {
 		"preset": "config/jest/node",
