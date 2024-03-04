@@ -4450,24 +4450,24 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@tldraw/assets@workspace:packages/assets"
   dependencies:
-    "@tldraw/utils": "workspace:*"
+    "@tldraw/utils": 2.0.0-alpha.18
     lazyrepo: 0.0.0-alpha.27
     ts-node-dev: ^1.1.8
   languageName: unknown
   linkType: soft
 
-"@tldraw/editor@workspace:*, @tldraw/editor@workspace:packages/editor":
+"@tldraw/editor@^2.0.0-alpha.18, @tldraw/editor@workspace:*, @tldraw/editor@workspace:packages/editor":
   version: 0.0.0-use.local
   resolution: "@tldraw/editor@workspace:packages/editor"
   dependencies:
     "@peculiar/webcrypto": ^1.4.0
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^14.0.0
-    "@tldraw/state": "workspace:*"
-    "@tldraw/store": "workspace:*"
-    "@tldraw/tlschema": "workspace:*"
-    "@tldraw/utils": "workspace:*"
-    "@tldraw/validate": "workspace:*"
+    "@tldraw/state": 2.0.0-alpha.18
+    "@tldraw/store": 2.0.0-alpha.18
+    "@tldraw/tlschema": 2.0.0-alpha.18
+    "@tldraw/utils": 2.0.0-alpha.18
+    "@tldraw/validate": 2.0.0-alpha.18
     "@types/benchmark": ^2.1.2
     "@types/core-js": ^2.5.5
     "@types/lodash.throttle": ^4.1.7
@@ -4561,7 +4561,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@tldraw/state@workspace:*, @tldraw/state@workspace:packages/state":
+"@tldraw/state@2.0.0-alpha.18, @tldraw/state@workspace:packages/state":
   version: 0.0.0-use.local
   resolution: "@tldraw/state@workspace:packages/state"
   dependencies:
@@ -4575,13 +4575,13 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@tldraw/store@workspace:*, @tldraw/store@workspace:packages/store":
+"@tldraw/store@2.0.0-alpha.18, @tldraw/store@workspace:packages/store":
   version: 0.0.0-use.local
   resolution: "@tldraw/store@workspace:packages/store"
   dependencies:
     "@peculiar/webcrypto": ^1.4.0
-    "@tldraw/state": "workspace:*"
-    "@tldraw/utils": "workspace:*"
+    "@tldraw/state": 2.0.0-alpha.18
+    "@tldraw/utils": 2.0.0-alpha.18
     "@types/lodash.isequal": ^4.5.6
     lazyrepo: 0.0.0-alpha.27
     lodash.isequal: ^4.5.0
@@ -4605,7 +4605,7 @@ __metadata:
     "@radix-ui/react-toast": ^1.1.1
     "@testing-library/jest-dom": ^5.14.1
     "@testing-library/react": ^14.0.0
-    "@tldraw/editor": "workspace:*"
+    "@tldraw/editor": ^2.0.0-alpha.18
     "@types/canvas-size": ^1.2.0
     "@types/classnames": ^2.3.1
     "@types/lz-string": ^1.3.34
@@ -4624,21 +4624,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@tldraw/tlschema@workspace:*, @tldraw/tlschema@workspace:packages/tlschema":
+"@tldraw/tlschema@2.0.0-alpha.18, @tldraw/tlschema@workspace:packages/tlschema":
   version: 0.0.0-use.local
   resolution: "@tldraw/tlschema@workspace:packages/tlschema"
   dependencies:
-    "@tldraw/state": "workspace:*"
-    "@tldraw/store": "workspace:*"
-    "@tldraw/utils": "workspace:*"
-    "@tldraw/validate": "workspace:*"
+    "@tldraw/state": 2.0.0-alpha.18
+    "@tldraw/store": 2.0.0-alpha.18
+    "@tldraw/utils": 2.0.0-alpha.18
+    "@tldraw/validate": 2.0.0-alpha.18
     kleur: ^4.1.5
     lazyrepo: 0.0.0-alpha.27
     nanoid: 4.0.2
   languageName: unknown
   linkType: soft
 
-"@tldraw/utils@workspace:*, @tldraw/utils@workspace:packages/utils":
+"@tldraw/utils@2.0.0-alpha.18, @tldraw/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@tldraw/utils@workspace:packages/utils"
   dependencies:
@@ -4646,11 +4646,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@tldraw/validate@workspace:*, @tldraw/validate@workspace:packages/validate":
+"@tldraw/validate@2.0.0-alpha.18, @tldraw/validate@workspace:packages/validate":
   version: 0.0.0-use.local
   resolution: "@tldraw/validate@workspace:packages/validate"
   dependencies:
-    "@tldraw/utils": "workspace:*"
+    "@tldraw/utils": 2.0.0-alpha.18
     lazyrepo: 0.0.0-alpha.27
   languageName: unknown
   linkType: soft

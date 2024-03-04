@@ -41,8 +41,8 @@
 		"lint": "yarn run -T tsx ../../scripts/lint.ts"
 	},
 	"dependencies": {
-		"@tldraw/state": "2.0.0-alpha.19",
-		"@tldraw/utils": "2.0.0-alpha.19",
+		"@tldraw/state": "2.0.0-alpha.18",
+		"@tldraw/utils": "2.0.0-alpha.18",
 		"lodash.isequal": "^4.5.0",
 		"nanoid": "4.0.2"
 	},
