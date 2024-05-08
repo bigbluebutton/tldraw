@@ -6,7 +6,7 @@ import {
 	precise,
 	shortAngleDist,
 	toDomPrecision,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { getStrokeOutlineTracks } from './getStrokeOutlinePoints'
 import { getStrokePoints } from './getStrokePoints'
 import { setStrokePointRadii } from './setStrokePointRadii'

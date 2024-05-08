@@ -1,4 +1,4 @@
-import { Editor, compact, useEditor } from '@tldraw/editor'
+import { Editor, compact, useEditor } from '@bigbluebutton/editor'
 import React from 'react'
 import { TLUiToolItem, TLUiToolsContextType, useTools } from './useTools'
 

@@ -1,11 +1,11 @@
 {
-	"name": "@tldraw/monorepo",
+	"name": "@bigbluebutton/monorepo",
 	"description": "A tiny little drawing app (monorepo).",
 	"version": "0.0.0",
 	"private": true,
 	"author": {
 		"name": "tldraw GB Ltd.",
-		"email": "hello@tldraw.com"
+		"email": "hello@bigbluebutton.com"
 	},
 	"homepage": "https://tldraw.dev",
 	"repository": {

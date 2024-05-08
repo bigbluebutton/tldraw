@@ -15,7 +15,7 @@ import {
 	compact,
 	createShapeId,
 	getHashForString,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { FONT_FAMILIES, FONT_SIZES, TEXT_PROPS } from './shapes/shared/default-shape-constants'
 import { containBoxSize, getResizedImageDataUrl, isGifAnimated } from './utils/assets/assets'
 import { getEmbedInfo } from './utils/embeds/embeds'

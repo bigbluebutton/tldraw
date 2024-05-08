@@ -1,11 +1,11 @@
 {
-	"name": "@tldraw/tlschema",
+	"name": "@bigbluebutton/tlschema",
 	"description": "A tiny little drawing app (schema).",
 	"version": "2.0.0-alpha.19",
 	"packageManager": "yarn@3.5.0",
 	"author": {
 		"name": "tldraw GB Ltd.",
-		"email": "hello@tldraw.com"
+		"email": "hello@bigbluebutton.com"
 	},
 	"homepage": "https://tldraw.dev",
 	"license": "Apache-2.0",
@@ -56,10 +56,10 @@
 		]
 	},
 	"dependencies": {
-		"@tldraw/state": "workspace:*",
-		"@tldraw/store": "workspace:*",
-		"@tldraw/utils": "workspace:*",
-		"@tldraw/validate": "workspace:*",
+		"@bigbluebutton/state": "2.0.0-alpha.19",
+		"@bigbluebutton/store": "2.0.0-alpha.19",
+		"@bigbluebutton/utils": "2.0.0-alpha.19",
+		"@bigbluebutton/validate": "2.0.0-alpha.19",
 		"nanoid": "4.0.2"
 	}
 }

@@ -382,7 +382,7 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 
 #### [fix] bug with eventemitter3 default export ([#1818](https://github.com/tldraw/tldraw/pull/1818))
 
-- [@tldraw/editor] updates eventemitter3 import to fix issue with Astro builds.
+- [@bigbluebutton/editor] updates eventemitter3 import to fix issue with Astro builds.
 
 #### Custom rendering margin / don't cull selected shapes ([#1788](https://github.com/tldraw/tldraw/pull/1788))
 
@@ -448,12 +448,12 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 
 #### tldraw zero - package shuffle ([#1710](https://github.com/tldraw/tldraw/pull/1710))
 
-- [@tldraw/editor] lots, wip
-- [@tldraw/ui] gone, merged to tldraw/tldraw
-- [@tldraw/polyfills] gone, merged to tldraw/editor
-- [@tldraw/primitives] gone, merged to tldraw/editor / tldraw/tldraw
-- [@tldraw/indices] gone, merged to tldraw/editor
-- [@tldraw/file-format] gone, merged to tldraw/tldraw
+- [@bigbluebutton/editor] lots, wip
+- [@bigbluebutton/ui] gone, merged to tldraw/tldraw
+- [@bigbluebutton/polyfills] gone, merged to tldraw/editor
+- [@bigbluebutton/primitives] gone, merged to tldraw/editor / tldraw/tldraw
+- [@bigbluebutton/indices] gone, merged to tldraw/editor
+- [@bigbluebutton/file-format] gone, merged to tldraw/tldraw
 
 #### tweaks for cloud shape ([#1723](https://github.com/tldraw/tldraw/pull/1723))
 
@@ -636,19 +636,19 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 
 #### [fix] comma keyboard shortcuts ([#1675](https://github.com/tldraw/tldraw/pull/1675))
 
-- [@tldraw/editor] Bug fixes on document events.
+- [@bigbluebutton/editor] Bug fixes on document events.
 
 #### [improvement] add box sizing border box ([#1674](https://github.com/tldraw/tldraw/pull/1674))
 
-- [@tldraw/editor] Add `box-sizing: border-box` to `tl-container`
+- [@bigbluebutton/editor] Add `box-sizing: border-box` to `tl-container`
 
 #### [improvemnet] drop crc, Buffer dependency ([#1673](https://github.com/tldraw/tldraw/pull/1673))
 
-- [@tldraw/editor] Remove peer dependency on buffer.
+- [@bigbluebutton/editor] Remove peer dependency on buffer.
 
 #### [improvement] export scribble manager ([#1671](https://github.com/tldraw/tldraw/pull/1671))
 
-- [@tldraw/tldraw] Export `ScribbleManager`
+- [@bigbluebutton/tldraw] Export `ScribbleManager`
 
 #### [feature] add `meta` property to records ([#1627](https://github.com/tldraw/tldraw/pull/1627))
 
@@ -865,7 +865,7 @@ n/a
 
 #### Rename tlstore to store ([#1507](https://github.com/tldraw/tldraw/pull/1507))
 
-- Replace @tldraw/tlstore with @tldraw/store
+- Replace @bigbluebutton/tlstore with @bigbluebutton/store
 
 #### Rename tlvalidate to validate ([#1508](https://github.com/tldraw/tldraw/pull/1508))
 
@@ -961,10 +961,10 @@ Highlighter pen is here! 🎉🎉🎉
 
 - Add a brief release note for your PR here.
 
-#### Create @tldraw/indices package ([#1426](https://github.com/tldraw/tldraw/pull/1426))
+#### Create @bigbluebutton/indices package ([#1426](https://github.com/tldraw/tldraw/pull/1426))
 
-- [@tldraw/editor] Remove fractional indices code into `@tldraw/indices`
-- [@tldraw/indices] Create library for fractional indices code
+- [@bigbluebutton/editor] Remove fractional indices code into `@bigbluebutton/indices`
+- [@bigbluebutton/indices] Create library for fractional indices code
 
 #### [improvement] set horizontal position using text alignment ([#1419](https://github.com/tldraw/tldraw/pull/1419))
 
@@ -1094,7 +1094,7 @@ internal-only change
 - [refactor] remove `createTLSchema` [#1440](https://github.com/tldraw/tldraw/pull/1440) ([@steveruizok](https://github.com/steveruizok))
 - [refactor] Remove `TLShapeDef`, `getShapeUtilByType`. [#1432](https://github.com/tldraw/tldraw/pull/1432) ([@steveruizok](https://github.com/steveruizok) [@SomeHats](https://github.com/SomeHats))
 - [refactor] record migrations [#1430](https://github.com/tldraw/tldraw/pull/1430) ([@steveruizok](https://github.com/steveruizok))
-- Create @tldraw/indices package [#1426](https://github.com/tldraw/tldraw/pull/1426) ([@steveruizok](https://github.com/steveruizok))
+- Create @bigbluebutton/indices package [#1426](https://github.com/tldraw/tldraw/pull/1426) ([@steveruizok](https://github.com/steveruizok))
 - Switch to new collaborators component [#1405](https://github.com/tldraw/tldraw/pull/1405) ([@ds300](https://github.com/ds300))
 - remove url state, to private [#1402](https://github.com/tldraw/tldraw/pull/1402) ([@steveruizok](https://github.com/steveruizok))
 - [fix] Don't synchronize isReadOnly [#1396](https://github.com/tldraw/tldraw/pull/1396) ([@ds300](https://github.com/ds300))
@@ -1228,7 +1228,7 @@ internal-only change
 
 #### 🔩 Dependency Updates
 
-- Incorporate signia as @tldraw/state [#1620](https://github.com/tldraw/tldraw/pull/1620) ([@steveruizok](https://github.com/steveruizok) [@ds300](https://github.com/ds300))
+- Incorporate signia as @bigbluebutton/state [#1620](https://github.com/tldraw/tldraw/pull/1620) ([@steveruizok](https://github.com/steveruizok) [@ds300](https://github.com/ds300))
 - Revert "Update dependencies (#1613)" [#1617](https://github.com/tldraw/tldraw/pull/1617) ([@SomeHats](https://github.com/SomeHats))
 - Update dependencies [#1613](https://github.com/tldraw/tldraw/pull/1613) ([@steveruizok](https://github.com/steveruizok))
 - update use-gesture [#1453](https://github.com/tldraw/tldraw/pull/1453) ([@ds300](https://github.com/ds300))
@@ -1334,7 +1334,7 @@ internal-only change
 
 ---
 
-# @tldraw/tldraw-beta
+# @bigbluebutton/tldraw-beta
 
 ## 2.0.0-alpha.11
 
@@ -1342,22 +1342,22 @@ internal-only change
 
 - fix some package build scripting
 - Updated dependencies
-  - @tldraw/primitives@2.0.0-alpha.11
-  - @tldraw/tlschema@2.0.0-alpha.11
-  - @tldraw/tlstore@2.0.0-alpha.11
-  - @tldraw/tlvalidate@2.0.0-alpha.10
-  - @tldraw/utils@2.0.0-alpha.10
+  - @bigbluebutton/primitives@2.0.0-alpha.11
+  - @bigbluebutton/tlschema@2.0.0-alpha.11
+  - @bigbluebutton/tlstore@2.0.0-alpha.11
+  - @bigbluebutton/tlvalidate@2.0.0-alpha.10
+  - @bigbluebutton/utils@2.0.0-alpha.10
 
 ## 2.0.0-alpha.10
 
 ### Patch Changes
 
 - Updated dependencies [4b4399b6e]
-  - @tldraw/primitives@2.0.0-alpha.10
-  - @tldraw/tlschema@2.0.0-alpha.10
-  - @tldraw/tlstore@2.0.0-alpha.10
-  - @tldraw/tlvalidate@2.0.0-alpha.9
-  - @tldraw/utils@2.0.0-alpha.9
+  - @bigbluebutton/primitives@2.0.0-alpha.10
+  - @bigbluebutton/tlschema@2.0.0-alpha.10
+  - @bigbluebutton/tlstore@2.0.0-alpha.10
+  - @bigbluebutton/tlvalidate@2.0.0-alpha.9
+  - @bigbluebutton/utils@2.0.0-alpha.9
 
 ## 2.0.0-alpha.9
 
@@ -1365,11 +1365,11 @@ internal-only change
 
 - Release day!
 - Updated dependencies
-  - @tldraw/primitives@2.0.0-alpha.9
-  - @tldraw/tlschema@2.0.0-alpha.9
-  - @tldraw/tlstore@2.0.0-alpha.9
-  - @tldraw/tlvalidate@2.0.0-alpha.8
-  - @tldraw/utils@2.0.0-alpha.8
+  - @bigbluebutton/primitives@2.0.0-alpha.9
+  - @bigbluebutton/tlschema@2.0.0-alpha.9
+  - @bigbluebutton/tlstore@2.0.0-alpha.9
+  - @bigbluebutton/tlvalidate@2.0.0-alpha.8
+  - @bigbluebutton/utils@2.0.0-alpha.8
 
 ## 2.0.0-alpha.8
 
@@ -1377,9 +1377,9 @@ internal-only change
 
 - 23dd81cfe: Make signia a peer dependency
 - Updated dependencies [23dd81cfe]
-  - @tldraw/tlstore@2.0.0-alpha.8
-  - @tldraw/tlschema@2.0.0-alpha.8
-  - @tldraw/primitives@2.0.0-alpha.8
+  - @bigbluebutton/tlstore@2.0.0-alpha.8
+  - @bigbluebutton/tlschema@2.0.0-alpha.8
+  - @bigbluebutton/primitives@2.0.0-alpha.8
 
 ## 2.0.0-alpha.7
 
@@ -1387,11 +1387,11 @@ internal-only change
 
 - Bug fixes.
 - Updated dependencies
-  - @tldraw/primitives@2.0.0-alpha.7
-  - @tldraw/tlschema@2.0.0-alpha.7
-  - @tldraw/tlstore@2.0.0-alpha.7
-  - @tldraw/tlvalidate@2.0.0-alpha.7
-  - @tldraw/utils@2.0.0-alpha.7
+  - @bigbluebutton/primitives@2.0.0-alpha.7
+  - @bigbluebutton/tlschema@2.0.0-alpha.7
+  - @bigbluebutton/tlstore@2.0.0-alpha.7
+  - @bigbluebutton/tlvalidate@2.0.0-alpha.7
+  - @bigbluebutton/utils@2.0.0-alpha.7
 
 ## 2.0.0-alpha.6
 
@@ -1399,11 +1399,11 @@ internal-only change
 
 - Add licenses.
 - Updated dependencies
-  - @tldraw/primitives@2.0.0-alpha.6
-  - @tldraw/tlschema@2.0.0-alpha.6
-  - @tldraw/tlstore@2.0.0-alpha.6
-  - @tldraw/tlvalidate@2.0.0-alpha.6
-  - @tldraw/utils@2.0.0-alpha.6
+  - @bigbluebutton/primitives@2.0.0-alpha.6
+  - @bigbluebutton/tlschema@2.0.0-alpha.6
+  - @bigbluebutton/tlstore@2.0.0-alpha.6
+  - @bigbluebutton/tlvalidate@2.0.0-alpha.6
+  - @bigbluebutton/utils@2.0.0-alpha.6
 
 ## 2.0.0-alpha.5
 
@@ -1411,11 +1411,11 @@ internal-only change
 
 - Add CSS files to tldraw/tldraw.
 - Updated dependencies
-  - @tldraw/primitives@2.0.0-alpha.5
-  - @tldraw/tlschema@2.0.0-alpha.5
-  - @tldraw/tlstore@2.0.0-alpha.5
-  - @tldraw/tlvalidate@2.0.0-alpha.5
-  - @tldraw/utils@2.0.0-alpha.5
+  - @bigbluebutton/primitives@2.0.0-alpha.5
+  - @bigbluebutton/tlschema@2.0.0-alpha.5
+  - @bigbluebutton/tlstore@2.0.0-alpha.5
+  - @bigbluebutton/tlvalidate@2.0.0-alpha.5
+  - @bigbluebutton/utils@2.0.0-alpha.5
 
 ## 2.0.0-alpha.4
 
@@ -1423,11 +1423,11 @@ internal-only change
 
 - Add children to tldraw/tldraw
 - Updated dependencies
-  - @tldraw/primitives@2.0.0-alpha.4
-  - @tldraw/tlschema@2.0.0-alpha.4
-  - @tldraw/tlstore@2.0.0-alpha.4
-  - @tldraw/tlvalidate@2.0.0-alpha.4
-  - @tldraw/utils@2.0.0-alpha.4
+  - @bigbluebutton/primitives@2.0.0-alpha.4
+  - @bigbluebutton/tlschema@2.0.0-alpha.4
+  - @bigbluebutton/tlstore@2.0.0-alpha.4
+  - @bigbluebutton/tlvalidate@2.0.0-alpha.4
+  - @bigbluebutton/utils@2.0.0-alpha.4
 
 ## 2.0.0-alpha.3
 
@@ -1435,11 +1435,11 @@ internal-only change
 
 - Change permissions.
 - Updated dependencies
-  - @tldraw/primitives@2.0.0-alpha.3
-  - @tldraw/tlschema@2.0.0-alpha.3
-  - @tldraw/tlstore@2.0.0-alpha.3
-  - @tldraw/tlvalidate@2.0.0-alpha.3
-  - @tldraw/utils@2.0.0-alpha.3
+  - @bigbluebutton/primitives@2.0.0-alpha.3
+  - @bigbluebutton/tlschema@2.0.0-alpha.3
+  - @bigbluebutton/tlstore@2.0.0-alpha.3
+  - @bigbluebutton/tlvalidate@2.0.0-alpha.3
+  - @bigbluebutton/utils@2.0.0-alpha.3
 
 ## 2.0.0-alpha.2
 
@@ -1447,11 +1447,11 @@ internal-only change
 
 - Add tldraw, editor
 - Updated dependencies
-  - @tldraw/primitives@2.0.0-alpha.2
-  - @tldraw/tlschema@2.0.0-alpha.2
-  - @tldraw/tlstore@2.0.0-alpha.2
-  - @tldraw/tlvalidate@2.0.0-alpha.2
-  - @tldraw/utils@2.0.0-alpha.2
+  - @bigbluebutton/primitives@2.0.0-alpha.2
+  - @bigbluebutton/tlschema@2.0.0-alpha.2
+  - @bigbluebutton/tlstore@2.0.0-alpha.2
+  - @bigbluebutton/tlvalidate@2.0.0-alpha.2
+  - @bigbluebutton/utils@2.0.0-alpha.2
 
 ## 0.1.0-alpha.11
 
@@ -1459,11 +1459,11 @@ internal-only change
 
 - Fix stale reactors.
 - Updated dependencies
-  - @tldraw/primitives@0.1.0-alpha.11
-  - @tldraw/tlschema@0.1.0-alpha.11
-  - @tldraw/tlstore@0.1.0-alpha.11
-  - @tldraw/tlvalidate@0.1.0-alpha.11
-  - @tldraw/utils@0.1.0-alpha.11
+  - @bigbluebutton/primitives@0.1.0-alpha.11
+  - @bigbluebutton/tlschema@0.1.0-alpha.11
+  - @bigbluebutton/tlstore@0.1.0-alpha.11
+  - @bigbluebutton/tlvalidate@0.1.0-alpha.11
+  - @bigbluebutton/utils@0.1.0-alpha.11
 
 ## 0.1.0-alpha.10
 
@@ -1471,11 +1471,11 @@ internal-only change
 
 - Fix type export bug.
 - Updated dependencies
-  - @tldraw/primitives@0.1.0-alpha.10
-  - @tldraw/tlschema@0.1.0-alpha.10
-  - @tldraw/tlstore@0.1.0-alpha.10
-  - @tldraw/tlvalidate@0.1.0-alpha.10
-  - @tldraw/utils@0.1.0-alpha.10
+  - @bigbluebutton/primitives@0.1.0-alpha.10
+  - @bigbluebutton/tlschema@0.1.0-alpha.10
+  - @bigbluebutton/tlstore@0.1.0-alpha.10
+  - @bigbluebutton/tlvalidate@0.1.0-alpha.10
+  - @bigbluebutton/utils@0.1.0-alpha.10
 
 ## 0.1.0-alpha.9
 
@@ -1483,11 +1483,11 @@ internal-only change
 
 - Fix import bugs.
 - Updated dependencies
-  - @tldraw/primitives@0.1.0-alpha.9
-  - @tldraw/tlschema@0.1.0-alpha.9
-  - @tldraw/tlstore@0.1.0-alpha.9
-  - @tldraw/tlvalidate@0.1.0-alpha.9
-  - @tldraw/utils@0.1.0-alpha.9
+  - @bigbluebutton/primitives@0.1.0-alpha.9
+  - @bigbluebutton/tlschema@0.1.0-alpha.9
+  - @bigbluebutton/tlstore@0.1.0-alpha.9
+  - @bigbluebutton/tlvalidate@0.1.0-alpha.9
+  - @bigbluebutton/utils@0.1.0-alpha.9
 
 ## 0.1.0-alpha.8
 
@@ -1495,11 +1495,11 @@ internal-only change
 
 - Changes validation requirements, exports validation helpers.
 - Updated dependencies
-  - @tldraw/primitives@0.1.0-alpha.8
-  - @tldraw/tlschema@0.1.0-alpha.8
-  - @tldraw/tlstore@0.1.0-alpha.8
-  - @tldraw/tlvalidate@0.1.0-alpha.8
-  - @tldraw/utils@0.1.0-alpha.8
+  - @bigbluebutton/primitives@0.1.0-alpha.8
+  - @bigbluebutton/tlschema@0.1.0-alpha.8
+  - @bigbluebutton/tlstore@0.1.0-alpha.8
+  - @bigbluebutton/tlvalidate@0.1.0-alpha.8
+  - @bigbluebutton/utils@0.1.0-alpha.8
 
 ## 0.1.0-alpha.7
 
@@ -1507,11 +1507,11 @@ internal-only change
 
 - - Pre-pre-release update
 - Updated dependencies
-  - @tldraw/primitives@0.1.0-alpha.7
-  - @tldraw/tlschema@0.1.0-alpha.7
-  - @tldraw/tlstore@0.1.0-alpha.7
-  - @tldraw/tlvalidate@0.1.0-alpha.7
-  - @tldraw/utils@0.1.0-alpha.7
+  - @bigbluebutton/primitives@0.1.0-alpha.7
+  - @bigbluebutton/tlschema@0.1.0-alpha.7
+  - @bigbluebutton/tlstore@0.1.0-alpha.7
+  - @bigbluebutton/tlvalidate@0.1.0-alpha.7
+  - @bigbluebutton/utils@0.1.0-alpha.7
 
 ## 0.0.2-alpha.1
 
@@ -1519,10 +1519,10 @@ internal-only change
 
 - Fix error with HMR
 - Updated dependencies
-  - @tldraw/primitives@0.0.2-alpha.1
-  - @tldraw/tlschema@0.0.2-alpha.1
-  - @tldraw/tlstore@0.0.2-alpha.1
-  - @tldraw/utils@0.0.2-alpha.1
+  - @bigbluebutton/primitives@0.0.2-alpha.1
+  - @bigbluebutton/tlschema@0.0.2-alpha.1
+  - @bigbluebutton/tlstore@0.0.2-alpha.1
+  - @bigbluebutton/utils@0.0.2-alpha.1
 
 ## 0.0.2-alpha.0
 
@@ -1530,7 +1530,7 @@ internal-only change
 
 - Initial release
 - Updated dependencies
-  - @tldraw/primitives@0.0.2-alpha.0
-  - @tldraw/tlschema@0.0.2-alpha.0
-  - @tldraw/tlstore@0.0.2-alpha.0
-  - @tldraw/utils@0.0.2-alpha.0
+  - @bigbluebutton/primitives@0.0.2-alpha.0
+  - @bigbluebutton/tlschema@0.0.2-alpha.0
+  - @bigbluebutton/tlstore@0.0.2-alpha.0
+  - @bigbluebutton/utils@0.0.2-alpha.0

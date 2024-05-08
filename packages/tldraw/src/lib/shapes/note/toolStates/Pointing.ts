@@ -5,7 +5,7 @@ import {
 	TLNoteShape,
 	TLPointerEventInfo,
 	createShapeId,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 export class Pointing extends StateNode {
 	static override id = 'pointing'

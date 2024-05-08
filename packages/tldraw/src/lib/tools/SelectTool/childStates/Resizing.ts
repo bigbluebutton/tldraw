@@ -17,7 +17,7 @@ import {
 	VecLike,
 	areAnglesCompatible,
 	compact,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 type ResizingInfo = TLPointerEventInfo & {
 	target: 'selection'

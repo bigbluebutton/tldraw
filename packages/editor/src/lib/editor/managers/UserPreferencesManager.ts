@@ -1,5 +1,5 @@
-import { computed } from '@tldraw/state'
-import { warnDeprecatedGetter } from '@tldraw/utils'
+import { computed } from '@bigbluebutton/state'
+import { warnDeprecatedGetter } from '@bigbluebutton/utils'
 import {
 	TLUserPreferences,
 	defaultUserPreferences,

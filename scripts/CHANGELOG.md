@@ -1,4 +1,4 @@
-# @tldraw/scripts
+# @bigbluebutton/scripts
 
 ## 2.0.0-alpha.8
 

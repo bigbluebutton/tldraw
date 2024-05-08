@@ -1,4 +1,4 @@
-import { StateNode } from '@tldraw/editor'
+import { StateNode } from '@bigbluebutton/editor'
 import { Brushing } from './childStates/Brushing'
 import { Crop } from './childStates/Crop/Crop'
 import { Cropping } from './childStates/Cropping'

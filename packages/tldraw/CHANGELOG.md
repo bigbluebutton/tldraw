@@ -311,7 +311,7 @@
 
 #### Add offline indicator (also to top zone example) ([#2083](https://github.com/tldraw/tldraw/pull/2083))
 
-- [@tldraw/tldraw] add offline indicator to ui components
+- [@bigbluebutton/tldraw] add offline indicator to ui components
 
 #### [fix] reparenting locked shapes ([#2070](https://github.com/tldraw/tldraw/pull/2070))
 
@@ -573,7 +573,7 @@ After
 
 #### [feature] Asset props ([#1824](https://github.com/tldraw/tldraw/pull/1824))
 
-- [@tldraw/tldraw] add asset props
+- [@bigbluebutton/tldraw] add asset props
 
 #### [fix] editing video shapes ([#1821](https://github.com/tldraw/tldraw/pull/1821))
 
@@ -609,7 +609,7 @@ After
 
 #### export `UiEventsProvider` ([#1774](https://github.com/tldraw/tldraw/pull/1774))
 
-- [@tldraw/tldraw] export ui events, so that UI hooks can work without context
+- [@bigbluebutton/tldraw] export ui events, so that UI hooks can work without context
 
 #### remove useForceSolid effect for geo / line shapes ([#1769](https://github.com/tldraw/tldraw/pull/1769))
 
@@ -671,12 +671,12 @@ After
 
 #### tldraw zero - package shuffle ([#1710](https://github.com/tldraw/tldraw/pull/1710))
 
-- [@tldraw/editor] lots, wip
-- [@tldraw/ui] gone, merged to tldraw/tldraw
-- [@tldraw/polyfills] gone, merged to tldraw/editor
-- [@tldraw/primitives] gone, merged to tldraw/editor / tldraw/tldraw
-- [@tldraw/indices] gone, merged to tldraw/editor
-- [@tldraw/file-format] gone, merged to tldraw/tldraw
+- [@bigbluebutton/editor] lots, wip
+- [@bigbluebutton/ui] gone, merged to tldraw/tldraw
+- [@bigbluebutton/polyfills] gone, merged to tldraw/editor
+- [@bigbluebutton/primitives] gone, merged to tldraw/editor / tldraw/tldraw
+- [@bigbluebutton/indices] gone, merged to tldraw/editor
+- [@bigbluebutton/file-format] gone, merged to tldraw/tldraw
 
 ---
 
@@ -871,7 +871,7 @@ After
 - readmes [#1195](https://github.com/tldraw/tldraw/pull/1195) ([@steveruizok](https://github.com/steveruizok))
 - [chore] update lazyrepo [#1211](https://github.com/tldraw/tldraw/pull/1211) ([@ds300](https://github.com/ds300))
 - derived presence state [#1204](https://github.com/tldraw/tldraw/pull/1204) ([@ds300](https://github.com/ds300))
-- Fix to not ignore the `userId` option for `<Tldraw/>` component in `@tldraw/tldraw` [#1205](https://github.com/tldraw/tldraw/pull/1205) ([@orangemug](https://github.com/orangemug))
+- Fix to not ignore the `userId` option for `<Tldraw/>` component in `@bigbluebutton/tldraw` [#1205](https://github.com/tldraw/tldraw/pull/1205) ([@orangemug](https://github.com/orangemug))
 - [lite] upgrade lazyrepo [#1198](https://github.com/tldraw/tldraw/pull/1198) ([@ds300](https://github.com/ds300))
 - transfer-out: transfer out [#1195](https://github.com/tldraw/tldraw/pull/1195) ([@SomeHats](https://github.com/SomeHats))
 
@@ -923,7 +923,7 @@ After
 
 ---
 
-# @tldraw/ui
+# @bigbluebutton/ui
 
 ## 2.0.0-alpha.11
 
@@ -931,10 +931,10 @@ After
 
 - fix some package build scripting
 - Updated dependencies
-  - @tldraw/editor@2.0.0-alpha.11
-  - @tldraw/polyfills@2.0.0-alpha.10
-  - @tldraw/tlsync-client@2.0.0-alpha.11
-  - @tldraw/ui@2.0.0-alpha.11
+  - @bigbluebutton/editor@2.0.0-alpha.11
+  - @bigbluebutton/polyfills@2.0.0-alpha.10
+  - @bigbluebutton/tlsync-client@2.0.0-alpha.11
+  - @bigbluebutton/ui@2.0.0-alpha.11
 
 ## 2.0.0-alpha.10
 
@@ -942,10 +942,10 @@ After
 
 - 4b4399b6e: redeploy with yarn to prevent package version issues
 - Updated dependencies [4b4399b6e]
-  - @tldraw/polyfills@2.0.0-alpha.9
-  - @tldraw/tlsync-client@2.0.0-alpha.10
-  - @tldraw/ui@2.0.0-alpha.10
-  - @tldraw/editor@2.0.0-alpha.10
+  - @bigbluebutton/polyfills@2.0.0-alpha.9
+  - @bigbluebutton/tlsync-client@2.0.0-alpha.10
+  - @bigbluebutton/ui@2.0.0-alpha.10
+  - @bigbluebutton/editor@2.0.0-alpha.10
 
 ## 2.0.0-alpha.9
 
@@ -953,19 +953,19 @@ After
 
 - Release day!
 - Updated dependencies
-  - @tldraw/editor@2.0.0-alpha.9
-  - @tldraw/polyfills@2.0.0-alpha.8
-  - @tldraw/tlsync-client@2.0.0-alpha.9
-  - @tldraw/ui@2.0.0-alpha.9
+  - @bigbluebutton/editor@2.0.0-alpha.9
+  - @bigbluebutton/polyfills@2.0.0-alpha.8
+  - @bigbluebutton/tlsync-client@2.0.0-alpha.9
+  - @bigbluebutton/ui@2.0.0-alpha.9
 
 ## 2.0.0-alpha.8
 
 ### Patch Changes
 
 - Updated dependencies [23dd81cfe]
-  - @tldraw/editor@2.0.0-alpha.8
-  - @tldraw/tlsync-client@2.0.0-alpha.8
-  - @tldraw/ui@2.0.0-alpha.8
+  - @bigbluebutton/editor@2.0.0-alpha.8
+  - @bigbluebutton/tlsync-client@2.0.0-alpha.8
+  - @bigbluebutton/ui@2.0.0-alpha.8
 
 ## 2.0.0-alpha.7
 
@@ -973,9 +973,9 @@ After
 
 - Bug fixes.
 - Updated dependencies
-  - @tldraw/editor@2.0.0-alpha.7
-  - @tldraw/tlsync-client@2.0.0-alpha.7
-  - @tldraw/ui@2.0.0-alpha.7
+  - @bigbluebutton/editor@2.0.0-alpha.7
+  - @bigbluebutton/tlsync-client@2.0.0-alpha.7
+  - @bigbluebutton/ui@2.0.0-alpha.7
 
 ## 2.0.0-alpha.6
 
@@ -983,9 +983,9 @@ After
 
 - Add licenses.
 - Updated dependencies
-  - @tldraw/editor@2.0.0-alpha.6
-  - @tldraw/tlsync-client@2.0.0-alpha.6
-  - @tldraw/ui@2.0.0-alpha.6
+  - @bigbluebutton/editor@2.0.0-alpha.6
+  - @bigbluebutton/tlsync-client@2.0.0-alpha.6
+  - @bigbluebutton/ui@2.0.0-alpha.6
 
 ## 2.0.0-alpha.5
 
@@ -993,9 +993,9 @@ After
 
 - Add CSS files to tldraw/tldraw.
 - Updated dependencies
-  - @tldraw/editor@2.0.0-alpha.5
-  - @tldraw/tlsync-client@2.0.0-alpha.5
-  - @tldraw/ui@2.0.0-alpha.5
+  - @bigbluebutton/editor@2.0.0-alpha.5
+  - @bigbluebutton/tlsync-client@2.0.0-alpha.5
+  - @bigbluebutton/ui@2.0.0-alpha.5
 
 ## 2.0.0-alpha.4
 
@@ -1003,9 +1003,9 @@ After
 
 - Add children to tldraw/tldraw
 - Updated dependencies
-  - @tldraw/editor@2.0.0-alpha.4
-  - @tldraw/tlsync-client@2.0.0-alpha.4
-  - @tldraw/ui@2.0.0-alpha.4
+  - @bigbluebutton/editor@2.0.0-alpha.4
+  - @bigbluebutton/tlsync-client@2.0.0-alpha.4
+  - @bigbluebutton/ui@2.0.0-alpha.4
 
 ## 2.0.0-alpha.3
 
@@ -1013,9 +1013,9 @@ After
 
 - Change permissions.
 - Updated dependencies
-  - @tldraw/editor@2.0.0-alpha.3
-  - @tldraw/tlsync-client@2.0.0-alpha.3
-  - @tldraw/ui@2.0.0-alpha.3
+  - @bigbluebutton/editor@2.0.0-alpha.3
+  - @bigbluebutton/tlsync-client@2.0.0-alpha.3
+  - @bigbluebutton/ui@2.0.0-alpha.3
 
 ## 2.0.0-alpha.2
 
@@ -1023,9 +1023,9 @@ After
 
 - Add tldraw, editor
 - Updated dependencies
-  - @tldraw/editor@2.0.0-alpha.2
-  - @tldraw/tlsync-client@2.0.0-alpha.2
-  - @tldraw/ui@2.0.0-alpha.2
+  - @bigbluebutton/editor@2.0.0-alpha.2
+  - @bigbluebutton/tlsync-client@2.0.0-alpha.2
+  - @bigbluebutton/ui@2.0.0-alpha.2
 
 ## 0.1.0-alpha.11
 
@@ -1033,10 +1033,10 @@ After
 
 - Fix stale reactors.
 - Updated dependencies
-  - @tldraw/primitives@0.1.0-alpha.11
-  - @tldraw/tldraw-beta@0.1.0-alpha.11
-  - @tldraw/tlsync-client@0.1.0-alpha.11
-  - @tldraw/utils@0.1.0-alpha.11
+  - @bigbluebutton/primitives@0.1.0-alpha.11
+  - @bigbluebutton/tldraw-beta@0.1.0-alpha.11
+  - @bigbluebutton/tlsync-client@0.1.0-alpha.11
+  - @bigbluebutton/utils@0.1.0-alpha.11
 
 ## 0.1.0-alpha.10
 
@@ -1044,10 +1044,10 @@ After
 
 - Fix type export bug.
 - Updated dependencies
-  - @tldraw/primitives@0.1.0-alpha.10
-  - @tldraw/tldraw-beta@0.1.0-alpha.10
-  - @tldraw/tlsync-client@0.1.0-alpha.10
-  - @tldraw/utils@0.1.0-alpha.10
+  - @bigbluebutton/primitives@0.1.0-alpha.10
+  - @bigbluebutton/tldraw-beta@0.1.0-alpha.10
+  - @bigbluebutton/tlsync-client@0.1.0-alpha.10
+  - @bigbluebutton/utils@0.1.0-alpha.10
 
 ## 0.1.0-alpha.9
 
@@ -1055,10 +1055,10 @@ After
 
 - Fix import bugs.
 - Updated dependencies
-  - @tldraw/primitives@0.1.0-alpha.9
-  - @tldraw/tldraw-beta@0.1.0-alpha.9
-  - @tldraw/tlsync-client@0.1.0-alpha.9
-  - @tldraw/utils@0.1.0-alpha.9
+  - @bigbluebutton/primitives@0.1.0-alpha.9
+  - @bigbluebutton/tldraw-beta@0.1.0-alpha.9
+  - @bigbluebutton/tlsync-client@0.1.0-alpha.9
+  - @bigbluebutton/utils@0.1.0-alpha.9
 
 ## 0.1.0-alpha.8
 
@@ -1066,10 +1066,10 @@ After
 
 - Changes validation requirements, exports validation helpers.
 - Updated dependencies
-  - @tldraw/primitives@0.1.0-alpha.8
-  - @tldraw/tldraw-beta@0.1.0-alpha.8
-  - @tldraw/tlsync-client@0.1.0-alpha.8
-  - @tldraw/utils@0.1.0-alpha.8
+  - @bigbluebutton/primitives@0.1.0-alpha.8
+  - @bigbluebutton/tldraw-beta@0.1.0-alpha.8
+  - @bigbluebutton/tlsync-client@0.1.0-alpha.8
+  - @bigbluebutton/utils@0.1.0-alpha.8
 
 ## 0.1.0-alpha.7
 
@@ -1077,10 +1077,10 @@ After
 
 - - Pre-pre-release update
 - Updated dependencies
-  - @tldraw/primitives@0.1.0-alpha.7
-  - @tldraw/tldraw-beta@0.1.0-alpha.7
-  - @tldraw/tlsync-client@0.1.0-alpha.7
-  - @tldraw/utils@0.1.0-alpha.7
+  - @bigbluebutton/primitives@0.1.0-alpha.7
+  - @bigbluebutton/tldraw-beta@0.1.0-alpha.7
+  - @bigbluebutton/tlsync-client@0.1.0-alpha.7
+  - @bigbluebutton/utils@0.1.0-alpha.7
 
 ## 0.0.2-alpha.1
 
@@ -1088,10 +1088,10 @@ After
 
 - Fix error with HMR
 - Updated dependencies
-  - @tldraw/primitives@0.0.2-alpha.1
-  - @tldraw/tldraw-beta@0.0.2-alpha.1
-  - @tldraw/tlsync-client@0.0.2-alpha.1
-  - @tldraw/utils@0.0.2-alpha.1
+  - @bigbluebutton/primitives@0.0.2-alpha.1
+  - @bigbluebutton/tldraw-beta@0.0.2-alpha.1
+  - @bigbluebutton/tlsync-client@0.0.2-alpha.1
+  - @bigbluebutton/utils@0.0.2-alpha.1
 
 ## 0.0.2-alpha.0
 
@@ -1099,7 +1099,7 @@ After
 
 - Initial release
 - Updated dependencies
-  - @tldraw/primitives@0.0.2-alpha.0
-  - @tldraw/tldraw-beta@0.0.2-alpha.0
-  - @tldraw/tlsync-client@0.0.2-alpha.0
-  - @tldraw/utils@0.0.2-alpha.0
+  - @bigbluebutton/primitives@0.0.2-alpha.0
+  - @bigbluebutton/tldraw-beta@0.0.2-alpha.0
+  - @bigbluebutton/tlsync-client@0.0.2-alpha.0
+  - @bigbluebutton/utils@0.0.2-alpha.0

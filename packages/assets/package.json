@@ -1,10 +1,10 @@
 {
-	"name": "@tldraw/assets",
+	"name": "@bigbluebutton/assets",
 	"description": "A tiny little drawing app (assets).",
 	"version": "2.0.0-alpha.19",
 	"author": {
 		"name": "tldraw GB Ltd.",
-		"email": "hello@tldraw.com"
+		"email": "hello@bigbluebutton.com"
 	},
 	"homepage": "https://tldraw.dev",
 	"license": "Apache-2.0",
@@ -44,7 +44,7 @@
 		"lint": "yarn run -T tsx ../../scripts/lint.ts"
 	},
 	"dependencies": {
-		"@tldraw/utils": "workspace:*"
+		"@bigbluebutton/utils": "2.0.0-alpha.19"
 	},
 	"devDependencies": {
 		"lazyrepo": "0.0.0-alpha.27",

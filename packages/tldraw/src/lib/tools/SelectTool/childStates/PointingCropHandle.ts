@@ -1,4 +1,4 @@
-import { StateNode, TLEventHandlers, TLPointerEventInfo, TLShape } from '@tldraw/editor'
+import { StateNode, TLEventHandlers, TLPointerEventInfo, TLShape } from '@bigbluebutton/editor'
 import { CursorTypeMap } from './PointingResizeHandle'
 
 type TLPointingCropHandleInfo = TLPointerEventInfo & {

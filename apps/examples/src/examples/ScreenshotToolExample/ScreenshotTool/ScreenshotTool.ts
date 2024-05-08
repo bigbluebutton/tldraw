@@ -1,4 +1,4 @@
-import { StateNode, TLCancelEvent, TLInterruptEvent } from '@tldraw/tldraw'
+import { StateNode, TLCancelEvent, TLInterruptEvent } from '@bigbluebutton/tldraw'
 import { ScreenshotDragging } from './childStates/Dragging'
 import { ScreenshotIdle } from './childStates/Idle'
 import { ScreenshotPointing } from './childStates/Pointing'

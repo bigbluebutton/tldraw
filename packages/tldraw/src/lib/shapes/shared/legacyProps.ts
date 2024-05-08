@@ -1,4 +1,4 @@
-import { Box2d, Box2dModel, TLDefaultHorizontalAlignStyle } from '@tldraw/editor'
+import { Box2d, Box2dModel, TLDefaultHorizontalAlignStyle } from '@bigbluebutton/editor'
 
 export function getLegacyOffsetX(
 	align: TLDefaultHorizontalAlignStyle | string,

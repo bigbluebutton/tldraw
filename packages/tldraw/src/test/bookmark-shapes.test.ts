@@ -1,4 +1,4 @@
-import { TLBookmarkShape, createShapeId } from '@tldraw/editor'
+import { TLBookmarkShape, createShapeId } from '@bigbluebutton/editor'
 import {
 	BookmarkShapeUtil,
 	getHumanReadableAddress,

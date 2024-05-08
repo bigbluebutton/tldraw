@@ -1,5 +1,5 @@
-import { TLEventInfo, Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { TLEventInfo, Tldraw } from '@bigbluebutton/tldraw'
+import '@bigbluebutton/tldraw/tldraw.css'
 import { useCallback, useState } from 'react'
 
 export default function CanvasEventsExample() {

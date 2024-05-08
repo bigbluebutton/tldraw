@@ -142,21 +142,21 @@
 
 #### 💥 Breaking Change
 
-- `@tldraw/editor`, `@tldraw/state`, `@tldraw/store`, `@tldraw/tldraw`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/state`, `@bigbluebutton/store`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`
   - No impure getters pt 1 [#2189](https://github.com/tldraw/tldraw/pull/2189) ([@steveruizok](https://github.com/steveruizok) [@ds300](https://github.com/ds300))
 
 #### 🚀 Enhancement
 
-- `@tldraw/editor`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`
   - Add fit to content for frames. [#2275](https://github.com/tldraw/tldraw/pull/2275) ([@MitjaBezensek](https://github.com/MitjaBezensek) [@steveruizok](https://github.com/steveruizok))
   - Removing frames and adding elements to frames [#2219](https://github.com/tldraw/tldraw/pull/2219) ([@MitjaBezensek](https://github.com/MitjaBezensek) [@steveruizok](https://github.com/steveruizok) [@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
   - Custom Tools DX + screenshot example [#2198](https://github.com/tldraw/tldraw/pull/2198) ([@steveruizok](https://github.com/steveruizok))
   - StateNode atoms [#2213](https://github.com/tldraw/tldraw/pull/2213) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tldraw`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`
   - [improvements] arrows x enclosing shapes x precision. [#2265](https://github.com/tldraw/tldraw/pull/2265) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - Add connecting screen override. [#2273](https://github.com/tldraw/tldraw/pull/2273) ([@MitjaBezensek](https://github.com/MitjaBezensek))
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - Add `getSvgAsImage` to exports. [#2229](https://github.com/tldraw/tldraw/pull/2229) ([@steveruizok](https://github.com/steveruizok))
   - [fix] huge images, use downscale for image scaling [#2207](https://github.com/tldraw/tldraw/pull/2207) ([@steveruizok](https://github.com/steveruizok))
   - feat: add new prop to force mobile mode layout [#1734](https://github.com/tldraw/tldraw/pull/1734) ([@gabrielchl](https://github.com/gabrielchl) [@steveruizok](https://github.com/steveruizok))
@@ -171,7 +171,7 @@
 - Update translations from community submissions [#2201](https://github.com/tldraw/tldraw/pull/2201) ([@TodePond](https://github.com/TodePond) [@steveruizok](https://github.com/steveruizok))
 - Japanese translations. (update) [#2199](https://github.com/tldraw/tldraw/pull/2199) ([@sugitlab](https://github.com/sugitlab))
 - VS code bump 2.0.16 [#2193](https://github.com/tldraw/tldraw/pull/2193) ([@MitjaBezensek](https://github.com/MitjaBezensek))
-- `@tldraw/editor`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`
   - Revert "zoom to affected shapes after undo/redo" [#2310](https://github.com/tldraw/tldraw/pull/2310) ([@ds300](https://github.com/ds300))
   - zoom to affected shapes after undo/redo [#2293](https://github.com/tldraw/tldraw/pull/2293) ([@ds300](https://github.com/ds300))
   - fix new page naming [#2292](https://github.com/tldraw/tldraw/pull/2292) ([@SomeHats](https://github.com/SomeHats))
@@ -184,25 +184,25 @@
   - No impure getters pt4 [#2206](https://github.com/tldraw/tldraw/pull/2206) ([@ds300](https://github.com/ds300))
   - No impure getters pt3 [#2203](https://github.com/tldraw/tldraw/pull/2203) ([@ds300](https://github.com/ds300))
   - No impure getters pt2 [#2202](https://github.com/tldraw/tldraw/pull/2202) ([@ds300](https://github.com/ds300))
-- `@tldraw/tlschema`
+- `@bigbluebutton/tlschema`
   - Fix migrations. [#2302](https://github.com/tldraw/tldraw/pull/2302) ([@MitjaBezensek](https://github.com/MitjaBezensek))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - Fix an issue with a stale editor reference in shape utils [#2295](https://github.com/tldraw/tldraw/pull/2295) ([@MitjaBezensek](https://github.com/MitjaBezensek))
   - Fix the cleanup of event handlers [#2298](https://github.com/tldraw/tldraw/pull/2298) ([@MitjaBezensek](https://github.com/MitjaBezensek))
   - Revert back to the previous color. [#2210](https://github.com/tldraw/tldraw/pull/2210) ([@MitjaBezensek](https://github.com/MitjaBezensek))
   - [fix] masked bounds calculation [#2197](https://github.com/tldraw/tldraw/pull/2197) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - Fix exporting of cropped images. [#2268](https://github.com/tldraw/tldraw/pull/2268) ([@MitjaBezensek](https://github.com/MitjaBezensek))
   - Hot elbows [#2258](https://github.com/tldraw/tldraw/pull/2258) ([@ds300](https://github.com/ds300) [@steveruizok](https://github.com/steveruizok))
   - Fix missing padding-right in toast [#2251](https://github.com/tldraw/tldraw/pull/2251) ([@ByMykel](https://github.com/ByMykel) [@steveruizok](https://github.com/steveruizok))
   - Also export `TLUiEventMap` [#2234](https://github.com/tldraw/tldraw/pull/2234) ([@MitjaBezensek](https://github.com/MitjaBezensek))
   - Fix the tool lock button. [#2225](https://github.com/tldraw/tldraw/pull/2225) ([@MitjaBezensek](https://github.com/MitjaBezensek))
   - don't overwrite bookmark position if it changed before metadata arrives [#2215](https://github.com/tldraw/tldraw/pull/2215) ([@ds300](https://github.com/ds300))
-- `@tldraw/editor`, `@tldraw/tldraw`, `@tldraw/utils`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`, `@bigbluebutton/utils`
   - fix vite HMR issue [#2279](https://github.com/tldraw/tldraw/pull/2279) ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/editor`, `@tldraw/state`, `@tldraw/tldraw`, `@tldraw/utils`
+- `@bigbluebutton/editor`, `@bigbluebutton/state`, `@bigbluebutton/tldraw`, `@bigbluebutton/utils`
   - no impure getters pt 11 [#2236](https://github.com/tldraw/tldraw/pull/2236) ([@ds300](https://github.com/ds300))
-- `@tldraw/editor`, `@tldraw/state`, `@tldraw/store`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/state`, `@bigbluebutton/store`, `@bigbluebutton/tldraw`
   - No impure getters pt10 [#2235](https://github.com/tldraw/tldraw/pull/2235) ([@ds300](https://github.com/ds300))
 
 #### 🏠 Internal
@@ -210,20 +210,20 @@
 - Fix "custom UI" example [#2253](https://github.com/tldraw/tldraw/pull/2253) ([@OriginalEXE](https://github.com/OriginalEXE))
 - Add floaty window example [#2250](https://github.com/tldraw/tldraw/pull/2250) ([@steveruizok](https://github.com/steveruizok))
 - VS Code bump 2.0.17 [#2217](https://github.com/tldraw/tldraw/pull/2217) ([@MitjaBezensek](https://github.com/MitjaBezensek))
-- `@tldraw/tlschema`
+- `@bigbluebutton/tlschema`
   - Add prettier caching [#2212](https://github.com/tldraw/tldraw/pull/2212) ([@MitjaBezensek](https://github.com/MitjaBezensek))
 
 #### 📝 Documentation
 
 - Update the comment in the example. [#2272](https://github.com/tldraw/tldraw/pull/2272) ([@MitjaBezensek](https://github.com/MitjaBezensek))
-- `@tldraw/editor`, `@tldraw/state`
+- `@bigbluebutton/editor`, `@bigbluebutton/state`
   - Replace getters in examples [#2261](https://github.com/tldraw/tldraw/pull/2261) ([@ds300](https://github.com/ds300))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - fix typo in useFixSafariDoubleTapZoomPencilEvents.ts [#2242](https://github.com/tldraw/tldraw/pull/2242) ([@eltociear](https://github.com/eltociear))
 
 #### 🧪 Tests
 
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - fix export snapshot race condition [#2280](https://github.com/tldraw/tldraw/pull/2280) ([@SomeHats](https://github.com/SomeHats))
 
 #### Authors: 13
@@ -360,20 +360,20 @@
 
 #### 🚀 Enhancement
 
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - instant bookmarks [#2176](https://github.com/tldraw/tldraw/pull/2176) ([@ds300](https://github.com/ds300))
   - Remove indicator for autosize text shapes while editing [#2120](https://github.com/tldraw/tldraw/pull/2120) ([@TodePond](https://github.com/TodePond))
-- `@tldraw/editor`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`
   - [feature] Things on the canvas [#2150](https://github.com/tldraw/tldraw/pull/2150) ([@steveruizok](https://github.com/steveruizok))
   - Tighten up editor ui [#2102](https://github.com/tldraw/tldraw/pull/2102) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tldraw`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`
   - [feature] multi-scribbles [#2125](https://github.com/tldraw/tldraw/pull/2125) ([@steveruizok](https://github.com/steveruizok))
 
 #### 🐛 Bug Fix
 
 - Bump vs code extension. [#2142](https://github.com/tldraw/tldraw/pull/2142) ([@MitjaBezensek](https://github.com/MitjaBezensek))
 - Bump VS Code [#2100](https://github.com/tldraw/tldraw/pull/2100) ([@MitjaBezensek](https://github.com/MitjaBezensek))
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - Add tldraw component exports [#2188](https://github.com/tldraw/tldraw/pull/2188) ([@steveruizok](https://github.com/steveruizok))
   - Fix an error when using context menu. [#2186](https://github.com/tldraw/tldraw/pull/2186) ([@MitjaBezensek](https://github.com/MitjaBezensek))
   - Fix an issue with edit link. [#2184](https://github.com/tldraw/tldraw/pull/2184) ([@MitjaBezensek](https://github.com/MitjaBezensek))
@@ -392,28 +392,28 @@
   - [fix] css for editing page title [#2124](https://github.com/tldraw/tldraw/pull/2124) ([@steveruizok](https://github.com/steveruizok))
   - fix selection fg transform [#2113](https://github.com/tldraw/tldraw/pull/2113) ([@ds300](https://github.com/ds300))
   - [fix] mobile style panel switching open / closed [#2101](https://github.com/tldraw/tldraw/pull/2101) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`
   - [fix] actions menu freezing ui [#2187](https://github.com/tldraw/tldraw/pull/2187) ([@steveruizok](https://github.com/steveruizok))
   - Fix crash with zero length arrow [#2173](https://github.com/tldraw/tldraw/pull/2173) ([@TodePond](https://github.com/TodePond))
   - Zooming improvement [#2149](https://github.com/tldraw/tldraw/pull/2149) ([@MitjaBezensek](https://github.com/MitjaBezensek))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - add missing semicolon [#2182](https://github.com/tldraw/tldraw/pull/2182) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
   - fix scroll event coords [#2180](https://github.com/tldraw/tldraw/pull/2180) ([@ds300](https://github.com/ds300))
   - Fix an issue with `addEventListener` in old Safari (pre v14) [#2114](https://github.com/tldraw/tldraw/pull/2114) ([@MitjaBezensek](https://github.com/MitjaBezensek))
 
 #### 🏠 Internal
 
-- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/state`, `@tldraw/store`, `@tldraw/tldraw`, `@tldraw/tlschema`, `@tldraw/utils`, `@tldraw/validate`
+- `@bigbluebutton/assets`, `@bigbluebutton/editor`, `@bigbluebutton/state`, `@bigbluebutton/store`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`, `@bigbluebutton/utils`, `@bigbluebutton/validate`
   - Revert "bump prerelease from alpha to beta" [#2192](https://github.com/tldraw/tldraw/pull/2192) ([@ds300](https://github.com/ds300))
   - bump prerelease from alpha to beta [#2148](https://github.com/tldraw/tldraw/pull/2148) ([@ds300](https://github.com/ds300))
-- `@tldraw/editor`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`
   - Taha/initial shape in handle change [#2117](https://github.com/tldraw/tldraw/pull/2117) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
 
 #### 📝 Documentation
 
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - Add meta example [#2122](https://github.com/tldraw/tldraw/pull/2122) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/state`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/state`, `@bigbluebutton/tldraw`
   - Remove (optional) from jsdocs [#2109](https://github.com/tldraw/tldraw/pull/2109) ([@TodePond](https://github.com/TodePond))
 
 #### Authors: 5
@@ -452,7 +452,7 @@
 
 #### Add offline indicator (also to top zone example) ([#2083](https://github.com/tldraw/tldraw/pull/2083))
 
-- [@tldraw/tldraw] add offline indicator to ui components
+- [@bigbluebutton/tldraw] add offline indicator to ui components
 
 #### [fix] missing border on group shape when unlocked ([#2075](https://github.com/tldraw/tldraw/pull/2075))
 
@@ -476,16 +476,16 @@ Before/after:
 
 #### 🚀 Enhancement
 
-- `@tldraw/assets`, `@tldraw/tldraw`
+- `@bigbluebutton/assets`, `@bigbluebutton/tldraw`
   - Add offline indicator (also to top zone example) [#2083](https://github.com/tldraw/tldraw/pull/2083) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - Add data breakpoint to layout css [#2076](https://github.com/tldraw/tldraw/pull/2076) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/tldraw`, `@tldraw/tlschema`
+- `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`
   - Same first page id for all editors [#2071](https://github.com/tldraw/tldraw/pull/2071) ([@steveruizok](https://github.com/steveruizok))
 
 #### 🐛 Bug Fix
 
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - Firefox, Touch: Fix not being able to open style dropdowns [#2092](https://github.com/tldraw/tldraw/pull/2092) ([@TodePond](https://github.com/TodePond))
   - Add timestamp to file names [#2096](https://github.com/tldraw/tldraw/pull/2096) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
   - move imports [#2099](https://github.com/tldraw/tldraw/pull/2099) ([@SomeHats](https://github.com/SomeHats))
@@ -494,10 +494,10 @@ Before/after:
   - Fixed a bug checking translated string keys [#2082](https://github.com/tldraw/tldraw/pull/2082) ([@kewell-tsao](https://github.com/kewell-tsao))
   - [fix] Don't select locked shapes on pointer up [#2069](https://github.com/tldraw/tldraw/pull/2069) ([@steveruizok](https://github.com/steveruizok))
   - [fix] locked shape of opacity problem with eraser.pointing [#2073](https://github.com/tldraw/tldraw/pull/2073) ([@momenthana](https://github.com/momenthana))
-- `@tldraw/editor`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`
   - [fix] Context menu + menus not closing correctly [#2086](https://github.com/tldraw/tldraw/pull/2086) ([@steveruizok](https://github.com/steveruizok))
   - [fix] reparenting locked shapes [#2070](https://github.com/tldraw/tldraw/pull/2070) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - [fix] remove findLast calls [#2081](https://github.com/tldraw/tldraw/pull/2081) ([@steveruizok](https://github.com/steveruizok))
   - [fix] missing border on group shape when unlocked [#2075](https://github.com/tldraw/tldraw/pull/2075) ([@steveruizok](https://github.com/steveruizok))
   - Compact children when updating parents to children. [#2072](https://github.com/tldraw/tldraw/pull/2072) ([@steveruizok](https://github.com/steveruizok))
@@ -514,7 +514,7 @@ Before/after:
 
 #### 🔩 Dependency Updates
 
-- `@tldraw/editor`, `@tldraw/store`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/store`, `@bigbluebutton/tlschema`
   - bump nanoid [#2078](https://github.com/tldraw/tldraw/pull/2078) ([@ds300](https://github.com/ds300))
 
 #### Authors: 9
@@ -573,41 +573,41 @@ Before/after:
 
 #### 🚀 Enhancement
 
-- `@tldraw/editor`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`
   - [improvement] Scope `getShapeAtPoint` to rendering shapes only [#2043](https://github.com/tldraw/tldraw/pull/2043) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/tldraw`, `@tldraw/tlschema`
+- `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`
   - Remove dot com ui styles [1/2] [#2039](https://github.com/tldraw/tldraw/pull/2039) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/tlschema`
   - prevent hover indicator from showing when pointer isn't over the canvas [#2023](https://github.com/tldraw/tldraw/pull/2023) ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - Remove topBar prop from <TldrawUi /> [#2018](https://github.com/tldraw/tldraw/pull/2018) ([@SomeHats](https://github.com/SomeHats))
 
 #### 🐛 Bug Fix
 
 - fix standalone examples [#2042](https://github.com/tldraw/tldraw/pull/2042) ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - Fix shape opacity when erasing [#2055](https://github.com/tldraw/tldraw/pull/2055) ([@ds300](https://github.com/ds300))
-- `@tldraw/editor`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`
   - [fix] Hit testing against zero width / height lines [#2060](https://github.com/tldraw/tldraw/pull/2060) ([@steveruizok](https://github.com/steveruizok))
   - Fix newlines in text geo shapes [#2059](https://github.com/tldraw/tldraw/pull/2059) ([@SomeHats](https://github.com/SomeHats) [@huppy-bot[bot]](https://github.com/huppy-bot[bot]) [@steveruizok](https://github.com/steveruizok))
   - Restore background [#2037](https://github.com/tldraw/tldraw/pull/2037) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - Fix opacity lowering on shapes that cannot be deleted [#2061](https://github.com/tldraw/tldraw/pull/2061) ([@Taha-Hassan-Git](https://github.com/Taha-Hassan-Git))
   - fix: proper label for opacity tooltip on hover [#2044](https://github.com/tldraw/tldraw/pull/2044) ([@Prince-Mendiratta](https://github.com/Prince-Mendiratta))
   - Fix alt + shift keyboard shortcuts [#2053](https://github.com/tldraw/tldraw/pull/2053) ([@MitjaBezensek](https://github.com/MitjaBezensek))
   - [fix] Stylepanel default spacing [#2036](https://github.com/tldraw/tldraw/pull/2036) ([@steveruizok](https://github.com/steveruizok))
   - Export tools [#2035](https://github.com/tldraw/tldraw/pull/2035) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/tlschema`
+- `@bigbluebutton/tlschema`
   - [fix] Page state migration [#2040](https://github.com/tldraw/tldraw/pull/2040) ([@steveruizok](https://github.com/steveruizok))
   - [fix] migrations for page state [#2038](https://github.com/tldraw/tldraw/pull/2038) ([@steveruizok](https://github.com/steveruizok))
 
 #### 🏠 Internal
 
 - Move example into examples folder [#2064](https://github.com/tldraw/tldraw/pull/2064) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/tlschema`
+- `@bigbluebutton/tlschema`
   - [fix] broken docs link [#2062](https://github.com/tldraw/tldraw/pull/2062) ([@steveruizok](https://github.com/steveruizok))
   - Remove fixup script [#2041](https://github.com/tldraw/tldraw/pull/2041) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/state`, `@tldraw/store`, `@tldraw/tldraw`, `@tldraw/tlschema`, `@tldraw/utils`, `@tldraw/validate`
+- `@bigbluebutton/editor`, `@bigbluebutton/state`, `@bigbluebutton/store`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`, `@bigbluebutton/utils`, `@bigbluebutton/validate`
   - Publish api.json [#2034](https://github.com/tldraw/tldraw/pull/2034) ([@steveruizok](https://github.com/steveruizok))
 
 #### 🧪 Tests
@@ -833,7 +833,7 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 
 #### [feature] Asset props ([#1824](https://github.com/tldraw/tldraw/pull/1824))
 
-- [@tldraw/tldraw] add asset props
+- [@bigbluebutton/tldraw] add asset props
 
 #### [fix] snapping bug ([#1819](https://github.com/tldraw/tldraw/pull/1819))
 
@@ -849,7 +849,7 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 
 #### [fix] bug with eventemitter3 default export ([#1818](https://github.com/tldraw/tldraw/pull/1818))
 
-- [@tldraw/editor] updates eventemitter3 import to fix issue with Astro builds.
+- [@bigbluebutton/editor] updates eventemitter3 import to fix issue with Astro builds.
 
 #### Add next cache to clean command ([#1811](https://github.com/tldraw/tldraw/pull/1811))
 
@@ -885,7 +885,7 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 
 #### export `UiEventsProvider` ([#1774](https://github.com/tldraw/tldraw/pull/1774))
 
-- [@tldraw/tldraw] export ui events, so that UI hooks can work without context
+- [@bigbluebutton/tldraw] export ui events, so that UI hooks can work without context
 
 #### remove useForceSolid effect for geo / line shapes ([#1769](https://github.com/tldraw/tldraw/pull/1769))
 
@@ -955,12 +955,12 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 
 #### tldraw zero - package shuffle ([#1710](https://github.com/tldraw/tldraw/pull/1710))
 
-- [@tldraw/editor] lots, wip
-- [@tldraw/ui] gone, merged to tldraw/tldraw
-- [@tldraw/polyfills] gone, merged to tldraw/editor
-- [@tldraw/primitives] gone, merged to tldraw/editor / tldraw/tldraw
-- [@tldraw/indices] gone, merged to tldraw/editor
-- [@tldraw/file-format] gone, merged to tldraw/tldraw
+- [@bigbluebutton/editor] lots, wip
+- [@bigbluebutton/ui] gone, merged to tldraw/tldraw
+- [@bigbluebutton/polyfills] gone, merged to tldraw/editor
+- [@bigbluebutton/primitives] gone, merged to tldraw/editor / tldraw/tldraw
+- [@bigbluebutton/indices] gone, merged to tldraw/editor
+- [@bigbluebutton/file-format] gone, merged to tldraw/tldraw
 
 #### [fix] add cloud tooltip ([#1728](https://github.com/tldraw/tldraw/pull/1728))
 
@@ -1023,7 +1023,7 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 
 #### 💥 Breaking Change
 
-- `@tldraw/editor`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`
   - [improvement] prevent editing in readonly [#1990](https://github.com/tldraw/tldraw/pull/1990) ([@steveruizok](https://github.com/steveruizok))
   - Remove focus management [#1953](https://github.com/tldraw/tldraw/pull/1953) ([@steveruizok](https://github.com/steveruizok) [@ds300](https://github.com/ds300))
   - Make user preferences optional [#1963](https://github.com/tldraw/tldraw/pull/1963) ([@ds300](https://github.com/ds300))
@@ -1037,54 +1037,54 @@ Removed a feature to reset the viewport back to a shape that is being edited.
   - environment manager [#1784](https://github.com/tldraw/tldraw/pull/1784) ([@steveruizok](https://github.com/steveruizok))
   - remove `selectionPageCenter` [#1766](https://github.com/tldraw/tldraw/pull/1766) ([@steveruizok](https://github.com/steveruizok))
   - rename selection page bounds [#1763](https://github.com/tldraw/tldraw/pull/1763) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - Remove targeted editing from text [#1962](https://github.com/tldraw/tldraw/pull/1962) ([@TodePond](https://github.com/TodePond) [@steveruizok](https://github.com/steveruizok))
   - [improvement] quick actions [#1922](https://github.com/tldraw/tldraw/pull/1922) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/store`
+- `@bigbluebutton/editor`, `@bigbluebutton/store`
   - SideEffectManager [#1785](https://github.com/tldraw/tldraw/pull/1785) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/state`, `@tldraw/store`, `@tldraw/tldraw`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/state`, `@bigbluebutton/store`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`
   - Revert "Editor commands API / effects" [#1783](https://github.com/tldraw/tldraw/pull/1783) ([@steveruizok](https://github.com/steveruizok))
   - Editor commands API / effects [#1778](https://github.com/tldraw/tldraw/pull/1778) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tldraw`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`
   - `ShapeUtil.getGeometry`, selection rewrite [#1751](https://github.com/tldraw/tldraw/pull/1751) ([@steveruizok](https://github.com/steveruizok))
   - More cleanup, focus bug fixes [#1749](https://github.com/tldraw/tldraw/pull/1749) ([@steveruizok](https://github.com/steveruizok))
   - Remove helpers / extraneous API methods. [#1745](https://github.com/tldraw/tldraw/pull/1745) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tldraw`, `@tldraw/utils`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`, `@bigbluebutton/utils`
   - move some utils into tldraw/utils [#1750](https://github.com/tldraw/tldraw/pull/1750) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/state`, `@tldraw/store`, `@tldraw/tldraw`, `@tldraw/tlschema`, `@tldraw/utils`, `@tldraw/validate`
+- `@bigbluebutton/editor`, `@bigbluebutton/state`, `@bigbluebutton/store`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`, `@bigbluebutton/utils`, `@bigbluebutton/validate`
   - tldraw zero - package shuffle [#1710](https://github.com/tldraw/tldraw/pull/1710) ([@steveruizok](https://github.com/steveruizok) [@SomeHats](https://github.com/SomeHats))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - [refactor] reduce dependencies on shape utils in editor [#1693](https://github.com/tldraw/tldraw/pull/1693) ([@steveruizok](https://github.com/steveruizok))
   - [hot take] remove `tool` from shape definition [#1691](https://github.com/tldraw/tldraw/pull/1691) ([@TodePond](https://github.com/TodePond))
   - [refactor] reordering shapes [#1718](https://github.com/tldraw/tldraw/pull/1718) ([@steveruizok](https://github.com/steveruizok))
 
 #### 🚀 Enhancement
 
-- `@tldraw/editor`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`
   - Debugging cleanup / misc cleanup [#2025](https://github.com/tldraw/tldraw/pull/2025) ([@steveruizok](https://github.com/steveruizok))
   - [feature] Include `sources` in `TLExternalContent` [#1925](https://github.com/tldraw/tldraw/pull/1925) ([@steveruizok](https://github.com/steveruizok))
   - Add snapshot prop, examples [#1856](https://github.com/tldraw/tldraw/pull/1856) ([@steveruizok](https://github.com/steveruizok))
   - [fix] arrow snapping bug [#1756](https://github.com/tldraw/tldraw/pull/1756) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tldraw`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`
   - Fix arrow handle snapping, snapping to text labels, selection of text labels [#1910](https://github.com/tldraw/tldraw/pull/1910) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/store`, `@tldraw/tldraw`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/store`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`
   - Migrate snapshot [#1843](https://github.com/tldraw/tldraw/pull/1843) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - export asset stuff [#1829](https://github.com/tldraw/tldraw/pull/1829) ([@steveruizok](https://github.com/steveruizok))
   - [feature] Asset props [#1824](https://github.com/tldraw/tldraw/pull/1824) ([@steveruizok](https://github.com/steveruizok))
   - [feature] unlock all action [#1820](https://github.com/tldraw/tldraw/pull/1820) ([@steveruizok](https://github.com/steveruizok))
   - export `UiEventsProvider` [#1774](https://github.com/tldraw/tldraw/pull/1774) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - Add className as prop to Canvas [#1827](https://github.com/tldraw/tldraw/pull/1827) ([@steveruizok](https://github.com/steveruizok))
   - refactor `parentsToChildrenWithIndexes` [#1764](https://github.com/tldraw/tldraw/pull/1764) ([@steveruizok](https://github.com/steveruizok))
   - remove state checks for brush and zoom brush [#1717](https://github.com/tldraw/tldraw/pull/1717) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/state`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/state`, `@bigbluebutton/tldraw`
   - [improvement] More selection logic [#1806](https://github.com/tldraw/tldraw/pull/1806) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/assets`, `@tldraw/tlschema`
+- `@bigbluebutton/assets`, `@bigbluebutton/tlschema`
   - [feature] Add val town embed [#1777](https://github.com/tldraw/tldraw/pull/1777) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/tldraw`, `@tldraw/validate`
+- `@bigbluebutton/tldraw`, `@bigbluebutton/validate`
   - Add shapes to exports [#1776](https://github.com/tldraw/tldraw/pull/1776) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/tlschema`
+- `@bigbluebutton/assets`, `@bigbluebutton/editor`, `@bigbluebutton/tlschema`
   - Add cloud shape [#1708](https://github.com/tldraw/tldraw/pull/1708) ([@ds300](https://github.com/ds300))
 
 #### 🐛 Bug Fix
@@ -1096,7 +1096,7 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 - Bump vs code version. [#1735](https://github.com/tldraw/tldraw/pull/1735) ([@MitjaBezensek](https://github.com/MitjaBezensek))
 - [fix] add cloud tooltip [#1728](https://github.com/tldraw/tldraw/pull/1728) ([@ds300](https://github.com/ds300))
 - Bump vs code version. [#1719](https://github.com/tldraw/tldraw/pull/1719) ([@MitjaBezensek](https://github.com/MitjaBezensek))
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - Update readme [#2027](https://github.com/tldraw/tldraw/pull/2027) ([@steveruizok](https://github.com/steveruizok))
   - [fix] Minimap interactions [#2012](https://github.com/tldraw/tldraw/pull/2012) ([@steveruizok](https://github.com/steveruizok))
   - [fix] Image size [#2002](https://github.com/tldraw/tldraw/pull/2002) ([@steveruizok](https://github.com/steveruizok))
@@ -1136,7 +1136,7 @@ Removed a feature to reset the viewport back to a shape that is being edited.
   - [fix]: Fix typo in shapeType declaration [#1747](https://github.com/tldraw/tldraw/pull/1747) ([@ricardo-crespo](https://github.com/ricardo-crespo) [@steveruizok](https://github.com/steveruizok))
   - fix: escape eraser tool on escape [#1732](https://github.com/tldraw/tldraw/pull/1732) ([@gabrielchl](https://github.com/gabrielchl) [@steveruizok](https://github.com/steveruizok))
   - fix: arrow label dark mode color [#1733](https://github.com/tldraw/tldraw/pull/1733) ([@gabrielchl](https://github.com/gabrielchl) [@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - fix screen bounds not updating [#2022](https://github.com/tldraw/tldraw/pull/2022) ([@SomeHats](https://github.com/SomeHats))
   - [improvement] Refactor curved arrows [#2019](https://github.com/tldraw/tldraw/pull/2019) ([@steveruizok](https://github.com/steveruizok))
   - [fix] focus events [#2013](https://github.com/tldraw/tldraw/pull/2013) ([@steveruizok](https://github.com/steveruizok))
@@ -1170,7 +1170,7 @@ Removed a feature to reset the viewport back to a shape that is being edited.
   - tweaks for cloud shape [#1723](https://github.com/tldraw/tldraw/pull/1723) ([@ds300](https://github.com/ds300))
   - Go back to default cursor when done resizing. [#1700](https://github.com/tldraw/tldraw/pull/1700) ([@MitjaBezensek](https://github.com/MitjaBezensek))
   - Firefox: Fix coarse pointer issue [#1701](https://github.com/tldraw/tldraw/pull/1701) ([@TodePond](https://github.com/TodePond))
-- `@tldraw/editor`, `@tldraw/tldraw`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`
   - frame label fix [#2016](https://github.com/tldraw/tldraw/pull/2016) ([@ds300](https://github.com/ds300))
   - [fix] Focus events (actually) [#2015](https://github.com/tldraw/tldraw/pull/2015) ([@steveruizok](https://github.com/steveruizok))
   - Contain all the things [#1999](https://github.com/tldraw/tldraw/pull/1999) ([@steveruizok](https://github.com/steveruizok))
@@ -1195,11 +1195,11 @@ Removed a feature to reset the viewport back to a shape that is being edited.
   - Custom rendering margin / don't cull selected shapes [#1788](https://github.com/tldraw/tldraw/pull/1788) ([@steveruizok](https://github.com/steveruizok))
   - [fix] minimap, common page bounds [#1770](https://github.com/tldraw/tldraw/pull/1770) ([@steveruizok](https://github.com/steveruizok))
   - [fix] restore bg option, fix calculations [#1765](https://github.com/tldraw/tldraw/pull/1765) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/store`
+- `@bigbluebutton/editor`, `@bigbluebutton/store`
   - Fix shape drag perf [#1932](https://github.com/tldraw/tldraw/pull/1932) ([@ds300](https://github.com/ds300))
-- `@tldraw/tldraw`, `@tldraw/tlschema`
+- `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`
   - [fix] embeds switching / tldraw embed [#1792](https://github.com/tldraw/tldraw/pull/1792) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tldraw`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`
   - [fix] dark mode [#1754](https://github.com/tldraw/tldraw/pull/1754) ([@steveruizok](https://github.com/steveruizok))
 
 #### 🏠 Internal
@@ -1213,7 +1213,7 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 - support custom shapes in yjs example [#1737](https://github.com/tldraw/tldraw/pull/1737) ([@steveruizok](https://github.com/steveruizok))
 - [internal] Add basic list to examples [#1688](https://github.com/tldraw/tldraw/pull/1688) ([@steveruizok](https://github.com/steveruizok))
 - cleanup [#1711](https://github.com/tldraw/tldraw/pull/1711) ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - [fix] CSS reload in dev [#1791](https://github.com/tldraw/tldraw/pull/1791) ([@steveruizok](https://github.com/steveruizok))
 
 #### 📝 Documentation
@@ -1225,18 +1225,18 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 - (2/2) Add content to Tools docs page. [#1721](https://github.com/tldraw/tldraw/pull/1721) ([@TodePond](https://github.com/TodePond))
 - Add API links to all docs pages [#1661](https://github.com/tldraw/tldraw/pull/1661) ([@TodePond](https://github.com/TodePond))
 - Fix tsdocs for TldrawUi component [#1707](https://github.com/tldraw/tldraw/pull/1707) ([@TodePond](https://github.com/TodePond))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - Make some missing tsdocs appear on the docs site [#1706](https://github.com/tldraw/tldraw/pull/1706) ([@TodePond](https://github.com/TodePond))
 
 #### 🧪 Tests
 
 - Fix e2e test [#1748](https://github.com/tldraw/tldraw/pull/1748) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - [fix] Right click groups [#1975](https://github.com/tldraw/tldraw/pull/1975) ([@TodePond](https://github.com/TodePond) [@steveruizok](https://github.com/steveruizok))
 
 #### 🔩 Dependency Updates
 
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - (chore) bump [#1744](https://github.com/tldraw/tldraw/pull/1744) ([@steveruizok](https://github.com/steveruizok))
 
 #### Authors: 14
@@ -1292,23 +1292,23 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 
 #### [fix] Lock shortcut ([#1677](https://github.com/tldraw/tldraw/pull/1677))
 
-- [@tldraw/editor] Fix lock tool shortcut
+- [@bigbluebutton/editor] Fix lock tool shortcut
 
 #### [fix] comma keyboard shortcuts ([#1675](https://github.com/tldraw/tldraw/pull/1675))
 
-- [@tldraw/editor] Bug fixes on document events.
+- [@bigbluebutton/editor] Bug fixes on document events.
 
 #### [improvement] add box sizing border box ([#1674](https://github.com/tldraw/tldraw/pull/1674))
 
-- [@tldraw/editor] Add `box-sizing: border-box` to `tl-container`
+- [@bigbluebutton/editor] Add `box-sizing: border-box` to `tl-container`
 
 #### [improvemnet] drop crc, Buffer dependency ([#1673](https://github.com/tldraw/tldraw/pull/1673))
 
-- [@tldraw/editor] Remove peer dependency on buffer.
+- [@bigbluebutton/editor] Remove peer dependency on buffer.
 
 #### [improvement] export scribble manager ([#1671](https://github.com/tldraw/tldraw/pull/1671))
 
-- [@tldraw/tldraw] Export `ScribbleManager`
+- [@bigbluebutton/tldraw] Export `ScribbleManager`
 
 #### [feature] add `meta` property to records ([#1627](https://github.com/tldraw/tldraw/pull/1627))
 
@@ -1316,35 +1316,35 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 
 #### [fix] mutating `snapshot` in `migrateStoreSnapshot` ([#1663](https://github.com/tldraw/tldraw/pull/1663))
 
-- [@tldraw/store] Fixed a bug that would cause `Store.migrateStoreSnapshot` to mutate its `snapshot` argument.
+- [@bigbluebutton/store] Fixed a bug that would cause `Store.migrateStoreSnapshot` to mutate its `snapshot` argument.
 
 ---
 
 #### 🚀 Enhancement
 
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - [improvement] More nuanced cursor state [#1682](https://github.com/tldraw/tldraw/pull/1682) ([@steveruizok](https://github.com/steveruizok))
   - [improvement] export scribble manager [#1671](https://github.com/tldraw/tldraw/pull/1671) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/tlschema`, `@tldraw/ui`, `@tldraw/utils`, `@tldraw/validate`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`, `@bigbluebutton/utils`, `@bigbluebutton/validate`
   - [feature] add `meta` property to records [#1627](https://github.com/tldraw/tldraw/pull/1627) ([@steveruizok](https://github.com/steveruizok))
 
 #### 🐛 Bug Fix
 
 - Lokalise: Translations update [#1694](https://github.com/tldraw/tldraw/pull/1694) ([@TodePond](https://github.com/TodePond))
-- `@tldraw/ui`
+- `@bigbluebutton/ui`
   - Disable styles panel button on mobile when using the laser tool. [#1704](https://github.com/tldraw/tldraw/pull/1704) ([@MitjaBezensek](https://github.com/MitjaBezensek))
   - remove lock option from highlighter [#1703](https://github.com/tldraw/tldraw/pull/1703) ([@SomeHats](https://github.com/SomeHats))
   - [fix] Lock shortcut [#1677](https://github.com/tldraw/tldraw/pull/1677) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - [fix] penmode [#1698](https://github.com/tldraw/tldraw/pull/1698) ([@steveruizok](https://github.com/steveruizok))
   - [fix] indicator not updating [#1696](https://github.com/tldraw/tldraw/pull/1696) ([@steveruizok](https://github.com/steveruizok))
   - [fix] comma keyboard shortcuts [#1675](https://github.com/tldraw/tldraw/pull/1675) ([@steveruizok](https://github.com/steveruizok))
   - [improvement] add box sizing border box [#1674](https://github.com/tldraw/tldraw/pull/1674) ([@steveruizok](https://github.com/steveruizok))
   - [improvemnet] drop crc, Buffer dependency [#1673](https://github.com/tldraw/tldraw/pull/1673) ([@steveruizok](https://github.com/steveruizok))
   - [fix] Shape rendering [#1670](https://github.com/tldraw/tldraw/pull/1670) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/state`
-  - [fix] rename `global` in @tldraw/state to avoid collissions [#1672](https://github.com/tldraw/tldraw/pull/1672) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/store`
+- `@bigbluebutton/state`
+  - [fix] rename `global` in @bigbluebutton/state to avoid collissions [#1672](https://github.com/tldraw/tldraw/pull/1672) ([@steveruizok](https://github.com/steveruizok))
+- `@bigbluebutton/store`
   - [fix] mutating `snapshot` in `migrateStoreSnapshot` [#1663](https://github.com/tldraw/tldraw/pull/1663) ([@steveruizok](https://github.com/steveruizok))
 
 #### 🏠 Internal
@@ -1500,7 +1500,7 @@ Removed a feature to reset the viewport back to a shape that is being edited.
 
 - Brought back cursor timeouts. Collaborator cursors now disappear after 3 seconds of inactivity.
 
-#### Remove `@tldraw/utils` from the docs site ([#1596](https://github.com/tldraw/tldraw/pull/1596))
+#### Remove `@bigbluebutton/utils` from the docs site ([#1596](https://github.com/tldraw/tldraw/pull/1596))
 
 - [docs] Removed an internal utilities package.
 
@@ -1664,7 +1664,7 @@ n/a
 
 #### Rename tlstore to store ([#1507](https://github.com/tldraw/tldraw/pull/1507))
 
-- Replace @tldraw/tlstore with @tldraw/store
+- Replace @bigbluebutton/tlstore with @bigbluebutton/store
 
 #### Rename tlvalidate to validate ([#1508](https://github.com/tldraw/tldraw/pull/1508))
 
@@ -1674,7 +1674,7 @@ n/a
 
 - Optimize file size of exported files.
 
-#### Cleanup @tldraw/ui types / exports ([#1504](https://github.com/tldraw/tldraw/pull/1504))
+#### Cleanup @bigbluebutton/ui types / exports ([#1504](https://github.com/tldraw/tldraw/pull/1504))
 
 - [editor] clean up / unify types
 
@@ -1725,7 +1725,7 @@ Highlighter pen is here! 🎉🎉🎉
 
 #### [minor] Mark tlsync-client internal APIs ([#1481](https://github.com/tldraw/tldraw/pull/1481))
 
-- Removes internal APIs from `@tldraw/tlsync-client`
+- Removes internal APIs from `@bigbluebutton/tlsync-client`
 
 #### [refactor] update record names ([#1473](https://github.com/tldraw/tldraw/pull/1473))
 
@@ -1801,10 +1801,10 @@ Highlighter pen is here! 🎉🎉🎉
 * [docs] Updated guides to get assets from the new `tldraw/tldraw` repo instead of the old `tldraw/tldraw-examples`.
 * [docs] Updated an old CodeSandbox link to the new StackBlitz.
 
-#### Create @tldraw/indices package ([#1426](https://github.com/tldraw/tldraw/pull/1426))
+#### Create @bigbluebutton/indices package ([#1426](https://github.com/tldraw/tldraw/pull/1426))
 
-- [@tldraw/editor] Remove fractional indices code into `@tldraw/indices`
-- [@tldraw/indices] Create library for fractional indices code
+- [@bigbluebutton/editor] Remove fractional indices code into `@bigbluebutton/indices`
+- [@bigbluebutton/indices] Create library for fractional indices code
 
 #### [feature] Add checkbox to toolbar ([#1423](https://github.com/tldraw/tldraw/pull/1423))
 
@@ -1963,111 +1963,111 @@ internal-only change
 
 #### Rework the assets package for strategy-specific imports ([#1341](https://github.com/tldraw/tldraw/pull/1341))
 
-- [dev] If you're using the `@tldraw/assets` package, you need to update your code to `import { getAssetUrlsByImport } from '@tldraw/assets/imports'` instead of `import { getBundlerAssetUrls } from '@tldraw/assets`
+- [dev] If you're using the `@bigbluebutton/assets` package, you need to update your code to `import { getAssetUrlsByImport } from '@bigbluebutton/assets/imports'` instead of `import { getBundlerAssetUrls } from '@bigbluebutton/assets`
 
 ---
 
 #### 💥 Breaking Change
 
 - [minor] Mark tlsync-client internal APIs [#1481](https://github.com/tldraw/tldraw/pull/1481) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/store`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/store`
   - [tweak] migrate store snapshot arguments [#1659](https://github.com/tldraw/tldraw/pull/1659) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/store`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/store`, `@bigbluebutton/tlschema`
   - [improvement] store snapshot types [#1657](https://github.com/tldraw/tldraw/pull/1657) ([@steveruizok](https://github.com/steveruizok))
   - Rename tlstore to store [#1507](https://github.com/tldraw/tldraw/pull/1507) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/ui`
   - [fix] react component runaways, error boundaries [#1625](https://github.com/tldraw/tldraw/pull/1625) ([@steveruizok](https://github.com/steveruizok))
   - Tidy up [#1600](https://github.com/tldraw/tldraw/pull/1600) ([@steveruizok](https://github.com/steveruizok))
   - Use unpkg as a default for serving assets. [#1548](https://github.com/tldraw/tldraw/pull/1548) ([@MitjaBezensek](https://github.com/MitjaBezensek))
   - Switch to new collaborators component [#1405](https://github.com/tldraw/tldraw/pull/1405) ([@ds300](https://github.com/ds300))
   - [improvement] Ui events followup [#1354](https://github.com/tldraw/tldraw/pull/1354) ([@steveruizok](https://github.com/steveruizok))
   - [feature] ui events [#1326](https://github.com/tldraw/tldraw/pull/1326) ([@orangemug](https://github.com/orangemug) [@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/tldraw`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`
   - `ShapeUtil` refactor, `Editor` cleanup [#1611](https://github.com/tldraw/tldraw/pull/1611) ([@steveruizok](https://github.com/steveruizok))
   - [refactor] restore createTLSchema [#1444](https://github.com/tldraw/tldraw/pull/1444) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - Remove on drop override [#1612](https://github.com/tldraw/tldraw/pull/1612) ([@steveruizok](https://github.com/steveruizok))
   - Rename `ShapeUtil.render` -> `ShapeUtil.component` [#1609](https://github.com/tldraw/tldraw/pull/1609) ([@steveruizok](https://github.com/steveruizok))
   - [fix] camera culling [#1602](https://github.com/tldraw/tldraw/pull/1602) ([@steveruizok](https://github.com/steveruizok))
   - remove `ShapeUtil.transform` [#1590](https://github.com/tldraw/tldraw/pull/1590) ([@steveruizok](https://github.com/steveruizok))
   - remove `ShapeUtil.point` [#1591](https://github.com/tldraw/tldraw/pull/1591) ([@steveruizok](https://github.com/steveruizok))
   - remove url state, to private [#1402](https://github.com/tldraw/tldraw/pull/1402) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tldraw`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/tldraw`, `@bigbluebutton/ui`
   - tldraw.css [#1607](https://github.com/tldraw/tldraw/pull/1607) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/tlschema`, `@tldraw/ui`, `@tldraw/utils`, `@tldraw/validate`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`, `@bigbluebutton/utils`, `@bigbluebutton/validate`
   - Styles API [#1580](https://github.com/tldraw/tldraw/pull/1580) ([@SomeHats](https://github.com/SomeHats) [@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/tldraw`, `@tldraw/tlschema`, `@tldraw/utils`, `@tldraw/validate`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`, `@bigbluebutton/utils`, `@bigbluebutton/validate`
   - mini `defineShape` API [#1563](https://github.com/tldraw/tldraw/pull/1563) ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/tldraw`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/tldraw`, `@bigbluebutton/ui`
   - `ExternalContentManager` for handling external content (files, images, etc) [#1550](https://github.com/tldraw/tldraw/pull/1550) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tlschema`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`
   - hoist opacity out of props [#1526](https://github.com/tldraw/tldraw/pull/1526) ([@SomeHats](https://github.com/SomeHats))
   - Add support for project names [#1340](https://github.com/tldraw/tldraw/pull/1340) ([@TodePond](https://github.com/TodePond) [@steveruizok](https://github.com/steveruizok))
   - [refactor] Remove `TLShapeDef`, `getShapeUtilByType`. [#1432](https://github.com/tldraw/tldraw/pull/1432) ([@steveruizok](https://github.com/steveruizok) [@SomeHats](https://github.com/SomeHats))
   - [fix] Don't synchronize isReadOnly [#1396](https://github.com/tldraw/tldraw/pull/1396) ([@ds300](https://github.com/ds300))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/store`, `@tldraw/tlschema`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/store`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`
   - Independent instance state persistence [#1493](https://github.com/tldraw/tldraw/pull/1493) ([@ds300](https://github.com/ds300))
   - tlschema cleanup [#1509](https://github.com/tldraw/tldraw/pull/1509) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/ui`
   - Renaming types, shape utils, tools [#1513](https://github.com/tldraw/tldraw/pull/1513) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/tlschema`, `@tldraw/validate`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/tlschema`, `@bigbluebutton/validate`
   - Rename tlvalidate to validate [#1508](https://github.com/tldraw/tldraw/pull/1508) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/file-format`, `@tldraw/tlschema`, `@tldraw/ui`
-  - Cleanup @tldraw/ui types / exports [#1504](https://github.com/tldraw/tldraw/pull/1504) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/indices`, `@tldraw/tldraw`, `@tldraw/ui`
+- `@bigbluebutton/file-format`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`
+  - Cleanup @bigbluebutton/ui types / exports [#1504](https://github.com/tldraw/tldraw/pull/1504) ([@steveruizok](https://github.com/steveruizok))
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/indices`, `@bigbluebutton/tldraw`, `@bigbluebutton/ui`
   - rename app to editor [#1503](https://github.com/tldraw/tldraw/pull/1503) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/tldraw`, `@tldraw/tlschema`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`
   - [refactor] User-facing APIs [#1478](https://github.com/tldraw/tldraw/pull/1478) ([@steveruizok](https://github.com/steveruizok))
   - [chore] refactor user preferences [#1435](https://github.com/tldraw/tldraw/pull/1435) ([@ds300](https://github.com/ds300))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/tlschema`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`
   - [refactor] update record names [#1473](https://github.com/tldraw/tldraw/pull/1473) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/tlschema`
   - [refactor] remove `createTLSchema` [#1440](https://github.com/tldraw/tldraw/pull/1440) ([@steveruizok](https://github.com/steveruizok))
   - [refactor] record migrations [#1430](https://github.com/tldraw/tldraw/pull/1430) ([@steveruizok](https://github.com/steveruizok))
   - [chore] Bump nanoid [#1349](https://github.com/tldraw/tldraw/pull/1349) ([@ds300](https://github.com/ds300))
-- `@tldraw/editor`, `@tldraw/indices`, `@tldraw/utils`
-  - Create @tldraw/indices package [#1426](https://github.com/tldraw/tldraw/pull/1426) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/indices`, `@bigbluebutton/utils`
+  - Create @bigbluebutton/indices package [#1426](https://github.com/tldraw/tldraw/pull/1426) ([@steveruizok](https://github.com/steveruizok))
+- `@bigbluebutton/ui`
   - [improvement] rename onEvent to onUiEvent [#1358](https://github.com/tldraw/tldraw/pull/1358) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/assets`, `@tldraw/tlschema`
+- `@bigbluebutton/assets`, `@bigbluebutton/tlschema`
   - Rework the assets package for strategy-specific imports [#1341](https://github.com/tldraw/tldraw/pull/1341) ([@SomeHats](https://github.com/SomeHats))
 
 #### 🚀 Enhancement
 
 - [feature] Easier store persistence API + persistence example [#1480](https://github.com/tldraw/tldraw/pull/1480) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tlschema`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`
   - Styles API follow-ups [#1636](https://github.com/tldraw/tldraw/pull/1636) ([@SomeHats](https://github.com/SomeHats) [@steveruizok](https://github.com/steveruizok))
   - (1/2) Cursor Chat - Presence [#1487](https://github.com/tldraw/tldraw/pull/1487) ([@TodePond](https://github.com/TodePond) [@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - Make resizeBox a regular function [#1610](https://github.com/tldraw/tldraw/pull/1610) ([@steveruizok](https://github.com/steveruizok))
   - [improvement] set horizontal position using text alignment [#1419](https://github.com/tldraw/tldraw/pull/1419) ([@steveruizok](https://github.com/steveruizok))
   - [fix] pointer location not updating when moving over editing shape [#1378](https://github.com/tldraw/tldraw/pull/1378) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/tlschema`
   - [fix] yjs presence [#1603](https://github.com/tldraw/tldraw/pull/1603) ([@steveruizok](https://github.com/steveruizok))
   - (1/2) Timeout collaborator cursors [#1525](https://github.com/tldraw/tldraw/pull/1525) ([@TodePond](https://github.com/TodePond) [@steveruizok](https://github.com/steveruizok))
   - [feature] add vertical align to note shape [#1539](https://github.com/tldraw/tldraw/pull/1539) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/file-format`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`
   - Add optional generic to `updateShapes` / `createShapes` [#1579](https://github.com/tldraw/tldraw/pull/1579) ([@steveruizok](https://github.com/steveruizok))
   - move v1 migration code into file-format [#1499](https://github.com/tldraw/tldraw/pull/1499) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/ui`
   - Add support for locking shapes [#1447](https://github.com/tldraw/tldraw/pull/1447) ([@MitjaBezensek](https://github.com/MitjaBezensek) [@steveruizok](https://github.com/steveruizok))
   - [feature] reduce motion [#1485](https://github.com/tldraw/tldraw/pull/1485) ([@steveruizok](https://github.com/steveruizok))
   - [mini-feature] Following indicator [#1468](https://github.com/tldraw/tldraw/pull/1468) ([@steveruizok](https://github.com/steveruizok))
   - Add SVG cursors for all cursor types [#1416](https://github.com/tldraw/tldraw/pull/1416) ([@TodePond](https://github.com/TodePond) [@steveruizok](https://github.com/steveruizok))
   - [improvement] refactor paste to support multi-line text [#1398](https://github.com/tldraw/tldraw/pull/1398) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/ui`
+- `@bigbluebutton/assets`, `@bigbluebutton/editor`, `@bigbluebutton/ui`
   - [3/3] Highlighter styling [#1490](https://github.com/tldraw/tldraw/pull/1490) ([@SomeHats](https://github.com/SomeHats) [@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/primitives`
+- `@bigbluebutton/editor`, `@bigbluebutton/primitives`
   - [2/3] renderer changes to support "sandwich mode" highlighting [#1418](https://github.com/tldraw/tldraw/pull/1418) ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/tlschema`, `@tldraw/ui`
+- `@bigbluebutton/assets`, `@bigbluebutton/editor`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`
   - [1/3] initial highlighter shape/tool [#1401](https://github.com/tldraw/tldraw/pull/1401) ([@SomeHats](https://github.com/SomeHats))
   - [feature] add laser pointer [#1412](https://github.com/tldraw/tldraw/pull/1412) ([@steveruizok](https://github.com/steveruizok))
   - Vertical text alignment for geo shapes [#1414](https://github.com/tldraw/tldraw/pull/1414) ([@MitjaBezensek](https://github.com/MitjaBezensek) [@steveruizok](https://github.com/steveruizok))
-- `@tldraw/ui`
+- `@bigbluebutton/ui`
   - [feature] Add checkbox to toolbar [#1423](https://github.com/tldraw/tldraw/pull/1423) ([@steveruizok](https://github.com/steveruizok))
   - Add stuff for new 'share project' flow [#1403](https://github.com/tldraw/tldraw/pull/1403) ([@ds300](https://github.com/ds300))
   - Snapshot link menu translations [#1399](https://github.com/tldraw/tldraw/pull/1399) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/assets`, `@tldraw/ui`
+- `@bigbluebutton/assets`, `@bigbluebutton/ui`
   - open menus refactor [#1400](https://github.com/tldraw/tldraw/pull/1400) ([@steveruizok](https://github.com/steveruizok))
 
 #### 🐛 Bug Fix
@@ -2096,7 +2096,7 @@ internal-only change
 - [chore] use explicit yarn in clean script [#1216](https://github.com/tldraw/tldraw/pull/1216) ([@ds300](https://github.com/ds300))
 - fix husky install [#1212](https://github.com/tldraw/tldraw/pull/1212) ([@SomeHats](https://github.com/SomeHats))
 - Alex/test [#1202](https://github.com/tldraw/tldraw/pull/1202) ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - Fix crash when rotating a deleted shape [#1658](https://github.com/tldraw/tldraw/pull/1658) ([@TodePond](https://github.com/TodePond))
   - [fix] pen mode touches [#1655](https://github.com/tldraw/tldraw/pull/1655) ([@steveruizok](https://github.com/steveruizok))
   - Fix text shapes not having colour [#1649](https://github.com/tldraw/tldraw/pull/1649) ([@TodePond](https://github.com/TodePond))
@@ -2140,29 +2140,29 @@ internal-only change
   - [fix] typo in isFocusingInput [#1221](https://github.com/tldraw/tldraw/pull/1221) ([@ds300](https://github.com/ds300))
   - [feat] new LiveCollaborators behind feature flag [#1219](https://github.com/tldraw/tldraw/pull/1219) ([@ds300](https://github.com/ds300))
   - [fix] collaborator render order [#1213](https://github.com/tldraw/tldraw/pull/1213) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/ui`
   - 3/2 Cursor chat [#1623](https://github.com/tldraw/tldraw/pull/1623) ([@steveruizok](https://github.com/steveruizok))
   - [fix] embeds [#1578](https://github.com/tldraw/tldraw/pull/1578) ([@steveruizok](https://github.com/steveruizok))
   - highlighter fixes [#1530](https://github.com/tldraw/tldraw/pull/1530) ([@SomeHats](https://github.com/SomeHats))
   - Feature flags rework [#1474](https://github.com/tldraw/tldraw/pull/1474) ([@SomeHats](https://github.com/SomeHats))
   - remove svg layer, html all the things, rs to tl [#1227](https://github.com/tldraw/tldraw/pull/1227) ([@TodePond](https://github.com/TodePond) [@steveruizok](https://github.com/steveruizok))
   - Added `pHYs` to import/export of png images [#1200](https://github.com/tldraw/tldraw/pull/1200) ([@orangemug](https://github.com/orangemug) [@steveruizok](https://github.com/steveruizok))
-- `@tldraw/tldraw`
+- `@bigbluebutton/tldraw`
   - [fix] tldraw api report [#1615](https://github.com/tldraw/tldraw/pull/1615) ([@steveruizok](https://github.com/steveruizok))
-  - Fix to not ignore the `userId` option for `<Tldraw/>` component in `@tldraw/tldraw` [#1205](https://github.com/tldraw/tldraw/pull/1205) ([@orangemug](https://github.com/orangemug))
-- `@tldraw/editor`, `@tldraw/primitives`
+  - Fix to not ignore the `userId` option for `<Tldraw/>` component in `@bigbluebutton/tldraw` [#1205](https://github.com/tldraw/tldraw/pull/1205) ([@orangemug](https://github.com/orangemug))
+- `@bigbluebutton/editor`, `@bigbluebutton/primitives`
   - [refactor] snapping [#1589](https://github.com/tldraw/tldraw/pull/1589) ([@steveruizok](https://github.com/steveruizok))
   - Fix arrows with weird bends crashing [#1540](https://github.com/tldraw/tldraw/pull/1540) ([@TodePond](https://github.com/TodePond))
   - ensure that fixed points stay fixed [#1523](https://github.com/tldraw/tldraw/pull/1523) ([@steveruizok](https://github.com/steveruizok))
   - Use `strokePathData` for `<ShapeFill/>` path to avoid bugs in the inner path algo [#1207](https://github.com/tldraw/tldraw/pull/1207) ([@orangemug](https://github.com/orangemug) [@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/tlschema`
   - update exports for user presence [#1583](https://github.com/tldraw/tldraw/pull/1583) ([@steveruizok](https://github.com/steveruizok))
   - [improvement] Embed shape cleanup [#1569](https://github.com/tldraw/tldraw/pull/1569) ([@steveruizok](https://github.com/steveruizok))
   - Add migration for horizontal alignment [#1443](https://github.com/tldraw/tldraw/pull/1443) ([@MitjaBezensek](https://github.com/MitjaBezensek) [@steveruizok](https://github.com/steveruizok))
   - [chore] move schema construction to tlschema package [#1334](https://github.com/tldraw/tldraw/pull/1334) ([@ds300](https://github.com/ds300))
-- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/ui`, `@tldraw/utils`
+- `@bigbluebutton/assets`, `@bigbluebutton/editor`, `@bigbluebutton/ui`, `@bigbluebutton/utils`
   - Asset improvements [#1557](https://github.com/tldraw/tldraw/pull/1557) ([@MitjaBezensek](https://github.com/MitjaBezensek))
-- `@tldraw/ui`
+- `@bigbluebutton/ui`
   - Use `"Toggle locked"` [#1538](https://github.com/tldraw/tldraw/pull/1538) ([@steveruizok](https://github.com/steveruizok))
   - Select locked shapes on long press [#1529](https://github.com/tldraw/tldraw/pull/1529) ([@steveruizok](https://github.com/steveruizok))
   - remove safari special-casing for paste [#1470](https://github.com/tldraw/tldraw/pull/1470) ([@SomeHats](https://github.com/SomeHats))
@@ -2180,29 +2180,29 @@ internal-only change
   - Fix "copy as png" in firefox when `dom.events.asyncClipboard.clipboardItem` is enabled [#1342](https://github.com/tldraw/tldraw/pull/1342) ([@orangemug](https://github.com/orangemug))
   - [tiny] rename show menu paste [#1332](https://github.com/tldraw/tldraw/pull/1332) ([@steveruizok](https://github.com/steveruizok))
   - update @radix-ui/react-popover to 1.0.6-rc.5 [#1206](https://github.com/tldraw/tldraw/pull/1206) ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/file-format`
+- `@bigbluebutton/file-format`
   - Filter out unused assets. [#1502](https://github.com/tldraw/tldraw/pull/1502) ([@MitjaBezensek](https://github.com/MitjaBezensek))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/tlschema`, `@tldraw/ui`, `@tldraw/utils`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`, `@bigbluebutton/utils`
   - Stricter ID types [#1439](https://github.com/tldraw/tldraw/pull/1439) ([@SomeHats](https://github.com/SomeHats) [@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/primitives`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/primitives`, `@bigbluebutton/ui`
   - Measure individual words instead of just line breaks for text exports [#1397](https://github.com/tldraw/tldraw/pull/1397) ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/tlschema`
+- `@bigbluebutton/tlschema`
   - [perf] make ensureStoreIsUsable scale better [#1362](https://github.com/tldraw/tldraw/pull/1362) ([@ds300](https://github.com/ds300))
-- `@tldraw/editor`, `@tldraw/utils`
+- `@bigbluebutton/editor`, `@bigbluebutton/utils`
   - presence-related fixes [#1361](https://github.com/tldraw/tldraw/pull/1361) ([@ds300](https://github.com/ds300))
-- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/tlschema`, `@tldraw/ui`
+- `@bigbluebutton/assets`, `@bigbluebutton/editor`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`
   - [feature] `check-box` geo shape [#1330](https://github.com/tldraw/tldraw/pull/1330) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/tldraw`, `@tldraw/ui`
+- `@bigbluebutton/assets`, `@bigbluebutton/editor`, `@bigbluebutton/tldraw`, `@bigbluebutton/ui`
   - New vite-based examples app [#1226](https://github.com/tldraw/tldraw/pull/1226) ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/assets`, `@tldraw/file-format`, `@tldraw/polyfills`, `@tldraw/primitives`, `@tldraw/tldraw`, `@tldraw/tlschema`, `@tldraw/ui`, `@tldraw/utils`
+- `@bigbluebutton/assets`, `@bigbluebutton/file-format`, `@bigbluebutton/polyfills`, `@bigbluebutton/primitives`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`, `@bigbluebutton/utils`
   - [wip] Going bublic [#1195](https://github.com/tldraw/tldraw/pull/1195) ([@SomeHats](https://github.com/SomeHats) [@ds300](https://github.com/ds300) [@orangemug](https://github.com/orangemug) [@steveruizok](https://github.com/steveruizok) [@TodePond](https://github.com/TodePond))
-- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/polyfills`, `@tldraw/primitives`, `@tldraw/tldraw`, `@tldraw/tlschema`, `@tldraw/ui`, `@tldraw/utils`
+- `@bigbluebutton/assets`, `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/polyfills`, `@bigbluebutton/primitives`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`, `@bigbluebutton/utils`
   - [chore] update lazyrepo [#1211](https://github.com/tldraw/tldraw/pull/1211) ([@ds300](https://github.com/ds300))
   - [lite] upgrade lazyrepo [#1198](https://github.com/tldraw/tldraw/pull/1198) ([@ds300](https://github.com/ds300))
   - [wip] Going bublic [#1195](https://github.com/tldraw/tldraw/pull/1195) ([@SomeHats](https://github.com/SomeHats) [@ds300](https://github.com/ds300) [@orangemug](https://github.com/orangemug) [@steveruizok](https://github.com/steveruizok) [@TodePond](https://github.com/TodePond))
-- `@tldraw/tlschema`, `@tldraw/ui`
+- `@bigbluebutton/tlschema`, `@bigbluebutton/ui`
   - [fix] pick a better default language [#1201](https://github.com/tldraw/tldraw/pull/1201) ([@steveruizok](https://github.com/steveruizok) [@TodePond](https://github.com/TodePond))
-- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/tldraw`, `@tldraw/tlschema`, `@tldraw/ui`, `@tldraw/utils`
+- `@bigbluebutton/assets`, `@bigbluebutton/editor`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`, `@bigbluebutton/utils`
   - derived presence state [#1204](https://github.com/tldraw/tldraw/pull/1204) ([@ds300](https://github.com/ds300))
 
 #### ⚠️ Pushed to `main`
@@ -2214,8 +2214,8 @@ internal-only change
 - rename api.mdx to editor.mdx ([@TodePond](https://github.com/TodePond))
 - remove e2e files ([@steveruizok](https://github.com/steveruizok))
 - main: notify huppy after release ([@SomeHats](https://github.com/SomeHats))
-- main: exclude @tldraw/assets from vite dep optimization to fix examples links ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/indices`, `@tldraw/polyfills`, `@tldraw/primitives`, `@tldraw/store`, `@tldraw/tldraw`, `@tldraw/tlschema`, `@tldraw/ui`, `@tldraw/utils`, `@tldraw/validate`
+- main: exclude @bigbluebutton/assets from vite dep optimization to fix examples links ([@SomeHats](https://github.com/SomeHats))
+- `@bigbluebutton/assets`, `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/indices`, `@bigbluebutton/polyfills`, `@bigbluebutton/primitives`, `@bigbluebutton/store`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`, `@bigbluebutton/utils`, `@bigbluebutton/validate`
   - update lazyrepo ([@ds300](https://github.com/ds300))
 
 #### 🏠 Internal
@@ -2234,29 +2234,29 @@ internal-only change
 - [fix] example routes on vercel [#1391](https://github.com/tldraw/tldraw/pull/1391) ([@steveruizok](https://github.com/steveruizok))
 - Neaten up pr template [#1369](https://github.com/tldraw/tldraw/pull/1369) ([@TodePond](https://github.com/TodePond))
 - remove references to tldraw-lite [#1367](https://github.com/tldraw/tldraw/pull/1367) ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/editor`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/ui`
   - Explicit shape type checks [#1594](https://github.com/tldraw/tldraw/pull/1594) ([@steveruizok](https://github.com/steveruizok))
   - [improvement] bookmark shape logic [#1568](https://github.com/tldraw/tldraw/pull/1568) ([@steveruizok](https://github.com/steveruizok))
   - Simplify static cursors [#1520](https://github.com/tldraw/tldraw/pull/1520) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/ui`
+- `@bigbluebutton/ui`
   - move some kbds into actions and tools [#1585](https://github.com/tldraw/tldraw/pull/1585) ([@BrianHung](https://github.com/BrianHung) [@steveruizok](https://github.com/steveruizok))
   - Add localizations for snapshots links [#1347](https://github.com/tldraw/tldraw/pull/1347) ([@MitjaBezensek](https://github.com/MitjaBezensek))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - use the right TLEventHandlers [#1486](https://github.com/tldraw/tldraw/pull/1486) ([@judicaelandria](https://github.com/judicaelandria) [@steveruizok](https://github.com/steveruizok))
   - yjs example [#1560](https://github.com/tldraw/tldraw/pull/1560) ([@steveruizok](https://github.com/steveruizok))
   - rename app folder to editor [#1528](https://github.com/tldraw/tldraw/pull/1528) ([@steveruizok](https://github.com/steveruizok))
   - [fix] overlay rendering issues [#1389](https://github.com/tldraw/tldraw/pull/1389) ([@steveruizok](https://github.com/steveruizok))
   - Remove commented code in App [#1377](https://github.com/tldraw/tldraw/pull/1377) ([@steveruizok](https://github.com/steveruizok))
   - enable eslint for test files [#1363](https://github.com/tldraw/tldraw/pull/1363) ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/tlschema`
+- `@bigbluebutton/tlschema`
   - restore styles sets exports [#1512](https://github.com/tldraw/tldraw/pull/1512) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/primitives`
+- `@bigbluebutton/primitives`
   - replace console.log with nicelog [#1496](https://github.com/tldraw/tldraw/pull/1496) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/indices`, `@tldraw/primitives`, `@tldraw/tldraw`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/indices`, `@bigbluebutton/primitives`, `@bigbluebutton/tldraw`, `@bigbluebutton/ui`
   - [chore] remove benchmark [#1489](https://github.com/tldraw/tldraw/pull/1489) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/tlschema`
   - [tiny] add isPageId [#1482](https://github.com/tldraw/tldraw/pull/1482) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`, `@tldraw/file-format`, `@tldraw/polyfills`, `@tldraw/primitives`, `@tldraw/tldraw`, `@tldraw/tlschema`, `@tldraw/ui`, `@tldraw/utils`
+- `@bigbluebutton/editor`, `@bigbluebutton/file-format`, `@bigbluebutton/polyfills`, `@bigbluebutton/primitives`, `@bigbluebutton/tldraw`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`, `@bigbluebutton/utils`
   - avoid lazy race conditions [#1364](https://github.com/tldraw/tldraw/pull/1364) ([@SomeHats](https://github.com/SomeHats))
 
 #### 📝 Documentation
@@ -2278,7 +2278,7 @@ internal-only change
 - [docs] Tighten up Introduction page [#1621](https://github.com/tldraw/tldraw/pull/1621) ([@TodePond](https://github.com/TodePond) [@steveruizok](https://github.com/steveruizok))
 - [docs] Simplify paths for uncategorised pages [#1619](https://github.com/tldraw/tldraw/pull/1619) ([@TodePond](https://github.com/TodePond))
 - Auto content refresh for docs site [#1606](https://github.com/tldraw/tldraw/pull/1606) ([@steveruizok](https://github.com/steveruizok))
-- Remove `@tldraw/utils` from the docs site [#1596](https://github.com/tldraw/tldraw/pull/1596) ([@TodePond](https://github.com/TodePond))
+- Remove `@bigbluebutton/utils` from the docs site [#1596](https://github.com/tldraw/tldraw/pull/1596) ([@TodePond](https://github.com/TodePond))
 - [docs] Add barebones note about translations [#1593](https://github.com/tldraw/tldraw/pull/1593) ([@TodePond](https://github.com/TodePond) [@steveruizok](https://github.com/steveruizok))
 - Change app to editor in docs [#1592](https://github.com/tldraw/tldraw/pull/1592) ([@TodePond](https://github.com/TodePond))
 - add presence to yjs example [#1582](https://github.com/tldraw/tldraw/pull/1582) ([@steveruizok](https://github.com/steveruizok))
@@ -2288,14 +2288,14 @@ internal-only change
 - Update examples links to point to examples folder. [#1522](https://github.com/tldraw/tldraw/pull/1522) ([@steveruizok](https://github.com/steveruizok))
 - Update docs links + guides + build [#1422](https://github.com/tldraw/tldraw/pull/1422) ([@TodePond](https://github.com/TodePond))
 - Update codesandbox + example link [#1368](https://github.com/tldraw/tldraw/pull/1368) ([@TodePond](https://github.com/TodePond))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - [improvement] custom shapes example [#1660](https://github.com/tldraw/tldraw/pull/1660) ([@steveruizok](https://github.com/steveruizok))
   - Add tsdocs to Editor methods [#1581](https://github.com/tldraw/tldraw/pull/1581) ([@TodePond](https://github.com/TodePond) [@steveruizok](https://github.com/steveruizok))
   - [Docs] Change some editor properties to methods [#1553](https://github.com/tldraw/tldraw/pull/1553) ([@TodePond](https://github.com/TodePond))
   - [Docs] Change some internal methods to public [#1554](https://github.com/tldraw/tldraw/pull/1554) ([@TodePond](https://github.com/TodePond))
-- `@tldraw/editor`, `@tldraw/tlschema`
+- `@bigbluebutton/editor`, `@bigbluebutton/tlschema`
   - Styles API docs [#1641](https://github.com/tldraw/tldraw/pull/1641) ([@SomeHats](https://github.com/SomeHats) [@steveruizok](https://github.com/steveruizok))
-- `@tldraw/tlschema`
+- `@bigbluebutton/tlschema`
   - TLSchema readme [#1506](https://github.com/tldraw/tldraw/pull/1506) ([@steveruizok](https://github.com/steveruizok))
 
 #### 🧪 Tests
@@ -2304,21 +2304,21 @@ internal-only change
 - Disable nightly/on-demand webdriver scripts [#1366](https://github.com/tldraw/tldraw/pull/1366) ([@orangemug](https://github.com/orangemug))
 - Adds CI for webdriver tests [#1343](https://github.com/tldraw/tldraw/pull/1343) ([@orangemug](https://github.com/orangemug))
 - Added initial webdriver tests [#1337](https://github.com/tldraw/tldraw/pull/1337) ([@orangemug](https://github.com/orangemug))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - update editor tests [#1547](https://github.com/tldraw/tldraw/pull/1547) ([@steveruizok](https://github.com/steveruizok))
   - Add DSL to make writing shape-layout test cases much easier [#1413](https://github.com/tldraw/tldraw/pull/1413) ([@SomeHats](https://github.com/SomeHats))
-- `@tldraw/editor`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/ui`
   - Add playwright tests [#1484](https://github.com/tldraw/tldraw/pull/1484) ([@steveruizok](https://github.com/steveruizok))
 
 #### 🔩 Dependency Updates
 
 - [chore] update wdio-vscode-service [#1346](https://github.com/tldraw/tldraw/pull/1346) ([@ds300](https://github.com/ds300))
-- `@tldraw/editor`, `@tldraw/state`, `@tldraw/store`, `@tldraw/tlschema`, `@tldraw/ui`
-  - Incorporate signia as @tldraw/state [#1620](https://github.com/tldraw/tldraw/pull/1620) ([@steveruizok](https://github.com/steveruizok) [@ds300](https://github.com/ds300))
-- `@tldraw/assets`, `@tldraw/editor`, `@tldraw/polyfills`, `@tldraw/tldraw`, `@tldraw/ui`
+- `@bigbluebutton/editor`, `@bigbluebutton/state`, `@bigbluebutton/store`, `@bigbluebutton/tlschema`, `@bigbluebutton/ui`
+  - Incorporate signia as @bigbluebutton/state [#1620](https://github.com/tldraw/tldraw/pull/1620) ([@steveruizok](https://github.com/steveruizok) [@ds300](https://github.com/ds300))
+- `@bigbluebutton/assets`, `@bigbluebutton/editor`, `@bigbluebutton/polyfills`, `@bigbluebutton/tldraw`, `@bigbluebutton/ui`
   - Revert "Update dependencies (#1613)" [#1617](https://github.com/tldraw/tldraw/pull/1617) ([@SomeHats](https://github.com/SomeHats))
   - Update dependencies [#1613](https://github.com/tldraw/tldraw/pull/1613) ([@steveruizok](https://github.com/steveruizok))
-- `@tldraw/editor`
+- `@bigbluebutton/editor`
   - update use-gesture [#1453](https://github.com/tldraw/tldraw/pull/1453) ([@ds300](https://github.com/ds300))
 
 #### Authors: 13

@@ -1,5 +1,5 @@
+import { MAX_PAGES, PageRecordType, TLPageId, track, useEditor } from '@bigbluebutton/editor'
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu'
-import { MAX_PAGES, PageRecordType, TLPageId, track, useEditor } from '@tldraw/editor'
 import { useCallback } from 'react'
 import { useTranslation } from '../../hooks/useTranslation/useTranslation'
 import { Button } from '../primitives/Button'

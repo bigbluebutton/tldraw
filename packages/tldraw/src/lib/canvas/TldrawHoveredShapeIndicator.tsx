@@ -3,7 +3,7 @@ import {
 	TLHoveredShapeIndicatorComponent,
 	useEditor,
 	useValue,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 /** @public */
 export const TldrawHoveredShapeIndicator: TLHoveredShapeIndicatorComponent = ({ shapeId }) => {

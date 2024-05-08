@@ -1,5 +1,5 @@
-import { track, useQuickReactor, useStateTracking } from '@tldraw/state'
-import { TLShape, TLShapeId } from '@tldraw/tlschema'
+import { track, useQuickReactor, useStateTracking } from '@bigbluebutton/state'
+import { TLShape, TLShapeId } from '@bigbluebutton/tlschema'
 import * as React from 'react'
 import { ShapeUtil } from '../editor/shapes/ShapeUtil'
 import { nearestMultiple } from '../hooks/useDPRMultiple'

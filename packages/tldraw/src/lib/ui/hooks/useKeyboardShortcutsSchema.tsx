@@ -1,4 +1,4 @@
-import { Editor, compact, track, useEditor } from '@tldraw/editor'
+import { Editor, compact, track, useEditor } from '@bigbluebutton/editor'
 import React, { useMemo } from 'react'
 import { TLUiMenuSchema, menuGroup, menuItem } from './menuHelpers'
 import { TLUiActionsContextType, useActions } from './useActions'

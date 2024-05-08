@@ -7,7 +7,7 @@ import {
 	exhaustiveSwitchError,
 	useEditor,
 	useValue,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { TLUiActionItem } from './useActions'
 import { TLUiToolItem } from './useTools'
 import { TLUiTranslationKey } from './useTranslation/TLUiTranslationKey'

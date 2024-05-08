@@ -1,5 +1,5 @@
-import { createShapeId, Tldraw, TLShapePartial } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { createShapeId, Tldraw, TLShapePartial } from '@bigbluebutton/tldraw'
+import '@bigbluebutton/tldraw/tldraw.css'
 import { ErrorShape, ErrorShapeUtil } from './ErrorShape'
 
 const shapes = [ErrorShapeUtil]

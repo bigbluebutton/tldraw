@@ -1,5 +1,5 @@
-import { HistoryEntry } from '@tldraw/store'
-import { TLPageId, TLRecord } from '@tldraw/tlschema'
+import { HistoryEntry } from '@bigbluebutton/store'
+import { TLPageId, TLRecord } from '@bigbluebutton/tlschema'
 import { TLEventInfo } from './event-types'
 
 /** @public */

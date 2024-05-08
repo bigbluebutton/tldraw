@@ -1,4 +1,4 @@
-# @tldraw/vscode
+# @bigbluebutton/vscode
 
 This folder contains the source for the tldraw VS Code extension.
 
@@ -48,7 +48,7 @@ The Visual Studio Code extension is made of two projects:
 ### 1. Extension project 
 Extension project is under `apps/vscode/extension` and contains the code needed to run a VS Code Extension - it implements the required VS Code interfaces so that VS Code can call our extension and start running it.
 
-It registers the command for generating a new `.tldr` file, custom editor for `.tldr` files, and it communicates with the WebViews that run `@tldraw/editor` (more on this later on).
+It registers the command for generating a new `.tldr` file, custom editor for `.tldr` files, and it communicates with the WebViews that run `@bigbluebutton/editor` (more on this later on).
 
 VS Code Extension API offers two ways for adding [new editors](https://code.visualstudio.com/api/extension-guides/custom-editors): `CustomEditor` and `CustomTextEditor`. We are using [`CustomEditor`](https://code.visualstudio.com/api/extension-guides/custom-editors#custom-editor), even though it means we have to do a bit more work and maintain the contents of the document ourselves. This allows us to better support features like `undo`, `redo`, and `revert`, since we are in complete control of the contents of the document. 
 
@@ -57,7 +57,7 @@ The custom editor logic lives in `TldrawDocument`, where we handle all the requi
 When a users opens a file a new WebView is created by the `TldrawWebviewManager` and the file's contents are sent do it. WebViews then show our editor project, which is described below.
 
 ### 2. Editor project 
-Editor project is under `apps/vscode/editor`. When a file is opened a new instance of a WebView is created and we show `@tldraw/editor` this WebView.
+Editor project is under `apps/vscode/editor`. When a file is opened a new instance of a WebView is created and we show `@bigbluebutton/editor` this WebView.
 
 The implementation is pretty straight forward, but there are some limitations of running `tldraw` inside a WebView, like `window.open` and `window.prompt` not being available, as well as some issues with embeds. We are using `useLocalSyncClient` to sync between different editor instances for cases when the same file is opened in multiple editors.
 

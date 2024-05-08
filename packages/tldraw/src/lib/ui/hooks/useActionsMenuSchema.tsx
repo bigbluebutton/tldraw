@@ -1,4 +1,4 @@
-import { Editor, useEditor, useValue } from '@tldraw/editor'
+import { Editor, useEditor, useValue } from '@bigbluebutton/editor'
 import React, { useMemo } from 'react'
 import {
 	TLUiMenuSchema,

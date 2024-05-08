@@ -1,5 +1,5 @@
-import { Tldraw, TLEditorComponents } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Tldraw, TLEditorComponents } from '@bigbluebutton/tldraw'
+import '@bigbluebutton/tldraw/tldraw.css'
 
 const components: TLEditorComponents = {
 	Brush: function MyBrush({ brush }) {

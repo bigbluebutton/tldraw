@@ -1,5 +1,5 @@
-import type { RecordId, UnknownRecord } from '@tldraw/store'
-import { T } from '@tldraw/validate'
+import type { RecordId, UnknownRecord } from '@bigbluebutton/store'
+import { T } from '@bigbluebutton/validate'
 
 /** @internal */
 export function idValidator<Id extends RecordId<UnknownRecord>>(

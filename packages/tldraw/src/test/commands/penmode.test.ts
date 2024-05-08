@@ -1,4 +1,4 @@
-import { Vec2d } from '@tldraw/editor'
+import { Vec2d } from '@bigbluebutton/editor'
 import { TestEditor } from '../TestEditor'
 
 let editor: TestEditor

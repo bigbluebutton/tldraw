@@ -1,4 +1,4 @@
-import { StateNode, TLEventHandlers, TLTextShape, createShapeId } from '@tldraw/editor'
+import { StateNode, TLEventHandlers, TLTextShape, createShapeId } from '@bigbluebutton/editor'
 
 export class Pointing extends StateNode {
 	static override id = 'pointing'

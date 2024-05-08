@@ -19,7 +19,7 @@ import {
 	last,
 	rng,
 	toFixed,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { ShapeFill, getShapeFillSvg, useDefaultColorTheme } from '../shared/ShapeFill'
 import { STROKE_SIZES } from '../shared/default-shape-constants'
 import { getFillDefForCanvas, getFillDefForExport } from '../shared/defaultStyleDefs'

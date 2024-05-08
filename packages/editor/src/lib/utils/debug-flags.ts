@@ -1,4 +1,4 @@
-import { Atom, atom, react } from '@tldraw/state'
+import { Atom, atom, react } from '@bigbluebutton/state'
 
 // --- 1. DEFINE ---
 //

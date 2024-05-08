@@ -1,6 +1,6 @@
-import { BaseRecord, createRecordType, defineMigrations, RecordId } from '@tldraw/store'
-import { JsonObject } from '@tldraw/utils'
-import { T } from '@tldraw/validate'
+import { BaseRecord, createRecordType, defineMigrations, RecordId } from '@bigbluebutton/store'
+import { JsonObject } from '@bigbluebutton/utils'
+import { T } from '@bigbluebutton/validate'
 
 /**
  * TLDocument

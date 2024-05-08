@@ -1,5 +1,5 @@
-import { TLShape, Tldraw, track, useEditor } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { TLShape, Tldraw, track, useEditor } from '@bigbluebutton/tldraw'
+import '@bigbluebutton/tldraw/tldraw.css'
 
 export default function ShapeMetaExample() {
 	return (

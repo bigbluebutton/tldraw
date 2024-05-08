@@ -5,7 +5,7 @@ import {
 	TLShapePartial,
 	Vec2d,
 	deepCopy,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 export type ShapeWithCrop = TLBaseShape<string, { w: number; h: number; crop: TLImageShapeCrop }>
 

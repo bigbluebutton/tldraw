@@ -1,4 +1,4 @@
-import { Editor } from '@tldraw/editor'
+import { Editor } from '@bigbluebutton/editor'
 
 export function registerDefaultSideEffects(editor: Editor) {
 	return [

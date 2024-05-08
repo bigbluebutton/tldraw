@@ -1,4 +1,4 @@
-import { ANIMATION_MEDIUM_MS, track, useEditor } from '@tldraw/editor'
+import { ANIMATION_MEDIUM_MS, track, useEditor } from '@bigbluebutton/editor'
 import * as React from 'react'
 import { useActions } from '../../hooks/useActions'
 import { useBreakpoint } from '../../hooks/useBreakpoint'

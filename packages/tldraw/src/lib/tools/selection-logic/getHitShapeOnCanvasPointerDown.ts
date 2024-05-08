@@ -1,4 +1,4 @@
-import { Editor, HIT_TEST_MARGIN, TLShape } from '@tldraw/editor'
+import { Editor, HIT_TEST_MARGIN, TLShape } from '@bigbluebutton/editor'
 
 export function getHitShapeOnCanvasPointerDown(editor: Editor): TLShape | undefined {
 	const zoomLevel = editor.getZoomLevel()

@@ -1,4 +1,4 @@
-import { createShapeId, TLArrowShape, TLShapePartial } from '@tldraw/editor'
+import { createShapeId, TLArrowShape, TLShapePartial } from '@bigbluebutton/editor'
 import { TestEditor } from './TestEditor'
 
 let editor: TestEditor

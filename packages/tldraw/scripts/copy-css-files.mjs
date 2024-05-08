@@ -17,8 +17,8 @@ let combinedContent = [
 		return acc
 	},
 	`/* THIS CSS FILE IS GENERATED! DO NOT EDIT. OR EDIT. I'M A COMMENT NOT A COP */ 
-/* This file is created by the copy-css-files.mjs script in @tldraw/tldraw. */
-/* It combines @tldraw/editor's editor.css and @tldraw/tldraw's ui.css */
+/* This file is created by the copy-css-files.mjs script in @bigbluebutton/tldraw. */
+/* It combines @bigbluebutton/editor's editor.css and @bigbluebutton/tldraw's ui.css */
 
 `
 )

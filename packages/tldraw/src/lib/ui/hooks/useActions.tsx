@@ -16,7 +16,7 @@ import {
 	createShapeId,
 	openWindow,
 	useEditor,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import * as React from 'react'
 import { getEmbedInfo } from '../../utils/embeds/embeds'
 import { fitFrameToContent, removeFrame } from '../../utils/frames/frames'

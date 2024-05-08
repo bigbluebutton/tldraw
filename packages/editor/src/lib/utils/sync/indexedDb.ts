@@ -1,5 +1,5 @@
-import { RecordsDiff, SerializedSchema, SerializedStore } from '@tldraw/store'
-import { TLRecord, TLStoreSchema } from '@tldraw/tlschema'
+import { RecordsDiff, SerializedSchema, SerializedStore } from '@bigbluebutton/store'
+import { TLRecord, TLStoreSchema } from '@bigbluebutton/tlschema'
 import { IDBPDatabase, openDB } from 'idb'
 import { TLSessionStateSnapshot } from '../../config/TLSessionStateSnapshot'
 

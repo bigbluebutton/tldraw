@@ -1,4 +1,4 @@
-import { TLDefaultColorTheme, TLGeoShape, TLShapeId } from '@tldraw/editor'
+import { TLDefaultColorTheme, TLGeoShape, TLShapeId } from '@bigbluebutton/editor'
 import * as React from 'react'
 import {
 	ShapeFill,

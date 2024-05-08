@@ -1,4 +1,4 @@
-import { TLArrowShape, TLGeoShape, TLShapeId, createShapeId } from '@tldraw/editor'
+import { TLArrowShape, TLGeoShape, TLShapeId, createShapeId } from '@bigbluebutton/editor'
 import { TestEditor } from './TestEditor'
 import { TL } from './test-jsx'
 

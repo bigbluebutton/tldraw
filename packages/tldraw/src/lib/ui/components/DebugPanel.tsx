@@ -10,7 +10,7 @@ import {
 	uniqueId,
 	useEditor,
 	useValue,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import * as React from 'react'
 import { useDialogs } from '../hooks/useDialogsProvider'
 import { useToasts } from '../hooks/useToastsProvider'

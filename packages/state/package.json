@@ -1,11 +1,11 @@
 {
-	"name": "@tldraw/state",
+	"name": "@bigbluebutton/state",
 	"description": "A tiny little drawing app (state).",
 	"version": "2.0.0-alpha.19",
 	"packageManager": "yarn@3.5.0",
 	"author": {
 		"name": "tldraw GB Ltd.",
-		"email": "hello@tldraw.com"
+		"email": "hello@bigbluebutton.com"
 	},
 	"homepage": "https://tldraw.dev",
 	"license": "Apache-2.0",
@@ -65,7 +65,7 @@
 	"typedoc": {
 		"readmeFile": "none",
 		"entryPoint": "./src/index.ts",
-		"displayName": "@tldraw/state",
+		"displayName": "@bigbluebutton/state",
 		"tsconfig": "./tsconfig.json"
 	}
 }

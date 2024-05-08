@@ -4,7 +4,7 @@ import {
 	TLShapeId,
 	perimeterOfEllipse,
 	toDomPrecision,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import * as React from 'react'
 import {
 	ShapeFill,

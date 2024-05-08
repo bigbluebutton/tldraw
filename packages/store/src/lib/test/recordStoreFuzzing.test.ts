@@ -1,4 +1,4 @@
-import { atom, EffectScheduler, RESET_VALUE } from '@tldraw/state'
+import { atom, EffectScheduler, RESET_VALUE } from '@bigbluebutton/state'
 import { BaseRecord, IdOf, RecordId, UnknownRecord } from '../BaseRecord'
 import { executeQuery } from '../executeQuery'
 import { createRecordType } from '../RecordType'

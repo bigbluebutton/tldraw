@@ -1,5 +1,5 @@
-import { isShapeId, TLShape, TLShapePartial } from '@tldraw/tlschema'
-import { structuredClone } from '@tldraw/utils'
+import { isShapeId, TLShape, TLShapePartial } from '@bigbluebutton/tlschema'
+import { structuredClone } from '@bigbluebutton/utils'
 import { Editor } from '../editor/Editor'
 import { Matrix2d } from '../primitives/Matrix2d'
 import { canonicalizeRotation } from '../primitives/utils'

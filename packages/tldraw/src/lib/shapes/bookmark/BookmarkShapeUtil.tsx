@@ -15,7 +15,7 @@ import {
 	isValidUrl,
 	stopEventPropagation,
 	toDomPrecision,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { truncateStringWithEllipsis } from '../../utils/text/text'
 import { HyperlinkButton } from '../shared/HyperlinkButton'
 import { getRotatedBoxShadow } from '../shared/rotated-box-shadow'

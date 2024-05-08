@@ -17,7 +17,7 @@
 
 #### Add offline indicator (also to top zone example) ([#2083](https://github.com/tldraw/tldraw/pull/2083))
 
-- [@tldraw/tldraw] add offline indicator to ui components
+- [@bigbluebutton/tldraw] add offline indicator to ui components
 
 ---
 
@@ -83,7 +83,7 @@ Highlighter pen is here! 🎉🎉🎉
 
 #### Rework the assets package for strategy-specific imports ([#1341](https://github.com/tldraw/tldraw/pull/1341))
 
-- [dev] If you're using the `@tldraw/assets` package, you need to update your code to `import { getAssetUrlsByImport } from '@tldraw/assets/imports'` instead of `import { getBundlerAssetUrls } from '@tldraw/assets`
+- [dev] If you're using the `@bigbluebutton/assets` package, you need to update your code to `import { getAssetUrlsByImport } from '@bigbluebutton/assets/imports'` instead of `import { getBundlerAssetUrls } from '@bigbluebutton/assets`
 
 ---
 

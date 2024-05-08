@@ -1,4 +1,4 @@
-import { PngHelpers, debugFlags } from '@tldraw/editor'
+import { PngHelpers, debugFlags } from '@bigbluebutton/editor'
 import { getBrowserCanvasMaxSize } from '../../shapes/shared/getBrowserCanvasMaxSize'
 
 /** @public */

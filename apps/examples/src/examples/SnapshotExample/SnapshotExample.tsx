@@ -1,5 +1,5 @@
-import { Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Tldraw } from '@bigbluebutton/tldraw'
+import '@bigbluebutton/tldraw/tldraw.css'
 import jsonSnapshot from './snapshot.json'
 // ^^^
 // This snapshot was previously created with `editor.store.getSnapshot()`

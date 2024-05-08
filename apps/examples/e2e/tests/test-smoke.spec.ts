@@ -1,5 +1,5 @@
+import { Editor, TLGeoShape } from '@bigbluebutton/tldraw'
 import test, { expect } from '@playwright/test'
-import { Editor, TLGeoShape } from '@tldraw/tldraw'
 import { getAllShapeTypes, setup } from '../shared-e2e'
 
 export function sleep(ms: number) {

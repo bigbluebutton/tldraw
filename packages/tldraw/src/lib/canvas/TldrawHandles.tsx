@@ -1,4 +1,4 @@
-import { TLHandlesComponent, useEditor, useValue } from '@tldraw/editor'
+import { TLHandlesComponent, useEditor, useValue } from '@bigbluebutton/editor'
 
 /** @public */
 export const TldrawHandles: TLHandlesComponent = ({ children }) => {

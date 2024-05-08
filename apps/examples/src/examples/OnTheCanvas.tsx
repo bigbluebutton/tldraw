@@ -1,5 +1,11 @@
-import { stopEventPropagation, Tldraw, TLEditorComponents, track, useEditor } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import {
+	stopEventPropagation,
+	Tldraw,
+	TLEditorComponents,
+	track,
+	useEditor,
+} from '@bigbluebutton/tldraw'
+import '@bigbluebutton/tldraw/tldraw.css'
 import { useState } from 'react'
 
 // The "OnTheCanvas" component is rendered on top of the canvas, but behind the UI.

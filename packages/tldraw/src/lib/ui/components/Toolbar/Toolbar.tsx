@@ -1,4 +1,4 @@
-import { GeoShapeGeoStyle, preventDefault, track, useEditor, useValue } from '@tldraw/editor'
+import { GeoShapeGeoStyle, preventDefault, track, useEditor, useValue } from '@bigbluebutton/editor'
 import classNames from 'classnames'
 import React, { memo } from 'react'
 import { useBreakpoint } from '../../hooks/useBreakpoint'

@@ -21,7 +21,7 @@ import {
 	getIndices,
 	isShapeId,
 	uniqueId,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 /**
  * When the clipboard has excalidraw content, paste it into the scene.

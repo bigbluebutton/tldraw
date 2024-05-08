@@ -1,6 +1,6 @@
-import { SerializedStore, Store, StoreSnapshot } from '@tldraw/store'
-import { TLRecord, TLStore } from '@tldraw/tlschema'
-import { Required, annotateError } from '@tldraw/utils'
+import { SerializedStore, Store, StoreSnapshot } from '@bigbluebutton/store'
+import { TLRecord, TLStore } from '@bigbluebutton/tlschema'
+import { Required, annotateError } from '@bigbluebutton/utils'
 import React, {
 	memo,
 	useCallback,
@@ -39,7 +39,7 @@ import { stopEventPropagation } from './utils/dom'
 import { TLStoreWithStatus } from './utils/sync/StoreWithStatus'
 
 /**
- * Props for the {@link @tldraw/tldraw#Tldraw} and {@link TldrawEditor} components.
+ * Props for the {@link @bigbluebutton/tldraw#Tldraw} and {@link TldrawEditor} components.
  *
  * @public
  **/
@@ -59,7 +59,7 @@ export type TldrawEditorProps = TldrawEditorBaseProps &
 	)
 
 /**
- * Base props for the {@link @tldraw/tldraw#Tldraw} and {@link TldrawEditor} components.
+ * Base props for the {@link @bigbluebutton/tldraw#Tldraw} and {@link TldrawEditor} components.
  *
  * @public
  */
@@ -150,9 +150,9 @@ export const TldrawEditor = memo(function TldrawEditor({
 	const ErrorFallback =
 		components?.ErrorFallback === undefined ? DefaultErrorFallback : components?.ErrorFallback
 
-	// apply defaults. if you're using the bare @tldraw/editor package, we
+	// apply defaults. if you're using the bare @bigbluebutton/editor package, we
 	// default these to the "tldraw zero" configuration. We have different
-	// defaults applied in @tldraw/tldraw.
+	// defaults applied in @bigbluebutton/tldraw.
 	const withDefaults = {
 		...rest,
 		shapeUtils: rest.shapeUtils ?? EMPTY_SHAPE_UTILS_ARRAY,

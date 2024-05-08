@@ -1,7 +1,7 @@
-import { atom } from '@tldraw/state'
-import { defineMigrations, migrate } from '@tldraw/store'
-import { getDefaultTranslationLocale } from '@tldraw/tlschema'
-import { T } from '@tldraw/validate'
+import { atom } from '@bigbluebutton/state'
+import { defineMigrations, migrate } from '@bigbluebutton/store'
+import { getDefaultTranslationLocale } from '@bigbluebutton/tlschema'
+import { T } from '@bigbluebutton/validate'
 import { uniqueId } from '../utils/uniqueId'
 
 const USER_DATA_KEY = 'TLDRAW_USER_DATA_v3'

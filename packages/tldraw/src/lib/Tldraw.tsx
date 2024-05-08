@@ -15,7 +15,7 @@ import {
 	useEditor,
 	useShallowArrayIdentity,
 	useShallowObjectIdentity,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { useCallback, useDebugValue, useLayoutEffect, useMemo, useRef } from 'react'
 import { TldrawHandles } from './canvas/TldrawHandles'
 import { TldrawHoveredShapeIndicator } from './canvas/TldrawHoveredShapeIndicator'

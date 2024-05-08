@@ -5,11 +5,11 @@
 To run the benchmarks
 
 ```
-yarn workspace @tldraw/tldraw benchmark
+yarn workspace @bigbluebutton/tldraw benchmark
 ```
 
 Or
 
 ```
-yarn workspace @tldraw/tldraw benchmark "file_search_string"
+yarn workspace @bigbluebutton/tldraw benchmark "file_search_string"
 ```

@@ -1,4 +1,4 @@
-import { T } from '@tldraw/validate'
+import { T } from '@bigbluebutton/validate'
 import { StyleProp } from './StyleProp'
 
 /** @public */

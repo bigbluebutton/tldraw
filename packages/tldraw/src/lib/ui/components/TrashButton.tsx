@@ -1,4 +1,4 @@
-import { track, useEditor } from '@tldraw/editor'
+import { track, useEditor } from '@bigbluebutton/editor'
 import { useActions } from '../hooks/useActions'
 import { useReadonly } from '../hooks/useReadonly'
 import { useTranslation } from '../hooks/useTranslation/useTranslation'

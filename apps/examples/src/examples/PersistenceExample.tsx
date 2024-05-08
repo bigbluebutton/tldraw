@@ -1,5 +1,5 @@
-import { Tldraw, createTLStore, defaultShapeUtils, throttle } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Tldraw, createTLStore, defaultShapeUtils, throttle } from '@bigbluebutton/tldraw'
+import '@bigbluebutton/tldraw/tldraw.css'
 import { useLayoutEffect, useState } from 'react'
 
 const PERSISTENCE_KEY = 'example-3'

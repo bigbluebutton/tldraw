@@ -1,4 +1,4 @@
-import { Editor, objectMapEntries } from '@tldraw/editor'
+import { Editor, objectMapEntries } from '@bigbluebutton/editor'
 import { useMemo } from 'react'
 import { ActionsProviderProps } from './hooks/useActions'
 import { ActionsMenuSchemaProviderProps } from './hooks/useActionsMenuSchema'

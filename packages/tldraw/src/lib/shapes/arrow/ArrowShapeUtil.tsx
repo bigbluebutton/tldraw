@@ -34,7 +34,7 @@ import {
 	getStraightArrowHandlePath,
 	toDomPrecision,
 	useIsEditing,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import React from 'react'
 import { ShapeFill, getShapeFillSvg, useDefaultColorTheme } from '../shared/ShapeFill'
 import { createTextSvgElementFromSpans } from '../shared/createTextSvgElementFromSpans'

@@ -1,4 +1,4 @@
-# @tldraw/vscode-editor
+# @bigbluebutton/vscode-editor
 
 ## 1.13.1-alpha.0
 

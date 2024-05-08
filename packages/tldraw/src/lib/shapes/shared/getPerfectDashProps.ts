@@ -1,4 +1,4 @@
-import { TLDefaultDashStyle } from '@tldraw/editor'
+import { TLDefaultDashStyle } from '@bigbluebutton/editor'
 
 export function getPerfectDashProps(
 	totalLength: number,

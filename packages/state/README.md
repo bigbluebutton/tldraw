@@ -1,3 +1,3 @@
-# @tldraw/state
+# @bigbluebutton/state
 
 ...

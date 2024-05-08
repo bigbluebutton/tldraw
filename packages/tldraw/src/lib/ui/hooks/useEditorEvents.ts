@@ -1,4 +1,4 @@
-import { useEditor } from '@tldraw/editor'
+import { useEditor } from '@bigbluebutton/editor'
 import { useEffect } from 'react'
 import { useToasts } from './useToastsProvider'
 

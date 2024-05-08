@@ -70,12 +70,12 @@
 
 #### tldraw zero - package shuffle ([#1710](https://github.com/tldraw/tldraw/pull/1710))
 
-- [@tldraw/editor] lots, wip
-- [@tldraw/ui] gone, merged to tldraw/tldraw
-- [@tldraw/polyfills] gone, merged to tldraw/editor
-- [@tldraw/primitives] gone, merged to tldraw/editor / tldraw/tldraw
-- [@tldraw/indices] gone, merged to tldraw/editor
-- [@tldraw/file-format] gone, merged to tldraw/tldraw
+- [@bigbluebutton/editor] lots, wip
+- [@bigbluebutton/ui] gone, merged to tldraw/tldraw
+- [@bigbluebutton/polyfills] gone, merged to tldraw/editor
+- [@bigbluebutton/primitives] gone, merged to tldraw/editor / tldraw/tldraw
+- [@bigbluebutton/indices] gone, merged to tldraw/editor
+- [@bigbluebutton/file-format] gone, merged to tldraw/tldraw
 
 ---
 
@@ -108,7 +108,7 @@
 
 #### [fix] mutating `snapshot` in `migrateStoreSnapshot` ([#1663](https://github.com/tldraw/tldraw/pull/1663))
 
-- [@tldraw/store] Fixed a bug that would cause `Store.migrateStoreSnapshot` to mutate its `snapshot` argument.
+- [@bigbluebutton/store] Fixed a bug that would cause `Store.migrateStoreSnapshot` to mutate its `snapshot` argument.
 
 ---
 
@@ -138,7 +138,7 @@
 
 #### Rename tlstore to store ([#1507](https://github.com/tldraw/tldraw/pull/1507))
 
-- Replace @tldraw/tlstore with @tldraw/store
+- Replace @bigbluebutton/tlstore with @bigbluebutton/store
 
 ---
 
@@ -156,7 +156,7 @@
 
 #### 🔩 Dependency Updates
 
-- Incorporate signia as @tldraw/state [#1620](https://github.com/tldraw/tldraw/pull/1620) ([@steveruizok](https://github.com/steveruizok) [@ds300](https://github.com/ds300))
+- Incorporate signia as @bigbluebutton/state [#1620](https://github.com/tldraw/tldraw/pull/1620) ([@steveruizok](https://github.com/steveruizok) [@ds300](https://github.com/ds300))
 
 #### Authors: 2
 
@@ -197,7 +197,7 @@
 
 ---
 
-# @tldraw/tlstore
+# @bigbluebutton/tlstore
 
 ## 2.0.0-alpha.11
 
@@ -205,7 +205,7 @@
 
 - fix some package build scripting
 - Updated dependencies
-  - @tldraw/utils@2.0.0-alpha.10
+  - @bigbluebutton/utils@2.0.0-alpha.10
 
 ## 2.0.0-alpha.10
 
@@ -213,7 +213,7 @@
 
 - 4b4399b6e: redeploy with yarn to prevent package version issues
 - Updated dependencies [4b4399b6e]
-  - @tldraw/utils@2.0.0-alpha.9
+  - @bigbluebutton/utils@2.0.0-alpha.9
 
 ## 2.0.0-alpha.9
 
@@ -221,7 +221,7 @@
 
 - Release day!
 - Updated dependencies
-  - @tldraw/utils@2.0.0-alpha.8
+  - @bigbluebutton/utils@2.0.0-alpha.8
 
 ## 2.0.0-alpha.8
 
@@ -235,7 +235,7 @@
 
 - Bug fixes.
 - Updated dependencies
-  - @tldraw/utils@2.0.0-alpha.7
+  - @bigbluebutton/utils@2.0.0-alpha.7
 
 ## 2.0.0-alpha.6
 
@@ -243,7 +243,7 @@
 
 - Add licenses.
 - Updated dependencies
-  - @tldraw/utils@2.0.0-alpha.6
+  - @bigbluebutton/utils@2.0.0-alpha.6
 
 ## 2.0.0-alpha.5
 
@@ -251,7 +251,7 @@
 
 - Add CSS files to tldraw/tldraw.
 - Updated dependencies
-  - @tldraw/utils@2.0.0-alpha.5
+  - @bigbluebutton/utils@2.0.0-alpha.5
 
 ## 2.0.0-alpha.4
 
@@ -259,7 +259,7 @@
 
 - Add children to tldraw/tldraw
 - Updated dependencies
-  - @tldraw/utils@2.0.0-alpha.4
+  - @bigbluebutton/utils@2.0.0-alpha.4
 
 ## 2.0.0-alpha.3
 
@@ -267,7 +267,7 @@
 
 - Change permissions.
 - Updated dependencies
-  - @tldraw/utils@2.0.0-alpha.3
+  - @bigbluebutton/utils@2.0.0-alpha.3
 
 ## 2.0.0-alpha.2
 
@@ -275,7 +275,7 @@
 
 - Add tldraw, editor
 - Updated dependencies
-  - @tldraw/utils@2.0.0-alpha.2
+  - @bigbluebutton/utils@2.0.0-alpha.2
 
 ## 0.1.0-alpha.11
 
@@ -283,7 +283,7 @@
 
 - Fix stale reactors.
 - Updated dependencies
-  - @tldraw/utils@0.1.0-alpha.11
+  - @bigbluebutton/utils@0.1.0-alpha.11
 
 ## 0.1.0-alpha.10
 
@@ -291,7 +291,7 @@
 
 - Fix type export bug.
 - Updated dependencies
-  - @tldraw/utils@0.1.0-alpha.10
+  - @bigbluebutton/utils@0.1.0-alpha.10
 
 ## 0.1.0-alpha.9
 
@@ -299,7 +299,7 @@
 
 - Fix import bugs.
 - Updated dependencies
-  - @tldraw/utils@0.1.0-alpha.9
+  - @bigbluebutton/utils@0.1.0-alpha.9
 
 ## 0.1.0-alpha.8
 
@@ -307,7 +307,7 @@
 
 - Changes validation requirements, exports validation helpers.
 - Updated dependencies
-  - @tldraw/utils@0.1.0-alpha.8
+  - @bigbluebutton/utils@0.1.0-alpha.8
 
 ## 0.1.0-alpha.7
 
@@ -315,7 +315,7 @@
 
 - - Pre-pre-release update
 - Updated dependencies
-  - @tldraw/utils@0.1.0-alpha.7
+  - @bigbluebutton/utils@0.1.0-alpha.7
 
 ## 0.0.2-alpha.1
 
@@ -323,7 +323,7 @@
 
 - Fix error with HMR
 - Updated dependencies
-  - @tldraw/utils@0.0.2-alpha.1
+  - @bigbluebutton/utils@0.0.2-alpha.1
 
 ## 0.0.2-alpha.0
 
@@ -331,4 +331,4 @@
 
 - Initial release
 - Updated dependencies
-  - @tldraw/utils@0.0.2-alpha.0
+  - @bigbluebutton/utils@0.0.2-alpha.0

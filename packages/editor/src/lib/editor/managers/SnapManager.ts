@@ -1,6 +1,6 @@
-import { atom, computed, EMPTY_ARRAY } from '@tldraw/state'
-import { TLGroupShape, TLParentId, TLShape, TLShapeId, Vec2dModel } from '@tldraw/tlschema'
-import { dedupe, deepCopy, warnDeprecatedGetter } from '@tldraw/utils'
+import { atom, computed, EMPTY_ARRAY } from '@bigbluebutton/state'
+import { TLGroupShape, TLParentId, TLShape, TLShapeId, Vec2dModel } from '@bigbluebutton/tlschema'
+import { dedupe, deepCopy, warnDeprecatedGetter } from '@bigbluebutton/utils'
 import {
 	Box2d,
 	flipSelectionHandleX,

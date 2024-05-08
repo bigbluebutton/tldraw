@@ -1,11 +1,11 @@
 {
-	"name": "@tldraw/editor",
+	"name": "@bigbluebutton/editor",
 	"description": "A tiny little drawing app (editor).",
 	"version": "2.0.0-alpha.19",
 	"packageManager": "yarn@3.5.0",
 	"author": {
 		"name": "tldraw GB Ltd.",
-		"email": "hello@tldraw.com"
+		"email": "hello@bigbluebutton.com"
 	},
 	"homepage": "https://tldraw.dev",
 	"license": "Apache-2.0",
@@ -45,11 +45,11 @@
 		"lint": "yarn run -T tsx ../../scripts/lint.ts"
 	},
 	"dependencies": {
-		"@tldraw/state": "workspace:*",
-		"@tldraw/store": "workspace:*",
-		"@tldraw/tlschema": "workspace:*",
-		"@tldraw/utils": "workspace:*",
-		"@tldraw/validate": "workspace:*",
+		"@bigbluebutton/state": "2.0.0-alpha.19",
+		"@bigbluebutton/store": "2.0.0-alpha.19",
+		"@bigbluebutton/tlschema": "2.0.0-alpha.19",
+		"@bigbluebutton/utils": "2.0.0-alpha.19",
+		"@bigbluebutton/validate": "2.0.0-alpha.19",
 		"@types/core-js": "^2.5.5",
 		"@use-gesture/react": "^10.2.27",
 		"classnames": "^2.3.2",

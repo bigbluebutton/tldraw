@@ -1,4 +1,4 @@
-import { react } from '@tldraw/state'
+import { react } from '@bigbluebutton/state'
 import * as React from 'react'
 import { useContainer } from './useContainer'
 import { useEditor } from './useEditor'

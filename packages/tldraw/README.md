@@ -5,7 +5,7 @@
 	</picture>
 </div>
 
-# @tldraw/tldraw
+# @bigbluebutton/tldraw
 
 This is the pre-release version of [tldraw](https://github.com/tldraw/tldraw).
 
@@ -13,14 +13,14 @@ See the pre-release docs at [canary.tldraw.dev](https://canary.tldraw.com).
 
 ## Installation
 
-Install the `@tldraw/tldraw` package using `@canary` for the latest canary release. (Or `@alpha` for the latest alpha release.)
+Install the `@bigbluebutton/tldraw` package using `@canary` for the latest canary release. (Or `@alpha` for the latest alpha release.)
 
 ```bash
-yarn add @tldraw/tldraw@canary
+yarn add @bigbluebutton/tldraw@canary
 # or
-npm install @tldraw/tldraw@canary
+npm install @bigbluebutton/tldraw@canary
 # or
-pnpm i @tldraw/tldraw@canary
+pnpm i @bigbluebutton/tldraw@canary
 ```
 
 Then start the local development server.
@@ -38,8 +38,8 @@ pnpm dev
 An extremely minimal usage (without our UI) might look like this:
 
 ```tsx
-import { Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { Tldraw } from '@bigbluebutton/tldraw'
+import '@bigbluebutton/tldraw/tldraw.css'
 
 export default function () {
 	return <Tldraw />
@@ -50,4 +50,4 @@ See the [examples folder](https://github.com/tldraw/tldraw/tree/main/apps/exampl
 
 ## License
 
-The source code in this repository (as well as our 2.0+ distributions and releases) are currently licensed under Apache-2.0. These licenses are subject to change in our upcoming 2.0 release. If you are planning to use tldraw in a commercial product, please reach out at [hello@tldraw.com](mailto://hello@tldraw.com).
+The source code in this repository (as well as our 2.0+ distributions and releases) are currently licensed under Apache-2.0. These licenses are subject to change in our upcoming 2.0 release. If you are planning to use tldraw in a commercial product, please reach out at [hello@bigbluebutton.com](mailto://hello@bigbluebutton.com).

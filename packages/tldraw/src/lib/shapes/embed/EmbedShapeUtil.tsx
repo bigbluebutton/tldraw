@@ -13,7 +13,7 @@ import {
 	toDomPrecision,
 	useIsEditing,
 	useValue,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { useMemo } from 'react'
 import { getEmbedInfo, getEmbedInfoUnsafely } from '../../utils/embeds/embeds'
 import { resizeBox } from '../shared/resizeBox'

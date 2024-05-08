@@ -14,7 +14,7 @@ import {
 	highlightShapeProps,
 	last,
 	rng,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { getHighlightFreehandSettings, getPointsFromSegments } from '../draw/getPath'
 import { useDefaultColorTheme } from '../shared/ShapeFill'
 import { FONT_SIZES } from '../shared/default-shape-constants'

@@ -1,4 +1,4 @@
-import { T } from '@tldraw/validate'
+import { T } from '@bigbluebutton/validate'
 
 /** @public */
 export type TLOpacityType = number

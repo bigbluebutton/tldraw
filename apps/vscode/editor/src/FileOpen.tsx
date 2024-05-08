@@ -1,4 +1,4 @@
-import { parseAndLoadDocument, useDefaultHelpers, useEditor } from '@tldraw/tldraw'
+import { parseAndLoadDocument, useDefaultHelpers, useEditor } from '@bigbluebutton/tldraw'
 import React from 'react'
 import { vscode } from './utils/vscode'
 

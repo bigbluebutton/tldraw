@@ -1,5 +1,5 @@
-import { EMPTY_ARRAY, atom, computed, transact } from '@tldraw/state'
-import { ComputedCache, RecordType } from '@tldraw/store'
+import { EMPTY_ARRAY, atom, computed, transact } from '@bigbluebutton/state'
+import { ComputedCache, RecordType } from '@bigbluebutton/store'
 import {
 	CameraRecordType,
 	InstancePageStateRecordType,
@@ -37,7 +37,7 @@ import {
 	isPageId,
 	isShape,
 	isShapeId,
-} from '@tldraw/tlschema'
+} from '@bigbluebutton/tlschema'
 import {
 	JsonObject,
 	annotateError,
@@ -50,7 +50,7 @@ import {
 	sortById,
 	structuredClone,
 	warnDeprecatedGetter,
-} from '@tldraw/utils'
+} from '@bigbluebutton/utils'
 import { EventEmitter } from 'eventemitter3'
 import { TLUser, createTLUser } from '../config/createTLUser'
 import { checkShapesAndAddCore } from '../config/defaultShapes'
@@ -7801,7 +7801,7 @@ export class Editor extends EventEmitter<TLEventMap> {
 	}
 
 	/**
-	 * Set the value of a {@link @tldraw/tlschema#StyleProp} for the selected shapes.
+	 * Set the value of a {@link @bigbluebutton/tlschema#StyleProp} for the selected shapes.
 	 *
 	 * @example
 	 * ```ts
@@ -7831,7 +7831,7 @@ export class Editor extends EventEmitter<TLEventMap> {
 	}
 
 	/**
-	 * Set the value of a {@link @tldraw/tlschema#StyleProp}. This change will be applied to the currently selected shapes.
+	 * Set the value of a {@link @bigbluebutton/tlschema#StyleProp}. This change will be applied to the currently selected shapes.
 	 *
 	 * @example
 	 * ```ts

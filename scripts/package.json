@@ -1,12 +1,12 @@
 {
-	"name": "@tldraw/scripts",
+	"name": "@bigbluebutton/scripts",
 	"description": "build scripts",
 	"version": "2.0.0-alpha.8",
 	"private": true,
 	"packageManager": "yarn@3.5.0",
 	"author": {
 		"name": "tldraw GB Ltd.",
-		"email": "hello@tldraw.com"
+		"email": "hello@bigbluebutton.com"
 	},
 	"homepage": "https://tldraw.dev",
 	"license": "Apache-2.0",

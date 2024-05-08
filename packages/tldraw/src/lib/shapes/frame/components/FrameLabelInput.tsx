@@ -1,4 +1,4 @@
-import { TLFrameShape, TLShapeId, stopEventPropagation, useEditor } from '@tldraw/editor'
+import { TLFrameShape, TLShapeId, stopEventPropagation, useEditor } from '@bigbluebutton/editor'
 import { forwardRef, useCallback } from 'react'
 import { defaultEmptyAs } from '../FrameShapeUtil'
 

@@ -51,12 +51,12 @@
 
 #### tldraw zero - package shuffle ([#1710](https://github.com/tldraw/tldraw/pull/1710))
 
-- [@tldraw/editor] lots, wip
-- [@tldraw/ui] gone, merged to tldraw/tldraw
-- [@tldraw/polyfills] gone, merged to tldraw/editor
-- [@tldraw/primitives] gone, merged to tldraw/editor / tldraw/tldraw
-- [@tldraw/indices] gone, merged to tldraw/editor
-- [@tldraw/file-format] gone, merged to tldraw/tldraw
+- [@bigbluebutton/editor] lots, wip
+- [@bigbluebutton/ui] gone, merged to tldraw/tldraw
+- [@bigbluebutton/polyfills] gone, merged to tldraw/editor
+- [@bigbluebutton/primitives] gone, merged to tldraw/editor / tldraw/tldraw
+- [@bigbluebutton/indices] gone, merged to tldraw/editor
+- [@bigbluebutton/file-format] gone, merged to tldraw/tldraw
 
 ---
 
@@ -108,10 +108,10 @@
 
 [internal only, covered by #1432 changelog]
 
-#### Create @tldraw/indices package ([#1426](https://github.com/tldraw/tldraw/pull/1426))
+#### Create @bigbluebutton/indices package ([#1426](https://github.com/tldraw/tldraw/pull/1426))
 
-- [@tldraw/editor] Remove fractional indices code into `@tldraw/indices`
-- [@tldraw/indices] Create library for fractional indices code
+- [@bigbluebutton/editor] Remove fractional indices code into `@bigbluebutton/indices`
+- [@bigbluebutton/indices] Create library for fractional indices code
 
 #### avoid lazy race conditions ([#1364](https://github.com/tldraw/tldraw/pull/1364))
 
@@ -127,7 +127,7 @@
 
 - Styles API [#1580](https://github.com/tldraw/tldraw/pull/1580) ([@SomeHats](https://github.com/SomeHats) [@steveruizok](https://github.com/steveruizok))
 - mini `defineShape` API [#1563](https://github.com/tldraw/tldraw/pull/1563) ([@SomeHats](https://github.com/SomeHats))
-- Create @tldraw/indices package [#1426](https://github.com/tldraw/tldraw/pull/1426) ([@steveruizok](https://github.com/steveruizok))
+- Create @bigbluebutton/indices package [#1426](https://github.com/tldraw/tldraw/pull/1426) ([@steveruizok](https://github.com/steveruizok))
 
 #### 🐛 Bug Fix
 
@@ -186,7 +186,7 @@
 
 ---
 
-# @tldraw/utils
+# @bigbluebutton/utils
 
 ## 2.0.0-alpha.10
 

@@ -1,4 +1,4 @@
-import { Editor } from '@tldraw/editor'
+import { Editor } from '@bigbluebutton/editor'
 
 export function getShouldEnterCropMode(editor: Editor): boolean {
 	const onlySelectedShape = editor.getOnlySelectedShape()

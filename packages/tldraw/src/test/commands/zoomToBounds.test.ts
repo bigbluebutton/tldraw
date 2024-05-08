@@ -1,4 +1,4 @@
-import { Box2d } from '@tldraw/editor'
+import { Box2d } from '@bigbluebutton/editor'
 import { TestEditor } from '../TestEditor'
 
 let editor: TestEditor
