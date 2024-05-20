@@ -1,7 +1,7 @@
 import { menuGroup, menuItem, TLUiOverrides } from '@bigbluebutton/tldraw'
 import { openUrl } from './openUrl'
 
-export const GITHUB_URL = 'https://github.com/tldraw/tldraw'
+export const GITHUB_URL = 'https://github.com/bigbluebutton/tldraw'
 
 const linksMenuGroup = menuGroup(
 	'links',

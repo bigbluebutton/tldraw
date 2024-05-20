@@ -1,19 +1,19 @@
 {
 	"name": "@bigbluebutton/assets",
-	"description": "A tiny little drawing app (assets).",
+	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 (Tldraw assets licensed under Apache 2.0)",
 	"version": "2.0.0-alpha.19",
 	"author": {
-		"name": "tldraw GB Ltd.",
-		"email": "hello@bigbluebutton.com"
+		"name": "BigBlueButton Inc.",
+		"email": "ffdixon@bigbluebutton.org"
 	},
-	"homepage": "https://tldraw.dev",
+	"homepage": "https://bigbluebutton.org/",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/bigbluebutton/tldraw"
 	},
 	"bugs": {
-		"url": "https://github.com/tldraw/tldraw/issues"
+		"url": "https://github.com/bigbluebutton/tldraw/issues"
 	},
 	"keywords": [
 		"tldraw",
