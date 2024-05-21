@@ -1,6 +1,6 @@
 {
 	"name": "@bigbluebutton/assets",
-	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 (which was licensed under Apache 2.0)",
+	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19",
 	"version": "2.0.0-alpha.19",
 	"author": {
 		"name": "tldraw GB Ltd.",
