@@ -1,13 +1,12 @@
 {
 	"name": "@bigbluebutton/tldraw",
-	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 (Tldraw packages licensed under Apache 2.0)",
+	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 (which was licensed under Apache 2.0)",
 	"version": "2.0.0-alpha.19",
 	"packageManager": "yarn@3.5.0",
 	"author": {
-		"name": "BigBlueButton Inc.",
-		"email": "ffdixon@bigbluebutton.org"
+		"name": "tldraw GB Ltd.",
+		"email": "hello@tldraw.com"
 	},
-	"homepage": "https://bigbluebutton.org/",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
@@ -16,15 +15,6 @@
 	"bugs": {
 		"url": "https://github.com/bigbluebutton/tldraw/issues"
 	},
-	"keywords": [
-		"tldraw",
-		"drawing",
-		"app",
-		"development",
-		"whiteboard",
-		"canvas",
-		"infinite"
-	],
 	"/* NOTE */": "These `main` and `types` fields are rewritten by the build script. They are not the actual values we publish",
 	"main": "./src/index.ts",
 	"types": "./.tsbuild/index.d.ts",

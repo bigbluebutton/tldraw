@@ -1,13 +1,12 @@
 {
 	"name": "@bigbluebutton/monorepo",
-	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 (Tldraw licensed under Apache 2.0)",
-	"version": "0.0.0",
+	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 (which was licensed under Apache 2.0)",
+	"version": "2.0.0",
 	"private": true,
 	"author": {
-		"name": "BigBlueButton Inc.",
-		"email": "ffdixon@bigbluebutton.org"
+		"name": "tldraw GB Ltd.",
+		"email": "hello@tldraw.com"
 	},
-	"homepage": "https://bigbluebutton.org/",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/bigbluebutton/tldraw"
@@ -16,15 +15,6 @@
 		"url": "https://github.com/bigbluebutton/tldraw/issues"
 	},
 	"license": "Apache-2.0",
-	"keywords": [
-		"tldraw",
-		"drawing",
-		"app",
-		"development",
-		"whiteboard",
-		"canvas",
-		"infinite"
-	],
 	"workspaces": [
 		"apps/*",
 		"packages/*",

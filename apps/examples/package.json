@@ -1,14 +1,13 @@
 {
 	"name": "examples.tldraw.com",
-	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 (Tldraw development licensed under Apache 2.0)",
+	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 (which was licensed under Apache 2.0)",
 	"version": "2.0.0-alpha.11",
 	"private": true,
 	"packageManager": "yarn@3.5.0",
 	"author": {
-		"name": "BigBlueButton Inc.",
-		"email": "ffdixon@bigbluebutton.org"
+		"name": "tldraw GB Ltd.",
+		"email": "hello@tldraw.com"
 	},
-	"homepage": "https://bigbluebutton.org/",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
@@ -17,15 +16,6 @@
 	"bugs": {
 		"url": "https://github.com/bigbluebutton/tldraw/issues"
 	},
-	"keywords": [
-		"tldraw",
-		"drawing",
-		"app",
-		"development",
-		"whiteboard",
-		"canvas",
-		"infinite"
-	],
 	"scripts": {
 		"dev": "vite --host",
 		"build": "vite build",
