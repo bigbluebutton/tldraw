@@ -1,5 +1,5 @@
-import { track } from '@tldraw/state'
-import { TLInstancePresence } from '@tldraw/tlschema'
+import { track } from '@bigbluebutton/state'
+import { TLInstancePresence } from '@bigbluebutton/tlschema'
 import { useEffect, useRef, useState } from 'react'
 import {
 	COLLABORATOR_CHECK_INTERVAL,

@@ -1,5 +1,5 @@
-import { createRecordType, defineMigrations, RecordId } from '@tldraw/store'
-import { T } from '@tldraw/validate'
+import { createRecordType, defineMigrations, RecordId } from '@bigbluebutton/store'
+import { T } from '@bigbluebutton/validate'
 import { TLBaseAsset } from '../assets/TLBaseAsset'
 import {
 	bookmarkAssetMigrations,

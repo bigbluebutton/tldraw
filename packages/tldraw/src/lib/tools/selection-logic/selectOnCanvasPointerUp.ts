@@ -1,4 +1,4 @@
-import { Editor, HIT_TEST_MARGIN, TLShape, isShapeId } from '@tldraw/editor'
+import { Editor, HIT_TEST_MARGIN, TLShape, isShapeId } from '@bigbluebutton/editor'
 
 export function selectOnCanvasPointerUp(editor: Editor) {
 	const selectedShapeIds = editor.getSelectedShapeIds()

@@ -1,4 +1,4 @@
-import { TLFrameShape, TLGeoShape, approximately, createShapeId } from '@tldraw/editor'
+import { TLFrameShape, TLGeoShape, approximately, createShapeId } from '@bigbluebutton/editor'
 import { TestEditor } from './TestEditor'
 
 let editor: TestEditor

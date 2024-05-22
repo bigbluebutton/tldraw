@@ -1,4 +1,4 @@
-import { track, useEditor } from '@tldraw/editor'
+import { track, useEditor } from '@bigbluebutton/editor'
 import * as React from 'react'
 import { useAssetUrls } from '../useAssetUrls'
 import { TLUiTranslationKey } from './TLUiTranslationKey'

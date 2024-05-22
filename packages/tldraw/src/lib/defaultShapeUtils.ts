@@ -1,4 +1,4 @@
-import { TLAnyShapeUtilConstructor } from '@tldraw/editor'
+import { TLAnyShapeUtilConstructor } from '@bigbluebutton/editor'
 import { ArrowShapeUtil } from './shapes/arrow/ArrowShapeUtil'
 import { BookmarkShapeUtil } from './shapes/bookmark/BookmarkShapeUtil'
 import { DrawShapeUtil } from './shapes/draw/DrawShapeUtil'

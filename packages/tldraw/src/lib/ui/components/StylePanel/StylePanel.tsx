@@ -15,7 +15,7 @@ import {
 	StyleProp,
 	minBy,
 	useEditor,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import React, { useCallback } from 'react'
 import { useRelevantStyles } from '../../hooks/useRevelantStyles'
 import { useTranslation } from '../../hooks/useTranslation/useTranslation'

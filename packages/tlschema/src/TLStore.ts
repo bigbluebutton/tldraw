@@ -4,8 +4,8 @@ import {
 	StoreSchema,
 	StoreSchemaOptions,
 	StoreSnapshot,
-} from '@tldraw/store'
-import { annotateError, structuredClone } from '@tldraw/utils'
+} from '@bigbluebutton/store'
+import { annotateError, structuredClone } from '@bigbluebutton/utils'
 import { CameraRecordType, TLCameraId } from './records/TLCamera'
 import { DocumentRecordType, TLDOCUMENT_ID } from './records/TLDocument'
 import { TLINSTANCE_ID } from './records/TLInstance'

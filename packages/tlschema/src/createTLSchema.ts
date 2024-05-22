@@ -1,5 +1,5 @@
-import { Migrations, StoreSchema } from '@tldraw/store'
-import { objectMapValues } from '@tldraw/utils'
+import { Migrations, StoreSchema } from '@bigbluebutton/store'
+import { objectMapValues } from '@bigbluebutton/utils'
 import { TLStoreProps, createIntegrityChecker, onValidationFailure } from './TLStore'
 import { AssetRecordType } from './records/TLAsset'
 import { CameraRecordType } from './records/TLCamera'

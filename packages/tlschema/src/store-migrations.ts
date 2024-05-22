@@ -1,4 +1,4 @@
-import { defineMigrations, SerializedStore } from '@tldraw/store'
+import { defineMigrations, SerializedStore } from '@bigbluebutton/store'
 import { TLRecord } from './records/TLRecord'
 
 const Versions = {

@@ -1,4 +1,4 @@
-import { EMBED_DEFINITIONS, LANGUAGES, RecursivePartial } from '@tldraw/editor'
+import { EMBED_DEFINITIONS, LANGUAGES, RecursivePartial } from '@bigbluebutton/editor'
 import { version } from '../ui/version'
 import { TLEditorAssetUrls, defaultEditorAssetUrls } from '../utils/static-assets/assetUrls'
 import { TLUiIconType, iconTypes } from './icon-types'
@@ -17,19 +17,19 @@ export let defaultUiAssetUrls: TLUiAssetUrls = {
 	icons: Object.fromEntries(
 		iconTypes.map((name) => [
 			name,
-			`https://unpkg.com/@tldraw/assets@${version}/icons/icon/${name}.svg`,
+			`https://unpkg.com/@bigbluebutton/assets@${version}/icons/icon/${name}.svg`,
 		])
 	) as Record<TLUiIconType, string>,
 	translations: Object.fromEntries(
 		LANGUAGES.map((lang) => [
 			lang.locale,
-			`https://unpkg.com/@tldraw/assets@${version}/translations/${lang.locale}.json`,
+			`https://unpkg.com/@bigbluebutton/assets@${version}/translations/${lang.locale}.json`,
 		])
 	) as Record<(typeof LANGUAGES)[number]['locale'], string>,
 	embedIcons: Object.fromEntries(
 		EMBED_DEFINITIONS.map((def) => [
 			def.type,
-			`https://unpkg.com/@tldraw/assets@${version}/embed-icons/${def.type}.png`,
+			`https://unpkg.com/@bigbluebutton/assets@${version}/embed-icons/${def.type}.png`,
 		])
 	) as Record<(typeof EMBED_DEFINITIONS)[number]['type'], string>,
 }

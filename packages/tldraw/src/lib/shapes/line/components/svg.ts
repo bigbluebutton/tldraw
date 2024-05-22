@@ -5,7 +5,7 @@ import {
 	Polyline2d,
 	Vec2d,
 	toDomPrecision,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 export function getSvgPathForEdge(edge: Edge2d, first: boolean) {
 	const { start, end } = edge

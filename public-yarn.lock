@@ -1524,6 +1524,241 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bigbluebutton/assets@2.0.0-alpha.19, @bigbluebutton/assets@workspace:packages/assets":
+  version: 0.0.0-use.local
+  resolution: "@bigbluebutton/assets@workspace:packages/assets"
+  dependencies:
+    "@bigbluebutton/utils": 2.0.0-alpha.19
+    lazyrepo: 0.0.0-alpha.27
+    ts-node-dev: ^1.1.8
+  languageName: unknown
+  linkType: soft
+
+"@bigbluebutton/editor@2.0.0-alpha.19, @bigbluebutton/editor@workspace:packages/editor":
+  version: 0.0.0-use.local
+  resolution: "@bigbluebutton/editor@workspace:packages/editor"
+  dependencies:
+    "@bigbluebutton/state": 2.0.0-alpha.19
+    "@bigbluebutton/store": 2.0.0-alpha.19
+    "@bigbluebutton/tlschema": 2.0.0-alpha.19
+    "@bigbluebutton/utils": 2.0.0-alpha.19
+    "@bigbluebutton/validate": 2.0.0-alpha.19
+    "@peculiar/webcrypto": ^1.4.0
+    "@testing-library/jest-dom": ^5.16.5
+    "@testing-library/react": ^14.0.0
+    "@types/benchmark": ^2.1.2
+    "@types/core-js": ^2.5.5
+    "@types/lodash.throttle": ^4.1.7
+    "@types/lodash.uniq": ^4.5.7
+    "@types/react-test-renderer": ^18.0.0
+    "@types/wicg-file-system-access": ^2020.9.5
+    "@use-gesture/react": ^10.2.27
+    benchmark: ^2.1.4
+    classnames: ^2.3.2
+    core-js: ^3.31.1
+    eventemitter3: ^4.0.7
+    fake-indexeddb: ^4.0.0
+    idb: ^7.1.1
+    is-plain-object: ^5.0.0
+    jest-canvas-mock: ^2.5.1
+    jest-environment-jsdom: ^29.4.3
+    lazyrepo: 0.0.0-alpha.27
+    lodash.throttle: ^4.1.1
+    lodash.uniq: ^4.5.0
+    nanoid: 4.0.2
+    react-test-renderer: ^18.2.0
+    resize-observer-polyfill: ^1.5.1
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+  languageName: unknown
+  linkType: soft
+
+"@bigbluebutton/monorepo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@bigbluebutton/monorepo@workspace:."
+  dependencies:
+    "@microsoft/api-extractor": ^7.35.4
+    "@next/eslint-plugin-next": ^13.3.0
+    "@swc/core": ^1.3.55
+    "@swc/jest": ^0.2.26
+    "@types/glob": ^8.1.0
+    "@types/jest": ^28.1.2
+    "@types/node": 18.7.3
+    "@types/react": ^18.0.24
+    "@types/react-dom": ^18.0.6
+    "@typescript-eslint/eslint-plugin": ^5.57.0
+    "@typescript-eslint/parser": ^5.57.0
+    auto: ^10.46.0
+    eslint: ^8.37.0
+    eslint-config-prettier: ^8.8.0
+    eslint-plugin-deprecation: ^2.0.0
+    eslint-plugin-import: ^2.27.5
+    eslint-plugin-local: ^1.0.0
+    eslint-plugin-no-only-tests: ^3.1.0
+    eslint-plugin-react: ^7.32.2
+    eslint-plugin-react-hooks: ^4.6.0
+    fs-extra: ^11.1.0
+    husky: ^8.0.0
+    jest: ^28.1.1
+    json5: ^2.2.3
+    lazyrepo: 0.0.0-alpha.27
+    lint-staged: ">=10"
+    prettier: ^2.8.6
+    prettier-plugin-organize-imports: ^3.2.2
+    rimraf: ^4.4.0
+    svgo: ^3.0.2
+    tsx: ^3.12.7
+    typescript: ^5.0.2
+    vercel: ^28.16.15
+  languageName: unknown
+  linkType: soft
+
+"@bigbluebutton/scripts@workspace:scripts":
+  version: 0.0.0-use.local
+  resolution: "@bigbluebutton/scripts@workspace:scripts"
+  dependencies:
+    "@auto-it/core": ^10.45.0
+    "@types/is-ci": ^3.0.0
+    "@types/node": ^18.13.0
+    "@typescript-eslint/utils": ^5.59.0
+    ast-types: ^0.14.2
+    cross-fetch: ^3.1.5
+    esbuild: ^0.18.4
+    glob: ^8.0.3
+    gray-matter: ^4.0.3
+    ignore: ^5.2.4
+    is-ci: ^3.0.1
+    kleur: ^4.1.5
+    lazyrepo: 0.0.0-alpha.27
+    prettier: ^2.8.7
+    recast: ^0.22.0
+    rimraf: ^4.4.0
+    semver: ^7.3.8
+    svgo: ^3.0.2
+    typescript: ^4.5.2
+  languageName: unknown
+  linkType: soft
+
+"@bigbluebutton/state@2.0.0-alpha.19, @bigbluebutton/state@workspace:packages/state":
+  version: 0.0.0-use.local
+  resolution: "@bigbluebutton/state@workspace:packages/state"
+  dependencies:
+    "@types/lodash": ^4.14.188
+    "@types/react": ^18.0.24
+    "@types/react-test-renderer": ^18.0.0
+    lodash: ^4.17.21
+    react-test-renderer: ^18.2.0
+  peerDependencies:
+    react: ^18
+  languageName: unknown
+  linkType: soft
+
+"@bigbluebutton/store@2.0.0-alpha.19, @bigbluebutton/store@workspace:packages/store":
+  version: 0.0.0-use.local
+  resolution: "@bigbluebutton/store@workspace:packages/store"
+  dependencies:
+    "@bigbluebutton/state": 2.0.0-alpha.19
+    "@bigbluebutton/utils": 2.0.0-alpha.19
+    "@peculiar/webcrypto": ^1.4.0
+    "@types/lodash.isequal": ^4.5.6
+    lazyrepo: 0.0.0-alpha.27
+    lodash.isequal: ^4.5.0
+    nanoid: 4.0.2
+    raf: ^3.4.1
+  languageName: unknown
+  linkType: soft
+
+"@bigbluebutton/tldraw@2.0.0-alpha.19, @bigbluebutton/tldraw@workspace:packages/tldraw":
+  version: 0.0.0-use.local
+  resolution: "@bigbluebutton/tldraw@workspace:packages/tldraw"
+  dependencies:
+    "@bigbluebutton/editor": 2.0.0-alpha.19
+    "@peculiar/webcrypto": ^1.4.0
+    "@radix-ui/react-alert-dialog": ^1.0.0
+    "@radix-ui/react-context-menu": ^2.1.5
+    "@radix-ui/react-dialog": ^1.0.5
+    "@radix-ui/react-dropdown-menu": ^2.0.6
+    "@radix-ui/react-popover": ^1.0.7
+    "@radix-ui/react-select": ^1.2.0
+    "@radix-ui/react-slider": ^1.1.0
+    "@radix-ui/react-toast": ^1.1.1
+    "@testing-library/jest-dom": ^5.14.1
+    "@testing-library/react": ^14.0.0
+    "@types/canvas-size": ^1.2.0
+    "@types/classnames": ^2.3.1
+    "@types/downscale": ^1.0.4
+    "@types/lz-string": ^1.3.34
+    canvas-size: ^1.2.6
+    chokidar-cli: ^3.0.0
+    classnames: ^2.3.2
+    downscale: ^1.0.6
+    hotkeys-js: ^3.11.2
+    jest-canvas-mock: ^2.5.2
+    jest-environment-jsdom: ^28.1.2
+    lazyrepo: 0.0.0-alpha.27
+    lz-string: ^1.4.4
+    resize-observer-polyfill: ^1.5.1
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+  languageName: unknown
+  linkType: soft
+
+"@bigbluebutton/tlschema@2.0.0-alpha.19, @bigbluebutton/tlschema@workspace:packages/tlschema":
+  version: 0.0.0-use.local
+  resolution: "@bigbluebutton/tlschema@workspace:packages/tlschema"
+  dependencies:
+    "@bigbluebutton/state": 2.0.0-alpha.19
+    "@bigbluebutton/store": 2.0.0-alpha.19
+    "@bigbluebutton/utils": 2.0.0-alpha.19
+    "@bigbluebutton/validate": 2.0.0-alpha.19
+    kleur: ^4.1.5
+    lazyrepo: 0.0.0-alpha.27
+    nanoid: 4.0.2
+  languageName: unknown
+  linkType: soft
+
+"@bigbluebutton/utils@2.0.0-alpha.19, @bigbluebutton/utils@workspace:packages/utils":
+  version: 0.0.0-use.local
+  resolution: "@bigbluebutton/utils@workspace:packages/utils"
+  dependencies:
+    lazyrepo: 0.0.0-alpha.27
+  languageName: unknown
+  linkType: soft
+
+"@bigbluebutton/validate@2.0.0-alpha.19, @bigbluebutton/validate@workspace:packages/validate":
+  version: 0.0.0-use.local
+  resolution: "@bigbluebutton/validate@workspace:packages/validate"
+  dependencies:
+    "@bigbluebutton/utils": 2.0.0-alpha.19
+    lazyrepo: 0.0.0-alpha.27
+  languageName: unknown
+  linkType: soft
+
+"@bigbluebutton/vscode-editor@workspace:apps/vscode/editor":
+  version: 0.0.0-use.local
+  resolution: "@bigbluebutton/vscode-editor@workspace:apps/vscode/editor"
+  dependencies:
+    "@bigbluebutton/assets": 2.0.0-alpha.19
+    "@bigbluebutton/tldraw": 2.0.0-alpha.19
+    "@types/fs-extra": ^11.0.1
+    "@types/node": ^17.0.14
+    "@types/react": ^18.0.24
+    "@types/react-dom": ^18.0.6
+    "@types/react-router-dom": ^5.1.8
+    concurrently: 7.0.0
+    create-serve: 1.0.1
+    dotenv: ^16.0.3
+    esbuild: ^0.18.4
+    fs-extra: ^11.1.0
+    lazyrepo: 0.0.0-alpha.27
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    tslib: ^2.4.0
+  languageName: unknown
+  linkType: soft
+
 "@cspotcode/source-map-support@npm:^0.8.0":
   version: 0.8.1
   resolution: "@cspotcode/source-map-support@npm:0.8.1"
@@ -2802,9 +3037,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@microsoft/api-extractor@patch:@microsoft/api-extractor@npm%3A7.35.4#./.yarn/patches/@microsoft-api-extractor-npm-7.35.4-5f4f0357b4.patch::locator=%40tldraw%2Fmonorepo%40workspace%3A.":
+"@microsoft/api-extractor@patch:@microsoft/api-extractor@npm%3A7.35.4#./.yarn/patches/@microsoft-api-extractor-npm-7.35.4-5f4f0357b4.patch::locator=%40bigbluebutton%2Fmonorepo%40workspace%3A.":
   version: 7.35.4
-  resolution: "@microsoft/api-extractor@patch:@microsoft/api-extractor@npm%3A7.35.4#./.yarn/patches/@microsoft-api-extractor-npm-7.35.4-5f4f0357b4.patch::version=7.35.4&hash=290713&locator=%40tldraw%2Fmonorepo%40workspace%3A."
+  resolution: "@microsoft/api-extractor@patch:@microsoft/api-extractor@npm%3A7.35.4#./.yarn/patches/@microsoft-api-extractor-npm-7.35.4-5f4f0357b4.patch::version=7.35.4&hash=290713&locator=%40bigbluebutton%2Fmonorepo%40workspace%3A."
   dependencies:
     "@microsoft/api-extractor-model": 7.27.3
     "@microsoft/tsdoc": 0.14.2
@@ -4398,241 +4633,6 @@ __metadata:
   checksum: 4a54c8f56cc4a39b50803205f84f06280bb76521d6d5d4b3b36651d760c7c7752ef142d857d52aaf4fad4848ed7a8be49afc793a5dda105955d2f8bef24901ac
   languageName: node
   linkType: hard
-
-"@tldraw/assets@workspace:*, @tldraw/assets@workspace:packages/assets":
-  version: 0.0.0-use.local
-  resolution: "@tldraw/assets@workspace:packages/assets"
-  dependencies:
-    "@tldraw/utils": "workspace:*"
-    lazyrepo: 0.0.0-alpha.27
-    ts-node-dev: ^1.1.8
-  languageName: unknown
-  linkType: soft
-
-"@tldraw/editor@workspace:*, @tldraw/editor@workspace:packages/editor":
-  version: 0.0.0-use.local
-  resolution: "@tldraw/editor@workspace:packages/editor"
-  dependencies:
-    "@peculiar/webcrypto": ^1.4.0
-    "@testing-library/jest-dom": ^5.16.5
-    "@testing-library/react": ^14.0.0
-    "@tldraw/state": "workspace:*"
-    "@tldraw/store": "workspace:*"
-    "@tldraw/tlschema": "workspace:*"
-    "@tldraw/utils": "workspace:*"
-    "@tldraw/validate": "workspace:*"
-    "@types/benchmark": ^2.1.2
-    "@types/core-js": ^2.5.5
-    "@types/lodash.throttle": ^4.1.7
-    "@types/lodash.uniq": ^4.5.7
-    "@types/react-test-renderer": ^18.0.0
-    "@types/wicg-file-system-access": ^2020.9.5
-    "@use-gesture/react": ^10.2.27
-    benchmark: ^2.1.4
-    classnames: ^2.3.2
-    core-js: ^3.31.1
-    eventemitter3: ^4.0.7
-    fake-indexeddb: ^4.0.0
-    idb: ^7.1.1
-    is-plain-object: ^5.0.0
-    jest-canvas-mock: ^2.5.1
-    jest-environment-jsdom: ^29.4.3
-    lazyrepo: 0.0.0-alpha.27
-    lodash.throttle: ^4.1.1
-    lodash.uniq: ^4.5.0
-    nanoid: 4.0.2
-    react-test-renderer: ^18.2.0
-    resize-observer-polyfill: ^1.5.1
-  peerDependencies:
-    react: ^18
-    react-dom: ^18
-  languageName: unknown
-  linkType: soft
-
-"@tldraw/monorepo@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@tldraw/monorepo@workspace:."
-  dependencies:
-    "@microsoft/api-extractor": ^7.35.4
-    "@next/eslint-plugin-next": ^13.3.0
-    "@swc/core": ^1.3.55
-    "@swc/jest": ^0.2.26
-    "@types/glob": ^8.1.0
-    "@types/jest": ^28.1.2
-    "@types/node": 18.7.3
-    "@types/react": ^18.0.24
-    "@types/react-dom": ^18.0.6
-    "@typescript-eslint/eslint-plugin": ^5.57.0
-    "@typescript-eslint/parser": ^5.57.0
-    auto: ^10.46.0
-    eslint: ^8.37.0
-    eslint-config-prettier: ^8.8.0
-    eslint-plugin-deprecation: ^2.0.0
-    eslint-plugin-import: ^2.27.5
-    eslint-plugin-local: ^1.0.0
-    eslint-plugin-no-only-tests: ^3.1.0
-    eslint-plugin-react: ^7.32.2
-    eslint-plugin-react-hooks: ^4.6.0
-    fs-extra: ^11.1.0
-    husky: ^8.0.0
-    jest: ^28.1.1
-    json5: ^2.2.3
-    lazyrepo: 0.0.0-alpha.27
-    lint-staged: ">=10"
-    prettier: ^2.8.6
-    prettier-plugin-organize-imports: ^3.2.2
-    rimraf: ^4.4.0
-    svgo: ^3.0.2
-    tsx: ^3.12.7
-    typescript: ^5.0.2
-    vercel: ^28.16.15
-  languageName: unknown
-  linkType: soft
-
-"@tldraw/scripts@workspace:scripts":
-  version: 0.0.0-use.local
-  resolution: "@tldraw/scripts@workspace:scripts"
-  dependencies:
-    "@auto-it/core": ^10.45.0
-    "@types/is-ci": ^3.0.0
-    "@types/node": ^18.13.0
-    "@typescript-eslint/utils": ^5.59.0
-    ast-types: ^0.14.2
-    cross-fetch: ^3.1.5
-    esbuild: ^0.18.4
-    glob: ^8.0.3
-    gray-matter: ^4.0.3
-    ignore: ^5.2.4
-    is-ci: ^3.0.1
-    kleur: ^4.1.5
-    lazyrepo: 0.0.0-alpha.27
-    prettier: ^2.8.7
-    recast: ^0.22.0
-    rimraf: ^4.4.0
-    semver: ^7.3.8
-    svgo: ^3.0.2
-    typescript: ^4.5.2
-  languageName: unknown
-  linkType: soft
-
-"@tldraw/state@workspace:*, @tldraw/state@workspace:packages/state":
-  version: 0.0.0-use.local
-  resolution: "@tldraw/state@workspace:packages/state"
-  dependencies:
-    "@types/lodash": ^4.14.188
-    "@types/react": ^18.0.24
-    "@types/react-test-renderer": ^18.0.0
-    lodash: ^4.17.21
-    react-test-renderer: ^18.2.0
-  peerDependencies:
-    react: ^18
-  languageName: unknown
-  linkType: soft
-
-"@tldraw/store@workspace:*, @tldraw/store@workspace:packages/store":
-  version: 0.0.0-use.local
-  resolution: "@tldraw/store@workspace:packages/store"
-  dependencies:
-    "@peculiar/webcrypto": ^1.4.0
-    "@tldraw/state": "workspace:*"
-    "@tldraw/utils": "workspace:*"
-    "@types/lodash.isequal": ^4.5.6
-    lazyrepo: 0.0.0-alpha.27
-    lodash.isequal: ^4.5.0
-    nanoid: 4.0.2
-    raf: ^3.4.1
-  languageName: unknown
-  linkType: soft
-
-"@tldraw/tldraw@workspace:*, @tldraw/tldraw@workspace:packages/tldraw":
-  version: 0.0.0-use.local
-  resolution: "@tldraw/tldraw@workspace:packages/tldraw"
-  dependencies:
-    "@peculiar/webcrypto": ^1.4.0
-    "@radix-ui/react-alert-dialog": ^1.0.0
-    "@radix-ui/react-context-menu": ^2.1.5
-    "@radix-ui/react-dialog": ^1.0.5
-    "@radix-ui/react-dropdown-menu": ^2.0.6
-    "@radix-ui/react-popover": ^1.0.7
-    "@radix-ui/react-select": ^1.2.0
-    "@radix-ui/react-slider": ^1.1.0
-    "@radix-ui/react-toast": ^1.1.1
-    "@testing-library/jest-dom": ^5.14.1
-    "@testing-library/react": ^14.0.0
-    "@tldraw/editor": "workspace:*"
-    "@types/canvas-size": ^1.2.0
-    "@types/classnames": ^2.3.1
-    "@types/downscale": ^1.0.4
-    "@types/lz-string": ^1.3.34
-    canvas-size: ^1.2.6
-    chokidar-cli: ^3.0.0
-    classnames: ^2.3.2
-    downscale: ^1.0.6
-    hotkeys-js: ^3.11.2
-    jest-canvas-mock: ^2.5.2
-    jest-environment-jsdom: ^28.1.2
-    lazyrepo: 0.0.0-alpha.27
-    lz-string: ^1.4.4
-    resize-observer-polyfill: ^1.5.1
-  peerDependencies:
-    react: ^18
-    react-dom: ^18
-  languageName: unknown
-  linkType: soft
-
-"@tldraw/tlschema@workspace:*, @tldraw/tlschema@workspace:packages/tlschema":
-  version: 0.0.0-use.local
-  resolution: "@tldraw/tlschema@workspace:packages/tlschema"
-  dependencies:
-    "@tldraw/state": "workspace:*"
-    "@tldraw/store": "workspace:*"
-    "@tldraw/utils": "workspace:*"
-    "@tldraw/validate": "workspace:*"
-    kleur: ^4.1.5
-    lazyrepo: 0.0.0-alpha.27
-    nanoid: 4.0.2
-  languageName: unknown
-  linkType: soft
-
-"@tldraw/utils@workspace:*, @tldraw/utils@workspace:packages/utils":
-  version: 0.0.0-use.local
-  resolution: "@tldraw/utils@workspace:packages/utils"
-  dependencies:
-    lazyrepo: 0.0.0-alpha.27
-  languageName: unknown
-  linkType: soft
-
-"@tldraw/validate@workspace:*, @tldraw/validate@workspace:packages/validate":
-  version: 0.0.0-use.local
-  resolution: "@tldraw/validate@workspace:packages/validate"
-  dependencies:
-    "@tldraw/utils": "workspace:*"
-    lazyrepo: 0.0.0-alpha.27
-  languageName: unknown
-  linkType: soft
-
-"@tldraw/vscode-editor@workspace:apps/vscode/editor":
-  version: 0.0.0-use.local
-  resolution: "@tldraw/vscode-editor@workspace:apps/vscode/editor"
-  dependencies:
-    "@tldraw/assets": "workspace:*"
-    "@tldraw/tldraw": "workspace:*"
-    "@types/fs-extra": ^11.0.1
-    "@types/node": ^17.0.14
-    "@types/react": ^18.0.24
-    "@types/react-dom": ^18.0.6
-    "@types/react-router-dom": ^5.1.8
-    concurrently: 7.0.0
-    create-serve: 1.0.1
-    dotenv: ^16.0.3
-    esbuild: ^0.18.4
-    fs-extra: ^11.1.0
-    lazyrepo: 0.0.0-alpha.27
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    tslib: ^2.4.0
-  languageName: unknown
-  linkType: soft
 
 "@tootallnate/once@npm:1":
   version: 1.1.2
@@ -9255,9 +9255,9 @@ __metadata:
   resolution: "examples.tldraw.com@workspace:apps/examples"
   dependencies:
     "@babel/plugin-proposal-decorators": ^7.21.0
+    "@bigbluebutton/assets": 2.0.0-alpha.19
+    "@bigbluebutton/tldraw": 2.0.0-alpha.19
     "@playwright/test": ^1.38.1
-    "@tldraw/assets": "workspace:*"
-    "@tldraw/tldraw": "workspace:*"
     "@vercel/analytics": ^1.0.1
     "@vitejs/plugin-react": ^4.2.0
     dotenv: ^16.0.3
@@ -16491,8 +16491,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tldraw-vscode@workspace:apps/vscode/extension"
   dependencies:
-    "@tldraw/editor": "workspace:*"
-    "@tldraw/tldraw": "workspace:*"
+    "@bigbluebutton/editor": 2.0.0-alpha.19
+    "@bigbluebutton/tldraw": 2.0.0-alpha.19
     "@types/fs-extra": ^11.0.1
     "@types/node-fetch": ^2.6.2
     "@types/vscode": ^1.75.1

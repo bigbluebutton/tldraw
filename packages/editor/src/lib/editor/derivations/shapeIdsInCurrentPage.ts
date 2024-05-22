@@ -1,5 +1,5 @@
-import { computed, isUninitialized, RESET_VALUE, withDiff } from '@tldraw/state'
-import { IncrementalSetConstructor } from '@tldraw/store'
+import { computed, isUninitialized, RESET_VALUE, withDiff } from '@bigbluebutton/state'
+import { IncrementalSetConstructor } from '@bigbluebutton/store'
 import {
 	isPageId,
 	isShape,
@@ -8,7 +8,7 @@ import {
 	TLShape,
 	TLShapeId,
 	TLStore,
-} from '@tldraw/tlschema'
+} from '@bigbluebutton/tlschema'
 
 /**
  * Get whether a shape is in the current page.

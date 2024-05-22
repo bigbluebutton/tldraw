@@ -1,13 +1,13 @@
-import { Signal, transact } from '@tldraw/state'
+import { Signal, transact } from '@bigbluebutton/state'
 import {
 	RecordsDiff,
 	SerializedSchema,
 	UnknownRecord,
 	compareSchemas,
 	squashRecordDiffs,
-} from '@tldraw/store'
-import { TLStore } from '@tldraw/tlschema'
-import { assert } from '@tldraw/utils'
+} from '@bigbluebutton/store'
+import { TLStore } from '@bigbluebutton/tlschema'
+import { assert } from '@bigbluebutton/utils'
 import {
 	TAB_ID,
 	TLSessionStateSnapshot,

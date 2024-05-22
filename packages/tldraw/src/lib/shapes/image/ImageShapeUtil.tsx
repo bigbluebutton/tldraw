@@ -12,7 +12,7 @@ import {
 	toDomPrecision,
 	useIsCropping,
 	useValue,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { useEffect, useState } from 'react'
 import { HyperlinkButton } from '../shared/HyperlinkButton'
 import { usePrefersReducedMotion } from '../shared/usePrefersReducedMotion'

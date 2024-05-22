@@ -1,30 +1,20 @@
 {
-	"name": "@tldraw/tldraw",
-	"description": "A tiny little drawing editor.",
+	"name": "@bigbluebutton/tldraw",
+	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19",
 	"version": "2.0.0-alpha.19",
 	"packageManager": "yarn@3.5.0",
 	"author": {
 		"name": "tldraw GB Ltd.",
 		"email": "hello@tldraw.com"
 	},
-	"homepage": "https://tldraw.dev",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/bigbluebutton/tldraw"
 	},
 	"bugs": {
-		"url": "https://github.com/tldraw/tldraw/issues"
+		"url": "https://github.com/bigbluebutton/tldraw/issues"
 	},
-	"keywords": [
-		"tldraw",
-		"drawing",
-		"app",
-		"development",
-		"whiteboard",
-		"canvas",
-		"infinite"
-	],
 	"/* NOTE */": "These `main` and `types` fields are rewritten by the build script. They are not the actual values we publish",
 	"main": "./src/index.ts",
 	"types": "./.tsbuild/index.d.ts",
@@ -44,6 +34,7 @@
 		"tldraw.css"
 	],
 	"dependencies": {
+		"@bigbluebutton/editor": "2.0.0-alpha.19",
 		"@radix-ui/react-alert-dialog": "^1.0.0",
 		"@radix-ui/react-context-menu": "^2.1.5",
 		"@radix-ui/react-dialog": "^1.0.5",
@@ -52,7 +43,6 @@
 		"@radix-ui/react-select": "^1.2.0",
 		"@radix-ui/react-slider": "^1.1.0",
 		"@radix-ui/react-toast": "^1.1.1",
-		"@tldraw/editor": "workspace:*",
 		"canvas-size": "^1.2.6",
 		"classnames": "^2.3.2",
 		"downscale": "^1.0.6",

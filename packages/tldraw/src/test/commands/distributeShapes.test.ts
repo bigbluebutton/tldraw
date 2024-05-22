@@ -1,4 +1,4 @@
-import { PI, createShapeId } from '@tldraw/editor'
+import { PI, createShapeId } from '@bigbluebutton/editor'
 import { TestEditor } from '../TestEditor'
 
 jest.useFakeTimers()

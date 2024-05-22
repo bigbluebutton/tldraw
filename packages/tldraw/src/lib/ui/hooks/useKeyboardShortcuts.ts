@@ -1,4 +1,4 @@
-import { preventDefault, useEditor, useValue } from '@tldraw/editor'
+import { preventDefault, useEditor, useValue } from '@bigbluebutton/editor'
 import hotkeys from 'hotkeys-js'
 import { useEffect } from 'react'
 import { useActions } from './useActions'

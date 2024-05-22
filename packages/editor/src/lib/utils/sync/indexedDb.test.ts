@@ -1,4 +1,4 @@
-import { createTLSchema } from '@tldraw/tlschema'
+import { createTLSchema } from '@bigbluebutton/tlschema'
 import {
 	getAllIndexDbNames,
 	loadDataFromStore,

@@ -1,29 +1,20 @@
 {
-	"name": "@tldraw/monorepo",
-	"description": "A tiny little drawing app (monorepo).",
-	"version": "0.0.0",
+	"name": "@bigbluebutton/monorepo",
+	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19",
+	"version": "2.0.0",
 	"private": true,
 	"author": {
 		"name": "tldraw GB Ltd.",
 		"email": "hello@tldraw.com"
 	},
-	"homepage": "https://tldraw.dev",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/bigbluebutton/tldraw"
 	},
 	"bugs": {
-		"url": "https://github.com/tldraw/tldraw/issues"
+		"url": "https://github.com/bigbluebutton/tldraw/issues"
 	},
-	"keywords": [
-		"tldraw",
-		"drawing",
-		"app",
-		"development",
-		"whiteboard",
-		"canvas",
-		"infinite"
-	],
+	"license": "Apache-2.0",
 	"workspaces": [
 		"apps/*",
 		"packages/*",

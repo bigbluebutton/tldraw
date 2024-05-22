@@ -1,6 +1,6 @@
 /* eslint-disable no-inner-declarations */
-import { InstancePresenceRecordType, Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { InstancePresenceRecordType, Tldraw } from '@bigbluebutton/tldraw'
+import '@bigbluebutton/tldraw/tldraw.css'
 import { useRef } from 'react'
 
 const USER_NAME = 'huppy da arrow'

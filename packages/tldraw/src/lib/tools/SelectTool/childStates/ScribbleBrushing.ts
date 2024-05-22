@@ -10,7 +10,7 @@ import {
 	Vec2d,
 	intersectLineSegmentPolyline,
 	pointInPolygon,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 export class ScribbleBrushing extends StateNode {
 	static override id = 'scribble_brushing'

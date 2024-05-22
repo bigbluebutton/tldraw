@@ -15,7 +15,7 @@ export default defineConfig({
 	},
 	clearScreen: false,
 	optimizeDeps: {
-		exclude: ['@tldraw/assets'],
+		exclude: ['@bigbluebutton/assets'],
 	},
 	define: {
 		'process.env.TLDRAW_ENV': JSON.stringify(process.env.VERCEL_ENV ?? 'development'),

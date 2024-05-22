@@ -1,4 +1,3 @@
-import { act, render, screen } from '@testing-library/react'
 import {
 	BaseBoxShapeTool,
 	BaseBoxShapeUtil,
@@ -10,7 +9,8 @@ import {
 	createShapeId,
 	createTLStore,
 	noop,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
+import { act, render, screen } from '@testing-library/react'
 import { defaultTools } from '../lib/defaultTools'
 import { GeoShapeUtil } from '../lib/shapes/geo/GeoShapeUtil'
 

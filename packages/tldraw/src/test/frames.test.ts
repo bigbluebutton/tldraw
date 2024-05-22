@@ -4,7 +4,7 @@ import {
 	TLFrameShape,
 	TLShapeId,
 	createShapeId,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { DEFAULT_FRAME_PADDING, fitFrameToContent, removeFrame } from '../lib/utils/frames/frames'
 import { TestEditor } from './TestEditor'
 

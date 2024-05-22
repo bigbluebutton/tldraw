@@ -1,4 +1,4 @@
-import { EASINGS, TLScribbleComponent, getSvgPathFromPoints } from '@tldraw/editor'
+import { EASINGS, TLScribbleComponent, getSvgPathFromPoints } from '@bigbluebutton/editor'
 import classNames from 'classnames'
 import { getStroke } from '../shapes/shared/freehand/getStroke'
 

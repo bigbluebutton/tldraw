@@ -1,4 +1,4 @@
-import { useEditor, usePresence, useValue } from '@tldraw/editor'
+import { useEditor, usePresence, useValue } from '@bigbluebutton/editor'
 
 export function FollowingIndicator() {
 	const editor = useEditor()

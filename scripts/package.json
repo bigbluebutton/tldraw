@@ -1,6 +1,6 @@
 {
-	"name": "@tldraw/scripts",
-	"description": "build scripts",
+	"name": "@bigbluebutton/scripts",
+	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19",
 	"version": "2.0.0-alpha.8",
 	"private": true,
 	"packageManager": "yarn@3.5.0",
@@ -8,24 +8,14 @@
 		"name": "tldraw GB Ltd.",
 		"email": "hello@tldraw.com"
 	},
-	"homepage": "https://tldraw.dev",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/bigbluebutton/tldraw"
 	},
 	"bugs": {
-		"url": "https://github.com/tldraw/tldraw/issues"
+		"url": "https://github.com/bigbluebutton/tldraw/issues"
 	},
-	"keywords": [
-		"tldraw",
-		"drawing",
-		"app",
-		"development",
-		"whiteboard",
-		"canvas",
-		"infinite"
-	],
 	"devDependencies": {
 		"@auto-it/core": "^10.45.0",
 		"@types/is-ci": "^3.0.0",

@@ -1,5 +1,5 @@
-import { SerializedSchema } from '@tldraw/store'
-import { TLAsset, TLShape, TLShapeId } from '@tldraw/tlschema'
+import { SerializedSchema } from '@bigbluebutton/store'
+import { TLAsset, TLShape, TLShapeId } from '@bigbluebutton/tlschema'
 
 /** @public */
 export interface TLContent {

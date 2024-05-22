@@ -1,5 +1,5 @@
+import { Editor } from '@bigbluebutton/tldraw'
 import test, { expect, Page } from '@playwright/test'
-import { Editor } from '@tldraw/tldraw'
 import { setupPage } from '../shared-e2e'
 
 declare const __tldraw_editor_events: any[]

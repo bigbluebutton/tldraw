@@ -1,6 +1,6 @@
 {
 	"name": "examples.tldraw.com",
-	"description": "A tiny little drawing app (development).",
+	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19",
 	"version": "2.0.0-alpha.11",
 	"private": true,
 	"packageManager": "yarn@3.5.0",
@@ -8,24 +8,14 @@
 		"name": "tldraw GB Ltd.",
 		"email": "hello@tldraw.com"
 	},
-	"homepage": "https://tldraw.dev",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/bigbluebutton/tldraw"
 	},
 	"bugs": {
-		"url": "https://github.com/tldraw/tldraw/issues"
+		"url": "https://github.com/bigbluebutton/tldraw/issues"
 	},
-	"keywords": [
-		"tldraw",
-		"drawing",
-		"app",
-		"development",
-		"whiteboard",
-		"canvas",
-		"infinite"
-	],
 	"scripts": {
 		"dev": "vite --host",
 		"build": "vite build",
@@ -35,9 +25,9 @@
 	},
 	"dependencies": {
 		"@babel/plugin-proposal-decorators": "^7.21.0",
+		"@bigbluebutton/assets": "2.0.0-alpha.19",
+		"@bigbluebutton/tldraw": "2.0.0-alpha.19",
 		"@playwright/test": "^1.38.1",
-		"@tldraw/assets": "workspace:*",
-		"@tldraw/tldraw": "workspace:*",
 		"@vercel/analytics": "^1.0.1",
 		"lazyrepo": "0.0.0-alpha.27",
 		"react": "^18.2.0",

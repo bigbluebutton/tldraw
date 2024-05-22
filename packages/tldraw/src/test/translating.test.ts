@@ -7,7 +7,7 @@ import {
 	TLShapePartial,
 	Vec2d,
 	createShapeId,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { TestEditor } from './TestEditor'
 import { getSnapLines } from './getSnapLines'
 

@@ -1,4 +1,4 @@
-import { Editor, TLFrameShape, TLShapeId, TLSvgOptions } from '@tldraw/editor'
+import { Editor, TLFrameShape, TLShapeId, TLSvgOptions } from '@bigbluebutton/editor'
 import { getSvgAsDataUrl, getSvgAsImage } from './export'
 
 /** @public */

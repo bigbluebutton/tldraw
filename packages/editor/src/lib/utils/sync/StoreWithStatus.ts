@@ -1,4 +1,4 @@
-import { TLStore } from '@tldraw/tlschema'
+import { TLStore } from '@bigbluebutton/tlschema'
 
 /** @public */
 export type TLStoreWithStatus =

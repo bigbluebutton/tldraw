@@ -4,7 +4,7 @@ import {
 	TLEventHandlers,
 	TLPointerEventInfo,
 	TLSelectionHandle,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 export const CursorTypeMap: Record<TLSelectionHandle, TLCursorType> = {
 	bottom: 'ns-resize',

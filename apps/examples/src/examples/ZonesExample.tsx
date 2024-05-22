@@ -1,5 +1,5 @@
-import { OfflineIndicator, Tldraw } from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+import { OfflineIndicator, Tldraw } from '@bigbluebutton/tldraw'
+import '@bigbluebutton/tldraw/tldraw.css'
 
 export default function Example() {
 	return (

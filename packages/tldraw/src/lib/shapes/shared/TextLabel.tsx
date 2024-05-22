@@ -8,7 +8,7 @@ import {
 	TLDefaultVerticalAlignStyle,
 	TLShape,
 	stopEventPropagation,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import React from 'react'
 import { useDefaultColorTheme } from './ShapeFill'
 import { TextHelpers } from './TextHelpers'

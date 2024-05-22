@@ -16,15 +16,15 @@ export {
 	whyAmIRunning,
 	type Atom,
 	type Signal,
-} from '@tldraw/state'
+} from '@bigbluebutton/state'
 // eslint-disable-next-line local/no-export-star
-export * from '@tldraw/store'
+export * from '@bigbluebutton/store'
 // eslint-disable-next-line local/no-export-star
-export * from '@tldraw/tlschema'
+export * from '@bigbluebutton/tlschema'
 // eslint-disable-next-line local/no-export-star
-export * from '@tldraw/utils'
+export * from '@bigbluebutton/utils'
 // eslint-disable-next-line local/no-export-star
-export * from '@tldraw/validate'
+export * from '@bigbluebutton/validate'
 export {
 	ErrorScreen,
 	LoadingScreen,

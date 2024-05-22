@@ -1,6 +1,6 @@
 {
-	"name": "@tldraw/vscode-editor",
-	"description": "An an editor for the tldraw vscode extension.",
+	"name": "@bigbluebutton/vscode-editor",
+	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19",
 	"version": "2.0.0-alpha.0",
 	"private": true,
 	"packageManager": "yarn@3.5.0",
@@ -8,24 +8,14 @@
 		"name": "tldraw GB Ltd.",
 		"email": "hello@tldraw.com"
 	},
-	"homepage": "https://tldraw.dev",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/bigbluebutton/tldraw"
 	},
 	"bugs": {
-		"url": "https://github.com/tldraw/tldraw/issues"
+		"url": "https://github.com/bigbluebutton/tldraw/issues"
 	},
-	"keywords": [
-		"tldraw",
-		"drawing",
-		"app",
-		"development",
-		"whiteboard",
-		"canvas",
-		"infinite"
-	],
 	"scripts": {
 		"build": "yarn run -T tsx scripts/build.ts",
 		"dev": "yarn run -T tsx scripts/dev.ts",
@@ -33,8 +23,8 @@
 		"lint": "yarn run -T tsx ../../../scripts/lint.ts"
 	},
 	"devDependencies": {
-		"@tldraw/assets": "workspace:*",
-		"@tldraw/tldraw": "workspace:*",
+		"@bigbluebutton/assets": "2.0.0-alpha.19",
+		"@bigbluebutton/tldraw": "2.0.0-alpha.19",
 		"@types/fs-extra": "^11.0.1",
 		"@types/node": "^17.0.14",
 		"@types/react": "^18.0.24",

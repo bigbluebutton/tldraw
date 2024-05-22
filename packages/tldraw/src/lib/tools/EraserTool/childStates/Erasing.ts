@@ -7,7 +7,7 @@ import {
 	TLPointerEventInfo,
 	TLShapeId,
 	pointInPolygon,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 export class Erasing extends StateNode {
 	static override id = 'erasing'

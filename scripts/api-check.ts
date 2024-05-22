@@ -40,7 +40,7 @@ async function main() {
 	)
 
 	for (const { name, relativePath } of packages) {
-		const unprefixedName = name.replace('@tldraw/', '')
+		const unprefixedName = name.replace('@bigbluebutton/', '')
 		const dtsFile = await readFileIfExists(join(relativePath, 'api', 'public.d.ts'))
 		if (!dtsFile) {
 			nicelog(`No public.d.ts for ${name}, skipping`)

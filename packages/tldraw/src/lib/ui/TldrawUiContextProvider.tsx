@@ -1,4 +1,4 @@
-import { RecursivePartial } from '@tldraw/editor'
+import { RecursivePartial } from '@bigbluebutton/editor'
 import { TLUiAssetUrls, useDefaultUiAssetUrlsWithOverrides } from './assetUrls'
 import { ActionsProvider } from './hooks/useActions'
 import { ActionsMenuSchemaProvider } from './hooks/useActionsMenuSchema'
@@ -17,7 +17,7 @@ import { TranslationProvider } from './hooks/useTranslation/useTranslation'
 import { TLUiOverrides, useMergedOverrides, useMergedTranslationOverrides } from './overrides'
 
 /**
- * Props for the {@link @tldraw/tldraw#Tldraw} and {@link TldrawUi} components.
+ * Props for the {@link @bigbluebutton/tldraw#Tldraw} and {@link TldrawUi} components.
  *
  * @public
  **/

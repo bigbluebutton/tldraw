@@ -1,4 +1,4 @@
-import { Vec2dModel } from '@tldraw/tlschema'
+import { Vec2dModel } from '@bigbluebutton/tlschema'
 import { EASINGS } from './easings'
 
 /** @public */

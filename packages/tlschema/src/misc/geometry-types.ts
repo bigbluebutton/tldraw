@@ -1,4 +1,4 @@
-import { T } from '@tldraw/validate'
+import { T } from '@bigbluebutton/validate'
 
 /**
  * A serializable model for 2D boxes.

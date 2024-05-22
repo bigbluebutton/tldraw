@@ -1,4 +1,4 @@
-import { useEditor, useValue } from '@tldraw/editor'
+import { useEditor, useValue } from '@bigbluebutton/editor'
 import React, { useContext } from 'react'
 import { PORTRAIT_BREAKPOINTS } from '../constants'
 

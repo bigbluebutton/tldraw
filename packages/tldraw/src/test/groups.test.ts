@@ -13,7 +13,7 @@ import {
 	compact,
 	createShapeId,
 	sortByIndex,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { TestEditor } from './TestEditor'
 
 jest.mock('nanoid', () => {

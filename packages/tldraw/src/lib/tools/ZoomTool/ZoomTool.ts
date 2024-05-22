@@ -1,4 +1,9 @@
-import { StateNode, TLInterruptEvent, TLKeyboardEvent, TLPointerEventInfo } from '@tldraw/editor'
+import {
+	StateNode,
+	TLInterruptEvent,
+	TLKeyboardEvent,
+	TLPointerEventInfo,
+} from '@bigbluebutton/editor'
 import { Idle } from './childStates/Idle'
 import { Pointing } from './childStates/Pointing'
 import { ZoomBrushing } from './childStates/ZoomBrushing'

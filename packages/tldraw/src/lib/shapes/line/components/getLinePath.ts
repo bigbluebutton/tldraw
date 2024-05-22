@@ -1,4 +1,4 @@
-import { CubicSpline2d, Polyline2d, TLLineShape, getSvgPathFromPoints } from '@tldraw/editor'
+import { CubicSpline2d, Polyline2d, TLLineShape, getSvgPathFromPoints } from '@bigbluebutton/editor'
 import { getStrokeOutlinePoints } from '../../shared/freehand/getStrokeOutlinePoints'
 import { getStrokePoints } from '../../shared/freehand/getStrokePoints'
 import { setStrokePointRadii } from '../../shared/freehand/setStrokePointRadii'

@@ -12,7 +12,7 @@ import {
 	VecLike,
 	createShapeId,
 	pointInPolygon,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { getHitShapeOnCanvasPointerDown } from '../../selection-logic/getHitShapeOnCanvasPointerDown'
 import { getShouldEnterCropMode } from '../../selection-logic/getShouldEnterCropModeOnPointerDown'
 import { selectOnCanvasPointerUp } from '../../selection-logic/selectOnCanvasPointerUp'

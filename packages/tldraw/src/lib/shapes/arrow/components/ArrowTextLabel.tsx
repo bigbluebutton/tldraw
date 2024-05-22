@@ -1,4 +1,4 @@
-import { TLArrowShape, TLShapeId, VecLike, stopEventPropagation } from '@tldraw/editor'
+import { TLArrowShape, TLShapeId, VecLike, stopEventPropagation } from '@bigbluebutton/editor'
 import * as React from 'react'
 import { TextHelpers } from '../../shared/TextHelpers'
 import { ARROW_LABEL_FONT_SIZES, TEXT_PROPS } from '../../shared/default-shape-constants'

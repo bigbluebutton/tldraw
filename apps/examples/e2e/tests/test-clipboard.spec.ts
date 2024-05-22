@@ -1,5 +1,5 @@
+import { Editor } from '@bigbluebutton/tldraw'
 import test, { expect } from '@playwright/test'
-import { Editor } from '@tldraw/tldraw'
 import { setup } from '../shared-e2e'
 
 export function sleep(ms: number) {

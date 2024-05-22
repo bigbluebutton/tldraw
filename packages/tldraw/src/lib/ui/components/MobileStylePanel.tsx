@@ -4,7 +4,7 @@ import {
 	getDefaultColorTheme,
 	useEditor,
 	useValue,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { useCallback } from 'react'
 import { useRelevantStyles } from '../hooks/useRevelantStyles'
 import { useTranslation } from '../hooks/useTranslation/useTranslation'

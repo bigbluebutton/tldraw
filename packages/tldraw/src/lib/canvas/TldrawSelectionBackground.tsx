@@ -3,7 +3,7 @@ import {
 	TLSelectionBackgroundComponent,
 	useEditor,
 	useValue,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 /** @public */
 export const TldrawSelectionBackground: TLSelectionBackgroundComponent = ({ bounds, rotation }) => {

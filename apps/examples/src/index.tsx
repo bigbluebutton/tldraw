@@ -1,10 +1,10 @@
-import { getAssetUrlsByMetaUrl } from '@tldraw/assets/urls'
+import { getAssetUrlsByMetaUrl } from '@bigbluebutton/assets/urls'
 import {
 	DefaultErrorFallback,
 	ErrorBoundary,
 	setDefaultEditorAssetUrls,
 	setDefaultUiAssetUrls,
-} from '@tldraw/tldraw'
+} from '@bigbluebutton/tldraw'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'

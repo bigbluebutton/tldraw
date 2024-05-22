@@ -1,8 +1,8 @@
-import { StyleProp } from '@tldraw/tlschema'
-import { exhaustiveSwitchError } from '@tldraw/utils'
+import { StyleProp } from '@bigbluebutton/tlschema'
+import { exhaustiveSwitchError } from '@bigbluebutton/utils'
 
 /**
- * The value of a particular {@link @tldraw/tlschema#StyleProp}.
+ * The value of a particular {@link @bigbluebutton/tlschema#StyleProp}.
  *
  * A `mixed` style means that in the current selection, there are lots of different values for the
  * same style prop - e.g. a red and a blue shape are selected.
@@ -28,7 +28,7 @@ function sharedStyleEquals<T>(a: SharedStyle<T>, b: SharedStyle<T> | undefined) 
 }
 
 /**
- * A map of {@link @tldraw/tlschema#StyleProp | StyleProps} to their {@link SharedStyle} values. See
+ * A map of {@link @bigbluebutton/tlschema#StyleProp | StyleProps} to their {@link SharedStyle} values. See
  * {@link Editor.sharedStyles}.
  *
  * @public

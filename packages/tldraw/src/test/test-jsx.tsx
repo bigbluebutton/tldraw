@@ -7,7 +7,7 @@ import {
 	createShapeId,
 	getIndexAbove,
 	omitFromStackTrace,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 const shapeTypeSymbol = Symbol('shapeJsx')
 

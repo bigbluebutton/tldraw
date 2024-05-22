@@ -1,4 +1,4 @@
-import { TLShapeId, assert, assertExists } from '@tldraw/editor'
+import { TLShapeId, assert, assertExists } from '@bigbluebutton/editor'
 import { TestEditor } from './TestEditor'
 import { TL } from './test-jsx'
 

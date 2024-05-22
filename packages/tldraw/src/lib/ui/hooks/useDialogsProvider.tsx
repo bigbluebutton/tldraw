@@ -1,4 +1,4 @@
-import { Editor, uniqueId, useEditor } from '@tldraw/editor'
+import { Editor, uniqueId, useEditor } from '@bigbluebutton/editor'
 import { createContext, useCallback, useContext, useState } from 'react'
 import { useUiEvents } from './useEventsProvider'
 

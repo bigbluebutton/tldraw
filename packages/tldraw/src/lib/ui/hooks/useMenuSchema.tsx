@@ -1,4 +1,4 @@
-import { Editor, TLBookmarkShape, TLEmbedShape, useEditor, useValue } from '@tldraw/editor'
+import { Editor, TLBookmarkShape, TLEmbedShape, useEditor, useValue } from '@bigbluebutton/editor'
 import React, { useMemo } from 'react'
 import { getEmbedInfo } from '../../utils/embeds/embeds'
 import {

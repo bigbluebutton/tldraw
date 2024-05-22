@@ -1,4 +1,4 @@
-import { useEditor, useValue } from '@tldraw/editor'
+import { useEditor, useValue } from '@bigbluebutton/editor'
 import classNames from 'classnames'
 import { useBreakpoint } from '../../hooks/useBreakpoint'
 import { useTranslation } from '../../hooks/useTranslation/useTranslation'

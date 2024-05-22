@@ -6,7 +6,7 @@ import {
 	TLShapePartial,
 	Vec2d,
 	compact,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 /**
  * Remove a frame.

@@ -5,7 +5,7 @@ import {
 	TLOnResizeHandler,
 	getDefaultColorTheme,
 	resizeBox,
-} from '@tldraw/tldraw'
+} from '@bigbluebutton/tldraw'
 import { useState } from 'react'
 import { cardShapeMigrations } from './card-shape-migrations'
 import { cardShapeProps } from './card-shape-props'

@@ -1,7 +1,7 @@
-import { computed, isUninitialized, RESET_VALUE } from '@tldraw/state'
-import { RecordsDiff } from '@tldraw/store'
-import { isShape, TLParentId, TLRecord, TLShape, TLShapeId, TLStore } from '@tldraw/tlschema'
-import { compact } from '@tldraw/utils'
+import { computed, isUninitialized, RESET_VALUE } from '@bigbluebutton/state'
+import { RecordsDiff } from '@bigbluebutton/store'
+import { isShape, TLParentId, TLRecord, TLShape, TLShapeId, TLStore } from '@bigbluebutton/tlschema'
+import { compact } from '@bigbluebutton/utils'
 import { sortByIndex } from '../../utils/reordering/reordering'
 
 type Parents2Children = Record<TLParentId, TLShapeId[]>

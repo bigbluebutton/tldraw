@@ -24,7 +24,7 @@ import {
 	geoShapeProps,
 	getDefaultColorTheme,
 	getPolygonVertices,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 import { HyperlinkButton } from '../shared/HyperlinkButton'
 import { TextLabel } from '../shared/TextLabel'

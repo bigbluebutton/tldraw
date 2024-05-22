@@ -1,4 +1,4 @@
-import { T } from '@tldraw/validate'
+import { T } from '@bigbluebutton/validate'
 
 /**
  * A `StyleProp` is a property of a shape that follows some special rules.
@@ -16,7 +16,7 @@ import { T } from '@tldraw/validate'
  * and {@link StyleProp.defineEnum}) or using tldraw's default ones, like {@link DefaultColorStyle}.
  * When you define a shape, pass a `props` object describing all of your shape's properties, using
  * `StyleProp`s for the ones you want to be styles. See the
- * {@link https://github.com/tldraw/tldraw/tree/main/apps/examples | custom styles example}
+ * {@link https://github.com/bigbluebutton/tldraw/tree/main/apps/examples | custom styles example}
  * for more.
  *
  * @public
@@ -34,8 +34,8 @@ export class StyleProp<Type> implements T.Validatable<Type> {
 	 *
 	 * @example
 	 * ```ts
-	 * import {T} from '@tldraw/validate'
-	 * import {StyleProp} from '@tldraw/tlschema'
+	 * import {T} from '@bigbluebutton/validate'
+	 * import {StyleProp} from '@bigbluebutton/tlschema'
 	 *
 	 * const MyLineWidthProp = StyleProp.define('myApp:lineWidth', {
 	 *   defaultValue: 1,
@@ -64,7 +64,7 @@ export class StyleProp<Type> implements T.Validatable<Type> {
 	 *
 	 * @example
 	 * ```ts
-	 * import {StyleProp} from '@tldraw/tlschema'
+	 * import {StyleProp} from '@bigbluebutton/tlschema'
 	 *
 	 * const MySizeProp = StyleProp.defineEnum('myApp:size', {
 	 *   defaultValue: 'medium',

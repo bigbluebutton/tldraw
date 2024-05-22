@@ -1,6 +1,6 @@
 {
 	"name": "tldraw-vscode",
-	"description": "The tldraw extension for VS Code.",
+	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19",
 	"version": "2.0.18",
 	"private": true,
 	"packageManager": "yarn@3.5.0",
@@ -8,24 +8,14 @@
 		"name": "tldraw GB Ltd.",
 		"email": "hello@tldraw.com"
 	},
-	"homepage": "https://tldraw.dev",
 	"license": "Apache-2.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tldraw/tldraw"
+		"url": "https://github.com/bigbluebutton/tldraw"
 	},
 	"bugs": {
-		"url": "https://github.com/tldraw/tldraw/issues"
+		"url": "https://github.com/bigbluebutton/tldraw/issues"
 	},
-	"keywords": [
-		"tldraw",
-		"drawing",
-		"app",
-		"development",
-		"whiteboard",
-		"canvas",
-		"infinite"
-	],
 	"displayName": "tldraw",
 	"publisher": "tldraw-org",
 	"icon": "icon.png",
@@ -130,8 +120,8 @@
 		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf editor && rm -rf temp & yarn"
 	},
 	"devDependencies": {
-		"@tldraw/editor": "workspace:*",
-		"@tldraw/tldraw": "workspace:*",
+		"@bigbluebutton/editor": "2.0.0-alpha.19",
+		"@bigbluebutton/tldraw": "2.0.0-alpha.19",
 		"@types/fs-extra": "^11.0.1",
 		"@types/node-fetch": "^2.6.2",
 		"@types/vscode": "^1.75.1",

@@ -7,7 +7,7 @@ import {
 	Vec2d,
 	clamp,
 	uniqueId,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 export class MinimapManager {
 	constructor(public editor: Editor) {}

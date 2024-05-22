@@ -1,4 +1,4 @@
-import { Box2d, TLShape, Vec2d, Vec2dModel } from '@tldraw/editor'
+import { Box2d, TLShape, Vec2d, Vec2dModel } from '@bigbluebutton/editor'
 
 export function resizeScaled(
 	shape: Extract<TLShape, { props: { scale: number } }>,

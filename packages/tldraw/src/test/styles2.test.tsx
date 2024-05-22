@@ -5,7 +5,7 @@ import {
 	SharedStyle,
 	TLGeoShape,
 	TLGroupShape,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { TestEditor, createDefaultShapes, defaultShapesIds } from './TestEditor'
 import { TL } from './test-jsx'
 

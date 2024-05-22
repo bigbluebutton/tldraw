@@ -1,5 +1,5 @@
+import { BaseBoxShapeUtil, Editor } from '@bigbluebutton/editor'
 import { act, render, screen } from '@testing-library/react'
-import { BaseBoxShapeUtil, Editor } from '@tldraw/editor'
 import { useState } from 'react'
 import { Tldraw } from './Tldraw'
 

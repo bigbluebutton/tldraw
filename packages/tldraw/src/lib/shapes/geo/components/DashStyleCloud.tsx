@@ -4,7 +4,7 @@ import {
 	TLShapeId,
 	Vec2d,
 	canonicalizeRotation,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import * as React from 'react'
 import {
 	ShapeFill,

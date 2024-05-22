@@ -1,4 +1,4 @@
-import { TLUiMenuGroup, TLUiOverrides, menuItem, toolbarItem } from '@tldraw/tldraw'
+import { TLUiMenuGroup, TLUiOverrides, menuItem, toolbarItem } from '@bigbluebutton/tldraw'
 
 // In order to see select our custom shape tool, we need to add it to the ui.
 

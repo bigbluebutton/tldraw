@@ -11,8 +11,8 @@ import {
 	defaultShapeTools,
 	defaultShapeUtils,
 	defaultTools,
-} from '@tldraw/tldraw'
-import '@tldraw/tldraw/tldraw.css'
+} from '@bigbluebutton/tldraw'
+import '@bigbluebutton/tldraw/tldraw.css'
 
 const defaultComponents = {
 	Scribble: TldrawScribble,

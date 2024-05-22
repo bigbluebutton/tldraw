@@ -11,7 +11,7 @@ import {
 	useSelectionEvents,
 	useTransform,
 	useValue,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import classNames from 'classnames'
 import { useRef } from 'react'
 import { useReadonly } from '../ui/hooks/useReadonly'

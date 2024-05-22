@@ -1,4 +1,4 @@
-import { useValue } from '@tldraw/state'
+import { useValue } from '@bigbluebutton/state'
 import classNames from 'classnames'
 import { ComponentType, useEffect, useLayoutEffect, useRef, useState } from 'react'
 import { Editor } from '../../editor/Editor'
@@ -8,7 +8,7 @@ import { refreshPage } from '../../utils/refreshPage'
 import { Canvas } from '../Canvas'
 import { ErrorBoundary } from '../ErrorBoundary'
 
-const BASE_ERROR_URL = 'https://github.com/tldraw/tldraw/issues/new'
+const BASE_ERROR_URL = 'https://github.com/bigbluebutton/tldraw/issues'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
 function noop() {}

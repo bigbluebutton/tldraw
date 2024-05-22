@@ -1,4 +1,10 @@
-import { StateNode, TLEventHandlers, TLExitEventHandler, TLGroupShape, Vec2d } from '@tldraw/editor'
+import {
+	StateNode,
+	TLEventHandlers,
+	TLExitEventHandler,
+	TLGroupShape,
+	Vec2d,
+} from '@bigbluebutton/editor'
 import { getHitShapeOnCanvasPointerDown } from '../../../../selection-logic/getHitShapeOnCanvasPointerDown'
 import { ShapeWithCrop, getTranslateCroppedImageChange } from './crop_helpers'
 

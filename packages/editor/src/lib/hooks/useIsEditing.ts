@@ -1,5 +1,5 @@
-import { useValue } from '@tldraw/state'
-import { TLShapeId } from '@tldraw/tlschema'
+import { useValue } from '@bigbluebutton/state'
+import { TLShapeId } from '@bigbluebutton/tlschema'
 import { useEditor } from './useEditor'
 
 /** @public */

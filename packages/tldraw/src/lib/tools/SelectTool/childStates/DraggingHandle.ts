@@ -15,7 +15,7 @@ import {
 	deepCopy,
 	snapAngle,
 	sortByIndex,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 
 export class DraggingHandle extends StateNode {
 	static override id = 'dragging_handle'

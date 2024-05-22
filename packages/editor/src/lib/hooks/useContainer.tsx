@@ -1,4 +1,4 @@
-import { assertExists } from '@tldraw/utils'
+import { assertExists } from '@bigbluebutton/utils'
 import { createContext, useContext } from 'react'
 
 const ContainerContext = createContext<HTMLDivElement | null>(null)

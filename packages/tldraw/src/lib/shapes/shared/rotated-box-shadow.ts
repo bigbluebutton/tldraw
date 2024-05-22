@@ -1,4 +1,4 @@
-import { Vec2d } from '@tldraw/editor'
+import { Vec2d } from '@bigbluebutton/editor'
 
 const ROTATING_BOX_SHADOWS = [
 	{

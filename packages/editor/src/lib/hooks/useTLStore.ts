@@ -1,6 +1,6 @@
-import { StoreSnapshot } from '@tldraw/store'
-import { TLRecord } from '@tldraw/tlschema'
-import { areObjectsShallowEqual } from '@tldraw/utils'
+import { StoreSnapshot } from '@bigbluebutton/store'
+import { TLRecord } from '@bigbluebutton/tlschema'
+import { areObjectsShallowEqual } from '@bigbluebutton/utils'
 import { useState } from 'react'
 import { TLStoreOptions, createTLStore } from '../config/createTLStore'
 

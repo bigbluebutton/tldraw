@@ -1,4 +1,4 @@
-import { Editor, TLLanguage, compact, track, useEditor } from '@tldraw/editor'
+import { Editor, TLLanguage, compact, track, useEditor } from '@bigbluebutton/editor'
 import React, { useMemo } from 'react'
 import { KeyboardShortcutsDialog } from '../components/KeyboardShortcutsDialog'
 import { TLUiMenuSchema, menuCustom, menuGroup, menuItem } from './menuHelpers'

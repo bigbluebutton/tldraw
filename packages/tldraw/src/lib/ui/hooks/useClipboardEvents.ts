@@ -11,7 +11,7 @@ import {
 	uniq,
 	useEditor,
 	useValue,
-} from '@tldraw/editor'
+} from '@bigbluebutton/editor'
 import { compressToBase64, decompressFromBase64 } from 'lz-string'
 import { useCallback, useEffect } from 'react'
 import { pasteExcalidrawContent } from './clipboard/pasteExcalidrawContent'

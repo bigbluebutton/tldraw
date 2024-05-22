@@ -1,4 +1,4 @@
-import { Box2d, StateNode, atom, copyAs, exportAs } from '@tldraw/tldraw'
+import { Box2d, StateNode, atom, copyAs, exportAs } from '@bigbluebutton/tldraw'
 
 // There's a guide at the bottom of this file!
 
