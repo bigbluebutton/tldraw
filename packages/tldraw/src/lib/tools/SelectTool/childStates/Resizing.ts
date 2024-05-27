@@ -13,6 +13,7 @@ import {
 	TLShape,
 	TLShapeId,
 	TLShapePartial,
+	TLTickEventHandler,
 	Vec2d,
 	VecLike,
 	areAnglesCompatible,
@@ -70,6 +71,10 @@ export class Resizing extends StateNode {
 
 		this.handleResizeStart()
 		this.updateShapes()
+	}
+
+	override onTick: TLTickEventHandler = () => {
+		moveCameraWhenCloseToEdge(this.editor)
 	}
 
 	override onPointerMove: TLEventHandlers['onPointerMove'] = () => {
