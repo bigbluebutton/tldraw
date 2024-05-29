@@ -14,6 +14,7 @@ import {
 	Vec2d,
 	compact,
 	isPageId,
+	moveCameraWhenCloseToEdge,
 } from '@bigbluebutton/editor'
 import { DragAndDropManager } from '../DragAndDropManager'
 
