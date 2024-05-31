@@ -18,6 +18,7 @@ import {
 	VecLike,
 	areAnglesCompatible,
 	compact,
+	moveCameraWhenCloseToEdge,
 } from '@bigbluebutton/editor'
 
 type ResizingInfo = TLPointerEventInfo & {
