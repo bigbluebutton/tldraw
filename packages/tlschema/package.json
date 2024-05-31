@@ -1,7 +1,7 @@
 {
 	"name": "@bigbluebutton/tlschema",
-	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19",
-	"version": "2.0.0-alpha.19",
+	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 - A tiny little drawing app (schema).",
+	"version": "2.0.0-alpha.20",
 	"packageManager": "yarn@3.5.0",
 	"author": {
 		"name": "tldraw GB Ltd.",
@@ -46,10 +46,10 @@
 		]
 	},
 	"dependencies": {
-		"@bigbluebutton/state": "2.0.0-alpha.19",
-		"@bigbluebutton/store": "2.0.0-alpha.19",
-		"@bigbluebutton/utils": "2.0.0-alpha.19",
-		"@bigbluebutton/validate": "2.0.0-alpha.19",
+		"@bigbluebutton/state": "2.0.0-alpha.20",
+		"@bigbluebutton/store": "2.0.0-alpha.20",
+		"@bigbluebutton/utils": "2.0.0-alpha.20",
+		"@bigbluebutton/validate": "2.0.0-alpha.20",
 		"nanoid": "4.0.2"
 	}
 }

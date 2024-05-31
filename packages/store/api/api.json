@@ -3444,7 +3444,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": "<T, V extends R = R>(name: string, derive: (record: V) => T | undefined, isEqual?: ((a: V, b: V) => boolean) | undefined) => "
+                  "text": "<T, V extends R = R>(name: string, derive: (record: V) => T | undefined, isEqual?: (a: V, b: V) => boolean) => "
                 },
                 {
                   "kind": "Reference",
