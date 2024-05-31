@@ -120,8 +120,8 @@
 		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist && rm -rf editor && rm -rf temp & yarn"
 	},
 	"devDependencies": {
-		"@bigbluebutton/editor": "2.0.0-alpha.19",
-		"@bigbluebutton/tldraw": "2.0.0-alpha.19",
+		"@bigbluebutton/editor": "2.0.0-alpha.20",
+		"@bigbluebutton/tldraw": "2.0.0-alpha.20",
 		"@types/fs-extra": "^11.0.1",
 		"@types/node-fetch": "^2.6.2",
 		"@types/vscode": "^1.75.1",

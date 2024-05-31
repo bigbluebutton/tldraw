@@ -50,6 +50,7 @@ const usePreloadFont = (id: string, font: TLTypeFace): PreloadStatus => {
 			featureSettings,
 			stretch,
 			unicodeRange,
+			// @ts-expect-error
 			variant,
 		}
 

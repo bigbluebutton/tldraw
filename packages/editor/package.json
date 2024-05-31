@@ -1,7 +1,7 @@
 {
 	"name": "@bigbluebutton/editor",
-	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19",
-	"version": "2.0.0-alpha.19",
+	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 - A tiny little drawing app (editor).",
+	"version": "2.0.0-alpha.20",
 	"packageManager": "yarn@3.5.0",
 	"author": {
 		"name": "tldraw GB Ltd.",
@@ -35,11 +35,11 @@
 		"lint": "yarn run -T tsx ../../scripts/lint.ts"
 	},
 	"dependencies": {
-		"@bigbluebutton/state": "2.0.0-alpha.19",
-		"@bigbluebutton/store": "2.0.0-alpha.19",
-		"@bigbluebutton/tlschema": "2.0.0-alpha.19",
-		"@bigbluebutton/utils": "2.0.0-alpha.19",
-		"@bigbluebutton/validate": "2.0.0-alpha.19",
+		"@bigbluebutton/state": "2.0.0-alpha.20",
+		"@bigbluebutton/store": "2.0.0-alpha.20",
+		"@bigbluebutton/tlschema": "2.0.0-alpha.20",
+		"@bigbluebutton/utils": "2.0.0-alpha.20",
+		"@bigbluebutton/validate": "2.0.0-alpha.20",
 		"@types/core-js": "^2.5.5",
 		"@use-gesture/react": "^10.2.27",
 		"classnames": "^2.3.2",

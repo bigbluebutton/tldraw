@@ -19,6 +19,7 @@ import { EventEmitter } from 'eventemitter3';
 import { HistoryEntry } from '@bigbluebutton/store';
 import { HTMLProps } from 'react';
 import { JsonObject } from '@bigbluebutton/utils';
+import { JSX as JSX_2 } from 'react/jsx-runtime';
 import { MemoExoticComponent } from 'react';
 import { Migrations } from '@bigbluebutton/store';
 import { NamedExoticComponent } from 'react';
@@ -289,7 +290,7 @@ export function canonicalizeRotation(a: number): number;
 // @public (undocumented)
 export function Canvas({ className }: {
     className?: string;
-}): JSX.Element;
+}): JSX_2.Element;
 
 // @public (undocumented)
 export class Circle2d extends Geometry2d {
@@ -431,7 +432,7 @@ export const DEFAULT_ANIMATION_OPTIONS: {
 };
 
 // @public (undocumented)
-export function DefaultBackground(): JSX.Element;
+export function DefaultBackground(): JSX_2.Element;
 
 // @public (undocumented)
 export const DefaultBrush: TLBrushComponent;
@@ -947,7 +948,7 @@ export class ErrorBoundary extends React_3.Component<React_3.PropsWithRef<React_
         error: Error;
     };
     // (undocumented)
-    render(): boolean | JSX.Element | null | number | React_3.ReactFragment | string | undefined;
+    render(): boolean | JSX_2.Element | Iterable<React_3.ReactNode> | null | number | string | undefined;
     // (undocumented)
     state: TLErrorBoundaryState;
 }
@@ -955,7 +956,7 @@ export class ErrorBoundary extends React_3.Component<React_3.PropsWithRef<React_
 // @public (undocumented)
 export function ErrorScreen({ children }: {
     children: any;
-}): JSX.Element;
+}): JSX_2.Element;
 
 // @public (undocumented)
 export const EVENT_NAME_MAP: Record<Exclude<TLEventName, TLPinchEventName>, keyof TLEventHandlers>;
@@ -1165,7 +1166,7 @@ export class GroupShapeUtil extends ShapeUtil<TLGroupShape> {
     // (undocumented)
     canBind: () => boolean;
     // (undocumented)
-    component(shape: TLGroupShape): JSX.Element | null;
+    component(shape: TLGroupShape): JSX_2.Element | null;
     // (undocumented)
     getDefaultProps(): TLGroupShape['props'];
     // (undocumented)
@@ -1173,7 +1174,7 @@ export class GroupShapeUtil extends ShapeUtil<TLGroupShape> {
     // (undocumented)
     hideSelectionBoundsFg: () => boolean;
     // (undocumented)
-    indicator(shape: TLGroupShape): JSX.Element;
+    indicator(shape: TLGroupShape): JSX_2.Element;
     // (undocumented)
     static migrations: Migrations;
     // (undocumented)
@@ -1199,7 +1200,7 @@ export const HASH_PATTERN_ZOOM_NAMES: Record<string, string>;
 export const HIT_TEST_MARGIN = 8;
 
 // @public (undocumented)
-export function HTMLContainer({ children, className, ...rest }: HTMLContainerProps): JSX.Element;
+export function HTMLContainer({ children, className, ...rest }: HTMLContainerProps): JSX_2.Element;
 
 // @public (undocumented)
 export type HTMLContainerProps = React_3.HTMLAttributes<HTMLDivElement>;
@@ -1228,7 +1229,7 @@ export function linesIntersect(A: VecLike, B: VecLike, C: VecLike, D: VecLike): 
 // @public (undocumented)
 export function LoadingScreen({ children }: {
     children: any;
-}): JSX.Element;
+}): JSX_2.Element;
 
 // @public
 export function loadSessionStateSnapshotIntoStore(store: TLStore, snapshot: TLSessionStateSnapshot): void;
@@ -1376,7 +1377,7 @@ export function openWindow(url: string, target?: string): void;
 // @internal (undocumented)
 export function OptionalErrorBoundary({ children, fallback, ...props }: Omit<TLErrorBoundaryProps, 'fallback'> & {
     fallback: TLErrorFallbackComponent;
-}): JSX.Element;
+}): JSX_2.Element;
 
 // @public
 export function perimeterOfEllipse(rx: number, ry: number): number;
@@ -1453,10 +1454,10 @@ export class Polyline2d extends Geometry2d {
 
 // @public (undocumented)
 export const PositionedOnCanvas: MemoExoticComponent<({ x: offsetX, y: offsetY, rotation, ...rest }: {
-x?: number | undefined;
-y?: number | undefined;
-rotation?: number | undefined;
-} & HTMLProps<HTMLDivElement>) => JSX.Element>;
+x?: number;
+y?: number;
+rotation?: number;
+} & HTMLProps<HTMLDivElement>) => JSX_2.Element>;
 
 // @public (undocumented)
 export function precise(A: VecLike): string;
@@ -1608,7 +1609,7 @@ export abstract class ShapeUtil<Shape extends TLUnknownShape = TLUnknownShape> {
     constructor(editor: Editor);
     // @internal
     backgroundComponent?(shape: Shape): any;
-    canBind: <K>(_shape: Shape, _otherShape?: K | undefined) => boolean;
+    canBind: <K>(_shape: Shape, _otherShape?: K) => boolean;
     canCrop: TLShapeUtilFlag<Shape>;
     canDropShapes(shape: Shape, shapes: TLShape[]): boolean;
     canEdit: TLShapeUtilFlag<Shape>;
@@ -1867,7 +1868,7 @@ export const stopEventPropagation: (e: any) => any;
 export const SVG_PADDING = 32;
 
 // @public (undocumented)
-export function SVGContainer({ children, className, ...rest }: SVGContainerProps): JSX.Element;
+export function SVGContainer({ children, className, ...rest }: SVGContainerProps): JSX_2.Element;
 
 // @public (undocumented)
 export type SVGContainerProps = React_3.HTMLAttributes<SVGElement>;
