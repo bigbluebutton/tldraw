@@ -8,6 +8,8 @@ global.FontFace = class FontFace {
 	}
 }
 
+import { version } from './src/lib/ui/version'
+
 document.fonts = {
 	add: () => {},
 	delete: () => {},
@@ -35,7 +37,7 @@ Object.defineProperty(global.URL, 'createObjectURL', {
 })
 
 window.fetch = async (input, init) => {
-	if (input === 'https://unpkg.com/@bigbluebutton/assets@2.0.0-alpha.12/translations/en.json') {
+	if (input === `https://unpkg.com/@bigbluebutton/assets@${version}/translations/en.json`) {
 		const json = await import('@bigbluebutton/assets/translations/main.json')
 		return {
 			ok: true,
