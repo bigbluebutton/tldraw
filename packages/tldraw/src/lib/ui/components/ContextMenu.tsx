@@ -67,7 +67,7 @@ export const ContextMenu = function ContextMenu({ children }: { children: any })
 
 	const container = useContainer()
 
-	const [_, handleOpenChange] = useMenuIsOpen('context menu', cb)
+	const [isOpen, handleOpenChange] = useMenuIsOpen('context menu', cb)
 
 	// If every item in the menu is readonly, then we don't want to show the menu
 	const isReadonly = useReadonly()
@@ -85,7 +85,7 @@ export const ContextMenu = function ContextMenu({ children }: { children: any })
 	const disabled = !selectToolActive || noItemsToShow
 
 	return (
-		<_ContextMenu.Root dir="ltr" onOpenChange={handleOpenChange}>
+		<_ContextMenu.Root dir="ltr" onOpenChange={handleOpenChange} modal={false}>
 			<_ContextMenu.Trigger
 				onContextMenu={disabled ? preventDefault : undefined}
 				dir="ltr"
@@ -93,9 +93,7 @@ export const ContextMenu = function ContextMenu({ children }: { children: any })
 			>
 				{children}
 			</_ContextMenu.Trigger>
-			<_ContextMenu.Portal container={container}>
-				<ContextMenuContent />
-			</_ContextMenu.Portal>
+			{isOpen && <ContextMenuContent />}
 		</_ContextMenu.Root>
 	)
 }

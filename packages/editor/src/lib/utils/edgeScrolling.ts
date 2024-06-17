@@ -28,39 +28,40 @@ export function getEdgeProximityFactor(position: number, scrollOffset: number, e
  * @public
  */
 export function moveCameraWhenCloseToEdge(editor: Editor) {
-	if (!editor.inputs.isDragging || editor.inputs.isPanning) return
+	return;
+	// if (!editor.inputs.isDragging || editor.inputs.isPanning) return
 
-	const {
-		inputs: {
-			currentScreenPoint: { x, y },
-		},
-	} = editor
-	const zoomLevel = editor.getZoomLevel()
-	const screenBounds = editor.getViewportScreenBounds()
+	// const {
+	// 	inputs: {
+	// 		currentScreenPoint: { x, y },
+	// 	},
+	// } = editor
+	// const zoomLevel = editor.getZoomLevel()
+	// const screenBounds = editor.getViewportScreenBounds()
 
-	// Determines how far from the edges we start the scroll behaviour
-	const insetX = screenBounds.w < 1000 ? 40 : 32
-	const insetY = screenBounds.h < 1000 ? 40 : 32
+	// // Determines how far from the edges we start the scroll behaviour
+	// const insetX = screenBounds.w < 1000 ? 40 : 32
+	// const insetY = screenBounds.h < 1000 ? 40 : 32
 
-	// Determines how much the speed is affected by the screen size
-	const screenSizeFactorX = screenBounds.w < 1000 ? 0.612 : 1
-	const screenSizeFactorY = screenBounds.h < 1000 ? 0.612 : 1
+	// // Determines how much the speed is affected by the screen size
+	// const screenSizeFactorX = screenBounds.w < 1000 ? 0.612 : 1
+	// const screenSizeFactorY = screenBounds.h < 1000 ? 0.612 : 1
 
-	// Determines the base speed of the scroll
-	const pxSpeed = editor.user.getEdgeScrollSpeed() * EDGE_SCROLL_SPEED
+	// // Determines the base speed of the scroll
+	// const pxSpeed = editor.user.getEdgeScrollSpeed() * EDGE_SCROLL_SPEED
 
-	const proximityFactorX = getEdgeProximityFactor(x, insetX, screenBounds.w)
-	const proximityFactorY = getEdgeProximityFactor(y, insetY, screenBounds.h)
+	// const proximityFactorX = getEdgeProximityFactor(x, insetX, screenBounds.w)
+	// const proximityFactorY = getEdgeProximityFactor(y, insetY, screenBounds.h)
 
-	if (proximityFactorX === 0 && proximityFactorY === 0) return
+	// if (proximityFactorX === 0 && proximityFactorY === 0) return
 
-	const scrollDeltaX = (pxSpeed * proximityFactorX * screenSizeFactorX) / zoomLevel
-	const scrollDeltaY = (pxSpeed * proximityFactorY * screenSizeFactorY) / zoomLevel
+	// const scrollDeltaX = (pxSpeed * proximityFactorX * screenSizeFactorX) / zoomLevel
+	// const scrollDeltaY = (pxSpeed * proximityFactorY * screenSizeFactorY) / zoomLevel
 
-	const camera = editor.getCamera()
+	// const camera = editor.getCamera()
 
-	editor.setCamera({
-		x: camera.x + scrollDeltaX,
-		y: camera.y + scrollDeltaY,
-	})
+	// editor.setCamera({
+	// 	x: camera.x + scrollDeltaX,
+	// 	y: camera.y + scrollDeltaY,
+	// })
 }
