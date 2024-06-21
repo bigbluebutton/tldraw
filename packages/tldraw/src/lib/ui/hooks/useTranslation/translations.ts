@@ -28,7 +28,7 @@ export async function fetchTranslation(
 	locale: TLUiTranslation['locale'],
 	assetUrls: TLUiAssetUrls
 ): Promise<TLUiTranslation> {
-	const mainRes = await fetch(assetUrls.translations.en)
+	const mainRes = await fetch(assetUrls?.translations?.en ?? 'en')
 
 	if (!mainRes.ok) {
 		console.warn(`No main translations found.`)
