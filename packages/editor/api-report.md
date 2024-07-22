@@ -588,6 +588,8 @@ export class Editor extends EventEmitter<TLEventMap> {
     centerOnPoint(point: VecLike, animation?: TLAnimationOptions): this;
     // @internal
     protected _clickManager: ClickManager;
+    // (undocumented)
+    closeMenusOpen(): this;
     complete(): this;
     // @internal (undocumented)
     crash(error: unknown): this;

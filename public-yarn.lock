@@ -1591,7 +1591,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/editor@2.0.0-alpha.21, @bigbluebutton/editor@workspace:packages/editor":
+"@bigbluebutton/editor@2.0.0-alpha.22, @bigbluebutton/editor@workspace:packages/editor":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/editor@workspace:packages/editor"
   dependencies:
@@ -1630,32 +1630,6 @@ __metadata:
     react-dom: ^18
   languageName: unknown
   linkType: soft
-
-"@bigbluebutton/editor@npm:2.0.0-alpha.20":
-  version: 2.0.0-alpha.20
-  resolution: "@bigbluebutton/editor@npm:2.0.0-alpha.20"
-  dependencies:
-    "@bigbluebutton/state": 2.0.0-alpha.20
-    "@bigbluebutton/store": 2.0.0-alpha.20
-    "@bigbluebutton/tlschema": 2.0.0-alpha.20
-    "@bigbluebutton/utils": 2.0.0-alpha.20
-    "@bigbluebutton/validate": 2.0.0-alpha.20
-    "@types/core-js": ^2.5.5
-    "@use-gesture/react": ^10.2.27
-    classnames: ^2.3.2
-    core-js: ^3.31.1
-    eventemitter3: ^4.0.7
-    idb: ^7.1.1
-    is-plain-object: ^5.0.0
-    lodash.throttle: ^4.1.1
-    lodash.uniq: ^4.5.0
-    nanoid: 4.0.2
-  peerDependencies:
-    react: ^18
-    react-dom: ^18
-  checksum: f840dad623b2e946f69a84e95f83fd2b303156fcc2eccbeb4aa2eec39dd1c4486273969cb2e65883d64a34d09bd7d3d6db260b7acdbc4f12f6e70607d94452c1
-  languageName: node
-  linkType: hard
 
 "@bigbluebutton/monorepo@workspace:.":
   version: 0.0.0-use.local
@@ -1752,36 +1726,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/tldraw@npm:2.0.0-alpha.20":
-  version: 2.0.0-alpha.20
-  resolution: "@bigbluebutton/tldraw@npm:2.0.0-alpha.20"
-  dependencies:
-    "@bigbluebutton/editor": 2.0.0-alpha.20
-    "@radix-ui/react-alert-dialog": ^1.0.0
-    "@radix-ui/react-context-menu": ^2.1.5
-    "@radix-ui/react-dialog": ^1.0.5
-    "@radix-ui/react-dropdown-menu": ^2.0.6
-    "@radix-ui/react-popover": ^1.0.7
-    "@radix-ui/react-select": ^1.2.0
-    "@radix-ui/react-slider": ^1.1.0
-    "@radix-ui/react-toast": ^1.1.1
-    canvas-size: ^1.2.6
-    classnames: ^2.3.2
-    downscale: ^1.0.6
-    hotkeys-js: ^3.11.2
-    lz-string: ^1.4.4
-  peerDependencies:
-    react: ^18
-    react-dom: ^18
-  checksum: c12bf5c02f188eb0910798e866b2e1e85020fc2a2a9597e59019c8b73d11273e0d392811e39a9f0ef9ca44e5159a4571cb674fa75032e0f7a224eef00a03fe1a
-  languageName: node
-  linkType: hard
-
-"@bigbluebutton/tldraw@workspace:packages/tldraw":
+"@bigbluebutton/tldraw@2.0.0-alpha.23, @bigbluebutton/tldraw@workspace:packages/tldraw":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/tldraw@workspace:packages/tldraw"
   dependencies:
-    "@bigbluebutton/editor": 2.0.0-alpha.21
+    "@bigbluebutton/editor": 2.0.0-alpha.22
     "@peculiar/webcrypto": ^1.4.0
     "@radix-ui/react-alert-dialog": ^1.0.0
     "@radix-ui/react-context-menu": ^2.1.5
@@ -1849,7 +1798,7 @@ __metadata:
   resolution: "@bigbluebutton/vscode-editor@workspace:apps/vscode/editor"
   dependencies:
     "@bigbluebutton/assets": 2.0.0-alpha.20
-    "@bigbluebutton/tldraw": 2.0.0-alpha.20
+    "@bigbluebutton/tldraw": 2.0.0-alpha.23
     "@types/fs-extra": ^11.0.1
     "@types/node": ^17.0.14
     "@types/react": ^18.0.24
@@ -9917,7 +9866,7 @@ __metadata:
   dependencies:
     "@babel/plugin-proposal-decorators": ^7.21.0
     "@bigbluebutton/assets": 2.0.0-alpha.20
-    "@bigbluebutton/tldraw": 2.0.0-alpha.20
+    "@bigbluebutton/tldraw": 2.0.0-alpha.23
     "@playwright/test": ^1.38.1
     "@vercel/analytics": ^1.0.1
     "@vitejs/plugin-react": ^4.2.0
@@ -17509,8 +17458,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tldraw-vscode@workspace:apps/vscode/extension"
   dependencies:
-    "@bigbluebutton/editor": 2.0.0-alpha.20
-    "@bigbluebutton/tldraw": 2.0.0-alpha.20
+    "@bigbluebutton/editor": 2.0.0-alpha.22
+    "@bigbluebutton/tldraw": 2.0.0-alpha.23
     "@types/fs-extra": ^11.0.1
     "@types/node-fetch": ^2.6.2
     "@types/vscode": ^1.75.1
