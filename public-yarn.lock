@@ -1591,7 +1591,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/editor@2.0.0-alpha.20, @bigbluebutton/editor@workspace:packages/editor":
+"@bigbluebutton/editor@2.0.0-alpha.22, @bigbluebutton/editor@workspace:packages/editor":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/editor@workspace:packages/editor"
   dependencies:
@@ -1726,11 +1726,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/tldraw@2.0.0-alpha.20, @bigbluebutton/tldraw@workspace:packages/tldraw":
+"@bigbluebutton/tldraw@2.0.0-alpha.23, @bigbluebutton/tldraw@workspace:packages/tldraw":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/tldraw@workspace:packages/tldraw"
   dependencies:
-    "@bigbluebutton/editor": 2.0.0-alpha.20
+    "@bigbluebutton/editor": 2.0.0-alpha.22
     "@peculiar/webcrypto": ^1.4.0
     "@radix-ui/react-alert-dialog": ^1.0.0
     "@radix-ui/react-context-menu": ^2.1.5
@@ -1798,7 +1798,7 @@ __metadata:
   resolution: "@bigbluebutton/vscode-editor@workspace:apps/vscode/editor"
   dependencies:
     "@bigbluebutton/assets": 2.0.0-alpha.20
-    "@bigbluebutton/tldraw": 2.0.0-alpha.20
+    "@bigbluebutton/tldraw": 2.0.0-alpha.23
     "@types/fs-extra": ^11.0.1
     "@types/node": ^17.0.14
     "@types/react": ^18.0.24
@@ -9866,7 +9866,7 @@ __metadata:
   dependencies:
     "@babel/plugin-proposal-decorators": ^7.21.0
     "@bigbluebutton/assets": 2.0.0-alpha.20
-    "@bigbluebutton/tldraw": 2.0.0-alpha.20
+    "@bigbluebutton/tldraw": 2.0.0-alpha.23
     "@playwright/test": ^1.38.1
     "@vercel/analytics": ^1.0.1
     "@vitejs/plugin-react": ^4.2.0
@@ -17458,8 +17458,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tldraw-vscode@workspace:apps/vscode/extension"
   dependencies:
-    "@bigbluebutton/editor": 2.0.0-alpha.20
-    "@bigbluebutton/tldraw": 2.0.0-alpha.20
+    "@bigbluebutton/editor": 2.0.0-alpha.22
+    "@bigbluebutton/tldraw": 2.0.0-alpha.23
     "@types/fs-extra": ^11.0.1
     "@types/node-fetch": ^2.6.2
     "@types/vscode": ^1.75.1
