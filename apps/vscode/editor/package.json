@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@bigbluebutton/assets": "2.0.0-alpha.20",
-		"@bigbluebutton/tldraw": "2.0.0-alpha.23",
+		"@bigbluebutton/tldraw": "2.0.0-alpha.24",
 		"@types/fs-extra": "^11.0.1",
 		"@types/node": "^17.0.14",
 		"@types/react": "^18.0.24",
