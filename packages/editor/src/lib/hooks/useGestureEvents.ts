@@ -114,7 +114,7 @@ export function useGestureEvents(ref: React.RefObject<HTMLDivElement>) {
 			preventDefault(event)
 			const delta = normalizeWheel(event)
 
-			if (delta.x === 0 && delta.y === 0) return
+			if (delta.x === 0 && delta.y === 0 && delta.z === 0) return
 
 			const container = editor.getContainer().getBoundingClientRect()
 
@@ -129,6 +129,18 @@ export function useGestureEvents(ref: React.RefObject<HTMLDivElement>) {
 				shiftKey: event.shiftKey,
 				altKey: event.altKey,
 				ctrlKey: event.metaKey || event.ctrlKey,
+			}
+
+			// Custom behavior: Default to zooming unless modifiers are pressed
+			if (!event.ctrlKey && !event.shiftKey) {
+				// Default behavior: Zoom
+				info.delta = { x: 0, y: 0, z: delta.y }
+			} else if (event.ctrlKey) {
+				// Pan up/down with Ctrl
+				info.delta = { x: 0, y: delta.y, z: 0 }
+			} else if (event.shiftKey) {
+				// Pan left/right with Shift
+				info.delta = { x: delta.x, y: 0, z: 0 }
 			}
 
 			editor.dispatch(info)
