@@ -3,7 +3,6 @@ import {
 	DefaultErrorFallback,
 	ErrorBoundary,
 	setDefaultEditorAssetUrls,
-	setDefaultUiAssetUrls,
 } from '@bigbluebutton/tldraw'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
@@ -49,7 +48,6 @@ import YjsExample from './examples/yjs/YjsExample'
 // top-level so assets don't need to be passed down in every single example.
 const assetUrls = getAssetUrlsByMetaUrl()
 setDefaultEditorAssetUrls(assetUrls)
-setDefaultUiAssetUrls(assetUrls)
 
 type Example = {
 	path: string

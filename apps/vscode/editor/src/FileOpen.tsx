@@ -1,4 +1,4 @@
-import { parseAndLoadDocument, useDefaultHelpers, useEditor } from '@bigbluebutton/tldraw'
+import { useDefaultHelpers, useEditor } from '@bigbluebutton/tldraw'
 import React from 'react'
 import { vscode } from './utils/vscode'
 
@@ -29,11 +29,11 @@ export function FileOpen({
 			})
 		}
 
-		async function loadFile() {
-			await parseAndLoadDocument(editor, fileContents, msg, addToast, onV1FileLoad, forceDarkMode)
-		}
+		// async function loadFile() {
+		// 	await parseAndLoadDocument(editor, fileContents, msg, addToast, onV1FileLoad, forceDarkMode)
+		// }
 
-		loadFile()
+		// loadFile()
 		setIsFileLoaded(true)
 		return () => {
 			clearToasts()
