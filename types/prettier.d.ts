@@ -1,4 +1,4 @@
 declare module 'prettier' {
-	import prettier from 'prettier'
+	import * as prettier from 'prettier'
 	export default prettier
 }
