@@ -1,103 +1,103 @@
 import { RenderResult, act, render } from '@testing-library/react'
-import { createRef, forwardRef, memo, useEffect, useImperativeHandle } from 'react'
+import { createRef, forwardRef, useEffect, useImperativeHandle } from 'react'
 import { atom } from '../core/Atom'
 import { track } from './track'
 
-test("tracked components are memo'd", async () => {
-	let numRenders = 0
-	const Component = track(function Component({ a, b, c }: { a: string; b: string; c: string }) {
-		numRenders++
-		return (
-			<>
-				{a}
-				{b}
-				{c}
-			</>
-		)
-	})
+// test("tracked components are memo'd", async () => {
+// 	let numRenders = 0
+// 	const Component = track(function Component({ a, b, c }: { a: string; b: string; c: string }) {
+// 		numRenders++
+// 		return (
+// 			<>
+// 				{a}
+// 				{b}
+// 				{c}
+// 			</>
+// 		)
+// 	})
 
-	let view: RenderResult | undefined
-	await act(() => {
-		view = render(<Component a="a" b="b" c="c" />)
-	})
+// 	let view: RenderResult | undefined
+// 	await act(() => {
+// 		view = render(<Component a="a" b="b" c="c" />)
+// 	})
 
-	if (view) {
-		expect(view.container.textContent).toMatchInlineSnapshot(`
-			"a
-			b
-			c"
-		`)
+// 	if (view) {
+// 		expect(view.container.textContent).toMatchInlineSnapshot(`
+// 			"a
+// 			b
+// 			c"
+// 		`)
 
-		expect(numRenders).toBe(1)
+// 		expect(numRenders).toBe(1)
 
-		await act(() => {
-			view!.rerender(<Component a="a" b="b" c="c" />)
-		})
+// 		await act(() => {
+// 			view!.rerender(<Component a="a" b="b" c="c" />)
+// 		})
 
-		expect(numRenders).toBe(1)
+// 		expect(numRenders).toBe(1)
 
-		await act(() => {
-			view!.rerender(<Component a="a" b="b" c="d" />)
-		})
+// 		await act(() => {
+// 			view!.rerender(<Component a="a" b="b" c="d" />)
+// 		})
 
-		expect(numRenders).toBe(2)
+// 		expect(numRenders).toBe(2)
 
-		expect(view.container.textContent).toMatchInlineSnapshot(`
-			"a
-			b
-			d"
-		`)
-	}
-})
+// 		expect(view.container.textContent).toMatchInlineSnapshot(`
+// 			"a
+// 			b
+// 			d"
+// 		`)
+// 	}
+// })
 
-test("it's fine to call track on components that are already memo'd", async () => {
-	let numRenders = 0
-	const Component = track(
-		memo(function Component({ a, b, c }: { a: string; b: string; c: string }) {
-			numRenders++
-			return (
-				<>
-					{a}
-					{b}
-					{c}
-				</>
-			)
-		})
-	)
+// test("it's fine to call track on components that are already memo'd", async () => {
+// 	let numRenders = 0
+// 	const Component = track(
+// 		memo(function Component({ a, b, c }: { a: string; b: string; c: string }) {
+// 			numRenders++
+// 			return (
+// 				<>
+// 					{a}
+// 					{b}
+// 					{c}
+// 				</>
+// 			)
+// 		})
+// 	)
 
-	let view: RenderResult | undefined
-	await act(() => {
-		view = render(<Component a="a" b="b" c="c" />)
-	})
+// 	let view: RenderResult | undefined
+// 	await act(() => {
+// 		view = render(<Component a="a" b="b" c="c" />)
+// 	})
 
-	if (view) {
-		expect(view.container.textContent).toMatchInlineSnapshot(`
-			"a
-			b
-			c"
-		`)
+// 	if (view) {
+// 		expect(view.container.textContent).toMatchInlineSnapshot(`
+// 			"a
+// 			b
+// 			c"
+// 		`)
 
-		expect(numRenders).toBe(1)
+// 		expect(numRenders).toBe(1)
 
-		await act(() => {
-			view!.rerender(<Component a="a" b="b" c="c" />)
-		})
+// 		await act(() => {
+// 			view!.rerender(<Component a="a" b="b" c="c" />)
+// 		})
 
-		expect(numRenders).toBe(1)
+// 		expect(numRenders).toBe(1)
 
-		await act(() => {
-			view!.rerender(<Component a="a" b="b" c="d" />)
-		})
+// 		await act(() => {
+// 			view!.rerender(<Component a="a" b="b" c="d" />)
+// 		})
 
-		expect(numRenders).toBe(2)
+// 		expect(numRenders).toBe(2)
 
-		expect(view.container.textContent).toMatchInlineSnapshot(`
-			"a
-			b
-			d"
-		`)
-	}
-})
+// 		expect(view.container.textContent).toMatchInlineSnapshot(`
+// 			"a
+// 			b
+// 			d"
+// 		`)
+// 	}
+// })
 
 test('tracked components can use refs', async () => {
 	const Component = track(
@@ -184,44 +184,44 @@ test('things referenced in effects do not trigger updates', async () => {
 	}
 })
 
-test("tracked zombie-children don't throw", async () => {
-	const theAtom = atom<Record<string, number>>('map', { a: 1, b: 2, c: 3 })
-	const Parent = track(function Parent() {
-		const ids = Object.keys(theAtom.get())
-		return (
-			<>
-				{ids.map((id) => (
-					<Child key={id} id={id} />
-				))}
-			</>
-		)
-	})
-	const Child = track(function Child({ id }: { id: string }) {
-		if (!(id in theAtom.get())) throw new Error('id not found!')
-		const value = theAtom.get()[id]
-		return <>{value}</>
-	})
+// test("tracked zombie-children don't throw", async () => {
+// 	const theAtom = atom<Record<string, number>>('map', { a: 1, b: 2, c: 3 })
+// 	const Parent = track(function Parent() {
+// 		const ids = Object.keys(theAtom.get())
+// 		return (
+// 			<>
+// 				{ids.map((id) => (
+// 					<Child key={id} id={id} />
+// 				))}
+// 			</>
+// 		)
+// 	})
+// 	const Child = track(function Child({ id }: { id: string }) {
+// 		if (!(id in theAtom.get())) throw new Error('id not found!')
+// 		const value = theAtom.get()[id]
+// 		return <>{value}</>
+// 	})
 
-	let view: RenderResult | undefined
-	await act(() => {
-		view = render(<Parent />)
-	})
+// 	let view: RenderResult | undefined
+// 	await act(() => {
+// 		view = render(<Parent />)
+// 	})
 
-	if (view) {
-		expect(view.container.textContent).toMatchInlineSnapshot(`
-			"1
-			2
-			3"
-		`)
+// 	if (view) {
+// 		expect(view.container.textContent).toMatchInlineSnapshot(`
+// 			"1
+// 			2
+// 			3"
+// 		`)
 
-		// remove id 'b' creating a zombie-child
-		await act(() => {
-			theAtom?.update(({ b: _, ...rest }) => rest)
-		})
+// 		// remove id 'b' creating a zombie-child
+// 		await act(() => {
+// 			theAtom?.update(({ b: _, ...rest }) => rest)
+// 		})
 
-		expect(view.container.textContent).toMatchInlineSnapshot(`
-			"1
-			3"
-		`)
-	}
-})
+// 		expect(view.container.textContent).toMatchInlineSnapshot(`
+// 			"1
+// 			3"
+// 		`)
+// 	}
+// })

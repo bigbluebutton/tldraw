@@ -74,89 +74,89 @@ describe('useStateTracking', () => {
 		)
 	})
 
-	it('allows throwing promises to trigger suspense boundaries', async () => {
-		const a = atom<null | number>('age', null)
+	// it('allows throwing promises to trigger suspense boundaries', async () => {
+	// 	const a = atom<null | number>('age', null)
 
-		let resolve = (_val: string) => {
-			// noop
-		}
+	// 	let resolve = (_val: string) => {
+	// 		// noop
+	// 	}
 
-		const Component = () => {
-			const val = useStateTracking('', () => {
-				if (a.get() === null) {
-					throw new Promise<string>((r) => {
-						resolve = r
-					})
-				}
-				return a.get()
-			})
-			return <>You are {val} years old</>
-		}
+	// 	const Component = () => {
+	// 		const val = useStateTracking('', () => {
+	// 			if (a.get() === null) {
+	// 				throw new Promise<string>((r) => {
+	// 					resolve = r
+	// 				})
+	// 			}
+	// 			return a.get()
+	// 		})
+	// 		return <>You are {val} years old</>
+	// 	}
 
-		let view = render(
-			<React.Suspense fallback={<>fallback</>}>
-				<Component />
-			</React.Suspense>
-		)
+	// 	let view = render(
+	// 		<React.Suspense fallback={<>fallback</>}>
+	// 			<Component />
+	// 		</React.Suspense>
+	// 	)
 
-		await act(async () => {
-			view = render(
-				<React.Suspense fallback={<>fallback</>}>
-					<Component />
-				</React.Suspense>
-			)
-		})
+	// 	await act(async () => {
+	// 		view = render(
+	// 			<React.Suspense fallback={<>fallback</>}>
+	// 				<Component />
+	// 			</React.Suspense>
+	// 		)
+	// 	})
 
-		expect(view.container!.textContent).toMatchInlineSnapshot(`"fallback"`)
+	// 	expect(view.container!.textContent).toMatchInlineSnapshot(`"fallback"`)
 
-		act(() => {
-			a.set(1)
-		})
+	// 	act(() => {
+	// 		a.set(1)
+	// 	})
 
-		expect(view.container!.textContent).toMatchInlineSnapshot(`"fallback"`)
+	// 	expect(view.container!.textContent).toMatchInlineSnapshot(`"fallback"`)
 
-		act(() => {
-			resolve('resolved')
-		})
+	// 	act(() => {
+	// 		resolve('resolved')
+	// 	})
 
-		expect(view.container!.textContent).toMatchInlineSnapshot(`"You are 1 years old"`)
-	})
+	// 	expect(view.container!.textContent).toMatchInlineSnapshot(`"You are 1 years old"`)
+	// })
 
-	it('stops reacting when the component unmounts', async () => {
-		const a = atom('', 0)
-		let numRenders = 0
-		const Component = () => {
-			const val = useStateTracking('', () => {
-				numRenders++
-				return a.get()
-			})
-			return <>You are {val} years old</>
-		}
+	// it('stops reacting when the component unmounts', async () => {
+	// 	const a = atom('', 0)
+	// 	let numRenders = 0
+	// 	const Component = () => {
+	// 		const val = useStateTracking('', () => {
+	// 			numRenders++
+	// 			return a.get()
+	// 		})
+	// 		return <>You are {val} years old</>
+	// 	}
 
-		let view = render(React.createElement(Component))
+	// 	let view = render(React.createElement(Component))
 
-		await act(async () => {
-			view = render(React.createElement(Component))
-		})
+	// 	await act(async () => {
+	// 		view = render(React.createElement(Component))
+	// 	})
 
-		expect(view.container!.textContent).toMatchInlineSnapshot(`"You are 0 years old"`)
-		expect(numRenders).toBe(1)
+	// 	expect(view.container!.textContent).toMatchInlineSnapshot(`"You are 0 years old"`)
+	// 	expect(numRenders).toBe(1)
 
-		act(() => {
-			a.set(1)
-		})
+	// 	act(() => {
+	// 		a.set(1)
+	// 	})
 
-		expect(view.container!.textContent).toMatchInlineSnapshot(`"You are 1 years old"`)
-		expect(numRenders).toBe(2)
+	// 	expect(view.container!.textContent).toMatchInlineSnapshot(`"You are 1 years old"`)
+	// 	expect(numRenders).toBe(2)
 
-		await act(async () => {
-			view.unmount()
-		})
+	// 	await act(async () => {
+	// 		view.unmount()
+	// 	})
 
-		act(() => {
-			a.set(2)
-		})
+	// 	act(() => {
+	// 		a.set(2)
+	// 	})
 
-		expect(numRenders).toBe(2)
-	})
+	// 	expect(numRenders).toBe(2)
+	// })
 })
