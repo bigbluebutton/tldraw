@@ -1272,8 +1272,8 @@ export class Editor extends EventEmitter<TLEventMap> {
 	}
 
 	closeMenusOpen(): this {
-		if (this.getOpenMenus()?.length) this.updateInstanceState({ openMenus: [] });
-		return this;
+		if (this.getOpenMenus()?.length) this.updateInstanceState({ openMenus: [] })
+		return this
 	}
 
 	/**
@@ -8701,7 +8701,7 @@ export class Editor extends EventEmitter<TLEventMap> {
 
 					switch (info.name) {
 						case 'pointer_down': {
-							this.closeMenusOpen();
+							this.closeMenusOpen()
 							this._selectedShapeIdsAtPointerDown = this.getSelectedShapeIds()
 
 							// Firefox bug fix...

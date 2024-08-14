@@ -1,5 +1,5 @@
+import { act, render } from '@testing-library/react'
 import * as React from 'react'
-import { act, create, ReactTestRenderer } from 'react-test-renderer'
 import { atom } from '../core/Atom'
 import { useStateTracking } from './useStateTracking'
 
@@ -14,29 +14,19 @@ describe('useStateTracking', () => {
 			return <>You are {val} years old</>
 		}
 
-		let view: ReactTestRenderer
-		await act(() => {
-			view = create(<Component />)
+		let view = render(<Component />)
+
+		await act(async () => {
+			view = render(<Component />)
 		})
-		expect(view!.toJSON()).toMatchInlineSnapshot(`
-		Array [
-		  "You are ",
-		  "0",
-		  " years old",
-		]
-	`)
+
+		expect(view.container!.textContent).toMatchInlineSnapshot(`"You are 0 years old"`)
 
 		act(() => {
 			a.set(1)
 		})
 
-		expect(view!.toJSON()).toMatchInlineSnapshot(`
-		Array [
-		  "You are ",
-		  "1",
-		  " years old",
-		]
-	`)
+		expect(view.container!.textContent).toMatchInlineSnapshot(`"You are 1 years old"`)
 	})
 
 	it('allows using hooks inside the callback', async () => {
@@ -57,48 +47,31 @@ describe('useStateTracking', () => {
 			)
 		}
 
-		let view: ReactTestRenderer
-		await act(() => {
-			view = create(<Component />)
+		let view = render(<Component />)
+
+		await act(async () => {
+			view = render(<Component />)
 		})
 
-		expect(view!.toJSON()).toMatchInlineSnapshot(`
-		Array [
-		  "You are ",
-		  "0",
-		  " years old and ",
-		  "20",
-		  " meters tall",
-		]
-	`)
+		expect(view.container!.textContent).toMatchInlineSnapshot(
+			`"You are 0 years old and 20 meters tall"`
+		)
 
 		act(() => {
 			_age.set(1)
 		})
 
-		expect(view!.toJSON()).toMatchInlineSnapshot(`
-		Array [
-		  "You are ",
-		  "1",
-		  " years old and ",
-		  "20",
-		  " meters tall",
-		]
-	`)
+		expect(view.container!.textContent).toMatchInlineSnapshot(
+			`"You are 1 years old and 20 meters tall"`
+		)
 
 		act(() => {
 			setHeight(21)
 		})
 
-		expect(view!.toJSON()).toMatchInlineSnapshot(`
-		Array [
-		  "You are ",
-		  "1",
-		  " years old and ",
-		  "21",
-		  " meters tall",
-		]
-	`)
+		expect(view.container!.textContent).toMatchInlineSnapshot(
+			`"You are 1 years old and 21 meters tall"`
+		)
 	})
 
 	it('allows throwing promises to trigger suspense boundaries', async () => {
@@ -120,34 +93,33 @@ describe('useStateTracking', () => {
 			return <>You are {val} years old</>
 		}
 
-		let view: ReactTestRenderer = null as any
-		await act(() => {
-			view = create(
+		let view = render(
+			<React.Suspense fallback={<>fallback</>}>
+				<Component />
+			</React.Suspense>
+		)
+
+		await act(async () => {
+			view = render(
 				<React.Suspense fallback={<>fallback</>}>
 					<Component />
 				</React.Suspense>
 			)
 		})
 
-		expect(view.toJSON()).toMatchInlineSnapshot(`"fallback"`)
+		expect(view.container!.textContent).toMatchInlineSnapshot(`"fallback"`)
 
-		await act(() => {
+		act(() => {
 			a.set(1)
 		})
-		// merely setting the value won't trigger a rerender, the promise must resolve
-		expect(view.toJSON()).toMatchInlineSnapshot(`"fallback"`)
 
-		await act(() => {
+		expect(view.container!.textContent).toMatchInlineSnapshot(`"fallback"`)
+
+		act(() => {
 			resolve('resolved')
 		})
 
-		expect(view.toJSON()).toMatchInlineSnapshot(`
-		Array [
-		  "You are ",
-		  "1",
-		  " years old",
-		]
-	`)
+		expect(view.container!.textContent).toMatchInlineSnapshot(`"You are 1 years old"`)
 	})
 
 	it('stops reacting when the component unmounts', async () => {
@@ -161,40 +133,27 @@ describe('useStateTracking', () => {
 			return <>You are {val} years old</>
 		}
 
-		let view: ReactTestRenderer
-		await act(() => {
-			view = create(React.createElement(Component))
+		let view = render(React.createElement(Component))
+
+		await act(async () => {
+			view = render(React.createElement(Component))
 		})
 
-		expect(view!.toJSON()).toMatchInlineSnapshot(`
-		Array [
-		  "You are ",
-		  "0",
-		  " years old",
-		]
-	`)
-
+		expect(view.container!.textContent).toMatchInlineSnapshot(`"You are 0 years old"`)
 		expect(numRenders).toBe(1)
 
-		await act(() => {
+		act(() => {
 			a.set(1)
 		})
 
-		expect(view!.toJSON()).toMatchInlineSnapshot(`
-		Array [
-		  "You are ",
-		  "1",
-		  " years old",
-		]
-	`)
-
+		expect(view.container!.textContent).toMatchInlineSnapshot(`"You are 1 years old"`)
 		expect(numRenders).toBe(2)
 
-		await act(() => {
-			view!.unmount()
+		await act(async () => {
+			view.unmount()
 		})
 
-		await act(() => {
+		act(() => {
 			a.set(2)
 		})
 

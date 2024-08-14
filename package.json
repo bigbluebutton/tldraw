@@ -80,6 +80,7 @@
 		"prettier": "^2.8.6",
 		"prettier-plugin-organize-imports": "^3.2.2",
 		"rimraf": "^4.4.0",
+		"ts-node": "^10.9.2",
 		"tsx": "4.17.0",
 		"typescript": "^5.0.2",
 		"vercel": "^28.16.15"

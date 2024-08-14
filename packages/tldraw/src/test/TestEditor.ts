@@ -24,6 +24,7 @@ import {
 	createTLStore,
 	rotateSelectionHandle,
 } from '@bigbluebutton/editor'
+import React from 'react'
 import { defaultShapeTools } from '../lib/defaultShapeTools'
 import { defaultShapeUtils } from '../lib/defaultShapeUtils'
 import { defaultTools } from '../lib/defaultTools'
@@ -560,7 +561,9 @@ export class TestEditor extends Editor {
 		return this
 	}
 
-	createShapesFromJsx(shapesJsx: JSX.Element | JSX.Element[]): Record<string, TLShapeId> {
+	createShapesFromJsx(
+		shapesJsx: React.JSX.Element | React.JSX.Element[]
+	): Record<string, TLShapeId> {
 		const { shapes, ids } = shapesFromJsx(shapesJsx)
 		this.createShapes(shapes)
 		return ids

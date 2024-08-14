@@ -57,5 +57,8 @@
 		"entryPoint": "./src/index.ts",
 		"displayName": "@bigbluebutton/state",
 		"tsconfig": "./tsconfig.json"
+	},
+	"dependencies": {
+		"@testing-library/react": "^16.0.0"
 	}
 }

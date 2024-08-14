@@ -1,4 +1,4 @@
-import ReactTestRenderer from 'react-test-renderer'
+import { act, render } from '@testing-library/react'
 import { Atom } from '../core/Atom'
 import { useAtom } from './useAtom'
 import { useValue } from './useValue'
@@ -11,23 +11,24 @@ test('useAtom returns an atom', async () => {
 		return <>{useValue(a)}</>
 	}
 
-	let view: ReactTestRenderer.ReactTestRenderer
-	await ReactTestRenderer.act(() => {
-		view = ReactTestRenderer.create(<Component />)
+	let view = render(<Component />)
+
+	await act(async () => {
+		view = render(<Component />)
 	})
 
 	expect(theAtom).not.toBeNull()
 	expect(theAtom?.get()).toBe('a')
 	expect(theAtom?.name).toBe('useAtom(myAtom)')
-	expect(view!.toJSON()).toMatchInlineSnapshot(`"a"`)
+	expect(view!.container.textContent).toMatchInlineSnapshot(`"a"`)
 
 	// it doesn't create a new atom on re-render
 	const a = theAtom!
-	await ReactTestRenderer.act(() => {
+	await act(async () => {
 		theAtom?.set('b')
 	})
 	expect(a).toBe(theAtom)
-	expect(view!.toJSON()).toMatchInlineSnapshot(`"b"`)
+	expect(view!.container.textContent).toMatchInlineSnapshot(`"b"`)
 })
 
 test('useAtom supports taking an initializer', async () => {
@@ -38,14 +39,15 @@ test('useAtom supports taking an initializer', async () => {
 		return <>{useValue(a)}</>
 	}
 
-	let view: ReactTestRenderer.ReactTestRenderer
-	await ReactTestRenderer.act(() => {
-		view = ReactTestRenderer.create(<Component />)
+	let view = render(<Component />)
+
+	await act(async () => {
+		view = render(<Component />)
 	})
 
 	expect(theAtom).not.toBeNull()
 	expect(theAtom?.get()).toBe('a')
 
 	expect(theAtom?.name).toBe('useAtom(myAtom)')
-	expect(view!.toJSON()).toMatchInlineSnapshot(`"a"`)
+	expect(view!.container.textContent).toMatchInlineSnapshot(`"a"`)
 })

@@ -65,7 +65,7 @@ export const ContextMenu = function ContextMenu({ children }: { children: any })
 		[editor]
 	)
 
-	const container = useContainer()
+	// const container = useContainer()
 
 	const [isOpen, handleOpenChange] = useMenuIsOpen('context menu', cb)
 

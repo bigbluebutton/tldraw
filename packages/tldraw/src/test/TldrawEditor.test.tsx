@@ -23,16 +23,16 @@ function checkAllShapes(editor: Editor, shapes: string[]) {
 }
 
 describe('<TldrawEditor />', () => {
-	it('Renders without crashing', async () => {
+	it('Renders without crashing', () => {
 		render(
 			<TldrawEditor tools={defaultTools} autoFocus initialState="select">
 				<div data-testid="canvas-1" />
 			</TldrawEditor>
 		)
-		await screen.findByTestId('canvas-1')
+		screen.findByTestId('canvas-1')
 	})
 
-	it('Creates its own store with core shapes', async () => {
+	it('Creates its own store with core shapes', () => {
 		let editor: Editor
 		render(
 			<TldrawEditor
@@ -46,11 +46,11 @@ describe('<TldrawEditor />', () => {
 				<div data-testid="canvas-1" />
 			</TldrawEditor>
 		)
-		await screen.findByTestId('canvas-1')
+		screen.findByTestId('canvas-1')
 		checkAllShapes(editor!, ['group'])
 	})
 
-	it('Can be created with default shapes', async () => {
+	it('Can be created with default shapes', () => {
 		let editor: Editor
 		render(
 			<TldrawEditor
@@ -65,13 +65,13 @@ describe('<TldrawEditor />', () => {
 				<div data-testid="canvas-1" />
 			</TldrawEditor>
 		)
-		await screen.findByTestId('canvas-1')
+		screen.findByTestId('canvas-1')
 		expect(editor!).toBeTruthy()
 
 		checkAllShapes(editor!, ['group'])
 	})
 
-	it('Renders with an external store', async () => {
+	it('Renders with an external store', () => {
 		const store = createTLStore({ shapeUtils: [] })
 		render(
 			<TldrawEditor
@@ -86,10 +86,10 @@ describe('<TldrawEditor />', () => {
 				<div data-testid="canvas-1" />
 			</TldrawEditor>
 		)
-		await screen.findByTestId('canvas-1')
+		screen.findByTestId('canvas-1')
 	})
 
-	it('throws if the store has different shapes to the ones passed in', async () => {
+	it('throws if the store has different shapes to the ones passed in', () => {
 		const spy = jest.spyOn(console, 'error').mockImplementation(noop)
 		// expect(() =>
 		// 	render(
@@ -130,7 +130,7 @@ describe('<TldrawEditor />', () => {
 		spy.mockRestore()
 	})
 
-	it('Accepts fresh versions of store and calls `onMount` for each one', async () => {
+	it('Accepts fresh versions of store and calls `onMount` for each one', () => {
 		const initialStore = createTLStore({ shapeUtils: [] })
 		const onMount = jest.fn()
 		const rendered = render(
@@ -144,7 +144,7 @@ describe('<TldrawEditor />', () => {
 				<div data-testid="canvas-1" />
 			</TldrawEditor>
 		)
-		await screen.findByTestId('canvas-1')
+		screen.findByTestId('canvas-1')
 		const initialEditor = onMount.mock.lastCall[0]
 		jest.spyOn(initialEditor, 'dispose')
 		expect(initialEditor.store).toBe(initialStore)
@@ -160,7 +160,7 @@ describe('<TldrawEditor />', () => {
 				<div data-testid="canvas-2" />
 			</TldrawEditor>
 		)
-		await screen.findByTestId('canvas-2')
+		screen.findByTestId('canvas-2')
 		// not called again:
 		expect(onMount).toHaveBeenCalledTimes(1)
 		// re-render with a new store:
@@ -176,7 +176,7 @@ describe('<TldrawEditor />', () => {
 				<div data-testid="canvas-3" />
 			</TldrawEditor>
 		)
-		await screen.findByTestId('canvas-3')
+		screen.findByTestId('canvas-3')
 		expect(initialEditor.dispose).toHaveBeenCalledTimes(1)
 		expect(onMount).toHaveBeenCalledTimes(2)
 		expect(onMount.mock.lastCall[0].store).toBe(newStore)
@@ -184,23 +184,21 @@ describe('<TldrawEditor />', () => {
 
 	it('Renders the canvas and shapes', async () => {
 		let editor = {} as Editor
-		await act(async () =>
-			render(
-				<TldrawEditor
-					shapeUtils={[GeoShapeUtil]}
-					initialState="select"
-					tools={defaultTools}
-					autoFocus
-					onMount={(editorApp) => {
-						editor = editorApp
-					}}
-				>
-					<Canvas />
-					<div data-testid="canvas-1" />
-				</TldrawEditor>
-			)
+		render(
+			<TldrawEditor
+				shapeUtils={[GeoShapeUtil]}
+				initialState="select"
+				tools={defaultTools}
+				autoFocus
+				onMount={(editorApp) => {
+					editor = editorApp
+				}}
+			>
+				<Canvas />
+				<div data-testid="canvas-1" />
+			</TldrawEditor>
 		)
-		await screen.findByTestId('canvas-1')
+		screen.findByTestId('canvas-1')
 
 		expect(editor).toBeTruthy()
 		await act(async () => {
@@ -324,7 +322,7 @@ describe('Custom shapes', () => {
 				<div data-testid="canvas-1" />
 			</TldrawEditor>
 		)
-		await screen.findByTestId('canvas-1')
+		screen.findByTestId('canvas-1')
 
 		expect(editor).toBeTruthy()
 		await act(async () => {
