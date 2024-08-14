@@ -1696,7 +1696,7 @@ __metadata:
     "@types/glob": ^8.1.0
     "@types/jest": ^29
     "@types/node": 18.7.3
-    "@types/prettier": ^3.0.0
+    "@types/prettier": 2.7.0
     "@types/react": ^18.0.24
     "@types/react-dom": ^18.0.6
     "@typescript-eslint/eslint-plugin": ^5.57.0
@@ -5705,12 +5705,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/prettier@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@types/prettier@npm:3.0.0"
-  dependencies:
-    prettier: "*"
-  checksum: a2a512d304e5bcf78f38089dc88ad19215e6ab871d435a17aef3ce538a63b07c0e359c18db23989dc1ed9fff96d99eee1f680416080184df5c7e0e3bf767e165
+"@types/prettier@npm:2.7.0":
+  version: 2.7.0
+  resolution: "@types/prettier@npm:2.7.0"
+  checksum: bf5d0c7c1270909b39399539ac106d20ddaa85fe92eb1d59922dc99159604b4f8d5e41b0045fb29c8011585cf5bca2350b7441ef3d9816c08bd0e10ebd4b31d4
   languageName: node
   linkType: hard
 
@@ -15589,15 +15587,6 @@ __metadata:
     "@volar/vue-typescript":
       optional: true
   checksum: 57ae97d7e403445e650ae92b7da586761d1d88a47e46b3ea274baeb96782165bebd0132db9c652081e185c41b50701ba1d30d615ad1c9000300cc0c67eb12b7a
-  languageName: node
-  linkType: hard
-
-"prettier@npm:*":
-  version: 3.3.3
-  resolution: "prettier@npm:3.3.3"
-  bin:
-    prettier: bin/prettier.cjs
-  checksum: bc8604354805acfdde6106852d14b045bb20827ad76a5ffc2455b71a8257f94de93f17f14e463fe844808d2ccc87248364a5691488a3304f1031326e62d9276e
   languageName: node
   linkType: hard
 
