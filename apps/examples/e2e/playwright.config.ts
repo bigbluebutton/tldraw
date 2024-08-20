@@ -100,7 +100,8 @@ const config: PlaywrightTestConfig = {
 	webServer: {
 		command: 'yarn dev',
 		port: 5420,
-		reuseExistingServer: !process.env.CI,
+		// reuseExistingServer: !process.env.CI,
+		reuseExistingServer: true,
 		cwd: path.join(__dirname, '../../..'),
 		timeout: 120 * 1000,
 	},
