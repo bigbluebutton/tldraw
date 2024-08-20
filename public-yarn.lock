@@ -1716,6 +1716,7 @@ __metadata:
     json5: ^2.2.3
     lazyrepo: 0.0.0-alpha.27
     lint-staged: ">=10"
+    playwright: ^1.46.0
     prettier: ^2.8.6
     prettier-plugin-organize-imports: ^3.2.2
     rimraf: ^4.4.0
@@ -15398,6 +15399,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"playwright-core@npm:1.46.0":
+  version: 1.46.0
+  resolution: "playwright-core@npm:1.46.0"
+  bin:
+    playwright-core: cli.js
+  checksum: 0af0bf8afdd2182d377137c19da870d13e0f849b12b147dce7d5273db9f3d08a6ea35ef229eeb1816b3a9eca61504596fc1171e041e666e6ebb4118e71fe83ba
+  languageName: node
+  linkType: hard
+
 "playwright@npm:1.44.1":
   version: 1.44.1
   resolution: "playwright@npm:1.44.1"
@@ -15410,6 +15420,21 @@ __metadata:
   bin:
     playwright: cli.js
   checksum: c2e8ff0a855e4a9e665ae5ffa0ff90423289546157be55e83f78916d17075c5910a7244773739c2a973da884a4ff0b3cf9b6e6b543de112e43b12169a9208e86
+  languageName: node
+  linkType: hard
+
+"playwright@npm:^1.46.0":
+  version: 1.46.0
+  resolution: "playwright@npm:1.46.0"
+  dependencies:
+    fsevents: 2.3.2
+    playwright-core: 1.46.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    playwright: cli.js
+  checksum: 013d7cd81c4016556245f98bd0b407c95f7dbc6d11d174d33d2e6aeeac1a4c63f646909adf3a926df09e1f0638e408018af3799e2c8e437dd2362f78091182e4
   languageName: node
   linkType: hard
 

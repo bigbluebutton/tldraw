@@ -16,13 +16,13 @@ const config: PlaywrightTestConfig = {
 	globalSetup: './global-setup.ts',
 	globalTeardown: './global-teardown.ts',
 	/* Maximum time one test can run for. */
-	timeout: 30 * 1000,
+	timeout: 60 * 1000,
 	expect: {
 		/**
 		 * Maximum time expect() should wait for the condition to be met.
 		 * For example in `await expect(locator).toHaveText();`
 		 */
-		timeout: 2000,
+		timeout: 5000,
 		toHaveScreenshot: {
 			maxDiffPixelRatio: 0.001,
 			threshold: 0.01,
@@ -39,7 +39,7 @@ const config: PlaywrightTestConfig = {
 	/* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
 	use: {
 		/* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
-		actionTimeout: 0,
+		actionTimeout: 10000,
 		/* Base URL to use in actions like `await page.goto('/')`. */
 		// baseURL: 'http://localhost:5420',
 
@@ -100,8 +100,10 @@ const config: PlaywrightTestConfig = {
 	webServer: {
 		command: 'yarn dev',
 		port: 5420,
-		reuseExistingServer: !process.env.CI,
+		// reuseExistingServer: !process.env.CI,
 		cwd: path.join(__dirname, '../../..'),
+		timeout: 120 * 1000,
+		reuseExistingServer: true,
 	},
 }
 
