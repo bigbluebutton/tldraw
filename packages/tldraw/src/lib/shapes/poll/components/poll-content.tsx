@@ -3,6 +3,7 @@ import {
   Bar, BarChart, ResponsiveContainer, XAxis, YAxis,
 } from 'recharts';
 import Styled from './styles';
+import { TLUiTranslationKey } from '@bigbluebutton/tldraw';
 
 const caseInsensitiveReducer = (acc: any[], item: { key: string; numVotes: number; }) => {
   const index = acc.findIndex(ans => ans.key.toLowerCase() === item.key.toLowerCase());
@@ -73,7 +74,16 @@ const ChatPollContent: React.FC<ChatPollContentProps> = ({
 
   const answers = pollData.answers.reduce(caseInsensitiveReducer, []);
 
-  const useHeight = height || answers.length * 50;
+  const translatedAnswers = answers.map((answer: Answers) => {
+    const translationKey = answer.key as TLUiTranslationKey;
+    const pollAnswer = translationKey ? translationKey : answer.key;
+    return {
+      ...answer,
+      pollAnswer,
+    };
+  });
+
+  const useHeight = height || translatedAnswers.length * 50;
   return (
     <Styled.PollWrapper data-test="chatPollMessageText">
       <Styled.PollText>
@@ -81,7 +91,7 @@ const ChatPollContent: React.FC<ChatPollContentProps> = ({
       </Styled.PollText>
       <ResponsiveContainer width="90%" height={useHeight}>
         <BarChart
-          data={answers}
+          data={translatedAnswers}
           layout="vertical"
         >
           <XAxis type="number" />

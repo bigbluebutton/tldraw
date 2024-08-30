@@ -349,5 +349,10 @@
 	"status.offline": "离线",
 	"status.online": "在线",
 	"action.remove-frame": "移除框架",
-	"action.fit-frame-to-content": "适合于内容"
+	"action.fit-frame-to-content": "适合于内容",
+	"app.poll.t": "正确",
+	"app.poll.f": "错误",
+	"app.poll.y": "是",
+	"app.poll.n": "否",
+	"app.poll.abstention": "无法作答"
 }
