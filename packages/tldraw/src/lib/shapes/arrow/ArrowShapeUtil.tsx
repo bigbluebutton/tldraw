@@ -518,7 +518,7 @@ export class ArrowShapeUtil extends ShapeUtil<TLArrowShape> {
 
 		const path = info.isStraight ? getSolidStraightArrowPath(info) : getSolidCurvedArrowPath(info)
 
-		let handlePath: null | JSX.Element = null
+		let handlePath: null | React.JSX.Element = null
 
 		if (onlySelectedShape === shape && shouldDisplayHandles) {
 			const sw = 2

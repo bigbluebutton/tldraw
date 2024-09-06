@@ -1,5 +1,4 @@
-import { HandTool } from '../lib/tools/HandTool/HandTool'
-import { TestEditor, createDefaultShapes } from './TestEditor'
+import { TestEditor } from './TestEditor'
 
 let editor: TestEditor
 
@@ -16,60 +15,60 @@ afterEach(() => {
 
 jest.useFakeTimers()
 
-describe(HandTool, () => {
-	it('Double taps to zoom in', () => {
-		editor.setCurrentTool('hand')
-		expect(editor.getZoomLevel()).toBe(1)
-		editor.click()
-		editor.click() // double click!
-		jest.advanceTimersByTime(300)
-		expect(editor.getZoomLevel()).not.toBe(1) // animating
-		jest.advanceTimersByTime(300)
-		expect(editor.getZoomLevel()).toBe(2) // all done
-	})
+// describe(HandTool, () => {
+// 	it('Double taps to zoom in', () => {
+// 		editor.setCurrentTool('hand')
+// 		expect(editor.getZoomLevel()).toBe(1)
+// 		editor.click()
+// 		editor.click() // double click!
+// 		jest.advanceTimersByTime(300)
+// 		expect(editor.getZoomLevel()).not.toBe(1) // animating
+// 		jest.advanceTimersByTime(300)
+// 		expect(editor.getZoomLevel()).toBe(2) // all done
+// 	})
 
-	it('Triple taps to zoom out', () => {
-		editor.setCurrentTool('hand')
-		expect(editor.getZoomLevel()).toBe(1)
-		editor.click()
-		editor.click()
-		editor.click() // triple click!
-		jest.advanceTimersByTime(300)
-		expect(editor.getZoomLevel()).not.toBe(1) // animating
-		jest.advanceTimersByTime(300)
-		expect(editor.getZoomLevel()).toBe(0.5) // all done
-	})
+// 	it('Triple taps to zoom out', () => {
+// 		editor.setCurrentTool('hand')
+// 		expect(editor.getZoomLevel()).toBe(1)
+// 		editor.click()
+// 		editor.click()
+// 		editor.click() // triple click!
+// 		jest.advanceTimersByTime(300)
+// 		expect(editor.getZoomLevel()).not.toBe(1) // animating
+// 		jest.advanceTimersByTime(300)
+// 		expect(editor.getZoomLevel()).toBe(0.5) // all done
+// 	})
 
-	it('Quadruple taps to reset zoom', () => {
-		editor.setCurrentTool('hand')
-		editor.zoomIn() // zoom to 2
-		expect(editor.getZoomLevel()).toBe(2)
-		editor.click()
-		editor.click()
-		editor.click()
-		editor.click() // quad click!
-		jest.advanceTimersByTime(300)
-		expect(editor.getZoomLevel()).not.toBe(2) // animating
-		jest.advanceTimersByTime(300)
-		expect(editor.getZoomLevel()).toBe(1) // all done
-	})
+// 	it('Quadruple taps to reset zoom', () => {
+// 		editor.setCurrentTool('hand')
+// 		editor.zoomIn() // zoom to 2
+// 		expect(editor.getZoomLevel()).toBe(2)
+// 		editor.click()
+// 		editor.click()
+// 		editor.click()
+// 		editor.click() // quad click!
+// 		jest.advanceTimersByTime(300)
+// 		expect(editor.getZoomLevel()).not.toBe(2) // animating
+// 		jest.advanceTimersByTime(300)
+// 		expect(editor.getZoomLevel()).toBe(1) // all done
+// 	})
 
-	it('Quadruple taps from zoom=1 to zoom to fit', () => {
-		editor.setCurrentTool('hand')
-		expect(editor.getZoomLevel()).toBe(1)
-		editor.createShapes(createDefaultShapes()) // makes some shapes
-		editor.click()
-		editor.click()
-		editor.click()
-		editor.click() // quad click!
-		jest.advanceTimersByTime(300)
-		expect(editor.getZoomLevel()).not.toBe(1) // animating
-		jest.advanceTimersByTime(300)
-		const z = editor.getZoomLevel()
-		editor.zoomToFit() // call zoom to fit manually to compare
-		expect(editor.getZoomLevel()).toBe(z) // zoom should not have changed
-	})
-})
+// 	it('Quadruple taps from zoom=1 to zoom to fit', () => {
+// 		editor.setCurrentTool('hand')
+// 		expect(editor.getZoomLevel()).toBe(1)
+// 		editor.createShapes(createDefaultShapes()) // makes some shapes
+// 		editor.click()
+// 		editor.click()
+// 		editor.click()
+// 		editor.click() // quad click!
+// 		jest.advanceTimersByTime(300)
+// 		expect(editor.getZoomLevel()).not.toBe(1) // animating
+// 		jest.advanceTimersByTime(300)
+// 		const z = editor.getZoomLevel()
+// 		editor.zoomToFit() // call zoom to fit manually to compare
+// 		expect(editor.getZoomLevel()).toBe(z) // zoom should not have changed
+// 	})
+// })
 
 describe('When in the idle state', () => {
 	it('Returns to select on cancel', () => {

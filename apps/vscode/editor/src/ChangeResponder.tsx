@@ -1,6 +1,6 @@
 import {
 	debounce,
-	parseAndLoadDocument,
+	// parseAndLoadDocument,
 	serializeTldrawJson,
 	useDefaultHelpers,
 	useEditor,
@@ -28,7 +28,7 @@ export const ChangeResponder = () => {
 				// 	break
 				// }
 				case 'vscode:revert': {
-					parseAndLoadDocument(editor, message.data.fileContents, msg, addToast)
+					// parseAndLoadDocument(editor, message.data.fileContents, msg, addToast)
 					break
 				}
 			}

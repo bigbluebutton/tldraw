@@ -18,7 +18,7 @@ jobs:
   build:
     name: 'End to end tests'
     timeout-minutes: 60
-    runs-on: ubuntu-latest-16-cores-open
+    runs-on: ubuntu-22.04
 
     steps:
       - name: Check out code
@@ -36,6 +36,20 @@ jobs:
 
       - name: Install dependencies
         run: yarn
+
+      - name: Run script to generate CSS
+        run: |
+          echo "Current directory: $(pwd)"
+          node packages/tldraw/scripts/copy-css-files.mjs
+
+      - name: Verify CSS file exists
+        run: |
+          if [ -f packages/tldraw/tldraw.css ]; then
+            echo "CSS file exists"
+          else
+            echo "CSS file is missing"
+            exit 1
+          fi
 
       - name: Get installed Playwright version
         id: playwright-version
@@ -56,8 +70,19 @@ jobs:
         run: npx playwright install --with-deps chromium chrome
         if: steps.playwright-cache.outputs.cache-hit != 'true'
 
+      - name: Start the development server
+        run: yarn dev &
+        working-directory: apps/examples
+
+      - name: Wait for server to be ready
+        run: |
+          for i in `seq 1 30`; do
+            curl --silent http://localhost:5420 && break
+            sleep 1
+          done
+
       - name: Run Playwright tests
-        run: 'yarn e2e'
+        run: 'xvfb-run yarn e2e'
         working-directory: apps/examples
 
       - uses: actions/upload-artifact@v3

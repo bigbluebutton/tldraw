@@ -1,4 +1,3 @@
-import { EDGE_SCROLL_SPEED } from '../constants'
 import { Editor } from '../editor/Editor'
 
 /**
@@ -27,8 +26,9 @@ export function getEdgeProximityFactor(position: number, scrollOffset: number, e
  * Moves the camera when the mouse is close to the edge of the screen.
  * @public
  */
-export function moveCameraWhenCloseToEdge(editor: Editor) {
-	return;
+// @typescript-eslint/no-unused-vars
+export function moveCameraWhenCloseToEdge(_editor: Editor) {
+	return
 	// if (!editor.inputs.isDragging || editor.inputs.isPanning) return
 
 	// const {

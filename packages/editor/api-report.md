@@ -1361,7 +1361,7 @@ export const MAX_ZOOM = 8;
 export const MIN_ZOOM = 0.1;
 
 // @public
-export function moveCameraWhenCloseToEdge(editor: Editor): void;
+export function moveCameraWhenCloseToEdge(_editor: Editor): void;
 
 // @internal (undocumented)
 export const MULTI_CLICK_DURATION = 200;

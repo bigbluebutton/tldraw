@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import ReactTestRenderer from 'react-test-renderer'
+import { act, render } from '@testing-library/react'
+import * as React from 'react'
 import { Atom, atom } from '../core/Atom'
 import { Computed } from '../core/Computed'
 import { useAtom } from './useAtom'
@@ -17,20 +17,21 @@ test('useValue returns a value from a computed', async () => {
 		return <>{useValue(b)}</>
 	}
 
-	let view: ReactTestRenderer.ReactTestRenderer
-	await ReactTestRenderer.act(() => {
-		view = ReactTestRenderer.create(<Component />)
+	let view = render(<Component />)
+
+	await act(async () => {
+		view = render(<Component />)
 	})
 
 	expect(theComputed).not.toBeNull()
-	expect(theComputed?.get()).toBe(2)
-	expect(theComputed?.name).toBe('useComputed(a+1)')
-	expect(view!.toJSON()).toMatchInlineSnapshot(`"2"`)
+	expect(theComputed!.get()).toBe(2)
+	expect(theComputed!.name).toBe('useComputed(a+1)')
+	expect(view.container!.textContent).toMatchInlineSnapshot(`"2"`)
 
-	await ReactTestRenderer.act(() => {
+	await act(async () => {
 		theAtom?.set(5)
 	})
-	expect(view!.toJSON()).toMatchInlineSnapshot(`"6"`)
+	expect(view.container!.textContent).toMatchInlineSnapshot(`"6"`)
 })
 
 test('useValue returns a value from an atom', async () => {
@@ -41,17 +42,18 @@ test('useValue returns a value from an atom', async () => {
 		return <>{useValue(a)}</>
 	}
 
-	let view: ReactTestRenderer.ReactTestRenderer
-	await ReactTestRenderer.act(() => {
-		view = ReactTestRenderer.create(<Component />)
+	let view = render(<Component />)
+
+	await act(async () => {
+		view = render(<Component />)
 	})
 
-	expect(view!.toJSON()).toMatchInlineSnapshot(`"1"`)
+	expect(view.container!.textContent).toMatchInlineSnapshot(`"1"`)
 
-	await ReactTestRenderer.act(() => {
+	await act(async () => {
 		theAtom?.set(5)
 	})
-	expect(view!.toJSON()).toMatchInlineSnapshot(`"5"`)
+	expect(view.container!.textContent).toMatchInlineSnapshot(`"5"`)
 })
 
 test('useValue returns a value from a compute function', async () => {
@@ -59,29 +61,30 @@ test('useValue returns a value from a compute function', async () => {
 	let setB = null as null | ((b: number) => void)
 	function Component() {
 		const a = useAtom('a', 1)
-		const [b, _setB] = useState(1)
+		const [b, _setB] = React.useState(1)
 		setB = _setB
 		theAtom = a
 		const c = useValue('a+b', () => a.get() + b, [b])
 		return <>{c}</>
 	}
 
-	let view: ReactTestRenderer.ReactTestRenderer
-	await ReactTestRenderer.act(() => {
-		view = ReactTestRenderer.create(<Component />)
+	let view = render(<Component />)
+
+	await act(async () => {
+		view = render(<Component />)
 	})
 
-	expect(view!.toJSON()).toMatchInlineSnapshot(`"2"`)
+	expect(view.container!.textContent).toMatchInlineSnapshot(`"2"`)
 
-	await ReactTestRenderer.act(() => {
+	await act(async () => {
 		theAtom?.set(5)
 	})
-	expect(view!.toJSON()).toMatchInlineSnapshot(`"6"`)
+	expect(view.container!.textContent).toMatchInlineSnapshot(`"6"`)
 
-	await ReactTestRenderer.act(() => {
+	await act(async () => {
 		setB!(5)
 	})
-	expect(view!.toJSON()).toMatchInlineSnapshot(`"10"`)
+	expect(view.container!.textContent).toMatchInlineSnapshot(`"10"`)
 })
 
 test("useValue doesn't throw when used in a zombie-child component", async () => {
@@ -108,28 +111,18 @@ test("useValue doesn't throw when used in a zombie-child component", async () =>
 		return <>{value}</>
 	}
 
-	let view: ReactTestRenderer.ReactTestRenderer
-	await ReactTestRenderer.act(() => {
-		view = ReactTestRenderer.create(<Parent />)
+	let view = render(<Parent />)
+
+	await act(async () => {
+		view = render(<Parent />)
 	})
 
-	expect(view!.toJSON()).toMatchInlineSnapshot(`
-		Array [
-		  "1",
-		  "2",
-		  "3",
-		]
-	`)
+	expect(view.container!.textContent).toMatchInlineSnapshot(`"123"`)
 
 	// remove id 'b' creating a zombie-child
-	await ReactTestRenderer.act(() => {
+	await act(async () => {
 		theAtom?.update(({ b: _, ...rest }) => rest)
 	})
 
-	expect(view!.toJSON()).toMatchInlineSnapshot(`
-		Array [
-		  "1",
-		  "3",
-		]
-	`)
+	expect(view.container!.textContent).toMatchInlineSnapshot(`"13"`)
 })
