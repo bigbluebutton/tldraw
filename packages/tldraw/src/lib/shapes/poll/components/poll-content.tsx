@@ -1,6 +1,6 @@
+import { TLUiTranslationKey } from '@bigbluebutton/tldraw'
 import React from 'react'
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts'
-import { TLUiTranslationKey } from '../../../../../../tldraw/src/lib/ui/hooks/useTranslation/TLUiTranslationKey'
 import Styled from './styles'
 
 const caseInsensitiveReducer = (acc: any[], item: { key: string; numVotes: number }) => {
