@@ -306,5 +306,10 @@
 	"cursor-chat.type-to-chat": "Tippen, um zu chatten...",
 	"geo-style.cloud": "Wolke",
 	"tool.cloud": "Wolke",
-	"action.unlock-all": "Alle entsperren"
+	"action.unlock-all": "Alle entsperren",
+	"app.poll.t": "Richtig",
+	"app.poll.f": "Falsch",
+	"app.poll.y": "Ja",
+	"app.poll.n": "Nein",
+	"app.poll.abstention": "Enthaltung"
 }

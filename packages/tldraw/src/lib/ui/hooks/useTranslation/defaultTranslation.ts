@@ -366,4 +366,9 @@ export const DEFAULT_TRANSLATION = {
 	'vscode.file-open.backup-failed': 'Backup failed: this is not a .tldr file.',
 	'vscode.file-open.dont-show-again': "Don't ask again",
 	'cursor-chat.type-to-chat': 'Type to chat...',
+	'app.poll.t': 'True',
+	'app.poll.f': 'False',
+	'app.poll.y': 'Yes',
+	'app.poll.n': 'No',
+	'app.poll.abstention': 'Abstention',
 }

@@ -356,3 +356,8 @@ export type TLUiTranslationKey =
 	| 'vscode.file-open.backup-failed'
 	| 'vscode.file-open.dont-show-again'
 	| 'cursor-chat.type-to-chat'
+	| 'app.poll.t'
+	| 'app.poll.f'
+	| 'app.poll.y'
+	| 'app.poll.n'
+	| 'app.poll.abstention'
