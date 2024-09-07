@@ -9,9 +9,9 @@ import { HighlightShapeUtil } from './shapes/highlight/HighlightShapeUtil'
 import { ImageShapeUtil } from './shapes/image/ImageShapeUtil'
 import { LineShapeUtil } from './shapes/line/LineShapeUtil'
 import { NoteShapeUtil } from './shapes/note/NoteShapeUtil'
+import { PollShapeUtil } from './shapes/poll/PollShapeUtil'
 import { TextShapeUtil } from './shapes/text/TextShapeUtil'
 import { VideoShapeUtil } from './shapes/video/VideoShapeUtil'
-import { PollShapeUtil } from './shapes/poll/PollShapeUtil'
 
 /** @public */
 export const defaultShapeUtils: TLAnyShapeUtilConstructor[] = [
