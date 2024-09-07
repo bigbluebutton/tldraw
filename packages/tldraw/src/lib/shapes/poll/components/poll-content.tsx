@@ -1,4 +1,4 @@
-import { TLUiTranslationKey } from '@bigbluebutton/tldraw'
+import { TLUiTranslationKey } from '../../../ui/hooks/useTranslation/TLUiTranslationKey'
 import React from 'react'
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts'
 import Styled from './styles'
