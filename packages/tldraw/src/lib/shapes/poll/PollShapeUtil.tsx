@@ -6,7 +6,6 @@ import {
 	getDefaultColorTheme,
 	resizeBox,
 } from '@bigbluebutton/editor'
-import React from 'react'
 
 import ChatPollContent from './components/poll-content'
 import { pollShapeMigrations } from './poll-shape-migrations'
@@ -55,7 +54,7 @@ export class PollShapeUtil extends ShapeUtil<IPollShape> {
 			isDarkMode: this.editor.user.getIsDarkMode(),
 		})
 
-		const contentRef = React.useRef<HTMLDivElement>(null)
+		// const contentRef = React.useRef<HTMLDivElement>(null)
 		const pollMetadata = JSON.stringify({
 			id: shape.id,
 			question: shape.props.question,
@@ -85,7 +84,6 @@ export class PollShapeUtil extends ShapeUtil<IPollShape> {
 				}}
 			>
 				<div
-					ref={contentRef}
 					style={{
 						width: `${bounds.width}px`,
 						overflow: 'hidden',

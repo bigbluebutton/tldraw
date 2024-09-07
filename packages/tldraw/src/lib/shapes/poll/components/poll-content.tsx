@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react'
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts'
 import { TLUiTranslationKey } from '../../../ui/hooks/useTranslation/TLUiTranslationKey'
