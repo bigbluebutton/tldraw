@@ -20,13 +20,10 @@ export class PollShapeUtil extends ShapeUtil<IPollShape> {
 
 	static override migrations = pollShapeMigrations
 
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	override isAspectRatioLocked = (_shape: IPollShape) => false
 
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	override canResize = (_shape: IPollShape) => true
 
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	override canBind = (_shape: IPollShape) => true
 
 	getDefaultProps(): IPollShape['props'] {
@@ -44,7 +41,6 @@ export class PollShapeUtil extends ShapeUtil<IPollShape> {
 		}
 	}
 
-	// eslint-disable-next-line class-methods-use-this
 	getGeometry(shape: IPollShape) {
 		return new Rectangle2d({
 			width: shape.props.w,
@@ -102,7 +98,6 @@ export class PollShapeUtil extends ShapeUtil<IPollShape> {
 		)
 	}
 
-	// eslint-disable-next-line class-methods-use-this
 	indicator(shape: IPollShape) {
 		return <rect width={shape.props.w} height={shape.props.h} />
 	}
