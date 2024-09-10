@@ -5,12 +5,10 @@ import { Tldraw } from './Tldraw'
 
 describe('<Tldraw />', () => {
 	it('Renders without crashing', async () => {
-		await act(async () =>
-			render(
-				<Tldraw>
-					<div data-testid="canvas-1" />
-				</Tldraw>
-			)
+		render(
+			<Tldraw>
+				<div data-testid="canvas-1" />
+			</Tldraw>
 		)
 
 		await screen.findByTestId('canvas-1')
@@ -27,7 +25,7 @@ describe('<Tldraw />', () => {
 			)
 		}
 
-		await act(async () => render(<TestComponent />))
+		render(<TestComponent />)
 		await screen.findByTestId('canvas-1')
 	})
 
@@ -57,12 +55,10 @@ describe('<Tldraw />', () => {
 			}
 		}
 
-		const rendered = await act(async () =>
-			render(
-				<Tldraw shapeUtils={[FakeShapeUtil1]}>
-					<div data-testid="canvas-1" />
-				</Tldraw>
-			)
+		const rendered = render(
+			<Tldraw shapeUtils={[FakeShapeUtil1]}>
+				<div data-testid="canvas-1" />
+			</Tldraw>
 		)
 		await screen.findByTestId('canvas-1')
 

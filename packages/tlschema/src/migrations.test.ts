@@ -1054,7 +1054,7 @@ describe('user config refactor', () => {
 		// it cannot be added back so it should add some meaningless id in there
 		// in practice, because we bumped the store version, this down migrator will never be used
 		expect(down(next)).toMatchInlineSnapshot(`
-		Object {
+		{
 		  "id": "instance:123",
 		  "typeName": "instance",
 		  "userId": "user:none",
@@ -1103,11 +1103,11 @@ describe('making instance state independent', () => {
 		expect(up(prev)).toEqual(next)
 		// down should never be called
 		expect(down(next)).toMatchInlineSnapshot(`
-		Object {
+		{
 		  "cameraId": "camera:void",
 		  "id": "instance_page_state:123",
 		  "instanceId": "instance:instance",
-		  "selectedShapeIds": Array [],
+		  "selectedShapeIds": [],
 		  "typeName": "instance_page_state",
 		}
 	`)
@@ -1134,10 +1134,10 @@ describe('making instance state independent', () => {
 
 		// down should never be called
 		expect(down(next)).toMatchInlineSnapshot(`
-		Object {
+		{
 		  "id": "instance_presence:123",
 		  "instanceId": "instance:instance",
-		  "selectedShapeIds": Array [],
+		  "selectedShapeIds": [],
 		  "typeName": "instance_presence",
 		}
 	`)

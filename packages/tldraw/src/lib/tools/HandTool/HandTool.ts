@@ -1,4 +1,4 @@
-import { EASINGS, StateNode, TLClickEvent } from '@bigbluebutton/editor'
+import { StateNode, TLClickEvent } from '@bigbluebutton/editor'
 import { Dragging } from './childStates/Dragging'
 import { Idle } from './childStates/Idle'
 import { Pointing } from './childStates/Pointing'
@@ -9,27 +9,26 @@ export class HandTool extends StateNode {
 	static override initial = 'idle'
 	static override children = () => [Idle, Pointing, Dragging]
 
-	override onDoubleClick: TLClickEvent = (info) => {
+	override onDoubleClick: TLClickEvent = (_info) => {
 		// if (info.phase === 'settle') {
 		// 	const { currentScreenPoint } = this.editor.inputs
 		// 	this.editor.zoomIn(currentScreenPoint, { duration: 220, easing: EASINGS.easeOutQuint })
 		// }
 	}
 
-	override onTripleClick: TLClickEvent = (info) => {
+	override onTripleClick: TLClickEvent = (_info) => {
 		// if (info.phase === 'settle') {
 		// 	const { currentScreenPoint } = this.editor.inputs
 		// 	this.editor.zoomOut(currentScreenPoint, { duration: 320, easing: EASINGS.easeOutQuint })
 		// }
 	}
 
-	override onQuadrupleClick: TLClickEvent = (info) => {
+	override onQuadrupleClick: TLClickEvent = (_info) => {
 		// if (info.phase === 'settle') {
 		// 	const zoomLevel = this.editor.getZoomLevel()
 		// 	const {
 		// 		inputs: { currentScreenPoint },
 		// 	} = this.editor
-
 		// 	if (zoomLevel === 1) {
 		// 		this.editor.zoomToFit({ duration: 400, easing: EASINGS.easeOutQuint })
 		// 	} else {
