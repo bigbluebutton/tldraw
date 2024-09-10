@@ -1,5 +1,4 @@
-// @ts-nocheck
-import { defineMigrations } from '../../../../../store/src/lib/migrate.ts'
+import { defineMigrations } from '@bigbluebutton/editor'
 
 // Migrations for the custom poll shape (optional but very helpful)
 export const pollShapeMigrations = defineMigrations({
