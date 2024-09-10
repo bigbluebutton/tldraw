@@ -7199,7 +7199,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ";\n        id: import(\"@bigbluebutton/editor\")."
+                  "text": ";\n        whiteboardId?: string | undefined;\n        id: import(\"@bigbluebutton/editor\")."
                 },
                 {
                   "kind": "Reference",
@@ -7274,7 +7274,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ";\n        id: import(\"@bigbluebutton/editor\")."
+                  "text": ";\n        whiteboardId?: string | undefined;\n        id: import(\"@bigbluebutton/editor\")."
                 },
                 {
                   "kind": "Reference",
@@ -7340,7 +7340,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ";\n        id: import(\"@bigbluebutton/editor\")."
+                  "text": ";\n        whiteboardId?: string | undefined;\n        id: import(\"@bigbluebutton/editor\")."
                 },
                 {
                   "kind": "Reference",
@@ -7367,7 +7367,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ";\n        id: import(\"@bigbluebutton/editor\")."
+                  "text": ";\n        whiteboardId?: string | undefined;\n        id: import(\"@bigbluebutton/editor\")."
                 },
                 {
                   "kind": "Reference",
@@ -11904,7 +11904,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ";\n        id: import(\"@bigbluebutton/editor\")."
+                  "text": ";\n        whiteboardId?: string | undefined;\n        id: import(\"@bigbluebutton/editor\")."
                 },
                 {
                   "kind": "Reference",
@@ -11979,7 +11979,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ";\n        id: import(\"@bigbluebutton/editor\")."
+                  "text": ";\n        whiteboardId?: string | undefined;\n        id: import(\"@bigbluebutton/editor\")."
                 },
                 {
                   "kind": "Reference",
@@ -13498,7 +13498,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ";\n        id: import(\"@bigbluebutton/editor\")."
+                  "text": ";\n        whiteboardId?: string | undefined;\n        id: import(\"@bigbluebutton/editor\")."
                 },
                 {
                   "kind": "Reference",
@@ -13573,7 +13573,7 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ";\n        id: import(\"@bigbluebutton/editor\")."
+                  "text": ";\n        whiteboardId?: string | undefined;\n        id: import(\"@bigbluebutton/editor\")."
                 },
                 {
                   "kind": "Reference",

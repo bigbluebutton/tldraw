@@ -829,6 +829,8 @@ export interface TLBaseShape<Type extends string, Props extends object> extends 
     // (undocumented)
     type: Type;
     // (undocumented)
+    whiteboardId?: string;
+    // (undocumented)
     x: number;
     // (undocumented)
     y: number;

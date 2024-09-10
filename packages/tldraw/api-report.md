@@ -597,6 +597,7 @@ export class GeoShapeUtil extends BaseBoxShapeUtil<TLGeoShape> {
         isLocked: boolean;
         opacity: number;
         meta: JsonObject;
+        whiteboardId?: string | undefined;
         id: TLShapeId;
         typeName: "shape";
     } | undefined;
@@ -627,6 +628,7 @@ export class GeoShapeUtil extends BaseBoxShapeUtil<TLGeoShape> {
         isLocked: boolean;
         opacity: number;
         meta: JsonObject;
+        whiteboardId?: string | undefined;
         id: TLShapeId;
         typeName: "shape";
     } | undefined;
@@ -644,6 +646,7 @@ export class GeoShapeUtil extends BaseBoxShapeUtil<TLGeoShape> {
         isLocked: boolean;
         opacity: number;
         meta: JsonObject;
+        whiteboardId?: string | undefined;
         id: TLShapeId;
         typeName: "shape";
     } | {
@@ -659,6 +662,7 @@ export class GeoShapeUtil extends BaseBoxShapeUtil<TLGeoShape> {
         isLocked: boolean;
         opacity: number;
         meta: JsonObject;
+        whiteboardId?: string | undefined;
         id: TLShapeId;
         typeName: "shape";
     } | undefined;
@@ -997,6 +1001,7 @@ export class NoteShapeUtil extends ShapeUtil<TLNoteShape> {
         isLocked: boolean;
         opacity: number;
         meta: JsonObject;
+        whiteboardId?: string | undefined;
         id: TLShapeId;
         typeName: "shape";
     } | undefined;
@@ -1021,6 +1026,7 @@ export class NoteShapeUtil extends ShapeUtil<TLNoteShape> {
         isLocked: boolean;
         opacity: number;
         meta: JsonObject;
+        whiteboardId?: string | undefined;
         id: TLShapeId;
         typeName: "shape";
     } | undefined;
@@ -1170,6 +1176,7 @@ export class TextShapeUtil extends ShapeUtil<TLTextShape> {
             autoSize: boolean;
         };
         meta: JsonObject;
+        whiteboardId?: string | undefined;
         id: TLShapeId;
         typeName: "shape";
     } | undefined;
@@ -1194,6 +1201,7 @@ export class TextShapeUtil extends ShapeUtil<TLTextShape> {
         isLocked: boolean;
         opacity: number;
         meta: JsonObject;
+        whiteboardId?: string | undefined;
         id: TLShapeId;
         typeName: "shape";
     } | undefined;

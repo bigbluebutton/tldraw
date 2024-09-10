@@ -18,6 +18,7 @@ export interface TLBaseShape<Type extends string, Props extends object>
 	opacity: TLOpacityType
 	props: Props
 	meta: JsonObject
+	whiteboardId?: string
 }
 
 /** @public */
@@ -54,6 +55,7 @@ export function createShapeValidator<
 		opacity: opacityValidator,
 		props: props ? T.object(props) : (T.jsonValue as T.ObjectValidator<Props>),
 		meta: meta ? T.object(meta) : (T.jsonValue as T.ObjectValidator<Meta>),
+		whiteboardId: T.optional(T.string), // Needed when akka-bbb-apps sends data to the whiteboard
 	})
 }
 
