@@ -67,7 +67,7 @@ This repository's contents is divided across four primary sections:
 
 ## License
 
-Previous versions of Tldraw's SDK were released under the permissive Apache-2.0 license. 
+Previous versions of Tldraw's SDK were released under the permissive Apache-2.0 license.
 
 On December 20th, 2023, Tldraw announced a new license in which only non-commercial uses of Tldraw are permitted without purchasing a commercial license.
 

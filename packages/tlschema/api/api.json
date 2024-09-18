@@ -4524,6 +4524,33 @@
             },
             {
               "kind": "PropertySignature",
+              "canonicalReference": "@bigbluebutton/tlschema!TLBaseShape#whiteboardId:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "whiteboardId?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isReadonly": false,
+              "isOptional": true,
+              "releaseTag": "Public",
+              "name": "whiteboardId",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
               "canonicalReference": "@bigbluebutton/tlschema!TLBaseShape#x:member",
               "docComment": "",
               "excerptTokens": [

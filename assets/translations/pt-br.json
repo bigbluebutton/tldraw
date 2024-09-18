@@ -329,5 +329,10 @@
 	"vscode.file-open.backup-saved": "Backup salvo",
 	"vscode.file-open.backup-failed": "Falha no backup: este não é um arquivo .tldr.",
 	"vscode.file-open.dont-show-again": "Não perguntar novamente",
-	"cursor-chat.type-to-chat": "Digite para conversar..."
+	"cursor-chat.type-to-chat": "Digite para conversar...",
+	"app.poll.t": "Verdadeiro",
+	"app.poll.f": "Falso",
+	"app.poll.y": "Sim",
+	"app.poll.n": "Não",
+	"app.poll.abstention": "Abstenção"
 }
