@@ -1,0 +1,12 @@
+undecided:
+  - "@bigbluebutton/monorepo"
+  - examples.tldraw.com
+  - "@bigbluebutton/vscode-editor"
+  - tldraw-vscode
+  - "@bigbluebutton/assets"
+  - "@bigbluebutton/state"
+  - "@bigbluebutton/store"
+  - "@bigbluebutton/tldraw"
+  - "@bigbluebutton/tlschema"
+  - "@bigbluebutton/utils"
+  - "@bigbluebutton/validate"
