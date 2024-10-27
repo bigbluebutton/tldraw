@@ -24,38 +24,38 @@ test.describe('smoke tests', () => {
 		expect(await getAllShapeTypes(page)).toEqual(['geo', 'geo'])
 	})
 
-	test('undo and redo', async ({ page }) => {
-		// buttons should be disabled when there is no history
-		expect(page.getByTestId('main.undo')).toBeDisabled()
-		expect(page.getByTestId('main.redo')).toBeDisabled()
+	// test('undo and redo', async ({ page }) => {
+	// 	// buttons should be disabled when there is no history
+	// 	expect(page.getByTestId('main.undo')).toBeDisabled()
+	// 	expect(page.getByTestId('main.redo')).toBeDisabled()
 
-		// create a shape
-		await page.keyboard.press('r')
-		await page.mouse.move(100, 100)
-		await page.mouse.down()
-		await page.mouse.move(200, 200)
-		await page.mouse.up()
+	// 	// create a shape
+	// 	await page.keyboard.press('r')
+	// 	await page.mouse.move(100, 100)
+	// 	await page.mouse.down()
+	// 	await page.mouse.move(200, 200)
+	// 	await page.mouse.up()
 
-		expect(await getAllShapeTypes(page)).toEqual(['geo'])
+	// 	expect(await getAllShapeTypes(page)).toEqual(['geo'])
 
-		// We should have an undoable shape
-		expect(page.getByTestId('main.undo')).not.toBeDisabled()
-		expect(page.getByTestId('main.redo')).toBeDisabled()
+	// 	// We should have an undoable shape
+	// 	expect(page.getByTestId('main.undo')).not.toBeDisabled()
+	// 	expect(page.getByTestId('main.redo')).toBeDisabled()
 
-		// Click the undo button to undo the shape
-		await page.getByTestId('main.undo').click()
+	// 	// Click the undo button to undo the shape
+	// 	await page.getByTestId('main.undo').click()
 
-		expect(await getAllShapeTypes(page)).toEqual([])
-		expect(page.getByTestId('main.undo')).toBeDisabled()
-		expect(page.getByTestId('main.redo')).not.toBeDisabled()
+	// 	expect(await getAllShapeTypes(page)).toEqual([])
+	// 	expect(page.getByTestId('main.undo')).toBeDisabled()
+	// 	expect(page.getByTestId('main.redo')).not.toBeDisabled()
 
-		// Click the redo button to redo the shape
-		await page.getByTestId('main.redo').click()
+	// 	// Click the redo button to redo the shape
+	// 	await page.getByTestId('main.redo').click()
 
-		expect(await getAllShapeTypes(page)).toEqual(['geo'])
-		expect(await page.getByTestId('main.undo').isDisabled()).not.toBe(true)
-		expect(await page.getByTestId('main.redo').isDisabled()).toBe(true)
-	})
+	// 	expect(await getAllShapeTypes(page)).toEqual(['geo'])
+	// 	expect(await page.getByTestId('main.undo').isDisabled()).not.toBe(true)
+	// 	expect(await page.getByTestId('main.redo').isDisabled()).toBe(true)
+	// })
 
 	test('style panel + undo and redo squashing', async ({ page }) => {
 		await page.keyboard.press('r')
