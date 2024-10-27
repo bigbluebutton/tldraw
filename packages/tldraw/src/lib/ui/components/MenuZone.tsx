@@ -1,12 +1,12 @@
-import { track, useEditor } from '@bigbluebutton/editor'
-import { useBreakpoint } from '../hooks/useBreakpoint'
-import { useReadonly } from '../hooks/useReadonly'
+import { track } from '@bigbluebutton/editor'
+// import { useBreakpoint } from '../hooks/useBreakpoint'
+// import { useReadonly } from '../hooks/useReadonly'
 
 export const MenuZone = track(function MenuZone() {
-	const editor = useEditor()
+	// const editor = useEditor()
 
-	const breakpoint = useBreakpoint()
-	const isReadonly = useReadonly()
+	// const breakpoint = useBreakpoint()
+	// const isReadonly = useReadonly()
 
 	return (
 		<div className="tlui-menu-zone">
