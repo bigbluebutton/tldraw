@@ -19,6 +19,11 @@ import {
 import React, { useCallback } from 'react'
 import { useRelevantStyles } from '../../hooks/useRevelantStyles'
 import { useTranslation } from '../../hooks/useTranslation/useTranslation'
+import { ActionsMenu } from '../ActionsMenu'
+import { DuplicateButton } from '../DuplicateButton'
+import { RedoButton } from '../RedoButton'
+import { TrashButton } from '../TrashButton'
+import { UndoButton } from '../UndoButton'
 import { Button } from '../primitives/Button'
 import { ButtonPicker } from '../primitives/ButtonPicker'
 import { Slider } from '../primitives/Slider'
@@ -58,6 +63,21 @@ export const StylePanel = function StylePanel({ isMobile }: StylePanelProps) {
 
 	return (
 		<div className="tlui-style-panel" data-ismobile={isMobile} onPointerLeave={handlePointerOut}>
+			<div className="tlui-style-panel__section" aria-label="style panel actions">
+				<div
+					style={{
+						display: 'flex',
+						position: 'relative',
+						flexDirection: 'row',
+					}}
+				>
+					<UndoButton />
+					<RedoButton />
+					<TrashButton />
+					<DuplicateButton />
+					<ActionsMenu />
+				</div>
+			</div>
 			<CommonStylePickerSet styles={styles} opacity={opacity} />
 			{!hideText && <TextStylePickerSet styles={styles} />}
 			{!(hideGeo && hideArrowHeads && hideSpline) && (

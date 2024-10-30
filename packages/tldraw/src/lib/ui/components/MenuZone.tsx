@@ -1,24 +1,17 @@
-import { track, useEditor } from '@bigbluebutton/editor'
-import { useBreakpoint } from '../hooks/useBreakpoint'
-import { useReadonly } from '../hooks/useReadonly'
-import { ActionsMenu } from './ActionsMenu'
-import { DuplicateButton } from './DuplicateButton'
-import { Menu } from './Menu'
-import { PageMenu } from './PageMenu/PageMenu'
-import { RedoButton } from './RedoButton'
-import { TrashButton } from './TrashButton'
-import { UndoButton } from './UndoButton'
+import { track } from '@bigbluebutton/editor'
+// import { useBreakpoint } from '../hooks/useBreakpoint'
+// import { useReadonly } from '../hooks/useReadonly'
 
 export const MenuZone = track(function MenuZone() {
-	const editor = useEditor()
+	// const editor = useEditor()
 
-	const breakpoint = useBreakpoint()
-	const isReadonly = useReadonly()
+	// const breakpoint = useBreakpoint()
+	// const isReadonly = useReadonly()
 
 	return (
 		<div className="tlui-menu-zone">
 			<div className="tlui-buttons__horizontal">
-				<Menu />
+				{/* <Menu />
 				<PageMenu />
 				{breakpoint >= 6 && !isReadonly && !editor.isInAny('hand', 'zoom') && (
 					<>
@@ -28,7 +21,7 @@ export const MenuZone = track(function MenuZone() {
 						<DuplicateButton />
 						<ActionsMenu />
 					</>
-				)}
+				)} */}
 			</div>
 		</div>
 	)
