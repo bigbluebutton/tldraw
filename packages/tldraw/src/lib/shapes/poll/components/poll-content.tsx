@@ -88,7 +88,7 @@ const ChatPollContent: React.FC<ChatPollContentProps> = ({
 			<Styled.PollText>{pollData.questionText}</Styled.PollText>
 			<ResponsiveContainer width="90%" height={useHeight}>
 				<BarChart data={translatedAnswers} layout="vertical">
-					<XAxis type="number" />
+					<XAxis type="number" allowDecimals={false} />
 					<YAxis width={80} type="category" dataKey="pollAnswer" />
 					<Bar dataKey="numVotes" fill="#0C57A7" />
 				</BarChart>
