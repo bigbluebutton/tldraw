@@ -6,6 +6,7 @@ import { useReadonly } from '../../hooks/useReadonly'
 import { TLUiToolbarItem, useToolbarSchema } from '../../hooks/useToolbarSchema'
 import { TLUiToolItem } from '../../hooks/useTools'
 import { useTranslation } from '../../hooks/useTranslation/useTranslation'
+import { ActionsMenu } from '../ActionsMenu'
 import { MobileStylePanel } from '../MobileStylePanel'
 import { Button } from '../primitives/Button'
 import * as M from '../primitives/DropdownMenu'
@@ -192,6 +193,7 @@ export const Toolbar = memo(function Toolbar() {
 												<OverflowToolsContent toolbarItems={itemsInDropdown} />
 											</M.Content>
 										</M.Root>
+										<ActionsMenu />
 									</>
 								) : null}
 							</>
