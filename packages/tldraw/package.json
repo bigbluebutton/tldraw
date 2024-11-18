@@ -1,7 +1,7 @@
 {
 	"name": "@bigbluebutton/tldraw",
 	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 - A tiny little drawing editor.",
-	"version": "2.0.0-alpha.25",
+	"version": "2.0.0-alpha.26",
 	"packageManager": "yarn@3.5.0",
 	"author": {
 		"name": "tldraw GB Ltd.",
@@ -34,7 +34,7 @@
 		"tldraw.css"
 	],
 	"dependencies": {
-		"@bigbluebutton/editor": "2.0.0-alpha.24",
+		"@bigbluebutton/editor": "2.0.0-alpha.25",
 		"@radix-ui/react-alert-dialog": "^1.0.0",
 		"@radix-ui/react-context-menu": "^2.1.5",
 		"@radix-ui/react-dialog": "^1.0.5",

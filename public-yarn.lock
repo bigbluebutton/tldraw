@@ -1654,7 +1654,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/editor@2.0.0-alpha.24, @bigbluebutton/editor@workspace:packages/editor":
+"@bigbluebutton/editor@2.0.0-alpha.25, @bigbluebutton/editor@workspace:packages/editor":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/editor@workspace:packages/editor"
   dependencies:
@@ -1694,6 +1694,32 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@bigbluebutton/editor@npm:2.0.0-alpha.24":
+  version: 2.0.0-alpha.24
+  resolution: "@bigbluebutton/editor@npm:2.0.0-alpha.24"
+  dependencies:
+    "@bigbluebutton/state": 2.0.0-alpha.21
+    "@bigbluebutton/store": 2.0.0-alpha.21
+    "@bigbluebutton/tlschema": 2.0.0-alpha.21
+    "@bigbluebutton/utils": 2.0.0-alpha.21
+    "@bigbluebutton/validate": 2.0.0-alpha.21
+    "@types/core-js": ^2.5.5
+    "@use-gesture/react": ^10.2.27
+    classnames: ^2.3.2
+    core-js: ^3.31.1
+    eventemitter3: ^4.0.7
+    idb: ^7.1.1
+    is-plain-object: ^5.0.0
+    lodash.throttle: ^4.1.1
+    lodash.uniq: ^4.5.0
+    nanoid: 4.0.2
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+  checksum: 0e5949675ff714612f907ef782b90e7aaaac77dae85a04b8ba3b95bd87dff2e9a179efb88411cc5f8d653e8531c02909caca96efcee9c91efa9231c3f26dce8b
+  languageName: node
+  linkType: hard
+
 "@bigbluebutton/monorepo@workspace:.":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/monorepo@workspace:."
@@ -1725,6 +1751,7 @@ __metadata:
     json5: ^2.2.3
     lazyrepo: 0.0.0-alpha.27
     lint-staged: ">=10"
+    node-gyp: ^10.2.0
     playwright: ^1.46.0
     prettier: ^2.8.6
     prettier-plugin-organize-imports: ^3.2.2
@@ -1795,11 +1822,36 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/tldraw@2.0.0-alpha.25, @bigbluebutton/tldraw@workspace:packages/tldraw":
+"@bigbluebutton/tldraw@npm:2.0.0-alpha.25":
+  version: 2.0.0-alpha.25
+  resolution: "@bigbluebutton/tldraw@npm:2.0.0-alpha.25"
+  dependencies:
+    "@bigbluebutton/editor": 2.0.0-alpha.24
+    "@radix-ui/react-alert-dialog": ^1.0.0
+    "@radix-ui/react-context-menu": ^2.1.5
+    "@radix-ui/react-dialog": ^1.0.5
+    "@radix-ui/react-dropdown-menu": ^2.0.6
+    "@radix-ui/react-popover": ^1.0.7
+    "@radix-ui/react-select": ^1.2.0
+    "@radix-ui/react-slider": ^1.1.0
+    "@radix-ui/react-toast": ^1.1.1
+    canvas-size: ^1.2.6
+    classnames: ^2.3.2
+    downscale: ^1.0.6
+    hotkeys-js: ^3.11.2
+    lz-string: ^1.4.4
+  peerDependencies:
+    react: ^18
+    react-dom: ^18
+  checksum: 02e359f1515e0ab3f24688837e132121b233698e4cd5f4b3a469937970e96b6b03cdb1d6cee75b402c331b25280f8a07a22f1cd2dafa9a52b85dfe1b98a9871b
+  languageName: node
+  linkType: hard
+
+"@bigbluebutton/tldraw@workspace:packages/tldraw":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/tldraw@workspace:packages/tldraw"
   dependencies:
-    "@bigbluebutton/editor": 2.0.0-alpha.24
+    "@bigbluebutton/editor": 2.0.0-alpha.25
     "@peculiar/webcrypto": ^1.4.0
     "@radix-ui/react-alert-dialog": ^1.0.0
     "@radix-ui/react-context-menu": ^2.1.5
@@ -14870,6 +14922,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"node-gyp@npm:^10.2.0":
+  version: 10.2.0
+  resolution: "node-gyp@npm:10.2.0"
+  dependencies:
+    env-paths: ^2.2.0
+    exponential-backoff: ^3.1.1
+    glob: ^10.3.10
+    graceful-fs: ^4.2.6
+    make-fetch-happen: ^13.0.0
+    nopt: ^7.0.0
+    proc-log: ^4.1.0
+    semver: ^7.3.5
+    tar: ^6.2.1
+    which: ^4.0.0
+  bin:
+    node-gyp: bin/node-gyp.js
+  checksum: 0233759d8c19765f7fdc259a35eb046ad86c3d09e22f7384613ae2b89647dd27fcf833fdf5293d9335041e91f9b1c539494225959cdb312a5c8080b7534b926f
+  languageName: node
+  linkType: hard
+
 "node-gyp@npm:latest":
   version: 10.1.0
   resolution: "node-gyp@npm:10.1.0"
@@ -15956,7 +16028,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"proc-log@npm:^4.2.0":
+"proc-log@npm:^4.1.0, proc-log@npm:^4.2.0":
   version: 4.2.0
   resolution: "proc-log@npm:4.2.0"
   checksum: 98f6cd012d54b5334144c5255ecb941ee171744f45fca8b43b58ae5a0c1af07352475f481cadd9848e7f0250376ee584f6aa0951a856ff8f021bdfbff4eb33fc
@@ -18047,7 +18119,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tar@npm:^6.0.2, tar@npm:^6.1.11, tar@npm:^6.1.2":
+"tar@npm:^6.0.2, tar@npm:^6.1.11, tar@npm:^6.1.2, tar@npm:^6.2.1":
   version: 6.2.1
   resolution: "tar@npm:6.2.1"
   dependencies:
