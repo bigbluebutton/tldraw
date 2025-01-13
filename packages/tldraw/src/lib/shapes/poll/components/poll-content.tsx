@@ -2,6 +2,7 @@
 import React from 'react'
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts'
 import { TLUiTranslationKey } from '../../../ui/hooks/useTranslation/TLUiTranslationKey'
+import CustomizedAxisTick from './CustomizedAxisTick';
 import Styled from './styles'
 
 const caseInsensitiveReducer = (acc: any[], item: { key: string; numVotes: number }) => {
@@ -89,7 +90,7 @@ const ChatPollContent: React.FC<ChatPollContentProps> = ({
 			<ResponsiveContainer width="90%" height={useHeight}>
 				<BarChart data={translatedAnswers} layout="vertical">
 					<XAxis type="number" allowDecimals={false} />
-					<YAxis width={80} type="category" dataKey="pollAnswer" />
+					<YAxis width={80} type="category" dataKey="pollAnswer" tick={<CustomizedAxisTick />} />
 					<Bar dataKey="numVotes" fill="#0C57A7" />
 				</BarChart>
 			</ResponsiveContainer>
