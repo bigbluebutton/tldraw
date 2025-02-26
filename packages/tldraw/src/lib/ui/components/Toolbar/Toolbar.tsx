@@ -47,7 +47,7 @@ export const Toolbar = memo(function Toolbar() {
 		const itemsInDropdown: TLUiToolbarItem[] = []
 		let dropdownFirstItem: TLUiToolbarItem | undefined
 
-		const overflowIndex = Math.min(8, 5 + breakpoint)
+		const overflowIndex = Math.min(9, 6 + breakpoint)
 
 		for (let i = 4; i < toolbarItems.length; i++) {
 			const item = toolbarItems[i]
