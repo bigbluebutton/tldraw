@@ -1,7 +1,7 @@
 {
 	"name": "tldraw-vscode",
 	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 - extension for VS Code.",
-	"version": "2.0.19",
+	"version": "2.0.0-alpha.27",
 	"private": true,
 	"packageManager": "yarn@3.5.0",
 	"author": {
@@ -142,5 +142,6 @@
 	"gitHead": "4b1137849ad07da36fc8f0f19cb64e7535a79296",
 	"dependencies": {
 		"node-fetch": "^2.0.0"
-	}
+	},
+	"stableVersion": "2.0.19"
 }

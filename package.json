@@ -1,7 +1,7 @@
 {
 	"name": "@bigbluebutton/monorepo",
 	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 - A tiny little drawing app (monorepo)",
-	"version": "2.0.1",
+	"version": "2.0.0-alpha.27",
 	"private": true,
 	"author": {
 		"name": "tldraw GB Ltd.",
@@ -95,5 +95,6 @@
 		"recharts": "2.15.1",
 		"styled-components": "^6.1.13",
 		"svgo": "^3.0.2"
-	}
+	},
+	"stableVersion": "2.0.1"
 }
