@@ -46,6 +46,7 @@ export function ToolbarSchemaProvider({ overrides, children }: TLUiToolbarSchema
 		const schema: TLUiToolbarSchemaContextType = compact([
 			toolbarItem(tools.select),
 			toolbarItem(tools.hand),
+			toolbarItem(tools.highlight),
 			toolbarItem(tools.draw),
 			toolbarItem(tools.eraser),
 			toolbarItem(tools.arrow),
@@ -70,7 +71,6 @@ export function ToolbarSchemaProvider({ overrides, children }: TLUiToolbarSchema
 			toolbarItem(tools['arrow-down']),
 			toolbarItem(tools['arrow-right']),
 			toolbarItem(tools.line),
-			toolbarItem(tools.highlight),
 			toolbarItem(tools.frame),
 			toolbarItem(tools.laser),
 		])
