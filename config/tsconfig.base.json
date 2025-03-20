@@ -16,7 +16,7 @@
 		"lib": ["dom", "DOM.Iterable", "esnext"],
 		"experimentalDecorators": true,
 		"module": "esnext",
-		"target": "esnext",
+		"target": "es2018",
 		"moduleResolution": "node",
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitAny": true,
