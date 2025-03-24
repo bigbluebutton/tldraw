@@ -140,7 +140,7 @@ describe('When in the pointing state', () => {
 		editor.setCurrentTool('note')
 		editor.pointerDown(50, 50)
 		editor.pointerUp(50, 50)
-		editor.expectToBeIn('note.idle')
+		editor.expectToBeIn('select.editing_shape')
 		expect(editor.getCurrentPageShapes().length).toBe(1)
 	})
 })
