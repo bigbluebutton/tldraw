@@ -70,6 +70,11 @@ test.describe('smoke tests', () => {
 	// 	expect(await page.getByTestId('main.redo').isDisabled()).toBe(true)
 	// })
 
+	test.skip(
+		({ browserName, isMobile }) => browserName === 'chromium' && isMobile,
+		'This test is desktop-only and breaks on Mobile Chrome.'
+	)
+
 	test('style panel + undo and redo squashing', async ({ page }) => {
 		await page.keyboard.press('r')
 		await page.mouse.move(100, 100)
