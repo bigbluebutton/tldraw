@@ -1644,25 +1644,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bigbluebutton/assets@2.0.0-alpha.28, @bigbluebutton/assets@workspace:packages/assets":
+"@bigbluebutton/assets@2.0.0-alpha.29, @bigbluebutton/assets@workspace:packages/assets":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/assets@workspace:packages/assets"
   dependencies:
-    "@bigbluebutton/utils": 2.0.0-alpha.28
+    "@bigbluebutton/utils": 2.0.0-alpha.29
     lazyrepo: 0.0.0-alpha.27
     ts-node-dev: ^1.1.8
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/editor@2.0.0-alpha.28, @bigbluebutton/editor@workspace:packages/editor":
+"@bigbluebutton/editor@2.0.0-alpha.29, @bigbluebutton/editor@workspace:packages/editor":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/editor@workspace:packages/editor"
   dependencies:
-    "@bigbluebutton/state": 2.0.0-alpha.28
-    "@bigbluebutton/store": 2.0.0-alpha.28
-    "@bigbluebutton/tlschema": 2.0.0-alpha.28
-    "@bigbluebutton/utils": 2.0.0-alpha.28
-    "@bigbluebutton/validate": 2.0.0-alpha.28
+    "@bigbluebutton/state": 2.0.0-alpha.29
+    "@bigbluebutton/store": 2.0.0-alpha.29
+    "@bigbluebutton/tlschema": 2.0.0-alpha.29
+    "@bigbluebutton/utils": 2.0.0-alpha.29
+    "@bigbluebutton/validate": 2.0.0-alpha.29
     "@peculiar/webcrypto": ^1.4.0
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^14.0.0
@@ -1766,7 +1766,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/state@2.0.0-alpha.28, @bigbluebutton/state@workspace:packages/state":
+"@bigbluebutton/state@2.0.0-alpha.29, @bigbluebutton/state@workspace:packages/state":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/state@workspace:packages/state"
   dependencies:
@@ -1781,12 +1781,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/store@2.0.0-alpha.28, @bigbluebutton/store@workspace:packages/store":
+"@bigbluebutton/store@2.0.0-alpha.29, @bigbluebutton/store@workspace:packages/store":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/store@workspace:packages/store"
   dependencies:
-    "@bigbluebutton/state": 2.0.0-alpha.28
-    "@bigbluebutton/utils": 2.0.0-alpha.28
+    "@bigbluebutton/state": 2.0.0-alpha.29
+    "@bigbluebutton/utils": 2.0.0-alpha.29
     "@peculiar/webcrypto": ^1.4.0
     "@types/lodash.isequal": ^4.5.6
     lazyrepo: 0.0.0-alpha.27
@@ -1796,11 +1796,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/tldraw@2.0.0-alpha.28, @bigbluebutton/tldraw@workspace:packages/tldraw":
+"@bigbluebutton/tldraw@2.0.0-alpha.29, @bigbluebutton/tldraw@workspace:packages/tldraw":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/tldraw@workspace:packages/tldraw"
   dependencies:
-    "@bigbluebutton/editor": 2.0.0-alpha.28
+    "@bigbluebutton/editor": 2.0.0-alpha.29
     "@peculiar/webcrypto": ^1.4.0
     "@radix-ui/react-alert-dialog": ^1.0.0
     "@radix-ui/react-context-menu": ^2.1.5
@@ -1832,21 +1832,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/tlschema@2.0.0-alpha.28, @bigbluebutton/tlschema@workspace:packages/tlschema":
+"@bigbluebutton/tlschema@2.0.0-alpha.29, @bigbluebutton/tlschema@workspace:packages/tlschema":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/tlschema@workspace:packages/tlschema"
   dependencies:
-    "@bigbluebutton/state": 2.0.0-alpha.28
-    "@bigbluebutton/store": 2.0.0-alpha.28
-    "@bigbluebutton/utils": 2.0.0-alpha.28
-    "@bigbluebutton/validate": 2.0.0-alpha.28
+    "@bigbluebutton/state": 2.0.0-alpha.29
+    "@bigbluebutton/store": 2.0.0-alpha.29
+    "@bigbluebutton/utils": 2.0.0-alpha.29
+    "@bigbluebutton/validate": 2.0.0-alpha.29
     kleur: ^4.1.5
     lazyrepo: 0.0.0-alpha.27
     nanoid: 4.0.2
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/utils@2.0.0-alpha.28, @bigbluebutton/utils@workspace:packages/utils":
+"@bigbluebutton/utils@2.0.0-alpha.29, @bigbluebutton/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/utils@workspace:packages/utils"
   dependencies:
@@ -1854,11 +1854,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/validate@2.0.0-alpha.28, @bigbluebutton/validate@workspace:packages/validate":
+"@bigbluebutton/validate@2.0.0-alpha.29, @bigbluebutton/validate@workspace:packages/validate":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/validate@workspace:packages/validate"
   dependencies:
-    "@bigbluebutton/utils": 2.0.0-alpha.28
+    "@bigbluebutton/utils": 2.0.0-alpha.29
     lazyrepo: 0.0.0-alpha.27
   languageName: unknown
   linkType: soft
@@ -1867,8 +1867,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/vscode-editor@workspace:apps/vscode/editor"
   dependencies:
-    "@bigbluebutton/assets": 2.0.0-alpha.28
-    "@bigbluebutton/tldraw": 2.0.0-alpha.28
+    "@bigbluebutton/assets": 2.0.0-alpha.29
+    "@bigbluebutton/tldraw": 2.0.0-alpha.29
     "@types/fs-extra": ^11.0.1
     "@types/node": ^17.0.14
     "@types/react": ^18.0.24
@@ -10430,8 +10430,8 @@ __metadata:
   resolution: "examples.tldraw.com@workspace:apps/examples"
   dependencies:
     "@babel/plugin-proposal-decorators": ^7.21.0
-    "@bigbluebutton/assets": 2.0.0-alpha.28
-    "@bigbluebutton/tldraw": 2.0.0-alpha.28
+    "@bigbluebutton/assets": 2.0.0-alpha.29
+    "@bigbluebutton/tldraw": 2.0.0-alpha.29
     "@playwright/test": ^1.38.1
     "@vercel/analytics": ^1.0.1
     "@vitejs/plugin-react": ^4.2.0
@@ -18154,8 +18154,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tldraw-vscode@workspace:apps/vscode/extension"
   dependencies:
-    "@bigbluebutton/editor": 2.0.0-alpha.28
-    "@bigbluebutton/tldraw": 2.0.0-alpha.28
+    "@bigbluebutton/editor": 2.0.0-alpha.29
+    "@bigbluebutton/tldraw": 2.0.0-alpha.29
     "@types/fs-extra": ^11.0.1
     "@types/node-fetch": ^2.6.2
     "@types/vscode": ^1.75.1
