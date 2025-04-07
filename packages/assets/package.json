@@ -1,7 +1,7 @@
 {
 	"name": "@bigbluebutton/assets",
 	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 - A tiny little drawing app (assets).",
-	"version": "2.0.0-alpha.27",
+	"version": "2.0.0-alpha.29",
 	"author": {
 		"name": "tldraw GB Ltd.",
 		"email": "hello@tldraw.com"
@@ -34,7 +34,7 @@
 		"lint": "yarn run -T tsx ../../scripts/lint.ts"
 	},
 	"dependencies": {
-		"@bigbluebutton/utils": "2.0.0-alpha.27"
+		"@bigbluebutton/utils": "2.0.0-alpha.29"
 	},
 	"devDependencies": {
 		"lazyrepo": "0.0.0-alpha.27",
