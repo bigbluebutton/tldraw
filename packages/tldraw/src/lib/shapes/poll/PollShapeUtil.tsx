@@ -49,7 +49,10 @@ export class PollShapeUtil extends ShapeUtil<IPollShape> {
 	}
 
 	component(shape: IPollShape) {
-		const { bounds } = this.editor.getShapeGeometry(shape)
+		// Use the shape's specified width and height, falling back to defaults if missing or invalid.
+		const width = shape.props.w > 0 ? shape.props.w : 300
+		const height = shape.props.h > 0 ? shape.props.h : 300
+
 		const theme = getDefaultColorTheme({
 			isDarkMode: this.editor.user.getIsDarkMode(),
 		})
@@ -65,7 +68,7 @@ export class PollShapeUtil extends ShapeUtil<IPollShape> {
 			answers: shape.props.answers,
 		})
 
-		const adjustedHeight = shape.props.questionText.length > 0 ? bounds.height - 75 : bounds.height
+		const adjustedHeight = shape.props.questionText.length > 0 ? height - 75 : height
 
 		return (
 			<HTMLContainer
@@ -85,7 +88,8 @@ export class PollShapeUtil extends ShapeUtil<IPollShape> {
 			>
 				<div
 					style={{
-						width: `${bounds.width}px`,
+						width: `${width}px`,
+						height: `${height}px`,
 						overflow: 'hidden',
 						position: 'relative',
 					}}
