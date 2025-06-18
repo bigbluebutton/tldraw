@@ -50,8 +50,8 @@ export class PollShapeUtil extends ShapeUtil<IPollShape> {
 
 	component(shape: IPollShape) {
 		// Use the shape's specified width and height, falling back to defaults if missing or invalid.
-		const width = shape.props.w > 0 ? shape.props.w : 300;
-		const height = shape.props.h > 0 ? shape.props.h : 300;
+		const width = shape.props.w > 0 ? shape.props.w : 300
+		const height = shape.props.h > 0 ? shape.props.h : 300
 
 		const theme = getDefaultColorTheme({
 			isDarkMode: this.editor.user.getIsDarkMode(),
