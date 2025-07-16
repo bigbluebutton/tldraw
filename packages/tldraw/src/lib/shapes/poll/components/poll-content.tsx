@@ -2,8 +2,17 @@
 import React from 'react'
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts'
 import { TLUiTranslationKey } from '../../../ui/hooks/useTranslation/TLUiTranslationKey'
+import { useTranslation } from '../../../ui/hooks/useTranslation/useTranslation'
 import CustomizedAxisTick from './CustomizedAxisTick'
 import Styled from './styles'
+
+const translatedAnswersKeys = {
+	True: 'app.poll.t',
+	False: 'app.poll.f',
+	Yes: 'app.poll.y',
+	No: 'app.poll.n',
+	Abstention: 'app.poll.abstention',
+}
 
 const caseInsensitiveReducer = (acc: any[], item: { key: string; numVotes: number }) => {
 	const index = acc.findIndex((ans) => ans.key.toLowerCase() === item.key.toLowerCase())
@@ -39,6 +48,7 @@ interface Answers {
 	key: string
 	numVotes: number
 	id: number
+	isCorrectAnswer?: boolean
 }
 
 function assertAsMetadata(metadata: unknown): asserts metadata is Metadata {
@@ -71,12 +81,16 @@ const ChatPollContent: React.FC<ChatPollContentProps> = ({
 }) => {
 	const pollData = JSON.parse(string) as unknown
 	assertAsMetadata(pollData)
+	const msg = useTranslation()
 
 	const answers = pollData.answers.reduce(caseInsensitiveReducer, [])
 
 	const translatedAnswers = answers.map((answer: Answers) => {
-		const translationKey = answer.key as TLUiTranslationKey
-		const pollAnswer = translationKey ? translationKey : answer.key
+		const key = answer.key as keyof typeof translatedAnswersKeys
+		const translationKey = msg((translatedAnswersKeys[key] || key) as TLUiTranslationKey)
+		const pollAnswer = `${answer.isCorrectAnswer ? '✅ ' : ''}${
+			translationKey ? translationKey : answer.key
+		}`
 		return {
 			...answer,
 			pollAnswer,

@@ -16,6 +16,7 @@ export type IPollShape = TLBaseShape<
 			id: number
 			key: string
 			numVotes: number
+			isCorrectAnswer?: boolean
 		}>
 	}
 >
