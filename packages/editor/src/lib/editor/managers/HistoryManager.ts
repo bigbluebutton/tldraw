@@ -23,6 +23,7 @@ export class HistoryManager<
 	_undos = atom<Stack<TLHistoryEntry>>('HistoryManager.undos', stack()) // Updated by each action that includes and undo
 	_redos = atom<Stack<TLHistoryEntry>>('HistoryManager.redos', stack()) // Updated when a user undoes
 	_batchDepth = 0 // A flag for whether the user is in a batch operation
+	_maxStackSize: number | null = null // The maximum number of undos/redos to keep in the stack
 
 	constructor(
 		private readonly ctx: CTX,
@@ -33,6 +34,27 @@ export class HistoryManager<
 
 	private _commands: Record<string, TLCommandHandler<any>> = {}
 
+	private ensureMaxStackSize() {
+		this._undos.update((undos) => {
+			if (typeof this._maxStackSize === 'number' && undos.length > this._maxStackSize) {
+				const undosArray = undos.toArray()
+				return stack(undosArray.slice(0, this._maxStackSize) as TLHistoryEntry[])
+			}
+			return undos
+		})
+
+		this._redos.update((redos) => {
+			if (typeof this._maxStackSize === 'number' && redos.length > this._maxStackSize) {
+				const redosArray = redos.toArray()
+				return stack(redosArray.slice(0, this._maxStackSize) as TLHistoryEntry[])
+			}
+			return redos
+		})
+	}
+	setMaxStackSize(limit: number) {
+		this._maxStackSize = Math.max(0, limit)
+		this.ensureMaxStackSize()
+	}
 	getNumUndos() {
 		return this._undos.get().length
 	}
@@ -105,6 +127,8 @@ export class HistoryManager<
 
 				this.ctx.emit('change-history', { reason: 'push' })
 			}
+
+			this.ensureMaxStackSize()
 
 			return this.ctx
 		}
