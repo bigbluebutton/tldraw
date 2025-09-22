@@ -1,7 +1,7 @@
 {
 	"name": "@bigbluebutton/utils",
 	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 - A tiny little drawing app (private utilities).",
-	"version": "2.0.0-alpha.30",
+	"version": "2.0.0-alpha.31",
 	"packageManager": "yarn@3.5.0",
 	"author": {
 		"name": "tldraw GB Ltd.",
