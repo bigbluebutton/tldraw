@@ -1294,7 +1294,9 @@ export type TldrawProps = TldrawEditorBaseProps & ({
     sessionId?: string;
     defaultName?: string;
     snapshot?: StoreSnapshot<TLRecord>;
-}) & TldrawUiProps & Partial<TLExternalContentProps>;
+}) & TldrawUiProps & Partial<TLExternalContentProps> & {
+    showTools?: string[];
+};
 
 // @public (undocumented)
 export const TldrawScribble: TLScribbleComponent;
@@ -1332,7 +1334,9 @@ export interface TldrawUiContextProviderProps {
 }
 
 // @public
-export type TldrawUiProps = TldrawUiBaseProps & TldrawUiContextProviderProps;
+export type TldrawUiProps = TldrawUiBaseProps & TldrawUiContextProviderProps & {
+    showTools?: string[];
+};
 
 // @public (undocumented)
 export interface TLUiActionItem<TransationKey extends string = string, IconType extends string = string> {
