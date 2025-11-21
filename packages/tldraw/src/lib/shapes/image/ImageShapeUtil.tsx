@@ -146,6 +146,8 @@ export class ImageShapeUtil extends BaseBoxShapeUtil<TLImageShape> {
 									backgroundImage: `url(${
 										!shape.props.playing || reduceMotion ? staticFrameSrc : asset.props.src
 									})`,
+									// Force hardware acceleration to prevent Safari flickering issue
+									transform: this.editor.environment.isSafari ? 'translateZ(0)' : undefined,
 								}}
 								draggable={false}
 							/>
