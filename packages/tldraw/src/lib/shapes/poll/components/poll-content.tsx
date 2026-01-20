@@ -88,13 +88,6 @@ const ChatPollContent: React.FC<ChatPollContentProps> = ({
 	const isTypedPoll = pollData.questionType.startsWith('R-')
 	const yAxisWidth = isTypedPoll && width ? Math.floor(width / 2) : 80
 
-	console.log(
-		'[tldraw] ChatPollContent - yalc link successful, isTypedPoll:',
-		isTypedPoll,
-		'yAxisWidth:',
-		yAxisWidth
-	)
-
 	const answers = pollData.answers.reduce(caseInsensitiveReducer, [])
 
 	const translatedAnswers = answers.map((answer: Answers) => {
