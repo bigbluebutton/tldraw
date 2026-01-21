@@ -94,7 +94,7 @@ export class PollShapeUtil extends ShapeUtil<IPollShape> {
 						position: 'relative',
 					}}
 				>
-					<ChatPollContent metadata={pollMetadata} height={adjustedHeight} />
+					<ChatPollContent metadata={pollMetadata} height={adjustedHeight} width={width} />
 				</div>
 			</HTMLContainer>
 		)

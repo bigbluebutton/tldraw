@@ -32,6 +32,7 @@ const caseInsensitiveReducer = (acc: any[], item: { key: string; numVotes: numbe
 interface ChatPollContentProps {
 	metadata: string
 	height?: number
+	width?: number
 }
 
 interface Metadata {
@@ -78,10 +79,14 @@ function assertAsMetadata(metadata: unknown): asserts metadata is Metadata {
 const ChatPollContent: React.FC<ChatPollContentProps> = ({
 	metadata: string,
 	height = undefined,
+	width = undefined,
 }) => {
 	const pollData = JSON.parse(string) as unknown
 	assertAsMetadata(pollData)
 	const msg = useTranslation()
+
+	const isTypedPoll = pollData.questionType.startsWith('R-')
+	const yAxisWidth = isTypedPoll && width ? Math.floor(width / 2) : 80
 
 	const answers = pollData.answers.reduce(caseInsensitiveReducer, [])
 
@@ -104,7 +109,12 @@ const ChatPollContent: React.FC<ChatPollContentProps> = ({
 			<ResponsiveContainer width="90%" height={useHeight}>
 				<BarChart data={translatedAnswers} layout="vertical">
 					<XAxis type="number" allowDecimals={false} />
-					<YAxis width={80} type="category" dataKey="pollAnswer" tick={<CustomizedAxisTick />} />
+					<YAxis
+						width={yAxisWidth}
+						type="category"
+						dataKey="pollAnswer"
+						tick={<CustomizedAxisTick />}
+					/>
 					<Bar dataKey="numVotes" fill="#0C57A7" />
 				</BarChart>
 			</ResponsiveContainer>
