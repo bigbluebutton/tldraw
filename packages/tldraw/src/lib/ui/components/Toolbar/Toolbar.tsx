@@ -14,7 +14,7 @@ import { kbdStr } from '../primitives/shared'
 import { ToggleToolLockedButton } from './ToggleToolLockedButton'
 
 /** @public */
-export const Toolbar = memo(function Toolbar() {
+export const Toolbar = memo(function Toolbar({ showTools }: { showTools?: string[] }) {
 	const editor = useEditor()
 	const msg = useTranslation()
 	const breakpoint = useBreakpoint()
@@ -22,7 +22,13 @@ export const Toolbar = memo(function Toolbar() {
 	const rMostRecentlyActiveDropdownItem = React.useRef<TLUiToolbarItem | undefined>(undefined)
 
 	const isReadonly = useReadonly()
-	const toolbarItems = useToolbarSchema()
+	const rawToolbarItems = useToolbarSchema()
+	const toolbarItems = React.useMemo(() => {
+		if (!showTools || showTools.length === 0) return rawToolbarItems
+
+		return rawToolbarItems.filter((item) => showTools.includes(item.id))
+	}, [rawToolbarItems, showTools])
+
 	const laserTool = toolbarItems.find((item) => item.toolItem.id === 'laser')
 
 	const activeToolId = useValue('current tool id', () => editor.getCurrentToolId(), [editor])

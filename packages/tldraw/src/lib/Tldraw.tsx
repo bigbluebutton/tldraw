@@ -53,7 +53,12 @@ export type TldrawProps = TldrawEditorBaseProps &
 		  }
 	) &
 	TldrawUiProps &
-	Partial<TLExternalContentProps>
+	Partial<TLExternalContentProps> & {
+		/**
+		 * List of allowed shapes that should be visible in the toolbar
+		 */
+		showTools?: string[]
+	}
 
 /** @public */
 export function Tldraw(props: TldrawProps) {
@@ -64,6 +69,7 @@ export function Tldraw(props: TldrawProps) {
 		acceptedImageMimeTypes,
 		acceptedVideoMimeTypes,
 		onMount,
+		showTools,
 		...rest
 	} = props
 
@@ -104,7 +110,7 @@ export function Tldraw(props: TldrawProps) {
 
 	return (
 		<TldrawEditor {...withDefaults}>
-			<TldrawUi {...withDefaults}>
+			<TldrawUi {...withDefaults} showTools={showTools}>
 				<ContextMenu>
 					<Canvas />
 				</ContextMenu>

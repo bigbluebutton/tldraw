@@ -29,7 +29,13 @@ import { useTranslation } from './hooks/useTranslation/useTranslation'
  *
  * @public
  */
-export type TldrawUiProps = TldrawUiBaseProps & TldrawUiContextProviderProps
+export type TldrawUiProps = TldrawUiBaseProps &
+	TldrawUiContextProviderProps & {
+		/**
+		 * Restrict which shapes/tools appear in the UI toolbar.
+		 */
+		showTools?: string[]
+	}
 
 /**
  * Base props for the {@link @bigbluebutton/tldraw#Tldraw} and {@link TldrawUi} components.
@@ -76,6 +82,7 @@ export const TldrawUi = React.memo(function TldrawUi({
 	renderDebugMenuItems,
 	children,
 	hideUi,
+	showTools,
 	...rest
 }: TldrawUiProps) {
 	return (
@@ -85,6 +92,7 @@ export const TldrawUi = React.memo(function TldrawUi({
 				shareZone={shareZone}
 				topZone={topZone}
 				renderDebugMenuItems={renderDebugMenuItems}
+				showTools={showTools}
 			>
 				{children}
 			</TldrawUiInner>
@@ -97,6 +105,7 @@ type TldrawUiContentProps = {
 	shareZone?: ReactNode
 	topZone?: ReactNode
 	renderDebugMenuItems?: () => React.ReactNode
+	showTools?: string[]
 }
 
 const TldrawUiInner = React.memo(function TldrawUiInner({
@@ -120,6 +129,7 @@ const TldrawUiContent = React.memo(function TldrawUI({
 	shareZone,
 	topZone,
 	renderDebugMenuItems,
+	showTools,
 }: TldrawUiContentProps) {
 	const editor = useEditor()
 	const msg = useTranslation()
@@ -178,7 +188,7 @@ const TldrawUiContent = React.memo(function TldrawUI({
 						<div className="tlui-layout__bottom">
 							<div className="tlui-layout__bottom__main">
 								<NavigationZone />
-								<Toolbar />
+								<Toolbar showTools={showTools} />
 								{breakpoint >= 4 && <HelpMenu />}
 							</div>
 							{isDebugMode && <DebugPanel renderDebugMenuItems={renderDebugMenuItems ?? null} />}

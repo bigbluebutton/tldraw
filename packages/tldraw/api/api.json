@@ -14435,7 +14435,7 @@
             },
             {
               "kind": "Content",
-              "text": ">"
+              "text": "> & {\n    showTools?: string[];\n}"
             },
             {
               "kind": "Content",
@@ -14978,6 +14978,10 @@
             },
             {
               "kind": "Content",
+              "text": " & {\n    showTools?: string[];\n}"
+            },
+            {
+              "kind": "Content",
               "text": ";"
             }
           ],
@@ -14986,7 +14990,7 @@
           "name": "TldrawUiProps",
           "typeTokenRange": {
             "startIndex": 1,
-            "endIndex": 4
+            "endIndex": 5
           }
         },
         {
