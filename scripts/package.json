@@ -40,7 +40,10 @@
 		"lint": "yarn run -T tsx lint.ts"
 	},
 	"dependencies": {
-		"ignore": "^5.2.4"
+		"chokidar": "^3.6.0",
+		"commander": "^9.5.0",
+		"ignore": "^5.2.4",
+		"ora": "^5.4.1"
 	},
 	"stableVersion": "2.0.0-alpha.8"
 }

@@ -1,5 +1,6 @@
 /// <reference types="react" />
 
+export { TLDRAW_BUILD_ID } from './lib/buildInfo'
 // eslint-disable-next-line local/no-export-star
 export * from '@bigbluebutton/editor'
 export { Tldraw, type TldrawProps } from './lib/Tldraw'

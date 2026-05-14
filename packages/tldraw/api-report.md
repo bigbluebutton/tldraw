@@ -1251,6 +1251,9 @@ function Title({ className, children }: {
 // @public (undocumented)
 export function Tldraw(props: TldrawProps): JSX_2.Element;
 
+// @internal (undocumented)
+export const TLDRAW_BUILD_ID = "build-1778706858782";
+
 // @public (undocumented)
 export const TLDRAW_FILE_EXTENSION: ".tldr";
 
