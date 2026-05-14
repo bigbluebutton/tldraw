@@ -119,14 +119,6 @@ function relinkInBBB(bbbHtml5Dir: string): void {
 		stdio: 'inherit',
 	})
 
-	// Delete webpack's filesystem cache so the next rebuild re-reads tldraw from
-	// disk. This is safer than dereferencing the symlink (which caused ENOENT
-	// because Docker's inotify fired while the symlink was momentarily absent).
-	const webpackCache = path.join(bbbHtml5Dir, 'node_modules/.cache/webpack')
-	if (fs.existsSync(webpackCache)) {
-		fs.rmSync(webpackCache, { recursive: true, force: true })
-	}
-
 	s.succeed('@bigbluebutton/tldraw relinked')
 }
 
