@@ -39,7 +39,8 @@
 		"check-scripts": "tsx scripts/check-scripts.ts",
 		"api-check": "lazy api-check",
 		"test": "lazy test -- -u",
-		"e2e": "lazy e2e --filter='{,bublic/}apps/examples'"
+		"e2e": "lazy e2e --filter='{,bublic/}apps/examples'",
+		"dev-bbb": "tsx scripts/tldraw-dev.ts"
 	},
 	"engines": {
 		"npm": ">=7.0.0"
