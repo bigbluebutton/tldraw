@@ -1644,25 +1644,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bigbluebutton/assets@2.0.0-alpha.33, @bigbluebutton/assets@workspace:packages/assets":
+"@bigbluebutton/assets@2.0.0-alpha.34, @bigbluebutton/assets@workspace:packages/assets":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/assets@workspace:packages/assets"
   dependencies:
-    "@bigbluebutton/utils": 2.0.0-alpha.33
+    "@bigbluebutton/utils": 2.0.0-alpha.34
     lazyrepo: 0.0.0-alpha.27
     ts-node-dev: ^1.1.8
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/editor@2.0.0-alpha.33, @bigbluebutton/editor@workspace:packages/editor":
+"@bigbluebutton/editor@2.0.0-alpha.34, @bigbluebutton/editor@workspace:packages/editor":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/editor@workspace:packages/editor"
   dependencies:
-    "@bigbluebutton/state": 2.0.0-alpha.33
-    "@bigbluebutton/store": 2.0.0-alpha.33
-    "@bigbluebutton/tlschema": 2.0.0-alpha.33
-    "@bigbluebutton/utils": 2.0.0-alpha.33
-    "@bigbluebutton/validate": 2.0.0-alpha.33
+    "@bigbluebutton/state": 2.0.0-alpha.34
+    "@bigbluebutton/store": 2.0.0-alpha.34
+    "@bigbluebutton/tlschema": 2.0.0-alpha.34
+    "@bigbluebutton/utils": 2.0.0-alpha.34
+    "@bigbluebutton/validate": 2.0.0-alpha.34
     "@peculiar/webcrypto": ^1.4.0
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^14.0.0
@@ -1726,13 +1726,13 @@ __metadata:
     lazyrepo: 0.0.0-alpha.27
     lint-staged: ">=10"
     node-gyp: ^10.2.0
-    playwright: ^1.46.0
+    playwright: ^1.55.1
     prettier: ^2.8.6
     prettier-plugin-organize-imports: ^3.2.2
     recharts: 2.15.1
     rimraf: ^4.4.0
     styled-components: ^6.1.13
-    svgo: ^3.0.2
+    svgo: ^3.3.3
     ts-node: ^10.9.2
     tsx: 4.17.0
     typescript: ^5.0.2
@@ -1766,7 +1766,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/state@2.0.0-alpha.33, @bigbluebutton/state@workspace:packages/state":
+"@bigbluebutton/state@2.0.0-alpha.34, @bigbluebutton/state@workspace:packages/state":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/state@workspace:packages/state"
   dependencies:
@@ -1781,12 +1781,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/store@2.0.0-alpha.33, @bigbluebutton/store@workspace:packages/store":
+"@bigbluebutton/store@2.0.0-alpha.34, @bigbluebutton/store@workspace:packages/store":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/store@workspace:packages/store"
   dependencies:
-    "@bigbluebutton/state": 2.0.0-alpha.33
-    "@bigbluebutton/utils": 2.0.0-alpha.33
+    "@bigbluebutton/state": 2.0.0-alpha.34
+    "@bigbluebutton/utils": 2.0.0-alpha.34
     "@peculiar/webcrypto": ^1.4.0
     "@types/lodash.isequal": ^4.5.6
     lazyrepo: 0.0.0-alpha.27
@@ -1796,11 +1796,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/tldraw@2.0.0-alpha.33, @bigbluebutton/tldraw@workspace:packages/tldraw":
+"@bigbluebutton/tldraw@2.0.0-alpha.34, @bigbluebutton/tldraw@workspace:packages/tldraw":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/tldraw@workspace:packages/tldraw"
   dependencies:
-    "@bigbluebutton/editor": 2.0.0-alpha.33
+    "@bigbluebutton/editor": 2.0.0-alpha.34
     "@peculiar/webcrypto": ^1.4.0
     "@radix-ui/react-alert-dialog": ^1.0.0
     "@radix-ui/react-context-menu": ^2.1.5
@@ -1832,21 +1832,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/tlschema@2.0.0-alpha.33, @bigbluebutton/tlschema@workspace:packages/tlschema":
+"@bigbluebutton/tlschema@2.0.0-alpha.34, @bigbluebutton/tlschema@workspace:packages/tlschema":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/tlschema@workspace:packages/tlschema"
   dependencies:
-    "@bigbluebutton/state": 2.0.0-alpha.33
-    "@bigbluebutton/store": 2.0.0-alpha.33
-    "@bigbluebutton/utils": 2.0.0-alpha.33
-    "@bigbluebutton/validate": 2.0.0-alpha.33
+    "@bigbluebutton/state": 2.0.0-alpha.34
+    "@bigbluebutton/store": 2.0.0-alpha.34
+    "@bigbluebutton/utils": 2.0.0-alpha.34
+    "@bigbluebutton/validate": 2.0.0-alpha.34
     kleur: ^4.1.5
     lazyrepo: 0.0.0-alpha.27
     nanoid: 4.0.2
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/utils@2.0.0-alpha.33, @bigbluebutton/utils@workspace:packages/utils":
+"@bigbluebutton/utils@2.0.0-alpha.34, @bigbluebutton/utils@workspace:packages/utils":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/utils@workspace:packages/utils"
   dependencies:
@@ -1854,11 +1854,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@bigbluebutton/validate@2.0.0-alpha.33, @bigbluebutton/validate@workspace:packages/validate":
+"@bigbluebutton/validate@2.0.0-alpha.34, @bigbluebutton/validate@workspace:packages/validate":
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/validate@workspace:packages/validate"
   dependencies:
-    "@bigbluebutton/utils": 2.0.0-alpha.33
+    "@bigbluebutton/utils": 2.0.0-alpha.34
     lazyrepo: 0.0.0-alpha.27
   languageName: unknown
   linkType: soft
@@ -1867,8 +1867,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@bigbluebutton/vscode-editor@workspace:apps/vscode/editor"
   dependencies:
-    "@bigbluebutton/assets": 2.0.0-alpha.33
-    "@bigbluebutton/tldraw": 2.0.0-alpha.33
+    "@bigbluebutton/assets": 2.0.0-alpha.34
+    "@bigbluebutton/tldraw": 2.0.0-alpha.34
     "@types/fs-extra": ^11.0.1
     "@types/node": ^17.0.14
     "@types/react": ^18.0.24
@@ -3811,14 +3811,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:^1.38.1":
-  version: 1.44.1
-  resolution: "@playwright/test@npm:1.44.1"
+"@playwright/test@npm:^1.55.1":
+  version: 1.60.0
+  resolution: "@playwright/test@npm:1.60.0"
   dependencies:
-    playwright: 1.44.1
+    playwright: 1.60.0
   bin:
     playwright: cli.js
-  checksum: 90507b77e388aa984deb92db56f7bb3b305c6be441e1d0087ca046989cfdda068bbc26d75bd29c20ad3dbb2434e69a8ff0d6b30003b88c9234cd3aa6a9f7deb9
+  checksum: 29176a1fcf016a06299353f01de7f35817d78731294bfca62bfa44f18e2ad3a9b5f8a8480cf55046b597ee28c5c5340a4dd03a268f8fb853522ddd96a437204a
   languageName: node
   linkType: hard
 
@@ -4721,10 +4721,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/router@npm:1.16.1":
-  version: 1.16.1
-  resolution: "@remix-run/router@npm:1.16.1"
-  checksum: 69068815832b30d2a5c063ac1c75365c45cf5b484dab65e1b3129fdbb3c2a7b866401733f766e550dbca1eaf0b84bc772a9c55310f4dd21eb53e62eb1b4625d0
+"@remix-run/router@npm:1.23.2":
+  version: 1.23.2
+  resolution: "@remix-run/router@npm:1.23.2"
+  checksum: 0f046e480372be17d14f88684435cd6af4c05ce842bd6094a549605dd5b8f0ab1e9a1e9d9e2faec9e4d5cd370d02179b456189192f06415e461bce44c28295d8
   languageName: node
   linkType: hard
 
@@ -10430,17 +10430,17 @@ __metadata:
   resolution: "examples.tldraw.com@workspace:apps/examples"
   dependencies:
     "@babel/plugin-proposal-decorators": ^7.21.0
-    "@bigbluebutton/assets": 2.0.0-alpha.33
-    "@bigbluebutton/tldraw": 2.0.0-alpha.33
-    "@playwright/test": ^1.38.1
+    "@bigbluebutton/assets": 2.0.0-alpha.34
+    "@bigbluebutton/tldraw": 2.0.0-alpha.34
+    "@playwright/test": ^1.55.1
     "@vercel/analytics": ^1.0.1
     "@vitejs/plugin-react": ^4.2.0
     dotenv: ^16.0.3
     lazyrepo: 0.0.0-alpha.27
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-router-dom: ^6.9.0
-    vite: ^4.3.4
+    react-router-dom: ^6.30.3
+    vite: ^4.5.14
   languageName: unknown
   linkType: soft
 
@@ -15677,51 +15677,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.44.1":
-  version: 1.44.1
-  resolution: "playwright-core@npm:1.44.1"
+"playwright-core@npm:1.60.0":
+  version: 1.60.0
+  resolution: "playwright-core@npm:1.60.0"
   bin:
     playwright-core: cli.js
-  checksum: ebc6fa0ff77792fe52648fda06cc4474d4e9746db6dc5750d262b7fe2caf9f9e2327a71f1fb365e862213403a9daf95361c5040a9b0fd462928d7eb4fdc760e1
+  checksum: 8afc6ce9b3fc2f17ebbc671555b1d982a6e1b554c9215ba92d843e9ced8ebdd66c25996debcf1773c15b449c5fa8a42e6bc8ec0b1d96c5b5b759214c3a54c80f
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.46.0":
-  version: 1.46.0
-  resolution: "playwright-core@npm:1.46.0"
-  bin:
-    playwright-core: cli.js
-  checksum: 0af0bf8afdd2182d377137c19da870d13e0f849b12b147dce7d5273db9f3d08a6ea35ef229eeb1816b3a9eca61504596fc1171e041e666e6ebb4118e71fe83ba
-  languageName: node
-  linkType: hard
-
-"playwright@npm:1.44.1":
-  version: 1.44.1
-  resolution: "playwright@npm:1.44.1"
+"playwright@npm:1.60.0, playwright@npm:^1.55.1":
+  version: 1.60.0
+  resolution: "playwright@npm:1.60.0"
   dependencies:
     fsevents: 2.3.2
-    playwright-core: 1.44.1
+    playwright-core: 1.60.0
   dependenciesMeta:
     fsevents:
       optional: true
   bin:
     playwright: cli.js
-  checksum: c2e8ff0a855e4a9e665ae5ffa0ff90423289546157be55e83f78916d17075c5910a7244773739c2a973da884a4ff0b3cf9b6e6b543de112e43b12169a9208e86
-  languageName: node
-  linkType: hard
-
-"playwright@npm:^1.46.0":
-  version: 1.46.0
-  resolution: "playwright@npm:1.46.0"
-  dependencies:
-    fsevents: 2.3.2
-    playwright-core: 1.46.0
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  bin:
-    playwright: cli.js
-  checksum: 013d7cd81c4016556245f98bd0b407c95f7dbc6d11d174d33d2e6aeeac1a4c63f646909adf3a926df09e1f0638e408018af3799e2c8e437dd2362f78091182e4
+  checksum: 07b893cfe34fed7039910f6bb9ecabac29888578b42ea54026815c3642989efdf9b9480184ce097c6f49cade3e8addcb026afcaf58800b639dc572ed3487ee42
   languageName: node
   linkType: hard
 
@@ -16309,27 +16285,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:^6.9.0":
-  version: 6.23.1
-  resolution: "react-router-dom@npm:6.23.1"
+"react-router-dom@npm:^6.30.3":
+  version: 6.30.3
+  resolution: "react-router-dom@npm:6.30.3"
   dependencies:
-    "@remix-run/router": 1.16.1
-    react-router: 6.23.1
+    "@remix-run/router": 1.23.2
+    react-router: 6.30.3
   peerDependencies:
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: e87b5cf85019496f499286d466a4ad9cf5efe729f1420502fc5d16093d525462803253538418ea5b0da7ab5671a16caefee67848b373008e567629c2d667dc44
+  checksum: 1f43ce47dd8cfc1bc728ea7b0cf10136416416491136726cda500aaea74da3c5dbcfcec24781bc390f6e8a4383ff72b8331b53887485e79dcb75387ffe5508c3
   languageName: node
   linkType: hard
 
-"react-router@npm:6.23.1":
-  version: 6.23.1
-  resolution: "react-router@npm:6.23.1"
+"react-router@npm:6.30.3":
+  version: 6.30.3
+  resolution: "react-router@npm:6.30.3"
   dependencies:
-    "@remix-run/router": 1.16.1
+    "@remix-run/router": 1.23.2
   peerDependencies:
     react: ">=16.8"
-  checksum: d5d43ccb908a95d2b7345f2a13315c38bf094e25bcf97d5a6c3f353b1ea88602de15726c3570cd7f07c53b19a3519af2b6739bf6929ec355012795611d739cff
+  checksum: b61e1a456b72ed35907dadc261d8572a65dd4caae008f7a85a6b09b437b1a4b90034fc7df0e418f1f01b73c2b8a8f6755d7fc0108b1ec3f2ed37f03a1e248513
   languageName: node
   linkType: hard
 
@@ -17171,6 +17147,13 @@ __metadata:
   version: 1.4.0
   resolution: "sax@npm:1.4.0"
   checksum: fce7eeda3d8d2b1676b847bb255d7398ee6909ea4b57a6687960df473327c3a55e2039e33d33733e3b5b6f6e12b0a89453e62e3325be481455f15ab61f403d66
+  languageName: node
+  linkType: hard
+
+"sax@npm:^1.5.0":
+  version: 1.6.0
+  resolution: "sax@npm:1.6.0"
+  checksum: 83ae2a17f524bd35b1b7d1c867700b1fab41e4cbb4f7635b7e66398421e06ff2cd43ec651c151cb99c67c3681ec7d0493cb6a98fd2e7799ea15b5d0a4615f870
   languageName: node
   linkType: hard
 
@@ -18017,6 +18000,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"svgo@npm:^3.3.3":
+  version: 3.3.3
+  resolution: "svgo@npm:3.3.3"
+  dependencies:
+    commander: ^7.2.0
+    css-select: ^5.1.0
+    css-tree: ^2.3.1
+    css-what: ^6.1.0
+    csso: ^5.0.5
+    picocolors: ^1.0.0
+    sax: ^1.5.0
+  bin:
+    svgo: ./bin/svgo
+  checksum: ad9c27f19f1f8a6e45bae1b280eb68028da5449359c4daf2c539fc099ab6c76852335d96300a030af4e6866e500159fe80f43a732b8a2905ffa1bd4339da520c
+  languageName: node
+  linkType: hard
+
 "symbol-tree@npm:^3.2.4":
   version: 3.2.4
   resolution: "symbol-tree@npm:3.2.4"
@@ -18154,8 +18154,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tldraw-vscode@workspace:apps/vscode/extension"
   dependencies:
-    "@bigbluebutton/editor": 2.0.0-alpha.33
-    "@bigbluebutton/tldraw": 2.0.0-alpha.33
+    "@bigbluebutton/editor": 2.0.0-alpha.34
+    "@bigbluebutton/tldraw": 2.0.0-alpha.34
     "@types/fs-extra": ^11.0.1
     "@types/node-fetch": ^2.6.2
     "@types/vscode": ^1.75.1
@@ -19265,9 +19265,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^4.3.4":
-  version: 4.5.3
-  resolution: "vite@npm:4.5.3"
+"vite@npm:^4.5.14":
+  version: 4.5.14
+  resolution: "vite@npm:4.5.14"
   dependencies:
     esbuild: ^0.18.10
     fsevents: ~2.3.2
@@ -19301,7 +19301,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: fd3f512ce48ca2a1fe60ad0376283b832de9272725fdbc65064ae9248f792de87b0f27a89573115e23e26784800daca329f8a9234d298ba6f60e808a9c63883c
+  checksum: ed61e2bc284968c5f514eae1f0b040ad6aa1b6591575c102d4967da5e34f8e52cd1a7048800bc3154ece0c11b4f11e1be1d0ef382c92993fd2dc6f7feca110ba
   languageName: node
   linkType: hard
 

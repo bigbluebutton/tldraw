@@ -1,7 +1,7 @@
 {
 	"name": "@bigbluebutton/monorepo",
 	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 - A tiny little drawing app (monorepo)",
-	"version": "2.0.0-alpha.33",
+	"version": "2.0.0-alpha.34",
 	"private": true,
 	"author": {
 		"name": "tldraw GB Ltd.",
@@ -79,7 +79,7 @@
 		"json5": "^2.2.3",
 		"lazyrepo": "0.0.0-alpha.27",
 		"lint-staged": ">=10",
-		"playwright": "^1.46.0",
+		"playwright": "^1.55.1",
 		"prettier": "^2.8.6",
 		"prettier-plugin-organize-imports": "^3.2.2",
 		"rimraf": "^4.4.0",
@@ -91,11 +91,40 @@
 	"resolutions": {
 		"@microsoft/api-extractor@^7.35.4": "patch:@microsoft/api-extractor@npm%3A7.35.4#./.yarn/patches/@microsoft-api-extractor-npm-7.35.4-5f4f0357b4.patch"
 	},
+	"overrides": {
+		"vm2": "3.11.3",
+		"form-data": "4.0.5",
+		"ws": ">=8.17.1",
+		"@remix-run/dev": {
+			"ws": ">=7.5.10 <8.0.0"
+		},
+		"body-parser": ">=1.20.3 <2.0.0",
+		"rollup": ">=3.29.5 <4.0.0 || >=4.22.4",
+		"cross-spawn": ">=7.0.5",
+		"tar-fs": ">=2.1.4",
+		"validator": ">=13.15.22",
+		"@remix-run/router": ">=1.23.2",
+		"flatted": ">=3.4.2",
+		"lodash": ">=4.18.0",
+		"@babel/plugin-transform-modules-systemjs": ">=7.29.4",
+		"micromatch": ">=4.0.8",
+		"xml2js": "0.5.0",
+		"@babel/helpers": ">=7.26.0",
+		"@babel/runtime": ">=7.26.0",
+		"postcss": ">=8.5.10",
+		"yaml": ">=2.8.3",
+		"cookie": ">=0.7.0 <1.0.0",
+		"js-yaml": ">=4.1.1 <5",
+		"qs": ">=6.14.2",
+		"express": ">=4.19.3 <5.0.0",
+		"send": ">=0.19.0 <1.0.0",
+		"serve-static": ">=1.16.0 <2.0.0"
+	},
 	"dependencies": {
 		"node-gyp": "^10.2.0",
 		"recharts": "2.15.1",
 		"styled-components": "^6.1.13",
-		"svgo": "^3.0.2"
+		"svgo": "^3.3.3"
 	},
 	"stableVersion": "2.0.1"
 }

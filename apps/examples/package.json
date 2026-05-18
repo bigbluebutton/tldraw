@@ -1,7 +1,7 @@
 {
 	"name": "examples.tldraw.com",
 	"description": "BigBlueButton's fork of tldraw 2.0-alpha.19 - A tiny little drawing app (development).",
-	"version": "2.0.0-alpha.33",
+	"version": "2.0.0-alpha.34",
 	"private": true,
 	"packageManager": "yarn@3.5.0",
 	"author": {
@@ -25,15 +25,15 @@
 	},
 	"dependencies": {
 		"@babel/plugin-proposal-decorators": "^7.21.0",
-		"@bigbluebutton/assets": "2.0.0-alpha.33",
-		"@bigbluebutton/tldraw": "2.0.0-alpha.33",
-		"@playwright/test": "^1.38.1",
+		"@bigbluebutton/assets": "2.0.0-alpha.34",
+		"@bigbluebutton/tldraw": "2.0.0-alpha.34",
+		"@playwright/test": "^1.55.1",
 		"@vercel/analytics": "^1.0.1",
 		"lazyrepo": "0.0.0-alpha.27",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"react-router-dom": "^6.9.0",
-		"vite": "^4.3.4"
+		"react-router-dom": "^6.30.3",
+		"vite": "^4.5.14"
 	},
 	"devDependencies": {
 		"@vitejs/plugin-react": "^4.2.0",
