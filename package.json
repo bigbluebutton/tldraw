@@ -89,7 +89,9 @@
 	},
 	"resolutions": {
 		"@microsoft/api-extractor@^7.35.4": "patch:@microsoft/api-extractor@npm%3A7.35.4#./.yarn/patches/@microsoft-api-extractor-npm-7.35.4-5f4f0357b4.patch",
-		"proxy-agent": "^6.0.0"
+		"proxy-agent": "^6.0.0",
+		"mocha/nanoid": "^3.3.8",
+		"postcss/nanoid": "^3.3.8"
 	},
 	"overrides": {
 		"vm2": "3.11.3",
