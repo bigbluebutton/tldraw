@@ -1749,8 +1749,6 @@ __metadata:
     "@types/node": ^18.13.0
     "@typescript-eslint/utils": ^5.59.0
     ast-types: ^0.14.2
-    chokidar: ^3.6.0
-    commander: ^9.5.0
     cross-fetch: ^3.1.5
     esbuild: ^0.25.0
     glob: ^8.0.3
@@ -1759,7 +1757,6 @@ __metadata:
     is-ci: ^3.0.1
     kleur: ^4.1.5
     lazyrepo: 0.0.0-alpha.27
-    ora: ^5.4.1
     prettier: ^2.8.7
     recast: ^0.22.0
     rimraf: ^4.4.0
@@ -7957,7 +7954,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^3.5.1, chokidar@npm:^3.5.2, chokidar@npm:^3.6.0":
+"chokidar@npm:^3.5.1, chokidar@npm:^3.5.2":
   version: 3.6.0
   resolution: "chokidar@npm:3.6.0"
   dependencies:
@@ -8262,7 +8259,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^9.4.1, commander@npm:^9.5.0":
+"commander@npm:^9.4.1":
   version: 9.5.0
   resolution: "commander@npm:9.5.0"
   checksum: c7a3e27aa59e913b54a1bafd366b88650bc41d6651f0cbe258d4ff09d43d6a7394232a4dadd0bf518b3e696fdf595db1028a0d82c785b88bd61f8a440cecfade
