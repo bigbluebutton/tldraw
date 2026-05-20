@@ -1977,13 +1977,13 @@
                   "text": "): "
                 },
                 {
-                  "kind": "Content",
-                  "text": "Diff[] | "
-                },
-                {
                   "kind": "Reference",
                   "text": "RESET_VALUE",
                   "canonicalReference": "@bigbluebutton/state!RESET_VALUE:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | Diff[]"
                 },
                 {
                   "kind": "Content",

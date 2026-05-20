@@ -93,7 +93,8 @@
 		"mocha/nanoid": "^3.3.8",
 		"postcss/nanoid": "^3.3.8",
 		"socks": ">=2.8.9",
-		"jsdom/http-proxy-agent": ">=7.0.1"
+		"jsdom/http-proxy-agent": ">=7.0.1",
+		"@remix-run/server-runtime": ">=2.17.3"
 	},
 	"overrides": {
 		"vm2": "3.11.3",
@@ -128,7 +129,8 @@
 		"serve-static": ">=1.16.0 <2.0.0",
 		"tar": ">=7.5.4",
 		"socks": ">=2.8.9",
-		"estree-util-value-to-estree": ">=3.3.3"
+		"estree-util-value-to-estree": ">=3.3.3",
+		"@remix-run/server-runtime": ">=2.17.3"
 	},
 	"dependencies": {
 		"node-gyp": "^10.2.0",
