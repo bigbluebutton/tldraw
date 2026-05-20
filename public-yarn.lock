@@ -6817,13 +6817,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"agent-base@npm:9.0.0":
-  version: 9.0.0
-  resolution: "agent-base@npm:9.0.0"
-  checksum: eb697a9eb4841c9936623b02779b8d705b886f343fdabf8d4bbe258094c61d9eb324886035345b304325b1d9c807e96efbc2ea2d3fa58011c837ad6b982a1f50
-  languageName: node
-  linkType: hard
-
 "agent-base@npm:^7.0.2, agent-base@npm:^7.1.0, agent-base@npm:^7.1.1":
   version: 7.1.1
   resolution: "agent-base@npm:7.1.1"
@@ -11963,16 +11956,6 @@ __metadata:
     statuses: 2.0.1
     toidentifier: 1.0.1
   checksum: 9b0a3782665c52ce9dc658a0d1560bcb0214ba5699e4ea15aefb2a496e2ca83db03ebc42e1cce4ac1f413e4e0d2d736a3fd755772c556a9a06853ba2a0b7d920
-  languageName: node
-  linkType: hard
-
-"http-proxy-agent@npm:>=7.0.1":
-  version: 9.0.0
-  resolution: "http-proxy-agent@npm:9.0.0"
-  dependencies:
-    agent-base: 9.0.0
-    debug: ^4.3.4
-  checksum: 8cf23a49ab274b2a5199011e5a96268d75dd6e4031cf72b723182c41b47d876c507c2fa125451743b87cd9f826cf60f5260dcc5e7db58f9dcc38823c9c07e625
   languageName: node
   linkType: hard
 
