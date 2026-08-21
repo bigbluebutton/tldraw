@@ -96,7 +96,7 @@ export const TextLabel = React.memo(function TextLabel<
 					color: theme[labelColor].solid,
 				}}
 			>
-				<div className="tl-text tl-text-content" dir="ltr">
+				<div className="tl-text tl-text-content" dir="auto">
 					{finalText}
 				</div>
 				{isEditing && (
