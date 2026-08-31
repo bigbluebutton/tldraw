@@ -105,7 +105,7 @@ export class TextShapeUtil extends ShapeUtil<TLTextShape> {
 						color: theme[color].solid,
 					}}
 				>
-					<div className="tl-text tl-text-content" dir="ltr">
+					<div className="tl-text tl-text-content" dir="auto">
 						{text}
 					</div>
 					{isEditing ? (
@@ -122,7 +122,7 @@ export class TextShapeUtil extends ShapeUtil<TLTextShape> {
 							placeholder=""
 							spellCheck="true"
 							wrap="off"
-							dir="ltr"
+							dir="auto"
 							datatype="wysiwyg"
 							defaultValue={text}
 							onFocus={handleFocus}
