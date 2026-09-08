@@ -1,6 +1,10 @@
 /// <reference types="react" />
 
-export { TLDRAW_BUILD_ID } from './lib/buildInfo'
+// Side-effect import only: logs the build id without exposing the ever-changing
+// TLDRAW_BUILD_ID literal in the public API (it would re-diff api-report.md on every build).
+import './lib/buildInfo'
+import * as Dialog from './lib/ui/components/primitives/Dialog'
+import * as DropdownMenu from './lib/ui/components/primitives/DropdownMenu'
 // eslint-disable-next-line local/no-export-star
 export * from '@bigbluebutton/editor'
 export { Tldraw, type TldrawProps } from './lib/Tldraw'
@@ -171,5 +175,3 @@ export {
 	type TldrawFile,
 } from './lib/utils/tldr/file'
 export { Dialog, DropdownMenu }
-import * as Dialog from './lib/ui/components/primitives/Dialog'
-import * as DropdownMenu from './lib/ui/components/primitives/DropdownMenu'
