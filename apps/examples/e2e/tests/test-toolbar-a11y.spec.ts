@@ -17,8 +17,9 @@ test.describe('Toolbar accessible names', () => {
 		for (let i = 0; i < count; i++) {
 			const button = buttons.nth(i)
 			const title = await button.getAttribute('title')
+			expect(title).toBe(title!.trim())
 			await expect(button).not.toHaveAccessibleName(/^tool\./)
-			await expect(button).toHaveAccessibleName(title!.trim())
+			await expect(button).toHaveAccessibleName(title!)
 		}
 	})
 
@@ -36,8 +37,9 @@ test.describe('Toolbar accessible names', () => {
 		for (let i = 0; i < count; i++) {
 			const button = buttons.nth(i)
 			const title = await button.getAttribute('title')
+			expect(title).toBe(title!.trim())
 			await expect(button).not.toHaveAccessibleName(/^tool\./)
-			await expect(button).toHaveAccessibleName(title!.trim())
+			await expect(button).toHaveAccessibleName(title!)
 		}
 
 		await page.getByTestId('tools.more').click()
