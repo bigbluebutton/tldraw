@@ -35,9 +35,6 @@ export const Toolbar = memo(function Toolbar() {
 
 	const showEditingTools = !isReadonly
 
-	const getTitle = (item: TLUiToolItem) =>
-		item.label ? `${msg(item.label)} ${item.kbd ? kbdStr(item.kbd) : ''}` : ''
-
 	const activeTLUiToolbarItem = toolbarItems.find((item) => {
 		return isActiveTLUiToolItem(item.toolItem, activeToolId, geoState)
 	})
@@ -131,7 +128,7 @@ export const Toolbar = memo(function Toolbar() {
 								<ToolbarButton
 									key={toolItem.id}
 									item={toolItem}
-									title={getTitle(toolItem)}
+									title={toolTitle(msg, toolItem)}
 									isSelected={isActiveTLUiToolItem(toolItem, activeToolId, geoState)}
 								/>
 							)
@@ -140,7 +137,7 @@ export const Toolbar = memo(function Toolbar() {
 							<ToolbarButton
 								key={laserTool.toolItem.id}
 								item={laserTool.toolItem}
-								title={getTitle(laserTool.toolItem)}
+								title={toolTitle(msg, laserTool.toolItem)}
 								isSelected={isActiveTLUiToolItem(laserTool.toolItem, activeToolId, geoState)}
 							/>
 						)}
@@ -151,7 +148,7 @@ export const Toolbar = memo(function Toolbar() {
 									<ToolbarButton
 										key={toolItem.id}
 										item={toolItem}
-										title={getTitle(toolItem)}
+										title={toolTitle(msg, toolItem)}
 										isSelected={isActiveTLUiToolItem(toolItem, activeToolId, geoState)}
 									/>
 								))}
@@ -160,7 +157,7 @@ export const Toolbar = memo(function Toolbar() {
 									<ToolbarButton
 										key={toolItem.id}
 										item={toolItem}
-										title={getTitle(toolItem)}
+										title={toolTitle(msg, toolItem)}
 										isSelected={isActiveTLUiToolItem(toolItem, activeToolId, geoState)}
 									/>
 								))}
@@ -171,7 +168,7 @@ export const Toolbar = memo(function Toolbar() {
 										<ToolbarButton
 											key={dropdownFirstItem.toolItem.id}
 											item={dropdownFirstItem.toolItem}
-											title={getTitle(dropdownFirstItem.toolItem)}
+											title={toolTitle(msg, dropdownFirstItem.toolItem)}
 											isSelected={isActiveTLUiToolItem(
 												dropdownFirstItem.toolItem,
 												activeToolId,
@@ -219,19 +216,20 @@ const OverflowToolsContent = track(function OverflowToolsContent({
 
 	return (
 		<div className="tlui-buttons__grid">
-			{toolbarItems.map(({ toolItem: { id, meta, kbd, label, onSelect, icon } }) => {
+			{toolbarItems.map(({ toolItem }) => {
+				const title = toolTitle(msg, toolItem)
 				return (
 					<M.Item
-						key={id}
+						key={toolItem.id}
 						type="icon"
 						className="tlui-button-grid__button"
-						data-testid={`tools.more.${id}`}
-						data-tool={id}
-						data-geo={meta?.geo ?? ''}
-						aria-label={label}
-						onClick={() => onSelect('toolbar')}
-						title={label ? `${msg(label)} ${kbd ? kbdStr(kbd) : ''}` : ''}
-						icon={icon}
+						data-testid={`tools.more.${toolItem.id}`}
+						data-tool={toolItem.id}
+						data-geo={toolItem.meta?.geo ?? ''}
+						aria-label={title || undefined}
+						onClick={() => toolItem.onSelect('toolbar')}
+						title={title}
+						icon={toolItem.icon}
 					/>
 				)
 			})}
@@ -254,7 +252,7 @@ function ToolbarButton({
 			data-testid={`tools.${item.id}`}
 			data-tool={item.id}
 			data-geo={item.meta?.geo ?? ''}
-			aria-label={item.label}
+			aria-label={title || undefined}
 			title={title}
 			icon={item.icon}
 			data-state={isSelected ? 'selected' : undefined}
@@ -266,6 +264,9 @@ function ToolbarButton({
 		/>
 	)
 }
+
+const toolTitle = (msg: ReturnType<typeof useTranslation>, item: TLUiToolItem) =>
+	item.label ? `${msg(item.label)}${item.kbd ? ` ${kbdStr(item.kbd)}` : ''}` : ''
 
 const isActiveTLUiToolItem = (
 	item: TLUiToolItem,
