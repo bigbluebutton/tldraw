@@ -18,7 +18,7 @@ import { debugFlags } from './debug-flags'
 
 /** @public */
 export function loopToHtmlElement(elm: Element): HTMLElement {
-	if (elm instanceof HTMLElement) return elm
+	if (elm.nodeType === Node.ELEMENT_NODE) return elm as HTMLElement
 	if (elm.parentElement) return loopToHtmlElement(elm.parentElement)
 	else throw Error('Could not find a parent element of an HTML type!')
 }
