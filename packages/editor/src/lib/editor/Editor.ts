@@ -719,7 +719,7 @@ export class Editor extends EventEmitter<TLEventMap> {
 	 * Use this instead of the global `document` to support cross-window embedding.
 	 */
 	getContainerDocument(): Document {
-			return this.getContainer().ownerDocument
+		return this.getContainer().ownerDocument
 	}
 
 	/**
@@ -727,7 +727,7 @@ export class Editor extends EventEmitter<TLEventMap> {
 	 * Use this instead of the global `window` to support cross-window embedding.
 	 */
 	getContainerWindow(): Window {
-			return this.getContainerDocument().defaultView ?? window
+		return this.getContainerDocument().defaultView ?? window
 	}
 
 	/**
