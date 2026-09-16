@@ -38,9 +38,10 @@ export function Minimap({ shapeFill, selectFill, viewportFill }: MinimapProps) {
 	const minimap = React.useMemo(() => new MinimapManager(editor), [editor])
 
 	React.useEffect(() => {
+		const win = editor.getContainerWindow()
 		// Must check after render
-		const raf = requestAnimationFrame(() => {
-			const style = getComputedStyle(editor.getContainer())
+		const raf = win.requestAnimationFrame(() => {
+			const style = win.getComputedStyle(editor.getContainer())
 
 			minimap.colors = {
 				shapeFill: style.getPropertyValue(shapeFill).trim(),
@@ -51,7 +52,7 @@ export function Minimap({ shapeFill, selectFill, viewportFill }: MinimapProps) {
 			minimap.render()
 		})
 		return () => {
-			cancelAnimationFrame(raf)
+			win.cancelAnimationFrame(raf)
 		}
 	}, [editor, selectFill, shapeFill, viewportFill, minimap, isDarkMode])
 

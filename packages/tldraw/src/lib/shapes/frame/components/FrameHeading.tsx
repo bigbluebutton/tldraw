@@ -59,15 +59,16 @@ export const FrameHeading = function FrameHeading({
 			el.focus()
 			el.select()
 
-			requestAnimationFrame(() => {
+			const win = editor.getContainerWindow()
+			win.requestAnimationFrame(() => {
 				// On desktop, the input may have lost focus, so try try try again!
-				if (document.activeElement !== el) {
+				if (win.document.activeElement !== el) {
 					el.focus()
 					el.select()
 				}
 			})
 		}
-	}, [rInput, isEditing])
+	}, [rInput, isEditing, editor])
 
 	// rotate right 45 deg
 	const offsetRotation = pageRotation + Math.PI / 4

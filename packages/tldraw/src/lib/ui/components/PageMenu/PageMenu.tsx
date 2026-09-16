@@ -87,8 +87,10 @@ export const PageMenu = function PageMenu() {
 	// Scroll the current page into view when the menu opens / when current page changes
 	useEffect(() => {
 		if (!isOpen) return
-		requestAnimationFrame(() => {
-			const elm = document.querySelector(
+		const win = editor.getContainerWindow()
+		const doc = editor.getContainerDocument()
+		win.requestAnimationFrame(() => {
+			const elm = doc.querySelector(
 				`[data-testid="page-menu-item-${currentPageId}"]`
 			) as HTMLDivElement
 
@@ -111,7 +113,7 @@ export const PageMenu = function PageMenu() {
 				}
 			}
 		})
-	}, [ITEM_HEIGHT, currentPageId, isOpen])
+	}, [ITEM_HEIGHT, currentPageId, isOpen, editor])
 
 	const handlePointerDown = useCallback(
 		(e: React.PointerEvent<HTMLButtonElement>) => {

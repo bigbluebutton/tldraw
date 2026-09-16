@@ -658,7 +658,7 @@ export function useNativeClipboardEvents() {
 		const pointerUpHandler = (e: PointerEvent) => {
 			if (e.button === 1) {
 				disablingMiddleClickPaste = true
-				requestAnimationFrame(() => {
+				editor.getContainerWindow().requestAnimationFrame(() => {
 					disablingMiddleClickPaste = false
 				})
 			}

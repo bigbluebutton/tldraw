@@ -204,6 +204,8 @@ export class Editor extends EventEmitter<TLEventMap> {
 
 		this.getContainer = getContainer ?? (() => document.body)
 
+		this._tickManager = new TickManager(this)
+
 		this.textMeasure = new TextManager(this)
 
 		class NewRoot extends RootState {
@@ -635,7 +637,7 @@ export class Editor extends EventEmitter<TLEventMap> {
 
 		this.updateRenderingBounds()
 
-		requestAnimationFrame(() => {
+		this.getContainerWindow().requestAnimationFrame(() => {
 			this._tickManager.start()
 		})
 	}
@@ -662,7 +664,7 @@ export class Editor extends EventEmitter<TLEventMap> {
 	readonly disposables = new Set<() => void>()
 
 	/** @internal */
-	private _tickManager = new TickManager(this)
+	private _tickManager: TickManager
 
 	/**
 	 * A manager for the app's snapping feature.
@@ -710,6 +712,23 @@ export class Editor extends EventEmitter<TLEventMap> {
 	 * @public
 	 */
 	getContainer: () => HTMLElement
+
+	/* backport part of https://github.com/tldraw/tldraw/pull/8196 */
+	/**
+	 * The document that the editor's container element belongs to.
+	 * Use this instead of the global `document` to support cross-window embedding.
+	 */
+	getContainerDocument(): Document {
+			return this.getContainer().ownerDocument
+	}
+
+	/**
+	 * The window that the editor's container element belongs to.
+	 * Use this instead of the global `window` to support cross-window embedding.
+	 */
+	getContainerWindow(): Window {
+			return this.getContainerDocument().defaultView ?? window
+	}
 
 	/**
 	 * A manager for side effects and correct state enforcement.
@@ -8635,7 +8654,7 @@ export class Editor extends EventEmitter<TLEventMap> {
 
 							if (this._didPinch) {
 								this._didPinch = false
-								requestAnimationFrame(() => {
+								this.getContainerWindow().requestAnimationFrame(() => {
 									if (!this._didPinch) {
 										this.setSelectedShapes(_selectedShapeIdsAtPointerDown, { squashing: true })
 									}

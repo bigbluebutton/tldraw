@@ -254,11 +254,12 @@ function PatternFillDefForCanvas() {
 			const htmlLayer = findHtmlLayerParent(containerRef.current!)
 			if (htmlLayer) {
 				// Wait for `patternContext` to be picked up
-				requestAnimationFrame(() => {
+				const win = editor.getContainerWindow()
+				win.requestAnimationFrame(() => {
 					htmlLayer.style.display = 'none'
 
 					// Wait for 'display = "none"' to take effect
-					requestAnimationFrame(() => {
+					win.requestAnimationFrame(() => {
 						htmlLayer.style.display = ''
 					})
 				})

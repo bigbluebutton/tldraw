@@ -71,13 +71,13 @@ export const Input = React.forwardRef<HTMLInputElement, TLUiInputProps>(function
 			setIsFocused(true)
 			const elm = e.currentTarget as HTMLInputElement
 			rCurrentValue.current = elm.value
-			requestAnimationFrame(() => {
+			editor.getContainerWindow().requestAnimationFrame(() => {
 				if (autoselect) {
 					elm.select()
 				}
 			})
 		},
-		[autoselect]
+		[autoselect, editor]
 	)
 
 	const handleChange = React.useCallback(
@@ -122,7 +122,8 @@ export const Input = React.forwardRef<HTMLInputElement, TLUiInputProps>(function
 	React.useEffect(() => {
 		if (!editor.environment.isIos) return
 
-		const visualViewport = window.visualViewport
+		const win = editor.getContainerWindow()
+		const visualViewport = win.visualViewport
 		if (isFocused && shouldManuallyMaintainScrollPositionWhenFocused && visualViewport) {
 			const onViewportChange = () => {
 				rInputRef.current?.scrollIntoView({ block: 'center' })
@@ -130,7 +131,7 @@ export const Input = React.forwardRef<HTMLInputElement, TLUiInputProps>(function
 			visualViewport.addEventListener('resize', onViewportChange)
 			visualViewport.addEventListener('scroll', onViewportChange)
 
-			requestAnimationFrame(() => {
+			win.requestAnimationFrame(() => {
 				rInputRef.current?.scrollIntoView({ block: 'center' })
 			})
 

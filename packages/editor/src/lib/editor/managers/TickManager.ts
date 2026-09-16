@@ -7,15 +7,16 @@ export class TickManager {
 		this.start()
 	}
 
-	raf: any
+	raf: number | undefined
+	rafWindow: Window | undefined
 	isPaused = true
 	last = 0
 	t = 0
 
 	start = () => {
 		this.isPaused = false
-		cancelAnimationFrame(this.raf)
-		this.raf = requestAnimationFrame(this.tick)
+		this.cancelFrame()
+		this.requestFrame()
 		this.last = Date.now()
 	}
 
@@ -32,20 +33,35 @@ export class TickManager {
 		this.editor.emit('frame', elapsed)
 
 		if (this.t < 16) {
-			this.raf = requestAnimationFrame(this.tick)
+			this.requestFrame()
 			return
 		}
 
 		this.t -= 16
 		this.updatePointerVelocity(elapsed)
 		this.editor.emit('tick', elapsed)
-		this.raf = requestAnimationFrame(this.tick)
+		this.requestFrame()
 	}
 
 	// Clear the listener
 	dispose = () => {
 		this.isPaused = true
-		cancelAnimationFrame(this.raf)
+		this.cancelFrame()
+	}
+
+	private requestFrame = () => {
+			const win = this.editor.getContainerWindow()
+					this.rafWindow = win
+					this.raf = win.requestAnimationFrame(this.tick)
+	}
+
+	private cancelFrame = () => {
+			if (this.raf !== undefined && this.rafWindow) {
+					this.rafWindow.cancelAnimationFrame(this.raf)
+			}
+
+			this.raf = undefined
+			this.rafWindow = undefined
 	}
 
 	private prevPoint = new Vec2d()

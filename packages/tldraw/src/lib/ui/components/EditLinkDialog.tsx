@@ -44,8 +44,8 @@ export const EditLinkDialogInner = track(function EditLinkDialogInner({
 	const rInput = useRef<HTMLInputElement>(null)
 
 	useEffect(() => {
-		requestAnimationFrame(() => rInput.current?.focus())
-	}, [])
+		editor.getContainerWindow().requestAnimationFrame(() => rInput.current?.focus())
+	}, [editor])
 
 	const rInitialValue = useRef(selectedShape.props.url)
 

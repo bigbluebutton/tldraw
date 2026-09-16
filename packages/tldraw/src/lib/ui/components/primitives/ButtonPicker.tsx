@@ -49,7 +49,7 @@ function _ButtonPicker<T extends string>(props: ButtonPickerProps<T>) {
 	} = React.useMemo(() => {
 		const handlePointerUp = () => {
 			rPointing.current = false
-			window.removeEventListener('pointerup', handlePointerUp)
+			editor.getContainerWindow().removeEventListener('pointerup', handlePointerUp)
 		}
 
 		const handleButtonClick = (e: React.PointerEvent<HTMLButtonElement>) => {
@@ -67,7 +67,7 @@ function _ButtonPicker<T extends string>(props: ButtonPickerProps<T>) {
 			onValueChange(style, id as T, true)
 
 			rPointing.current = true
-			window.addEventListener('pointerup', handlePointerUp) // see TLD-658
+			editor.getContainerWindow().addEventListener('pointerup', handlePointerUp) // see TLD-658
 		}
 
 		const handleButtonPointerEnter = (e: React.PointerEvent<HTMLButtonElement>) => {

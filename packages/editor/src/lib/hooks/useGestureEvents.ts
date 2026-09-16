@@ -277,7 +277,7 @@ export function useGestureEvents(ref: React.RefObject<HTMLDivElement>) {
 
 			pinchState = 'not sure'
 
-			requestAnimationFrame(() => {
+			editor.getContainerWindow().requestAnimationFrame(() => {
 				editor.dispatch({
 					type: 'pinch',
 					name: 'pinch_end',

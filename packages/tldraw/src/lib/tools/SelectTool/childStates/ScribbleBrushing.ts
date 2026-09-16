@@ -42,7 +42,7 @@ export class ScribbleBrushing extends StateNode {
 
 		this.updateScribbleSelection(true)
 
-		requestAnimationFrame(() => {
+		this.editor.getContainerWindow().requestAnimationFrame(() => {
 			this.editor.updateInstanceState({ brush: null })
 		})
 	}

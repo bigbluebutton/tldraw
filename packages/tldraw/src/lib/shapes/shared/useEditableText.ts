@@ -40,7 +40,7 @@ export function useEditableText<T extends Extract<TLShape, { props: { text: stri
 		rSkipSelectOnFocus.current = false
 
 		// On the next frame, if we're not skipping select AND we have text in the element, then focus the text
-		requestAnimationFrame(() => {
+		editor.getContainerWindow().requestAnimationFrame(() => {
 			const elm = rInput.current
 			if (!elm) return
 
@@ -61,7 +61,7 @@ export function useEditableText<T extends Extract<TLShape, { props: { text: stri
 	const handleBlur = useCallback(() => {
 		const ranges = rSelectionRanges.current
 
-		requestAnimationFrame(() => {
+		editor.getContainerWindow().requestAnimationFrame(() => {
 			const elm = rInput.current
 			const editingShapeId = editor.getEditingShapeId()
 			// Did we move to a different shape?
