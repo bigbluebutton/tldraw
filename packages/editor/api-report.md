@@ -660,6 +660,8 @@ export class Editor extends EventEmitter<TLEventMap> {
     getCanRedo(): boolean;
     getCanUndo(): boolean;
     getContainer: () => HTMLElement;
+    getContainerDocument(): Document;
+    getContainerWindow(): Window;
     getContentFromCurrentPage(shapes: TLShape[] | TLShapeId[]): TLContent | undefined;
     // @internal
     getCrashingError(): unknown;

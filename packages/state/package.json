@@ -44,6 +44,7 @@
 		"testEnvironment": "jsdom"
 	},
 	"devDependencies": {
+		"@testing-library/react": "^16.0.0",
 		"@types/lodash": "^4.14.188",
 		"@types/react": "^18.0.24",
 		"@types/react-test-renderer": "^18.0.0",
@@ -58,9 +59,6 @@
 		"entryPoint": "./src/index.ts",
 		"displayName": "@bigbluebutton/state",
 		"tsconfig": "./tsconfig.json"
-	},
-	"dependencies": {
-		"@testing-library/react": "^16.0.0"
 	},
 	"stableVersion": "2.0.0-alpha.20"
 }
