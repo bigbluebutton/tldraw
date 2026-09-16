@@ -50,18 +50,18 @@ export class TickManager {
 	}
 
 	private requestFrame = () => {
-			const win = this.editor.getContainerWindow()
-					this.rafWindow = win
-					this.raf = win.requestAnimationFrame(this.tick)
+		const win = this.editor.getContainerWindow()
+		this.rafWindow = win
+		this.raf = win.requestAnimationFrame(this.tick)
 	}
 
 	private cancelFrame = () => {
-			if (this.raf !== undefined && this.rafWindow) {
-					this.rafWindow.cancelAnimationFrame(this.raf)
-			}
+		if (this.raf !== undefined && this.rafWindow) {
+			this.rafWindow.cancelAnimationFrame(this.raf)
+		}
 
-			this.raf = undefined
-			this.rafWindow = undefined
+		this.raf = undefined
+		this.rafWindow = undefined
 	}
 
 	private prevPoint = new Vec2d()
