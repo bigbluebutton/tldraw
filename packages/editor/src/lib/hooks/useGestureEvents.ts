@@ -190,7 +190,7 @@ export function useGestureEvents(ref: React.RefObject<HTMLDivElement>) {
 
 			switch (pinchState) {
 				case 'not sure': {
-					if (touchDistance > 24) {
+					if (touchDistance > 8) {
 						pinchState = 'zooming'
 					} else if (originDistance > 16) {
 						pinchState = 'panning'

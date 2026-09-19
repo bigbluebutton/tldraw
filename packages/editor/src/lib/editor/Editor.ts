@@ -8628,9 +8628,13 @@ export class Editor extends EventEmitter<TLEventMap> {
 							if (!inputs.isPinching) return
 
 							const {
-								point: { x, y, z = 1 },
+								point: { z = 1 },
 								delta: { x: dx, y: dy },
 							} = info
+
+							const { screenBounds } = this.getInstanceState()
+							const x = info.point.x - screenBounds.x
+							const y = info.point.y - screenBounds.y
 
 							const { x: cx, y: cy, z: cz } = this.getCamera()
 
