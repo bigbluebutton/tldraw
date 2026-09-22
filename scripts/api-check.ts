@@ -23,6 +23,14 @@ async function main() {
 			rootDir: '.',
 			paths: {},
 			esModuleInterop: true,
+			// This directory is installed straight from the registry rather than from
+			// public-yarn.lock, so @types/node arrives as whatever version npm resolves
+			// that day (via @types/react and @types/ws) and is picked up automatically.
+			// Newer ones declare types that only exist in a newer TypeScript than the one
+			// we compile with, which fails the check on a commit that has not changed.
+			// Our public types are not allowed to depend on node's globals anyway, so
+			// leave them out of the check entirely; explicit imports still resolve.
+			types: [],
 		},
 		files: [],
 	}
