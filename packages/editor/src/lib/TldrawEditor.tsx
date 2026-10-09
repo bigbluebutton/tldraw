@@ -359,7 +359,14 @@ function Layout({
 	useDPRMultiple()
 
 	const editor = useEditor()
-	editor.updateViewportScreenBounds()
+	// Measuring the container writes the new screen and rendering bounds to the
+	// store. Doing that while Layout renders schedules an update on components
+	// already subscribed to those bounds (ShapesToDisplay), which React reports
+	// as a setState during render. A layout effect still runs before paint, so
+	// the shapes are repositioned in the same frame.
+	useLayoutEffect(() => {
+		editor.updateViewportScreenBounds()
+	})
 
 	return children ?? <Canvas />
 }
