@@ -102,22 +102,29 @@ const ChatPollContent: React.FC<ChatPollContentProps> = ({
 		}
 	})
 
-	const useHeight = height || translatedAnswers.length * 50
+	// With a height (the whiteboard shape), the question takes the space it needs and the
+	// chart fills the rest, so a long question cannot push the last bars out of the shape.
+	const chart = (
+		<ResponsiveContainer width="90%" height={height ? '100%' : translatedAnswers.length * 50}>
+			<BarChart data={translatedAnswers} layout="vertical">
+				<XAxis type="number" allowDecimals={false} />
+				<YAxis
+					width={yAxisWidth}
+					type="category"
+					dataKey="pollAnswer"
+					tick={<CustomizedAxisTick />}
+				/>
+				<Bar dataKey="numVotes" fill="#0C57A7" />
+			</BarChart>
+		</ResponsiveContainer>
+	)
 	return (
-		<Styled.PollWrapper data-test="chatPollMessageText">
+		<Styled.PollWrapper
+			data-test="chatPollMessageText"
+			style={height ? { height, display: 'flex', flexDirection: 'column' } : undefined}
+		>
 			<Styled.PollText>{pollData.questionText}</Styled.PollText>
-			<ResponsiveContainer width="90%" height={useHeight}>
-				<BarChart data={translatedAnswers} layout="vertical">
-					<XAxis type="number" allowDecimals={false} />
-					<YAxis
-						width={yAxisWidth}
-						type="category"
-						dataKey="pollAnswer"
-						tick={<CustomizedAxisTick />}
-					/>
-					<Bar dataKey="numVotes" fill="#0C57A7" />
-				</BarChart>
-			</ResponsiveContainer>
+			{height ? <div style={{ flex: '1 1 0', minHeight: 0 }}>{chart}</div> : chart}
 		</Styled.PollWrapper>
 	)
 }
