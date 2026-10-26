@@ -68,8 +68,6 @@ export class PollShapeUtil extends ShapeUtil<IPollShape> {
 			answers: shape.props.answers,
 		})
 
-		const adjustedHeight = shape.props.questionText.length > 0 ? height - 75 : height
-
 		return (
 			<HTMLContainer
 				id={shape.id}
@@ -94,7 +92,7 @@ export class PollShapeUtil extends ShapeUtil<IPollShape> {
 						position: 'relative',
 					}}
 				>
-					<ChatPollContent metadata={pollMetadata} height={adjustedHeight} width={width} />
+					<ChatPollContent metadata={pollMetadata} height={height} width={width} />
 				</div>
 			</HTMLContainer>
 		)
